@@ -1,0 +1,30 @@
+# Makefile for UNIX
+
+# the compiler: gcc for C program, define as g++ for C++
+CC = gcc
+
+# compiler flags:
+# -g enable debugging
+# -Wall turn on all warnings
+# -D__USE_FIXED_PROTOTYPES__ force the compiler to use the correct headers
+# -ansi don't use GNU extensions, stick to ANSI
+# -std=c99 use newer version
+CFLAGS=-g -Wall -D__USE_FIXED_PROTOTYPES__ -std=c99
+
+# libraries
+# OS X
+OS_X_LIBS += -framework ApplicationServices
+
+# the build target executable:
+TARGET = mouse_events
+
+all: $(TARGET)
+
+$(TARGET): mouse_events.o
+	$(CC) $(CFLAGS) -o mouse_events main.c mouse_events.o $(OS_X_LIBS)
+
+mouse_events.o: mouse_events.c mouse_events.h
+	$(CC) $(CFLAGS) -c mouse_events.c
+
+clean:
+	$(RM) $(TARGET) $(TARGET).o
