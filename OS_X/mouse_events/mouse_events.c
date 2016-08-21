@@ -5,6 +5,7 @@
 #include <ApplicationServices/ApplicationServices.h>
 #include "mouse_events.h"
 
+// mouse moving
 static CGPoint osx_mouse_position(void) {
 
     CGPoint position;
@@ -72,16 +73,192 @@ void mouse_move_to_eventless(float x, float y) {
 
 void mouse_move_by(float dx, float dy) {
 
-    float curr_x, curr_y;
+    float x, y;
 
-    mouse_position(&curr_x, &curr_y);
-    mouse_move_to(curr_x + dx, curr_y + dy);
+    mouse_position(&x, &y);
+    mouse_move_to(x + dx, y + dy);
 }
 
 void mouse_move_by_eventless(float dx, float dy) {
 
-    float curr_x, curr_y;
+    float x, y;
 
-    mouse_position(&curr_x, &curr_y);
-    mouse_move_to_eventless(curr_x + dx, curr_y + dy);
+    mouse_position(&x, &y);
+    mouse_move_to_eventless(x + dx, y + dy);
+}
+
+// mouse clicking
+void mouse_left_click(void) {
+
+}
+
+void mouse_left_click_at(float x, float y) {
+
+    // 1. mouse left click down at (x,y)
+    /**
+    * create a new Quartz mouse event.
+    * params:
+    * @source : CGEventSourceRef
+    * @mouseType : CGEventType
+    * @mouseCursorPosition : CGPoint
+    * @mouseButton : CGMouseButton
+    */
+    CGEventRef left_click_down_event = CGEventCreateMouseEvent(NULL, kCGEventLeftMouseDown, CGPointMake(x,y), 0);
+
+    // 2. mouse left click up at (x,y)
+    /**
+    * create a new Quartz mouse event.
+    * params:
+    * @source : CGEventSourceRef
+    * @mouseType : CGEventType
+    * @mouseCursorPosition : CGPoint
+    * @mouseButton : CGMouseButton
+    */
+    CGEventRef left_click_up_event = CGEventCreateMouseEvent(NULL, kCGEventLeftMouseUp, CGPointMake(x,y), 0);
+
+    /**
+     * post a Quartz event into the event stream at a specified location.
+     * params:
+     * @tap : CGEventTapLocation
+     * @event : CGEventRef
+     */
+    CGEventPost(kCGHIDEventTap, left_click_down_event);
+    CGEventPost(kCGHIDEventTap, left_click_up_event);
+
+    /**
+     * release a Quartz event
+     */
+    CFRelease(left_click_up_event);
+    CFRelease(left_click_down_event);
+}
+
+void mouse_right_click(void) {
+
+}
+
+void mouse_right_click_at(float x, float y) {
+
+}
+
+void mouse_left_double_click(void) {
+
+
+}
+
+void mouse_left_double_click_at(float x, float y) {
+
+    // 1. mouse left click down at (x,y)
+    /**
+    * create a new Quartz mouse event.
+    * params:
+    * @source : CGEventSourceRef
+    * @mouseType : CGEventType
+    * @mouseCursorPosition : CGPoint
+    * @mouseButton : CGMouseButton
+    */
+    CGEventRef left_click_down_event = CGEventCreateMouseEvent(NULL, kCGEventLeftMouseDown, CGPointMake(x,y), 0);
+
+    // 2. mouse left click up at (x,y)
+    /**
+    * create a new Quartz mouse event.
+    * params:
+    * @source : CGEventSourceRef
+    * @mouseType : CGEventType
+    * @mouseCursorPosition : CGPoint
+    * @mouseButton : CGMouseButton
+    */
+    CGEventRef left_click_up_event = CGEventCreateMouseEvent(NULL, kCGEventLeftMouseUp, CGPointMake(x,y), 0);
+
+    // 3. set mouse event click state to 2 (double click)
+    CGEventSetIntegerValueField(left_click_down_event, kCGMouseEventClickState, 2);
+    CGEventSetIntegerValueField(left_click_up_event, kCGMouseEventClickState, 2);
+
+    /**
+     * post a Quartz event into the event stream at a specified location.
+     * params:
+     * @tap : CGEventTapLocation
+     * @event : CGEventRef
+     */
+    CGEventPost(kCGHIDEventTap, left_click_down_event);
+    CGEventPost(kCGHIDEventTap, left_click_up_event);
+
+    CGEventPost(kCGHIDEventTap, left_click_down_event);
+    CGEventPost(kCGHIDEventTap, left_click_up_event);
+
+    /**
+     * release a Quartz event
+     */
+    CFRelease(left_click_up_event);
+    CFRelease(left_click_down_event);
+
+}
+
+void mouse_right_double_click(void) {
+
+}
+
+void mouse_right_double_click_at(float x, float y) {
+
+}
+
+void mouse_left_triple_click(void) {
+
+}
+
+void mouse_left_triple_click_at(float x, float y) {
+
+    // 1. mouse left click down at (x,y)
+    /**
+    * create a new Quartz mouse event.
+    * params:
+    * @source : CGEventSourceRef
+    * @mouseType : CGEventType
+    * @mouseCursorPosition : CGPoint
+    * @mouseButton : CGMouseButton
+    */
+    CGEventRef left_click_down_event = CGEventCreateMouseEvent(NULL, kCGEventLeftMouseDown, CGPointMake(x,y), 0);
+
+    // 2. mouse left click up at (x,y)
+    /**
+    * create a new Quartz mouse event.
+    * params:
+    * @source : CGEventSourceRef
+    * @mouseType : CGEventType
+    * @mouseCursorPosition : CGPoint
+    * @mouseButton : CGMouseButton
+    */
+    CGEventRef left_click_up_event = CGEventCreateMouseEvent(NULL, kCGEventLeftMouseUp, CGPointMake(x,y), 0);
+
+    // 3. set mouse event click state to 3 (triple click)
+    CGEventSetIntegerValueField(left_click_down_event, kCGMouseEventClickState, 3);
+    CGEventSetIntegerValueField(left_click_up_event, kCGMouseEventClickState, 3);
+
+    /**
+     * post a Quartz event into the event stream at a specified location.
+     * params:
+     * @tap : CGEventTapLocation
+     * @event : CGEventRef
+     */
+    CGEventPost(kCGHIDEventTap, left_click_down_event);
+    CGEventPost(kCGHIDEventTap, left_click_up_event);
+
+    CGEventPost(kCGHIDEventTap, left_click_down_event);
+    CGEventPost(kCGHIDEventTap, left_click_up_event);
+
+    CGEventPost(kCGHIDEventTap, left_click_down_event);
+    CGEventPost(kCGHIDEventTap, left_click_up_event);
+
+    /**
+     * release a Quartz event
+     */
+    CFRelease(left_click_up_event);
+    CFRelease(left_click_down_event);
+}
+
+void mouse_right_triple_click(void) {
+
+}
+
+void mouse_right_triple_click_at(float x, float y) {
+
 }

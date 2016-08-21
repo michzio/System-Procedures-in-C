@@ -6,7 +6,8 @@ int main() {
 
     float x, y;
 
-  /*  printf("Hello, world!\n");
+    /*
+    printf("Hello, world!\n");
     mouse_position(&x, &y);
     printf("Current mouse position: {%f,%f}\n", x, y);
     mouse_move_to(500,500);
@@ -36,9 +37,13 @@ int main() {
         usleep(10000);
         mouse_move_by(5, 5);
     }
-     */
+    */
 
-
+    mouse_left_click_at(300, 150);
+    sleep(1);
+    mouse_left_double_click_at(300, 150);
+    sleep(1); 
+    mouse_left_triple_click_at(300, 150);
 
     return 0;
 }
