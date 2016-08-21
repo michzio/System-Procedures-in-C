@@ -39,11 +39,18 @@ int main() {
     }
     */
 
+    /*
     mouse_left_click_at(300, 150);
     sleep(1);
     mouse_left_double_click_at(300, 150);
-    sleep(1); 
+    sleep(1);
     mouse_left_triple_click_at(300, 150);
+     */
+
+    /*
+    sleep(2);
+    mouse_left_click();
+    */ 
 
     return 0;
 }

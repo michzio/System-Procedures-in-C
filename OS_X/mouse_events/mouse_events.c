@@ -90,6 +90,10 @@ void mouse_move_by_eventless(float dx, float dy) {
 // mouse clicking
 void mouse_left_click(void) {
 
+    float x, y;
+
+    mouse_position(&x, &y);
+    mouse_left_click_at(x, y);
 }
 
 void mouse_left_click_at(float x, float y) {
@@ -115,6 +119,10 @@ void mouse_left_click_at(float x, float y) {
     * @mouseButton : CGMouseButton
     */
     CGEventRef left_click_up_event = CGEventCreateMouseEvent(NULL, kCGEventLeftMouseUp, CGPointMake(x,y), 0);
+
+    // 3. set mouse event click state to 1 (single click)
+    CGEventSetIntegerValueField(left_click_down_event, kCGMouseEventClickState, 1);
+    CGEventSetIntegerValueField(left_click_up_event, kCGMouseEventClickState, 1);
 
     /**
      * post a Quartz event into the event stream at a specified location.
