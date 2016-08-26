@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include <CoreGraphics/CoreGraphics.h>
 #include "mouse_events.h"
+#include "scroll_wheel_events.h"
 
 int main() {
 
@@ -151,6 +152,10 @@ int main() {
     mouse_left_click_up_at(700,500);
     */
 
+    for(int i=0; i<100; i++) {
+        sleep(1);
+        scroll_wheel_scroll_down(10);
+    }
 
     return 0;
 }

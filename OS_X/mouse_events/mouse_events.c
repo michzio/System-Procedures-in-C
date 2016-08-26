@@ -667,6 +667,74 @@ void mouse_left_click_up_at(float x, float y) {
     CFRelease(left_click_up_event);
 }
 
+void mouse_right_click_up(void) {
+
+    float x, y;
+
+    mouse_position(&x, &y);
+    mouse_right_click_up_at(x, y);
+}
+
+void mouse_right_click_up_at(float x, float y) {
+
+    /**
+     * create a new Quartz mouse event.
+     * params:
+     * @source : CGEventSourceRef
+     * @mouseType : CGEventType
+     * @mouseCursorPosition : CGPoint
+     * @mouseButton : CGMouseButton
+     */
+    CGEventRef right_click_up_event = CGEventCreateMouseEvent(NULL, kCGEventRightMouseUp, CGPointMake(x, y), 0);
+
+    /**
+     * post a Quartz event into the event stream at a specified location.
+     * params:
+     * @tap : CGEventTapLocation
+     * @event : CGEventRef
+     */
+    CGEventPost(kCGHIDEventTap, right_click_up_event);
+
+    /**
+     * release a Quartz event
+     */
+    CFRelease(right_click_up_event);
+}
+
+void mouse_middle_click_up(void) {
+
+    float x, y;
+
+    mouse_position(&x, &y);
+    mouse_middle_click_up_at(x, y);
+}
+
+void mouse_middle_click_up_at(float x, float y) {
+
+    /**
+     * create a new Quartz mouse event.
+     * params:
+     * @source : CGEventSourceRef
+     * @mouseType : CGEventType
+     * @mouseCursorPosition : CGPoint
+     * @mouseButton : CGMouseButton
+     */
+    CGEventRef middle_click_up_event = CGEventCreateMouseEvent(NULL, kCGEventOtherMouseUp, CGPointMake(x, y), kCGMouseButtonCenter);
+
+    /**
+     * post a Quartz event into the event stream at a specified location.
+     * params:
+     * @tap : CGEventTapLocation
+     * @event : CGEventRef
+     */
+    CGEventPost(kCGHIDEventTap, middle_click_up_event);
+
+    /**
+     * release a Quartz event
+     */
+    CFRelease(middle_click_up_event);
+}
+
 // mouse dragging
 void mouse_left_drag(void) {
 
@@ -674,6 +742,14 @@ void mouse_left_drag(void) {
 
     mouse_position(&x, &y);
     mouse_left_drag_to(x, y);
+}
+
+void mouse_left_drag_by(float dx, float dy) {
+
+    float x, y;
+
+    mouse_position(&x, &y);
+    mouse_left_drag_to(x + dx, y + dy);
 }
 
 void mouse_left_drag_to(float x, float y) {
@@ -702,10 +778,89 @@ void mouse_left_drag_to(float x, float y) {
     CFRelease(left_drag_event);
 }
 
-void mouse_left_drag_by(float dx, float dy) {
+void mouse_right_drag(void) {
 
     float x, y;
 
     mouse_position(&x, &y);
-    mouse_left_drag_to(x + dx, y + dy);
+    mouse_right_drag_to(x, y);
 }
+
+void mouse_right_drag_by(float dx, float dy) {
+
+    float x, y;
+
+    mouse_position(&x, &y);
+    mouse_right_drag_to(x + dx, y + dy);
+}
+
+void mouse_right_drag_to(float x, float y) {
+
+    /**
+     * create a new Quartz mouse event.
+     * params:
+     * @source : CGEventSourceRef
+     * @mouseType : CGEventType
+     * @mouseCursorPosition : CGPoint
+     * @mouseButton : CGMouseButton
+     */
+    CGEventRef right_drag_event = CGEventCreateMouseEvent(NULL, kCGEventRightMouseDragged, CGPointMake(x, y), 0);
+
+    /**
+     * post a Quartz event into the event stream at a specified location.
+     * params:
+     * @tap : CGEventTapLocation
+     * @event : CGEventRef
+     */
+    CGEventPost(kCGHIDEventTap, right_drag_event);
+
+    /**
+    * release a Quartz event
+    */
+    CFRelease(right_drag_event);
+}
+
+void mouse_middle_drag(void) {
+
+    float x, y;
+
+    mouse_position(&x, &y);
+    mouse_middle_drag_to(x, y);
+}
+
+void mouse_middle_drag_by(float dx, float dy) {
+
+    float x, y;
+
+    mouse_position(&x, &y);
+    mouse_middle_drag_to(x + dx, y + dy);
+}
+
+void mouse_middle_drag_to(float x, float y) {
+
+    /**
+     * create a new Quartz mouse event.
+     * params:
+     * @source : CGEventSourceRef
+     * @mouseType : CGEventType
+     * @mouseCursorPosition : CGPoint
+     * @mouseButton : CGMouseButton
+     */
+    CGEventRef middle_drag_event = CGEventCreateMouseEvent(NULL, kCGEventOtherMouseDragged, CGPointMake(x, y), kCGMouseButtonCenter);
+
+    /**
+     * post a Quartz event into the event stream at a specified location.
+     * params:
+     * @tap : CGEventTapLocation
+     * @event : CGEventRef
+     */
+    CGEventPost(kCGHIDEventTap, middle_drag_event);
+
+    /**
+    * release a Quartz event
+    */
+    CFRelease(middle_drag_event);
+}
+
+
+    

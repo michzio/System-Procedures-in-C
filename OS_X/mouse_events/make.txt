@@ -20,11 +20,14 @@ TARGET = mouse_events
 
 all: $(TARGET)
 
-$(TARGET): mouse_events.o
-	$(CC) $(CFLAGS) -o mouse_events main.c mouse_events.o $(OS_X_LIBS)
+$(TARGET): mouse_events.o scroll_wheel_events.o
+	$(CC) $(CFLAGS) -o mouse_events main.c mouse_events.o scroll_wheel_events.o $(OS_X_LIBS)
 
 mouse_events.o: mouse_events.c mouse_events.h
 	$(CC) $(CFLAGS) -c mouse_events.c
 
+scroll_wheel_events.o: scroll_wheel_events.c scroll_wheel_events.h
+	$(CC) $(CFLAGS) -c scroll_wheel_events.c
+
 clean:
-	$(RM) $(TARGET) $(TARGET).o
+	$(RM) $(TARGET) $(TARGET).o scroll_wheel_events.o

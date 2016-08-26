@@ -50,13 +50,13 @@ void mouse_middle_click_up_at(float x, float y);
 
 // mouse dragging
 void mouse_left_drag(void);
-void mouse_left_drag_to(float x, float y);
 void mouse_left_drag_by(float dx, float dy);
+void mouse_left_drag_to(float x, float y);
 void mouse_right_drag(void);
-void mouse_right_drag_to(float x, float y);
 void mouse_right_drag_by(float dx, float dy);
+void mouse_right_drag_to(float x, float y);
 void mouse_middle_drag(void);
-void mouse_middle_drag_to(float x, float y);
 void mouse_middle_drag_by(float dx, float dy);
+void mouse_middle_drag_to(float x, float y);
 
 #endif //MOUSE_EVENTS_IN_OS_X_MOUSE_EVENTS_H
