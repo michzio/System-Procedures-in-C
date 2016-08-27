@@ -152,10 +152,22 @@ int main() {
     mouse_left_click_up_at(700,500);
     */
 
+    /*
+    while(1) {
+        sleep(3);
+        mouse_left_click_down();
+        sleep(3);
+        mouse_left_drag();
+        mouse_left_click_up();
+    }
+    */
+
+    /*
     for(int i=0; i<100; i++) {
         sleep(1);
         scroll_wheel_scroll_down(10);
     }
+    */
 
     return 0;
 }

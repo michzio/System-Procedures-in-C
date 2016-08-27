@@ -1,0 +1,31 @@
+# Makefile for UNIX 
+
+# the compiler: gcc for C program, define as g++ for C++
+CC = gcc 
+
+# compiler flags: 
+# -g enable debugging 
+# -Wall turn on all warnings 
+# -D__USE_FIXED_PROTOTYPES__ force the compiler to use the correct headers 
+# -ansi don’t use GNU extensions, stick to ANSI 
+# -std=c99 use newer version 
+CFLAGS=-g -Wall -D__USE_FIXED_PROTOTYPES__ -std=c99 
+
+# libraries 
+# OS X 
+OS_X_LIBS += -framework ApplicationServices 
+
+# the build target executable:  
+TARGET = keyboard_events
+
+all: $(TARGET)
+
+$(TARGET): keyboard_events.o
+	$(CC) $(CFLAGS) -o keyboard_events main.c keyboard_events.o $(OS_X_LIBS) 
+
+keyboard_events.o: keyboard_events.c keyboard_events.h virtual_key_codes.h
+	$(CC) $(CFLAGS) -c keyboard_events.c 
+
+clean: 
+	$(RM) $(TARGET) $(TARGET).o  
+ 
