@@ -40,9 +40,9 @@ int main() {
         multi_key_input(3, kVK_Shift, kVK_Command, kVK_ANSI_Equal);
         sleep(2);
     }
-    */  
+    */
+
+    multi_key_input(1, kVK_ANSI_E);
 
     return 0;
 }
-
-

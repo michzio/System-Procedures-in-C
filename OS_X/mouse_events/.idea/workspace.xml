@@ -43,7 +43,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mouse_events.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mouse_events.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mouse_events.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -65,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="make.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="make.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/make.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -546,6 +546,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mouse_events.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -559,16 +569,6 @@
         <state relative-caret-position="105">
           <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mouse_events.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <element signature="e#50#102#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
