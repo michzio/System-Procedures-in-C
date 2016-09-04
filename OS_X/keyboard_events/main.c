@@ -1,5 +1,6 @@
 #include "keyboard_events.h"
 #include "virtual_key_codes.h"
+#include "symbolic_hot_keys.h"
 
 
 void execute(void);
@@ -42,7 +43,9 @@ int main() {
     }
     */
 
-    multi_key_input(1, kVK_ANSI_E);
+    //multi_key_input(1, kVK_ANSI_E);
+
+    test_shk();
 
     return 0;
 }

@@ -67,12 +67,15 @@ enum {
 };
 
 
-struct symbolic_hot_key {
+struct symbolic_hot_keys {
+    int shk_id;                 // symbolic hot keys identifier
     int enabled;
-    int ASCII_code;         // ASCII code of the character or 65535 (0xFFFF) for non-ASCII characters
-    int virtual_key_code;   // virtual key code for the character
-    int modifier_flags;          // the sum of modifier flags: Shift 17 bit, Ctrl 18 bit, Opt 19 bit, Cmd 20 bit
+    char *type;                 // usually "standard"
+    int64_t ASCII_code;             // ASCII code of the character or 65535 (0xFFFF) for non-ASCII characters
+    int64_t virtual_key_code;       // virtual key code for the character
+    int64_t modifier_keys_flags;    // the sum of modifier key flags: Shift 17 bit, Ctrl 18 bit, Opt 19 bit, Cmd 20 bit
 };
+typedef struct symbolic_hot_keys symbolic_hot_keys_t;
 
 // simple mapping of modifier flags
 enum {
@@ -81,5 +84,7 @@ enum {
     kMFOption   = kCGEventFlagMaskAlternate,
     kMFCommand  = kCGEventFlagMaskCommand,
 };
+
+void test_shk(void);
 
 #endif //KEYBOARD_EVENTS_IN_OS_X_SYMBOLIC_HOTKYES_H
