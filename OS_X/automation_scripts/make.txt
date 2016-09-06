@@ -1,0 +1,42 @@
+# Makefile for UNIX 
+
+# the compiler: gcc for C program, define as g++ for C++ 
+CC = gcc 
+
+# the static library archiver 
+AR = ar rcs
+
+# compiler flags: 
+# -g enable debugging 
+# -Wall turn on all warnings 
+# -D__USE_FIXED_PROTOTYPES__ force the compiler to use the correct headers 
+# -ansi don’t use GNU extensions, stick to ANSI 
+# -std=c99 use newer version 
+CFLAGS=-g -Wall -D__USE_FIXED_PROTOTYPES__ -std=c99
+
+# libraries 
+# OS X 
+OS_X_LIBS += -framework ApplicationServices 
+# custom 
+COCOA_HELPER_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/test/OS_X/cocoa_helper/libcocoa_helper.a 
+
+# the build target executable: 
+TARGET = automation_scripts
+LIBRARY = libautomation_scripts.a
+
+all: $(TARGET)
+
+$(TARGET): $(LIBRARY)
+	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LIBRARY) $(OS_X_LIBS) $(COCOA_HELPER_LIBRARY)
+
+$(LIBRARY): automation_scripts.o windows.o
+	$(AR) $(LIBRARY) automation_scripts.o windows.o
+
+automation_scripts.o: automation_scripts.c automation_scripts.h
+	$(CC) $(CFLAGS) -c automation_scripts.c 
+
+windows.o: system/windows.c system/windows.h
+	$(CC) $(CFLAGS) -c system/windows.c 
+
+clean: 
+	$(RM) $(TARGET) $(LIBRARY) automation_scripts.o windows.o

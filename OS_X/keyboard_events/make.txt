@@ -14,18 +14,27 @@ CFLAGS=-g -Wall -D__USE_FIXED_PROTOTYPES__ -std=c99
 # libraries 
 # OS X 
 OS_X_LIBS += -framework ApplicationServices 
+# custom
+COCOA_HELPER_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/test/OS_X/cocoa_helper/libcocoa_helper.a
+AUTOMATION_SCRIPTS_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/test/OS_X/automation_scripts/libautomation_scripts.a
 
 # the build target executable:  
 TARGET = keyboard_events
 
 all: $(TARGET)
 
-$(TARGET): keyboard_events.o
-	$(CC) $(CFLAGS) -o keyboard_events main.c keyboard_events.o $(OS_X_LIBS) 
+$(TARGET): keyboard_events.o hot_keys_events.o symbolic_hot_keys.o
+	$(CC) $(CFLAGS) -o keyboard_events main.c keyboard_events.o hot_keys_events.o symbolic_hot_keys.o $(OS_X_LIBS) $(COCOA_HELPER_LIBRARY) $(AUTOMATION_SCRIPTS_LIBRARY)
 
 keyboard_events.o: keyboard_events.c keyboard_events.h virtual_key_codes.h
 	$(CC) $(CFLAGS) -c keyboard_events.c 
 
+hot_keys_events.o: hot_keys_events.c hot_keys_events.h 
+	$(CC) $(CFLAGS) -c hot_keys_events.c
+
+symbolic_hot_keys.o: symbolic_hot_keys.c symbolic_hot_keys.h 
+	$(CC) $(CFLAGS) -c symbolic_hot_keys.c 
+
 clean: 
-	$(RM) $(TARGET) $(TARGET).o  
+	$(RM) $(TARGET) $(TARGET).o hot_keys_events.o symbolic_hot_keys.o
  

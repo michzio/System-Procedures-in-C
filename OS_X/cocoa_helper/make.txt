@@ -1,0 +1,37 @@
+# Makefile for UNIX 
+
+# the compiler: gcc fro C program, define as g++ for C++ 
+CC = gcc 
+
+# the static library archiver 
+AR = ar rcs 
+
+# compiler flags: 
+# -g enable debugging 
+# -Wall turn on all warnings 
+# -D__USE_FIXED_PROTOTYPES__ force the compiler to use the correct headers 
+# -ansi don’t use GNU extensions, stick to ANSI 
+# -std=c99 use newer version
+CFLAGS=-g -Wall -D__USE_FIXED_PROTOTYPES__ -std=c99
+
+# libraries
+# OS X
+OS_X_LIBS += -framework ApplicationServices
+
+# the build target executable: 
+TARGET = cocoa_helper 
+LIBRARY = libcocoa_helper.a  
+
+all: $(TARGET)
+
+$(TARGET): $(LIBRARY) main.c
+	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LIBRARY) $(OS_X_LIBS)
+
+$(LIBRARY): strings.o
+	$(AR) $(LIBRARY) strings.o 
+
+strings.o: strings.c strings.h 
+	$(CC) $(CFLAGS) -c strings.c
+
+clean: 
+	$(RM) $(TARGET) $(LIBRARY) strings.o 

@@ -29,7 +29,7 @@ enum {
     kSHKZoomIn                                  = 17,   // Opt, Cmd, =
     kSHKZoomOut                                 = 19,   // Opt, Cmd, -
     kSHKInvertColors                            = 21,   // Ctrl, Opt, Cmd, 8
-    kSHKTurnImageSmoothingOnOrOff               = 23,   // Opt, Cmd, \
+    kSHKTurnImageSmoothingOnOrOff               = 23,   // Opt, Cmd, Backslash "\"
     kSHKIncreaseContrast                        = 25,   // Ctrl, Opt, Cmd, .
     kSHKDecreaseContrast                        = 26,   // Ctrl, Opt, Cmd, ,
     kSHKMoveFocusToNextWindow                   = 27,   // Cmd, `
@@ -85,6 +85,6 @@ enum {
     kMFCommand  = kCGEventFlagMaskCommand,
 };
 
-void test_shk(void);
+void symbolic_hot_keys_event(int shk_id);
 
 #endif //KEYBOARD_EVENTS_IN_OS_X_SYMBOLIC_HOTKYES_H

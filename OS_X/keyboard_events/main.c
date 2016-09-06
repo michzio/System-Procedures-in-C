@@ -1,9 +1,7 @@
 #include "keyboard_events.h"
 #include "virtual_key_codes.h"
 #include "symbolic_hot_keys.h"
-
-
-void execute(void);
+#include "hot_keys_events.h"
 
 int main() {
 
@@ -45,7 +43,34 @@ int main() {
 
     //multi_key_input(1, kVK_ANSI_E);
 
-    test_shk();
+    //symbolic_hot_keys_event(kSHKShowSpotlightSearch);
+
+    /*
+    while(1) {
+        sleep(3);
+        //zoom_hot_keys_event(kZoomOut);
+        zoom_hot_keys_event(kZoomIn);
+    }
+    */
+
+    /*
+    while(1) {
+        sleep(3);
+        //rotate_hot_keys_event(kRotateClockWise);
+        rotate_hot_keys_event(kRotateCounterClockWise);
+    }
+    */
+
+    /*
+    while(1) {
+        sleep(3);
+        swipe_hot_keys_event(kSwipeLeft);
+        sleep(3);
+        swipe_hot_keys_event(kSwipeRight);
+        sleep(3);
+        swipe_hot_keys_event(kSwipeUp);
+    }
+    */  
 
     return 0;
 }
