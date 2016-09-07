@@ -2,6 +2,7 @@
 #include "virtual_key_codes.h"
 #include "symbolic_hot_keys.h"
 #include "hot_keys_events.h"
+#include "applications/opera/opera_hot_keys_events.h"
 
 int main() {
 
@@ -48,16 +49,16 @@ int main() {
     /*
     while(1) {
         sleep(3);
-        //zoom_hot_keys_event(kZoomOut);
-        zoom_hot_keys_event(kZoomIn);
+        zoom_hot_keys_event(kZoomOut);
+        //zoom_hot_keys_event(kZoomIn);
     }
     */
 
     /*
     while(1) {
         sleep(3);
-        //rotate_hot_keys_event(kRotateClockWise);
-        rotate_hot_keys_event(kRotateCounterClockWise);
+        rotate_hot_keys_event(kRotateClockWise);
+        //rotate_hot_keys_event(kRotateCounterClockWise);
     }
     */
 
@@ -70,7 +71,49 @@ int main() {
         sleep(3);
         swipe_hot_keys_event(kSwipeUp);
     }
+    */
+
+    //sleep(5);
+    //zoom_actual_size_hot_keys_event();
+
+    //sleep(5);
+    //enter_full_screen_hot_keys_event();
+
+    /*
+    while(1) {
+        sleep(5);
+        player_play_hot_keys_event();
+    }*/
+
+    //sleep(5);
+    //player_stop_hot_keys_event();
+
+    //sleep(5);
+    //player_next_hot_keys_event();
+
+    //sleep(5);
+    //player_previous_hot_keys_event();
+
+    /*
+    sleep(3);
+    while(1) {
+        sleep(1);
+        //player_step_forward_hot_keys_event();
+        player_step_backward_hot_keys_event();
+    }
+    */
+
+    /*
+    while(1) {
+        sleep(3);
+        //player_volume_up_hot_keys_event();
+        //player_volume_down_hot_keys_event();
+        player_mute_hot_keys_event();
+    }
     */  
+
+    //printf("%d\n", kVK_ANSI_0);
+    //printf("%d\n", kMFCommand | kMFOption);
 
     return 0;
 }

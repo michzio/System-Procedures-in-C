@@ -2,6 +2,7 @@
 // Created by Michal Ziobro on 28/08/2016.
 //
 #include "../cocoa_helper/strings.h"
+#include "../cocoa_helper/property_list.h"
 #include "symbolic_hot_keys.h"
 #include "keyboard_events.h"
 
@@ -11,6 +12,8 @@ static const CFStringRef kEnabledKey = CFSTR("enabled");
 static const CFStringRef kValueKey = CFSTR("value");
 static const CFStringRef kParametersKey = CFSTR("parameters");
 static const CFStringRef kTypeKey = CFSTR("type");
+
+static const CFStringRef kDefaultSymbolicHotKeysPlist = CFSTR("resources/default_symbolichotkeys.plist");
 
 static symbolic_hot_keys_t *symbolic_hot_keys_get(CFPropertyListRef app_plist, int shk_id) {
 
@@ -73,26 +76,7 @@ static symbolic_hot_keys_t *apple_symbolic_hot_keys_get(int shk_id) {
 
 static symbolic_hot_keys_t *default_symbolic_hot_keys_get(int shk_id) {
 
-    CFDataRef plist_data;
-    SInt32 error_code;
-    CFErrorRef error;
-
-    CFBundleRef bundle = CFBundleGetMainBundle();
-    CFURLRef bundle_URL = CFBundleCopyBundleURL(bundle);
-    CFURLRef plist_URL = CFURLCreateWithString(kCFAllocatorDefault, CFSTR("resources/default_symbolichotkeys.plist"), bundle_URL);
-    CFURLCreateDataAndPropertiesFromResource(kCFAllocatorDefault, plist_URL, &plist_data, NULL, NULL, &error_code);
-
-    // this code line is now deprecated:
-    // CFPropertyListRef default_plist = CFPropertyListCreateFromXMLData(kCFAllocatorDefault, plist_data, kCFPropertyListImmutable, &error_string);
-    // use below code line:
-    CFPropertyListRef default_plist = CFPropertyListCreateWithData(kCFAllocatorDefault, plist_data, kCFPropertyListImmutable, NULL, &error);
-
-    if(plist_data) {
-        CFRelease( plist_data );
-    } else {
-        CFRelease( error );
-    }
-
+    CFPropertyListRef default_plist = CFPropertyListCopyFromFileInMainBundle(kDefaultSymbolicHotKeysPlist);
     CFPropertyListRef app_plist = CFDictionaryGetValue(default_plist, kAppleSymbolicHotKeysKey);
 
     return symbolic_hot_keys_get(app_plist, shk_id);

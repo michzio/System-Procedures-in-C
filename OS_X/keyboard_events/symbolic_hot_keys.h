@@ -68,9 +68,9 @@ enum {
 
 
 struct symbolic_hot_keys {
-    int shk_id;                 // symbolic hot keys identifier
+    int shk_id;                     // symbolic hot keys identifier
     int enabled;
-    char *type;                 // usually "standard"
+    char *type;                     // usually "standard"
     int64_t ASCII_code;             // ASCII code of the character or 65535 (0xFFFF) for non-ASCII characters
     int64_t virtual_key_code;       // virtual key code for the character
     int64_t modifier_keys_flags;    // the sum of modifier key flags: Shift 17 bit, Ctrl 18 bit, Opt 19 bit, Cmd 20 bit

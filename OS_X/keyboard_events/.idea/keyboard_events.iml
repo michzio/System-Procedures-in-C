@@ -2,13 +2,18 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/applications/iwork/iwork_hot_keys_events.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/applications/iwork/iwork_hot_keys_events.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/applications/photos/photos_hot_keys_events.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/applications/photos/photos_hot_keys_events.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/applications/acrobat_reader/acrobat_reader_hot_keys_events.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/applications/acrobat_reader/acrobat_reader_hot_keys_events.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/applications/preview/preview_hot_keys_events.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/applications/preview/preview_hot_keys_events.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/applications/opera/opera_hot_keys_events.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/applications/opera/opera_hot_keys_events.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/resources/default_symbolichotkeys.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/resources/hotkeys.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/hot_keys_events.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/hot_keys_events.c" isTestSource="false" />

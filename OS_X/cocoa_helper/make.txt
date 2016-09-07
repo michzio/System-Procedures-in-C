@@ -27,11 +27,14 @@ all: $(TARGET)
 $(TARGET): $(LIBRARY) main.c
 	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LIBRARY) $(OS_X_LIBS)
 
-$(LIBRARY): strings.o
-	$(AR) $(LIBRARY) strings.o 
+$(LIBRARY): property_list.o strings.o
+	$(AR) $(LIBRARY) property_list.o strings.o 
+
+property_list.o: property_list.c property_list.h
+	$(CC) $(CFLAGS) -c property_list.c 
 
 strings.o: strings.c strings.h 
 	$(CC) $(CFLAGS) -c strings.c
 
 clean: 
-	$(RM) $(TARGET) $(LIBRARY) strings.o 
+	$(RM) $(TARGET) $(LIBRARY) property_list.o strings.o
