@@ -83,6 +83,7 @@ enum {
     kMFControl  = kCGEventFlagMaskControl,
     kMFOption   = kCGEventFlagMaskAlternate,
     kMFCommand  = kCGEventFlagMaskCommand,
+    kMFFunction = kCGEventFlagMaskSecondaryFn,
 };
 
 void symbolic_hot_keys_event(int shk_id);

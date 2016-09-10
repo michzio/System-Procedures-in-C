@@ -127,11 +127,8 @@ static const char *kSwitchAppsHotKeys = "SwitchAppsHotKeys";                    
 static const char *kSwitchAppWindowsHotKeys = "SwitchAppWindowsHotKeys";        // Cmd, ~ (Shift, `)
 static const char *kScreenshotHotKeys = "ScreenshotHotKeys";                    // Cmd, Shift, 3
 static const char *kAppPreferencesHotKeys = "AppPreferencesHotKeys";            // Cmd, comma (,)
-// sleep, log out, and shut down shortcuts
-static const char *kShutDownHotKeys = "ShutDownHotKeys";                        // Ctrl, Opt, Cmd, Power button
-static const char *kRestartHotKeys = "RestartHotKeys";                          // Ctrl, Cmd, Power button
-static const char *kSleepHotKeys =  "SleepHotKeys";                             // Ctrl, Shift, Power button
-static const char *kLogOutHotKeys = "LogOutHotKeys";                            // Opt, Shift, Cmd, Q
+//  log out shortcut
+static const char *kLogOutHotKeys = "LogOutHotKeys";                            // Cmd, Shift, Opt, Q
 // document shortcuts
 static const char *kBoldTextHotKeys = "BoldTextHotKeys";                        // Cmd, B
 static const char *kItalicizeTextHotKeys = "ItalicizeTextHotKeys";              // Cmd, I
@@ -202,10 +199,9 @@ static const char *kPreviousFolderHotKeys = "PreviousFolderHotKeys";            
 static const char *kNextFolderHotKeys = "NextFolderHotKeys";                    // Cmd, ]
 static const char *kUpFolderHotKeys = "UpFolderHotKeys";                        // Cmd, Up arrow
 static const char *kDownFolderHotKeys = "DownFolderHotKeys";                    // Cmd, Down arrow
-static const char *kShowDesktopHotKeys = "ShowDesktopHotKeys";                  // Cmd, Mission Control (F3)
+static const char *kShowDesktopHotKeys = "ShowDesktopHotKeys";                  // F11
 static const char *kMoveToTrashHotKeys = "MoveToTrashHotKeys";                  // Cmd, Delete
 static const char *kEmptyTrashHotKeys = "EmptyTrashHotKeys";                    // Cmd, Shift, Delete
-static const char *kForceEmptyTrashHotKeys = "ForceEmptyTrashHotKeys";          // Cmd, Opt, Shift, Delete
-static const char *kSoundPreferencesHotKeys = "SoundPreferencesHotKeys";        // Opt, Volume Up (F12)
+static const char *kForceEmptyTrashHotKeys = "ForceEmptyTrashHotKeys";          // Cmd, Shift, Opt, Delete
 
 #endif //KEYBOARD_EVENTS_IN_OS_X_HOTKEYS_EVENTS_H

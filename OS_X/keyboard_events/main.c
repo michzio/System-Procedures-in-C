@@ -113,8 +113,22 @@ int main() {
     }
     */
 
-    //printf("%d\n", kVK_ANSI_0);
-    //printf("%d\n", kMFCommand | kMFOption);
+
+    key_input_modified(kVK_F11, 0);
+
+    printf("%d\n", kVK_Delete);
+    printf("Cmd: %d\n", kMFCommand);
+    printf("Cmd + Opt: %d\n", kMFCommand + kMFOption);
+    printf("Cmd + Shift: %d\n", kMFCommand + kMFShift);
+    printf("Cmd + Shift + Opt: %d\n", kMFCommand + kMFShift + kMFOption);
+    printf("Ctrl + Opt + Cmd: %d\n", kMFControl + kMFOption + kMFCommand);
+    printf("Ctrl + Cmd: %d\n", kMFControl + kMFCommand);
+    printf("Ctrl + Cmd + Shift: %d\n", kMFControl + kMFCommand + kMFShift);
+    printf("Opt: %d\n", kMFOption);
+    printf("Ctrl: %d\n", kMFControl);
+    printf("Fn: %d\n", kMFFunction);
+    printf("Shift: %d\n", kMFShift);
+    printf("Cmd + Fn: %d\n", kMFCommand + kMFFunction);
 
     return 0;
 }
