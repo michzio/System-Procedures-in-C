@@ -83,7 +83,8 @@ int main() {
     while(1) {
         sleep(5);
         player_play_hot_keys_event();
-    }*/
+    }
+    */
 
     //sleep(5);
     //player_stop_hot_keys_event();
@@ -110,7 +111,7 @@ int main() {
         //player_volume_down_hot_keys_event();
         player_mute_hot_keys_event();
     }
-    */  
+    */
 
     //printf("%d\n", kVK_ANSI_0);
     //printf("%d\n", kMFCommand | kMFOption);

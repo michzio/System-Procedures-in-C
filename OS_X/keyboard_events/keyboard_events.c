@@ -77,6 +77,12 @@ void key_input_modified(uint16_t key_code, uint64_t modifiers_flags) {
     key_up_modified(key_code, modifiers_flags);
 }
 
+void key_hold_down_modified(uint16_t key_code, uint64_t modifiers_flags, uint32_t hold_time_in_s) {
+    key_down_modified(key_code, modifiers_flags);
+    sleep(hold_time_in_s);
+    key_up_modified(key_code, modifiers_flags);
+}
+
 static uint64_t mod_key_code_to_mod_flag(uint16_t mod_key_code) {
 
     switch(mod_key_code) {

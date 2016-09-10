@@ -13,7 +13,7 @@
       <sourceFolder url="file://$MODULE_DIR$/applications/opera/opera_hot_keys_events.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/applications/opera/opera_hot_keys_events.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/resources/default_symbolichotkeys.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/resources/hotkeys.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/resources/application_hotkeys.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/hot_keys_events.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/hot_keys_events.c" isTestSource="false" />

@@ -11,7 +11,7 @@ set(COCOA_HELPER_PATH /Users/michzio/Developer/MyProjects/BachelorDegree/c/test/
 set(AUTOMATION_SCRIPTS_PATH /Users/michzio/Developer/MyProjects/BachelorDegree/c/test/OS_X/automation_scripts)
 
 configure_file(resources/default_symbolichotkeys.plist resources/default_symbolichotkeys.plist COPYONLY)
-configure_file(resources/hotkeys.plist resources/hotkeys.plist COPYONLY)
+configure_file(resources/application_hotkeys.plist resources/application_hotkeys.plist COPYONLY)
 
 add_executable(Keyboard_Events_in_OS_X ${SOURCE_FILES})
 target_link_libraries(Keyboard_Events_in_OS_X ${APPLICATION_SERVICES_LIBRARY})

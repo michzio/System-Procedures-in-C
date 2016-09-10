@@ -9,8 +9,9 @@
 #include <stdbool.h>
 
 struct hot_keys {
-    int64_t virtual_key_code;       // virtual key code for the character
+    int16_t virtual_key_code;       // virtual key code for the character
     int64_t modifier_keys_flags;    // the sum of modifier key flags: Shift 17 bit, Ctrl 18 bit, Opt 19 bit, Cmd 20 bit
+    int32_t hold_time_in_s;         // hold down keys time [s]
 };
 typedef struct hot_keys hot_keys_t;
 
@@ -34,17 +35,28 @@ enum swipe_direction {
 };
 typedef enum swipe_direction swipe_direction_t;
 
-void front_app_hot_keys_event(const char *hot_keys_name, bool consider_default);
-void app_hot_keys_event(const char *hot_keys_name, const char *application_name, bool consider_default);
+enum scroll_direction {
+    kScrollLeft,
+    kScrollRight,
+    kScrollUp,
+    kScrollDown,
+};
+typedef enum scroll_direction scroll_direction_t;
 
 // functions mimic common mouse gestures using hot keys
 void zoom_hot_keys_event(zoom_direction_t zoom_direction);
 void rotate_hot_keys_event(rotate_direction_t rotate_direction);
 void swipe_hot_keys_event(swipe_direction_t swipe_direction);
+void scroll_hot_keys_event(scroll_direction_t scroll_direction);
 
-// other common hot keys
-void zoom_actual_size_hot_keys_event(void);
-void enter_full_screen_hot_keys_event(void);
+// macOS system hot keys
+void system_hot_keys_event(const char *hot_keys_name);
+
+// application hot keys
+void front_app_hot_keys_event(const char *hot_keys_name, bool consider_default);
+void app_hot_keys_event(const char *hot_keys_name, const char *application_name, bool consider_default);
+
+// video & audio players common hot keys
 void player_play_hot_keys_event(void);
 void player_stop_hot_keys_event(void);
 void player_next_hot_keys_event(void);
@@ -56,8 +68,15 @@ void player_volume_up_hot_keys_event(void);
 void player_volume_down_hot_keys_event(void);
 void player_mute_hot_keys_event(void);
 
-// constant hot keys names
+// other common hot keys
+void zoom_actual_size_hot_keys_event(void);
+void enter_full_screen_hot_keys_event(void);
+
+// constant names
+// 1. application names
 static const char *kDefaultApplication = "Default Application";
+
+// 2. common hot keys names
 static const char *kZoomOutHotKeys = "ZoomOutHotKeys";
 static const char *kZoominHotKeys = "ZoomInHotKeys";
 static const char *kRotateCCWHotKeys = "RotateCCWHotKeys";
@@ -74,5 +93,119 @@ static const char *kPlayerLoopHotKeys = "PlayerLoopHotKeys";
 static const char *kPlayerVolumeUpHotKeys = "PlayerVolumeUpHotKeys";
 static const char *kPlayerVolumeDownHotKeys = "PlayerVolumeDownHotKeys";
 static const char *kPlayerMuteHotKeys = "PlayerMuteHotKeys";
+static const char *kBrowserNextTabHotKeys = "BrowserNextTabHotKeys"; // todo Ctrl + Tab
+static const char *kBrowserPreviousTabHotKeys = "BrowserPreviousTabHotKeys"; // todo Ctrl + Shift + Tab
+static const char *kBrowserAddBookmarkHotKeys = "BrowserAddBookmarkHotKeys"; // todo Cmd + D
+
+// 3. system hot keys names
+// a) cut, copy, paste, and other common shortcuts
+static const char *kCutHotKeys = "CutHotKeys";                                  // Cmd, X
+static const char *kCopyHotKeys = "CopyHotKeys";                                // Cmd, C
+static const char *kPasteHotKeys = "PasteHotKeys";                              // Cmd, V
+static const char *kUndoHotKeys = "UndoHotKeys";                                // Cmd, Z
+static const char *kRedoHotKeys = "RedoHotKeys";                                // Cmd, Shift, Z
+static const char *kSelectAllHotKeys = "SelectAllHotKeys";                      // Cmd, A
+static const char *kFindHotKeys = "FindHotKeys";                                // Cmd, F
+static const char *kFindNextHotKeys = "FindNextHotKeys";                        // Cmd, G
+static const char *kFindPreviousHotKeys = "FindPreviousHotKeys";                // Cmd, Shift, G
+static const char *kHideFrontWindowHotKeys = "HideFrontWindowHotKeys";          // Cmd, H
+static const char *kHideOtherWindowsHotKeys = "HideOtherWindowsHotKeys";        // Cmd, Opt, H
+static const char *kMinimizeFrontWindowHotKeys = "MinimizeFrontWindowHotKeys";  // Cmd, M
+static const char *kOpenNewHotKeys = "OpenNewHotKeys";                          // Cmd, N
+static const char *kOpenItemHotKeys = "OpenItemHotKeys";                        // Cmd, 0
+static const char *kPrintHotKeys = "PrintHotKeys";                              // Cmd, P
+static const char *kSaveHotKeys = "SaveHotKeys";                                // Cmd, S
+static const char *kCloseFrontWindowHotKeys = "CloseFrontWindowHotKeys";        // Cmd, W
+static const char *kCloseAllWindowsHotKeys = "CloseAllWindowsHotKeys";          // Cmd, Opt, W
+static const char *kQuitTheAppHotKeys = "QuitTheAppHotKeys";                    // Cmd, Q
+static const char *kForceQuitHotKeys = "ForceQuitHotKeys";                      // Cmd, Opt, Esc
+static const char *kForceQuitFrontAppHotKeys = "ForceQuitFrontAppHotKeys";      // Cmd, Shift, Opt, Esc, 3 sec hold time
+static const char *kSpotlightHotKeys = "SpotlightHotKeys";                      // Cmd, Space bar
+static const char *kFinderSpotlightHotKeys = "FinderSpotlightHotKeys";          // Cmd, Opt, Space bar
+static const char *kQuickLookHotKeys = "QuickLookHotKeys";                      // Space bar
+static const char *kSwitchAppsHotKeys = "SwitchAppsHotKeys";                    // Cmd, Tab
+static const char *kSwitchAppWindowsHotKeys = "SwitchAppWindowsHotKeys";        // Cmd, ~ (Shift, `)
+static const char *kScreenshotHotKeys = "ScreenshotHotKeys";                    // Cmd, Shift, 3
+static const char *kAppPreferencesHotKeys = "AppPreferencesHotKeys";            // Cmd, comma (,)
+// sleep, log out, and shut down shortcuts
+static const char *kShutDownHotKeys = "ShutDownHotKeys";                        // Ctrl, Opt, Cmd, Power button
+static const char *kRestartHotKeys = "RestartHotKeys";                          // Ctrl, Cmd, Power button
+static const char *kSleepHotKeys =  "SleepHotKeys";                             // Ctrl, Shift, Power button
+static const char *kLogOutHotKeys = "LogOutHotKeys";                            // Opt, Shift, Cmd, Q
+// document shortcuts
+static const char *kBoldTextHotKeys = "BoldTextHotKeys";                        // Cmd, B
+static const char *kItalicizeTextHotKeys = "ItalicizeTextHotKeys";              // Cmd, I
+static const char *kUnderlineTextHotKeys = "UnderlineTextHotKeys";              // Cmd, U
+static const char *kFontsWindowHotKeys = "FontsWindowHotKeys";                  // Cmd, T
+static const char *kWordDefinitionHotKeys = "WordDefinitionHotKeys";            // Ctrl, Cmd, D
+static const char *kSpellingWindowHotKeys = "SpellingWindowHotKeys";            // Cmd, Shift, : (colon)
+static const char *kDeletePreviousWordHotKeys = "DeletePreviousWordHotKeys";    // Opt, Del
+static const char *kForwardDeleteHotKeys = "ForwardDeleteHotKeys";              // Ctrl, D
+static const char *kPageUpHotKeys = "PageUpHotKeys";                            // Fn, Up arrow
+static const char *kPageDownHotKeys = "PageDownHotKeys";                        // Fn, Down arrow
+static const char *kDocumentHomeHotKeys = "DocumentHomeHotKeys";                // Fn, Left arrow
+static const char *kDocumentEndHotKeys = "DocumentEndHotKeys";                  // Fn, Right arrow
+static const char *kMoveToDocumentBeginHotKeys = "MoveToDocumentBeginHotKeys";  // Cmd, Up arrow
+static const char *kMoveToDocumentEndHotKeys = "MoveToDocumentEndHotKeys";      // Cmd, Down arrow
+static const char *kMoveToLineBeginHotKeys = "MoveToLineBeginHotKeys";          // Cmd, Left arrow
+static const char *kMoveToLineEndHotKeys = "MoveToLineEndHotKeys";              // Cmd, Right arrow
+static const char *kMoveToWordBeginHotKeys = "MoveToWordBeginHotKeys";          // Opt, Left arrow
+static const char *kMoveToWordEndHotKeys = "MoveToWordEndHotKeys";              // Opt, Right arrow
+static const char *kExpandSelectionUpHotKeys = "ExpandSelectionUpHotKeys";      // Shift, Up arrow
+static const char *kExpandSelectionDownHotKeys = "ExpandSelectionDownHotKeys";  // Shift, Down arrow
+static const char *kExpandSelectionLeftHotKeys = "ExpandSelectionLeftHotKeys";  // Shift, Left arrow
+static const char *kExpandSelectionRightHotKeys = "ExpandSelectionRightHotKeys";// Shift, Right arrow
+static const char *kLeftAlignHotKeys = "LeftAlignHotKeys";                      // Cmd, { (Shift, [)
+static const char *kRightAlignHotKeys = "RightAlignHotKeys";                    // Cmd, } (Shift, ])
+static const char *kCenterAlignHotKeys = "CenterAlignHotKeys";                  // Cmd, | (Shift, \)
+static const char *kSearchFieldHotKeys = "SearchFieldHotKeys";                  // Cmd, Opt, F
+static const char *kShowToolbarHotKeys = "ShowToolbarHotKeys";                  // Cmd, Opt, T
+static const char *kShowInspectorWindowHotKeys = "ShowInspectorWindowHotKeys";  // Cmd, Opt, I
+static const char *kIncreaseTextSizeHotKeys = "IncreaseTextSizeHotKeys";        // Cmd, Shift, = (+)
+static const char *kDecreaseTextSizeHotKeys = "DecreaseTextSizeHotKeys";        // Cmd, Shift, -
+// finder shortcuts
+static const char *kDuplicateFileHotKeys = "DuplicateFileHotKeys";              // Cmd, D
+static const char *kEjectDiskHotKeys = "EjectDiskHotKeys";                      // Cmd, E
+static const char *kFinderSpotlightSearchHotKeys = "FinderSpotlightSearchHotKeys";// Cmd, F
+static const char *kFileInfoHotKeys = "FileInfoHotKeys";                        // Cmd, I
+static const char *kOpenComputerHotKeys = "OpenComputerHotKeys";                // Cmd, Shift, C
+static const char *kOpenDesktopHotKeys = "OpenDesktopHotKeys";                  // Cmd, Shift, D
+static const char *kOpenAllMyFilesHotKeys = "OpenAllMyFilesHotKeys";            // Cmd, Shift, F
+static const char *kOpenGoToHotKeys = "OpenGoToHotKeys";                        // Cmd, Shift, G
+static const char *kOpenHomeHotKeys = "OpenHomeHotKeys";                        // Cmd, Shift, H
+static const char *kOpeniCloudHotKeys = "OpeniCloudHotKeys";                    // Cmd, Shift, I
+static const char *kOpenNetworkHotKeys = "OpenNetworkHotKeys";                  // Cmd, Shift, K
+static const char *kOpenDownloadsHotKeys = "OpenDownloadsHotKeys";              // Cmd, Opt, L
+static const char *kOpenDocumentsHotKeys = "OpenDocumentsHotKeys";              // Cmd, Shift, O
+static const char *kOpenLibraryHotKeys = "OpenLibraryHotKeys";                  // Cmd, Shift, L
+static const char *kOpenAirDropHotKeys = "OpenAirDropHotKeys";                  // Cmd, Shift, R
+static const char *kAddItemToDockHotKeys = "AddItemToDockHotKeys";              // Ctrl, Cmd, Shift, T
+static const char *kOpenUtilitiesHotKeys = "OpenUtilitiesHotKeys";              // Cmd, Shift, U
+static const char *kShowDockHotKeys = "ShowDockHotKeys";                        // Cmd, Opt, D
+static const char *kAddItemToSidebarHotKeys = "AddItemToSidebarHotKeys";        // Ctrl, Cmd, T
+static const char *kShowPathBarHotKeys = "ShowPathBarHotKeys";                  // Cmd, Opt, P
+static const char *kShowSidebarHotKeys = "ShowSidebarHotKeys";                  // Cmd, Opt, S
+static const char *kShowStatusBarHotKeys = "ShowStatusBarHotKeys";              // Cmd, /
+static const char *kShowViewOptionsHotKeys = "ShowViewOptionsHotKeys";          // Cmd, J
+static const char *kOpenConnectToServerHotKeys = "OpenConnectToServerHotKeys";  // Cmd, K
+static const char *kMakeItemAliasHotKeys = "MakeItemAliasHotKeys";              // Cmd, L
+static const char *kOpenNewWindowHotKeys = "OpenNewWindowHotKeys";              // Cmd, N
+static const char *kCreateNewFolderHotKeys = "CreateNewFolderHotKeys";          // Cmd, Shift, N
+static const char *kCreateNewSmartFolderHotKeys = "CreateNewSmartFolderHotKeys";// Cmd, Opt, N
+static const char *kShowFileForAliasHotKeys = "ShowFileForAliasHotKeys";        // Cmd, R
+static const char *kShowTabBarHotKeys = "ShowTabBarHotKeys";                    // Cmd, Shift, T
+static const char *kIconsViewHotKeys = "IconsViewHotKeys";                      // Cmd, 1
+static const char *kListViewHotKeys = "ListViewHotKeys";                        // Cmd, 2
+static const char *kColumnsViewHotKeys = "ColumnsViewHotKeys";                  // Cmd, 3
+static const char *kCoverFlowViewHotKeys = "CoverFlowViewHotKeys";              // Cmd, 4
+static const char *kPreviousFolderHotKeys = "PreviousFolderHotKeys";            // Cmd, [
+static const char *kNextFolderHotKeys = "NextFolderHotKeys";                    // Cmd, ]
+static const char *kUpFolderHotKeys = "UpFolderHotKeys";                        // Cmd, Up arrow
+static const char *kDownFolderHotKeys = "DownFolderHotKeys";                    // Cmd, Down arrow
+static const char *kShowDesktopHotKeys = "ShowDesktopHotKeys";                  // Cmd, Mission Control (F3)
+static const char *kMoveToTrashHotKeys = "MoveToTrashHotKeys";                  // Cmd, Delete
+static const char *kEmptyTrashHotKeys = "EmptyTrashHotKeys";                    // Cmd, Shift, Delete
+static const char *kForceEmptyTrashHotKeys = "ForceEmptyTrashHotKeys";          // Cmd, Opt, Shift, Delete
+static const char *kSoundPreferencesHotKeys = "SoundPreferencesHotKeys";        // Opt, Volume Up (F12)
 
 #endif //KEYBOARD_EVENTS_IN_OS_X_HOTKEYS_EVENTS_H

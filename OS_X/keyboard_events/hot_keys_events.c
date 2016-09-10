@@ -7,16 +7,58 @@
 #include "symbolic_hot_keys.h"
 #include "../automation_scripts/system/windows.h"
 #include "../cocoa_helper/property_list.h"
+#include "virtual_key_codes.h"
 
-static const CFStringRef kHotKeysPlist = CFSTR("resources/hotkeys.plist");
+static const CFStringRef kSystemHotKeysPlist = CFSTR("resources/system_hotkeys.plist");
+static const CFStringRef kApplicationHotKeysPlist = CFSTR("resources/application_hotkeys.plist");
 static const CFStringRef kDefaultApplicationKey = CFSTR("Default Application");
 static const CFStringRef kVirtualKeyCodeKey = CFSTR("key_code");
 static const CFStringRef kModifierKeysFlagsKey = CFSTR("modifier_flags");
+static const CFStringRef kHoldTimeInSKey = CFSTR("hold_time_in_s");
 
-static hot_keys_t *hot_keys_get(const char *hot_keys_name, const char *application_name, bool consider_default) {
+static hot_keys_t *hot_keys_get(CFDictionaryRef hot_keys_dict) {
+
+    CFNumberRef hk_virtual_key_code = CFDictionaryGetValue(hot_keys_dict, kVirtualKeyCodeKey);
+    CFNumberRef hk_modifier_keys_flags = CFDictionaryGetValue(hot_keys_dict, kModifierKeysFlagsKey);
+    CFNumberRef hk_hold_time_in_s = CFDictionaryGetValue(hot_keys_dict, kHoldTimeInSKey);
+
+    int16_t virtual_key_code; CFNumberGetValue(hk_virtual_key_code, kCFNumberSInt16Type, &virtual_key_code);
+    int64_t modifier_keys_flags; CFNumberGetValue(hk_modifier_keys_flags, kCFNumberSInt64Type, &modifier_keys_flags);
+    int32_t hold_time_in_s; if(hk_hold_time_in_s != NULL) CFNumberGetValue(hk_hold_time_in_s, kCFNumberSInt32Type, &hold_time_in_s);
+
+    hot_keys_t *hot_keys = malloc(sizeof(hot_keys_t));
+    hot_keys->virtual_key_code = virtual_key_code;
+    hot_keys->modifier_keys_flags = modifier_keys_flags;
+    hot_keys->hold_time_in_s = hold_time_in_s;
+
+    return hot_keys;
+}
+
+static hot_keys_t *system_hot_keys_get(const char *hot_keys_name) {
 
     // get property list of hot keys
-    CFPropertyListRef plist = CFPropertyListCopyFromFileInMainBundle(kHotKeysPlist);
+    CFPropertyListRef plist = CFPropertyListCopyFromFileInMainBundle(kSystemHotKeysPlist);
+    // make sure property list is a dictionary
+    if( CFGetTypeID(plist) != CFDictionaryGetTypeID()) {
+        fprintf(stderr, "%s: property list is not of the dictionary type.\n", __func__);
+        return NULL;
+    }
+
+    CFStringRef hot_keys_name_key = CFStringCreateWithCString(kCFAllocatorDefault, hot_keys_name, kCFStringEncodingUTF8);
+    CFDictionaryRef sys_hot_keys_dict = CFDictionaryGetValue(plist, hot_keys_name_key);
+    CFRelease(hot_keys_name_key);
+    if(sys_hot_keys_dict == NULL) {
+        fprintf(stderr, "%s: Could not get system hot keys value for given hot keys name key from property list.\n", __func__);
+        return NULL;
+    }
+
+    return hot_keys_get(sys_hot_keys_dict);
+}
+
+static hot_keys_t *app_hot_keys_get(const char *hot_keys_name, const char *application_name, bool consider_default) {
+
+    // get property list of hot keys
+    CFPropertyListRef plist = CFPropertyListCopyFromFileInMainBundle(kApplicationHotKeysPlist);
     // make sure property list is a dictionary
     if( CFGetTypeID(plist) != CFDictionaryGetTypeID() ) {
         fprintf(stderr, "%s: property list is not of the dictionary type.\n", __func__);
@@ -49,38 +91,7 @@ static hot_keys_t *hot_keys_get(const char *hot_keys_name, const char *applicati
         }
     }
 
-    CFNumberRef hk_virtual_key_code = CFDictionaryGetValue(app_hot_keys_dict, kVirtualKeyCodeKey);
-    CFNumberRef hk_modifier_keys_flags = CFDictionaryGetValue(app_hot_keys_dict, kModifierKeysFlagsKey);
-
-    int64_t virtual_key_code; CFNumberGetValue(hk_virtual_key_code, kCFNumberSInt64Type, &virtual_key_code);
-    int64_t modifier_keys_flags; CFNumberGetValue(hk_modifier_keys_flags, kCFNumberSInt64Type, &modifier_keys_flags);
-
-    hot_keys_t *hot_keys = malloc(sizeof(hot_keys_t));
-    hot_keys->virtual_key_code = virtual_key_code;
-    hot_keys->modifier_keys_flags = modifier_keys_flags;
-
-    return hot_keys;
-}
-
-void front_app_hot_keys_event(const char *hot_keys_name, bool consider_default) {
-
-    char *application_name = front_window_owner();
-    hot_keys_t *hk = hot_keys_get(hot_keys_name, application_name, consider_default);
-    if(hk == NULL) {
-        fprintf(stderr, "%s: Could not find hot keys definition for given hot keys name and front application (if considered, including default hot keys definition).\n", __func__);
-        return;
-    }
-    key_input_modified(hk->virtual_key_code, hk->modifier_keys_flags);
-}
-
-void app_hot_keys_event(const char *hot_keys_name, const char *application_name, bool consider_default) {
-
-    hot_keys_t *hk = hot_keys_get(hot_keys_name, application_name, consider_default);
-    if(hk == NULL) {
-        fprintf(stderr, "%s: Could not find hot keys definition for given hot keys name and application name (if considered, including default hot keys definition).\n", __func__);
-        return;
-    }
-    key_input_modified(hk->virtual_key_code, hk->modifier_keys_flags);
+    return hot_keys_get(app_hot_keys_dict);
 }
 
 // functions mimic common mouse gestures using hot keys
@@ -129,13 +140,60 @@ void swipe_hot_keys_event(swipe_direction_t swipe_direction) {
     }
 }
 
-// other common hot keys
-void zoom_actual_size_hot_keys_event(void) {
-    front_app_hot_keys_event(kZoomActualSizeHotKeys, true);
+void scroll_hot_keys_event(scroll_direction_t scroll_direction) {
+
+    switch (scroll_direction) {
+        case kScrollUp:
+            key_input(kVK_UpArrow);
+            break;
+        case kScrollDown:
+            key_input(kVK_DownArrow);
+            break;
+        case kScrollLeft:
+            key_input(kVK_LeftArrow);
+            break;
+        case kScrollRight:
+            key_input(kVK_RightArrow);
+            break;
+        default:
+            return;
+    }
 }
-void enter_full_screen_hot_keys_event(void) {
-    front_app_hot_keys_event(kEnterFullScreenHotKeys, true);
+
+// macOS system hot keys
+void system_hot_keys_event(const char *hot_keys_name) {
+
+    hot_keys_t *hk = system_hot_keys_get(hot_keys_name);
+    if(hk == NULL) {
+        fprintf(stderr, "%s: Could not find hot keys definition for given hot keys name.\n", __func__);
+        return;
+    }
+    key_input_modified(hk->virtual_key_code, hk->modifier_keys_flags);
 }
+
+// application hot keys
+void front_app_hot_keys_event(const char *hot_keys_name, bool consider_default) {
+
+    char *application_name = front_window_owner();
+    hot_keys_t *hk = app_hot_keys_get(hot_keys_name, application_name, consider_default);
+    if(hk == NULL) {
+        fprintf(stderr, "%s: Could not find hot keys definition for given hot keys name and front application (if considered, including default hot keys definition).\n", __func__);
+        return;
+    }
+    key_input_modified(hk->virtual_key_code, hk->modifier_keys_flags);
+}
+
+void app_hot_keys_event(const char *hot_keys_name, const char *application_name, bool consider_default) {
+
+    hot_keys_t *hk = app_hot_keys_get(hot_keys_name, application_name, consider_default);
+    if(hk == NULL) {
+        fprintf(stderr, "%s: Could not find hot keys definition for given hot keys name and application name (if considered, including default hot keys definition).\n", __func__);
+        return;
+    }
+    key_input_modified(hk->virtual_key_code, hk->modifier_keys_flags);
+}
+
+// video & audio players common hot keys
 void player_play_hot_keys_event(void) {
     front_app_hot_keys_event(kPlayerPlayHotKeys, true);
 }
@@ -165,4 +223,12 @@ void player_volume_down_hot_keys_event(void) {
 }
 void player_mute_hot_keys_event(void) {
     front_app_hot_keys_event(kPlayerMuteHotKeys, true);
+}
+
+// other common hot keys
+void zoom_actual_size_hot_keys_event(void) {
+    front_app_hot_keys_event(kZoomActualSizeHotKeys, true);
+}
+void enter_full_screen_hot_keys_event(void) {
+    front_app_hot_keys_event(kEnterFullScreenHotKeys, true);
 }
