@@ -68,6 +68,43 @@ void player_volume_up_hot_keys_event(void);
 void player_volume_down_hot_keys_event(void);
 void player_mute_hot_keys_event(void);
 
+// browser common hot keys
+void browser_new_tab_hot_keys_event(void);
+void browser_next_tab_hot_keys_event(void);
+void browser_prev_tab_hot_keys_event(void);
+void browser_add_bookmark_hot_keys_event(void);
+void browser_new_private_window_hot_keys_event(void);
+void browser_reopen_closed_tab_hot_keys_event(void);
+void browser_open_file_hot_keys_event(void);
+void browser_open_location_hot_keys_event(void);
+void browser_close_tab_hot_keys_event(void);
+void browser_close_window_hot_keys_event(void);
+void browser_emoji_hot_keys_event(void);
+void browser_reload_page_hot_keys_event(void);
+void browser_show_downloads_hot_keys_event(void);
+void browser_show_history_hot_keys_event(void);
+void browser_show_sidebar_hot_keys_event(void);
+void browser_show_page_source_hot_keys_event(void);
+void browser_home_page_hot_keys_event(void);
+
+// slide show common hot keys
+void slide_show_start_hot_keys_event(void);
+void slide_show_end_hot_keys_event(void);
+void slide_show_next_hot_keys_event(void);
+void slide_show_next_no_animation_hot_keys_event(void);
+void slide_show_previous_hot_keys_event(void);
+void slide_show_previous_no_animation_hot_keys_event(void);
+void slide_show_blank_black_slide_hot_keys_event(void);
+void slide_show_blank_white_slide_hot_keys_event(void);
+void slide_show_pause_hot_keys_event(void);
+void slide_show_first_slide_hot_keys_event(void);
+void slide_show_last_slide_hot_keys_event(void);
+void slide_show_hide_cursor_hot_keys_event(void);
+void slide_show_slide_number_hot_keys_event(void);
+void slide_show_go_to_next_hidden_slide_hot_keys_event(void);
+void slide_show_pen_pointer_hot_keys_event(void);
+void slide_show_arrow_pointer_hot_keys_event(void);
+
 // other common hot keys
 void zoom_actual_size_hot_keys_event(void);
 void enter_full_screen_hot_keys_event(void);
@@ -93,9 +130,39 @@ static const char *kPlayerLoopHotKeys = "PlayerLoopHotKeys";
 static const char *kPlayerVolumeUpHotKeys = "PlayerVolumeUpHotKeys";
 static const char *kPlayerVolumeDownHotKeys = "PlayerVolumeDownHotKeys";
 static const char *kPlayerMuteHotKeys = "PlayerMuteHotKeys";
-static const char *kBrowserNextTabHotKeys = "BrowserNextTabHotKeys"; // todo Ctrl + Tab
-static const char *kBrowserPreviousTabHotKeys = "BrowserPreviousTabHotKeys"; // todo Ctrl + Shift + Tab
-static const char *kBrowserAddBookmarkHotKeys = "BrowserAddBookmarkHotKeys"; // todo Cmd + D
+static const char *kBrowserNewTabHotKeys = "BrowserNewTabHotKeys";
+static const char *kBrowserNextTabHotKeys = "BrowserNextTabHotKeys";
+static const char *kBrowserPreviousTabHotKeys = "BrowserPreviousTabHotKeys";
+static const char *kBrowserAddBookmarkHotKeys = "BrowserAddBookmarkHotKeys";
+static const char *kBrowserNewPrivateWindowHotKeys = "BrowserNewPrivateWindowHotKeys";
+static const char *kBrowserReopenClosedTabHotKeys = "BrowserReopenClosedTabHotKeys";
+static const char *kBrowserOpenFileHotKeys = "BrowserOpenFileHotKeys";
+static const char *kBrowserOpenLocationHotKeys = "BrowserOpenLocationHotKeys";
+static const char *kBrowserCloseTabHotKeys = "BrowserCloseTabHotKeys";
+static const char *kBrowserCloseWindowHotKeys = "BrowserCloseWindowHotKeys";
+static const char *kBrowserEmojiHotKeys = "BrowserEmojiHotKeys";
+static const char *kBrowserReloadPageHotKeys = "BrowserReloadPageHotKeys";
+static const char *kBrowserShowDownloadsHotKeys = "BrowserShowDownloadsHotKeys";
+static const char *kBrowserShowHistoryHotKeys = "BrowserShowHistoryHotKeys";
+static const char *kBrowserShowSidebarHotKeys = "BrowserShowSidebarHotKeys";
+static const char *kBrowserShowPageSourceHotKeys = "BrowserShowPageSourceHotKeys";
+static const char *kBrowserHomePageHotKeys = "BrowserHomePageHotKeys";
+static const char *kSlideShowStartHotKeys = "SlideShowStartHotKeys";
+static const char *kSlideShowEndHotKeys = "SlideShowEndHotKeys";
+static const char *kSlideShowNextHotKeys = "SlideShowNextHotKeys";
+static const char *kSlideShowNextNoAnimationHotKeys = "SlideShowNextNoAnimationHotKeys";
+static const char *kSlideShowPreviousHotKeys = "SlideShowPreviousHotKeys";
+static const char *kSlideShowPreviousNoAnimationHotKeys = "SlideShowPreviousNoAnimationHotKeys";
+static const char *kSlideShowBlankBlackSlideHotKeys = "SlideShowBlankBlackSlideHotKeys";
+static const char *kSlideShowBlankWhiteSlideHotKeys = "SlideShowBlankWhiteSlideHotKeys";
+static const char *kSlideShowPauseHotKeys = "SlideShowPauseHotKeys";
+static const char *kSlideShowFirstSlideHotKeys = "SlideShowFirstSlideHotKeys";
+static const char *kSlideShowLastSlideHotKeys = "SlideShowLastSlideHotKeys";
+static const char *kSlideShowHideCursorHotKeys= "SlideShowHideCursorHotKeys";
+static const char *kSlideShowSlideNumberHotKeys = "SlideShowSlideNumberHotKeys";
+static const char *kSlideShowGoToNextHiddenSlideHotKeys = "SlideShowGoToNextHiddenSlideHotKeys";
+static const char *kSlideShowPenPointerHotKeys = "SlideShowPenPointerHotKeys";
+static const char *kSlideShowArrowPointerHotKeys = "SlideShowArrowPointerHotKeys";
 
 // 3. system hot keys names
 // a) cut, copy, paste, and other common shortcuts
@@ -203,5 +270,8 @@ static const char *kShowDesktopHotKeys = "ShowDesktopHotKeys";                  
 static const char *kMoveToTrashHotKeys = "MoveToTrashHotKeys";                  // Cmd, Delete
 static const char *kEmptyTrashHotKeys = "EmptyTrashHotKeys";                    // Cmd, Shift, Delete
 static const char *kForceEmptyTrashHotKeys = "ForceEmptyTrashHotKeys";          // Cmd, Shift, Opt, Delete
+// other shortcuts
+static const char *kScrollFullScreenDown = "ScrollFullScreenDownHotKeys";       // Space bar
+static const char *kScrollFullScreenUp = "ScrollFullScreenUpHotKeys";           // Shift + Space bar
 
 #endif //KEYBOARD_EVENTS_IN_OS_X_HOTKEYS_EVENTS_H

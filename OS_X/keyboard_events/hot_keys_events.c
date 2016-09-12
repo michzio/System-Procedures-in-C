@@ -225,6 +225,110 @@ void player_mute_hot_keys_event(void) {
     front_app_hot_keys_event(kPlayerMuteHotKeys, true);
 }
 
+// browser common hot keys
+void browser_new_tab_hot_keys_event(void) {
+    front_app_hot_keys_event(kBrowserNewTabHotKeys, true);
+}
+void browser_next_tab_hot_keys_event(void) {
+    front_app_hot_keys_event(kBrowserNextTabHotKeys, true);
+}
+void browser_prev_tab_hot_keys_event(void) {
+    front_app_hot_keys_event(kBrowserPreviousTabHotKeys, true);
+}
+void browser_add_bookmark_hot_keys_event(void) {
+    front_app_hot_keys_event(kBrowserAddBookmarkHotKeys, true);
+}
+void browser_new_private_window_hot_keys_event(void) {
+    front_app_hot_keys_event(kBrowserNewPrivateWindowHotKeys, true);
+}
+void browser_reopen_closed_tab_hot_keys_event(void) {
+    front_app_hot_keys_event(kBrowserReopenClosedTabHotKeys, true);
+}
+void browser_open_file_hot_keys_event(void) {
+    front_app_hot_keys_event(kBrowserOpenFileHotKeys, true);
+}
+void browser_open_location_hot_keys_event(void) {
+    front_app_hot_keys_event(kBrowserOpenLocationHotKeys, true);
+}
+void browser_close_tab_hot_keys_event(void) {
+    front_app_hot_keys_event(kBrowserCloseTabHotKeys, true);
+}
+void browser_close_window_hot_keys_event(void) {
+    front_app_hot_keys_event(kBrowserCloseWindowHotKeys, true);
+}
+void browser_emoji_hot_keys_event(void) {
+    front_app_hot_keys_event(kBrowserEmojiHotKeys, true);
+}
+void browser_reload_page_hot_keys_event(void) {
+    front_app_hot_keys_event(kBrowserReloadPageHotKeys, true);
+}
+void browser_show_downloads_hot_keys_event(void) {
+    front_app_hot_keys_event(kBrowserShowDownloadsHotKeys, true);
+}
+void browser_show_history_hot_keys_event(void) {
+    front_app_hot_keys_event(kBrowserShowHistoryHotKeys, true);
+}
+void browser_show_sidebar_hot_keys_event(void) {
+    front_app_hot_keys_event(kBrowserShowSidebarHotKeys, true);
+}
+void browser_show_page_source_hot_keys_event(void) {
+    front_app_hot_keys_event(kBrowserShowPageSourceHotKeys, true);
+}
+void browser_home_page_hot_keys_event(void) {
+    front_app_hot_keys_event(kBrowserHomePageHotKeys, true);
+}
+
+// slide show common hot keys
+void slide_show_start_hot_keys_event(void) {
+    front_app_hot_keys_event(kSlideShowStartHotKeys, true);
+}
+void slide_show_end_hot_keys_event(void) {
+    front_app_hot_keys_event(kSlideShowEndHotKeys, true);
+}
+void slide_show_next_hot_keys_event(void) {
+    front_app_hot_keys_event(kSlideShowNextHotKeys, true);
+}
+void slide_show_next_no_animation_hot_keys_event(void) {
+    front_app_hot_keys_event(kSlideShowNextNoAnimationHotKeys, true);
+}
+void slide_show_previous_hot_keys_event(void) {
+    front_app_hot_keys_event(kSlideShowPreviousHotKeys, true);
+}
+void slide_show_previous_no_animation_hot_keys_event(void) {
+    front_app_hot_keys_event(kSlideShowPreviousNoAnimationHotKeys, true);
+}
+void slide_show_blank_black_slide_hot_keys_event(void) {
+    front_app_hot_keys_event(kSlideShowBlankBlackSlideHotKeys, true);
+}
+void slide_show_blank_white_slide_hot_keys_event(void) {
+    front_app_hot_keys_event(kSlideShowBlankWhiteSlideHotKeys, true);
+}
+void slide_show_pause_hot_keys_event(void) {
+    front_app_hot_keys_event(kSlideShowPauseHotKeys, true);
+}
+void slide_show_first_slide_hot_keys_event(void) {
+    front_app_hot_keys_event(kSlideShowFirstSlideHotKeys, true);
+}
+void slide_show_last_slide_hot_keys_event(void) {
+    front_app_hot_keys_event(kSlideShowLastSlideHotKeys, true);
+}
+void slide_show_hide_cursor_hot_keys_event(void) {
+    front_app_hot_keys_event(kSlideShowHideCursorHotKeys, true);
+}
+void slide_show_slide_number_hot_keys_event(void) {
+    front_app_hot_keys_event(kSlideShowSlideNumberHotKeys, true);
+}
+void slide_show_go_to_next_hidden_slide_hot_keys_event(void) {
+    front_app_hot_keys_event(kSlideShowGoToNextHiddenSlideHotKeys, true);
+}
+void slide_show_pen_pointer_hot_keys_event(void) {
+    front_app_hot_keys_event(kSlideShowPenPointerHotKeys, true);
+}
+void slide_show_arrow_pointer_hot_keys_event(void) {
+    front_app_hot_keys_event(kSlideShowArrowPointerHotKeys, true);
+}
+
+
 // other common hot keys
 void zoom_actual_size_hot_keys_event(void) {
     front_app_hot_keys_event(kZoomActualSizeHotKeys, true);

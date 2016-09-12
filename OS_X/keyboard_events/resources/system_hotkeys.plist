@@ -711,5 +711,19 @@
 		<key>modifier_flags</key>
 		<real>1703936</real>
 	</dict>
+	<key>ScrollFullScreenDownHotKeys</key>
+	<dict>
+		<key>key_code</key>
+		<integer>49</integer>
+		<key>modifier_flags</key>
+		<integer>0</integer>
+	</dict>
+	<key>ScrollFullScreenUpHotKeys</key>
+	<dict>
+		<key>key_code</key>
+		<integer>49</integer>
+		<key>modifier_flags</key>
+		<integer>131072</integer>
+	</dict>
 </dict>
 </plist>

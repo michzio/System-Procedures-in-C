@@ -2,7 +2,7 @@
 #include "virtual_key_codes.h"
 #include "symbolic_hot_keys.h"
 #include "hot_keys_events.h"
-#include "applications/opera/opera_hot_keys_events.h"
+#include "../automation_scripts/system/windows.h"
 
 int main() {
 
@@ -113,10 +113,42 @@ int main() {
     }
     */
 
+    sleep(10);
+    //browser_new_tab_hot_keys_event();
+    //browser_next_tab_hot_keys_event();
+    //browser_prev_tab_hot_keys_event();
+    //browser_add_bookmark_hot_keys_event();
+    //browser_new_private_window_hot_keys_event();
+    //browser_reopen_closed_tab_hot_keys_event();
+    //browser_open_file_hot_keys_event();
+    //browser_open_location_hot_keys_event();
+    //browser_close_tab_hot_keys_event();
+    //browser_close_window_hot_keys_event();
+    //browser_emoji_hot_keys_event();
+    //browser_reload_page_hot_keys_event();
+    //browser_show_downloads_hot_keys_event();
+    //browser_show_history_hot_keys_event();
+    //browser_show_sidebar_hot_keys_event();
+    //browser_show_page_source_hot_keys_event();
+    //browser_home_page_hot_keys_event();
+    //slide_show_start_hot_keys_event();
+    //slide_show_end_hot_keys_event();
+    //slide_show_next_hot_keys_event();
+    //slide_show_next_no_animation_hot_keys_event();
+    //slide_show_previous_hot_keys_event();
+    //slide_show_previous_no_animation_hot_keys_event();
+    //slide_show_blank_black_slide_hot_keys_event();
+    //slide_show_blank_white_slide_hot_keys_event();
+    //slide_show_first_slide_hot_keys_event();
+    //slide_show_last_slide_hot_keys_event();
+    //slide_show_hide_cursor_hot_keys_event();
+    //slide_show_slide_number_hot_keys_event();
+    //slide_show_go_to_next_hidden_slide_hot_keys_event();
+    //slide_show_pen_pointer_hot_keys_event();
+    //slide_show_arrow_pointer_hot_keys_event();
 
-    key_input_modified(kVK_F11, 0);
-
-    printf("%d\n", kVK_Delete);
+    //printf("%s\n", front_window_owner());
+    printf("%d\n", kVK_ANSI_A);
     printf("Cmd: %d\n", kMFCommand);
     printf("Cmd + Opt: %d\n", kMFCommand + kMFOption);
     printf("Cmd + Shift: %d\n", kMFCommand + kMFShift);
@@ -129,6 +161,7 @@ int main() {
     printf("Fn: %d\n", kMFFunction);
     printf("Shift: %d\n", kMFShift);
     printf("Cmd + Fn: %d\n", kMFCommand + kMFFunction);
+    printf("Ctrl + Shift: %d\n", kMFControl + kMFShift);
 
     return 0;
 }
