@@ -113,7 +113,7 @@ int main() {
     }
     */
 
-    sleep(10);
+    //sleep(10);
     //browser_new_tab_hot_keys_event();
     //browser_next_tab_hot_keys_event();
     //browser_prev_tab_hot_keys_event();

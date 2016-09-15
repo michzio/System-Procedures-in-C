@@ -2,7 +2,6 @@
 // Created by Michal Ziobro on 06/09/2016.
 //
 #include "../../cocoa_helper/strings.h"
-#include <CoreGraphics/CoreGraphics.h>
 
 char *front_window_owner(void) {
 
