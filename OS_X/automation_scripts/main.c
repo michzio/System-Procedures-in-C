@@ -63,5 +63,7 @@ int main(void) {
 
     //printf("Input volume level: %.2f\n", audio_input_get_volume());
 
+    display_capture();
+
     return 0;
 }
