@@ -1,6 +1,6 @@
 # Makefile for UNIX 
 
-# the compiler: gcc fro C program, define as g++ for C++ 
+# the compiler: gcc for C program, define as g++ for C++
 CC = gcc 
 
 # the static library archiver 
@@ -17,6 +17,8 @@ CFLAGS=-g -Wall -D__USE_FIXED_PROTOTYPES__ -std=c99
 # libraries
 # OS X
 OS_X_LIBS += -framework ApplicationServices
+# custom 
+COMMON_FUNCTIONS_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/libcommon_functions.a
 
 # the build target executable: 
 TARGET = cocoa_helper 
@@ -25,10 +27,10 @@ LIBRARY = libcocoa_helper.a
 all: $(TARGET)
 
 $(TARGET): $(LIBRARY) main.c
-	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LIBRARY) $(OS_X_LIBS)
+	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LIBRARY) $(OS_X_LIBS) $(COMMON_FUNCTIONS_LIBRARY)
 
-$(LIBRARY): property_list.o strings.o
-	$(AR) $(LIBRARY) property_list.o strings.o 
+$(LIBRARY): property_list.o strings.o exec_cmd.o images.o file_system.o
+	$(AR) $(LIBRARY) property_list.o strings.o exec_cmd.o images.o file_system.o
 
 property_list.o: property_list.c property_list.h
 	$(CC) $(CFLAGS) -c property_list.c 
@@ -36,5 +38,14 @@ property_list.o: property_list.c property_list.h
 strings.o: strings.c strings.h 
 	$(CC) $(CFLAGS) -c strings.c
 
+exec_cmd.o: exec_cmd.c exec_cmd.h
+	$(CC) $(CFLAGS) -c exec_cmd.c
+
+images.o: images.c images.h 
+	$(CC) $(CFLAGS) -c images.c 
+
+file_system.o: file_system.c file_system.h 
+	$(CC) $(CFLAGS) -c file_system.c 
+
 clean: 
-	$(RM) $(TARGET) $(LIBRARY) property_list.o strings.o
+	$(RM) $(TARGET) $(LIBRARY) property_list.o strings.o exec_cmd.o images.o file_system.o

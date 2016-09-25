@@ -70,11 +70,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="symbolic_hot_keys.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="symbolic_hot_keys.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/symbolic_hot_keys.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
               <caret line="39" column="22" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -387,11 +397,12 @@
       <option name="presentableId" value="Default" />
       <updated>1472288918753</updated>
       <workItem from="1473967324576" duration="2594000" />
+      <workItem from="1474489081909" duration="21000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2594000" />
+    <option name="totallyTimeSpent" value="2615000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="176" y="66" width="1168" height="730" extended-state="0" />
@@ -641,13 +652,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/applications/photos/photos_hot_keys_events.h" />
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="87" selection-start-line="10" selection-start-column="87" selection-end-line="10" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/keyboard_events.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -692,6 +696,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="39" column="22" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="86" />
           <folding />
         </state>
       </provider>

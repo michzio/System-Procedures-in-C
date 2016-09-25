@@ -18,8 +18,11 @@ CFLAGS=-g -Wall -D__USE_FIXED_PROTOTYPES__ -std=c99
 # OS X 
 OS_X_LIBS += -framework ApplicationServices 
 OS_X_LIBS += -framework Carbon
+OS_X_LIBS += -framework IOKit
+OX_X_LIBS += -framework AudioToolbox
 # custom 
-COCOA_HELPER_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/libcocoa_helper.a 
+COCOA_HELPER_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/libcocoa_helper.a
+COMMON_FUNCTIONS_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/libcommon_functions.a 
 
 # the build target executable: 
 TARGET = automation_scripts
@@ -28,10 +31,10 @@ LIBRARY = libautomation_scripts.a
 all: $(TARGET)
 
 $(TARGET): $(LIBRARY)
-	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LIBRARY) $(OS_X_LIBS) $(COCOA_HELPER_LIBRARY)
+	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LIBRARY) $(OS_X_LIBS) $(COCOA_HELPER_LIBRARY) $(COMMON_FUNCTIONS_LIBRARY) 
 
-$(LIBRARY): automation_scripts.o windows.o events.o
-	$(AR) $(LIBRARY) automation_scripts.o windows.o events.o
+$(LIBRARY): automation_scripts.o windows.o events.o display.o audio.o
+	$(AR) $(LIBRARY) automation_scripts.o windows.o events.o display.o audio.o
 
 automation_scripts.o: automation_scripts.c automation_scripts.h
 	$(CC) $(CFLAGS) -c automation_scripts.c 
@@ -42,5 +45,11 @@ windows.o: system/windows.c system/windows.h
 events.o: system/events.c system/events.h
 	$(CC) $(CFLAGS) -c system/events.c
 
+display.o: system/display.c system/display.h 
+	$(CC) $(CFLAGS) -c system/display.c 
+
+audio.o: system/audio.c system/audio.h 
+	$(CC) $(CFLAGS) -c system/audio.c 
+
 clean: 
-	$(RM) $(TARGET) $(LIBRARY) automation_scripts.o windows.o events.o
+	$(RM) $(TARGET) $(LIBRARY) automation_scripts.o windows.o events.o display.o audio.o

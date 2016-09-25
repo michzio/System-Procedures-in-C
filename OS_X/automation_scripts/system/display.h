@@ -7,7 +7,9 @@
 
 float display_get_brightness(void);
 void display_set_brightness(float level);
-void display_capture(void);
-void display_capture_rect(void);
+void display_screen_snapshot_to_desktop(void);
+void display_screen_snapshot_rect_to_desktop(void);
+void display_screen_snapshot_to_clipboard(void);
+void display_screen_snapshot_rect_to_clipboard(void);
 
 #endif //AUTOMATION_SCRIPTS_DISPLAY_H

@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <unistd.h>
+#include <NSSystemDirectories.h>
 #include "system/windows.h"
 #include "system/events.h"
 #include "system/display.h"
 #include "system/audio.h"
+#include "../cocoa_helper/file_system.h"
+#include "../cocoa_helper/strings.h"
 
 int main(void) {
 
@@ -63,7 +66,11 @@ int main(void) {
 
     //printf("Input volume level: %.2f\n", audio_input_get_volume());
 
-    display_capture();
+    //display_screen_snapshot_to_desktop();
+    //display_screen_snapshot_rect_to_desktop();
+
+    //display_screen_snapshot_to_clipboard();
+    //display_screen_snapshot_rect_to_clipboard();
 
     return 0;
 }
