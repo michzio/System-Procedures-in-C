@@ -30,7 +30,7 @@ LIBRARY = libautomation_scripts.a
 
 all: $(TARGET)
 
-$(TARGET): $(LIBRARY)
+$(TARGET): main.c $(LIBRARY)
 	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LIBRARY) $(OS_X_LIBS) $(COCOA_HELPER_LIBRARY) $(COMMON_FUNCTIONS_LIBRARY) 
 
 $(LIBRARY): automation_scripts.o windows.o events.o display.o audio.o
