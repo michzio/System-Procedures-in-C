@@ -19,22 +19,30 @@ CFLAGS=-g -Wall -D__USE_FIXED_PROTOTYPES__ -std=c99
 OS_X_LIBS += -framework ApplicationServices 
 OS_X_LIBS += -framework Carbon
 OS_X_LIBS += -framework IOKit
-OX_X_LIBS += -framework AudioToolbox
+OS_X_LIBS += -framework AudioToolbox
+
 # custom 
 COCOA_HELPER_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/libcocoa_helper.a
-COMMON_FUNCTIONS_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/libcommon_functions.a 
+COMMON_FUNCTIONS_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/libcommon_functions.a
+UNIT_TESTS_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/unit_tests/libunit_tests.a
 
 # the build target executable: 
 TARGET = automation_scripts
 LIBRARY = libautomation_scripts.a
 
+# source files 
+SOURCE_FILES = automation_scripts.o windows.o events.o display.o audio.o
+
+# test source files 
+TEST_SOURCE_FILES = test_audio.o test_display.o test_system_events.o test_windows.o
+
 all: $(TARGET)
 
-$(TARGET): main.c $(LIBRARY)
-	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LIBRARY) $(OS_X_LIBS) $(COCOA_HELPER_LIBRARY) $(COMMON_FUNCTIONS_LIBRARY) 
+$(TARGET): main.c $(LIBRARY) $(TEST_SOURCE_FILES)
+	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LIBRARY) $(OS_X_LIBS) $(COCOA_HELPER_LIBRARY) $(COMMON_FUNCTIONS_LIBRARY) $(TEST_SOURCE_FILES) $(UNIT_TESTS_LIBRARY) 
 
-$(LIBRARY): automation_scripts.o windows.o events.o display.o audio.o
-	$(AR) $(LIBRARY) automation_scripts.o windows.o events.o display.o audio.o
+$(LIBRARY): $(SOURCE_FILES)
+	$(AR) $(LIBRARY) $(SOURCE_FILES)
 
 automation_scripts.o: automation_scripts.c automation_scripts.h
 	$(CC) $(CFLAGS) -c automation_scripts.c 
@@ -51,5 +59,17 @@ display.o: system/display.c system/display.h
 audio.o: system/audio.c system/audio.h 
 	$(CC) $(CFLAGS) -c system/audio.c 
 
+test_audio.o: test/test_audio.c test/test_audio.h 
+	$(CC) $(CFLAGS) -c test/test_audio.c 
+
+test_display.o: test/test_display.c test/test_display.h
+	$(CC) $(CFLAGS) -c test/test_display.c
+
+test_system_events.o: test/test_system_events.c test/test_system_events.h
+	$(CC) $(CFLAGS) -c test/test_system_events.c
+
+test_windows.o: test/test_windows.c test/test_windows.h 
+	$(CC) $(CFLAGS) -c test/test_windows.c
+
 clean: 
-	$(RM) $(TARGET) $(LIBRARY) automation_scripts.o windows.o events.o display.o audio.o
+	$(RM) $(TARGET) $(LIBRARY) $(SOURCE_FILES) $(TEST_SOURCE_FILES)

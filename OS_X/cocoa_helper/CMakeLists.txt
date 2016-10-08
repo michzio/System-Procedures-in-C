@@ -4,6 +4,7 @@ project(Cocoa_Helper_in_OS_X)
 # OS X Cocoa libraries including
 find_library(APPLICATION_SERVICES_LIBRARY ApplicationServices )
 mark_as_advanced(APPLICATION_SERVICES_LIBRARY)
+
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c99")
 set(SOURCE_FILES strings.h strings.c property_list.h property_list.c exec_cmd.h exec_cmd.c images.h images.c file_system.h file_system.c)
 # libraries paths

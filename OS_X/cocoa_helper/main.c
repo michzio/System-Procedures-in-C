@@ -138,7 +138,7 @@ int main() {
     size_t rgbaDataLength = 0;
     size_t width = 0;
     size_t height = 0;
-    int result = readRGBAFromPNGFile("/Users/michzio/Desktop/River.png", &rgbaData, &rgbaDataLength, &width, &height, NULL);
+    int result = readRGBAfromPNGFile("/Users/michzio/Desktop/River.png", &rgbaData, &rgbaDataLength, &width, &height, NULL);
     printf("Reading RGBA from PNG file: %d\n", result);
 
     CGImageRef image = CGImageCreateWithRGBAData(rgbaData, rgbaDataLength, width, height);

@@ -2,10 +2,12 @@
 // Created by Michal Ziobro on 15/09/2016.
 //
 
+#include <dispatch/dispatch.h>
 #include <IOKit/IOTypes.h>
 #include <IOKit/IOKitLib.h>
 #include <IOKit/graphics/IOGraphicsTypes.h>
 #include <IOKit/graphics/IOGraphicsLib.h>
+#include <IOSurface/IOSurface.h>
 #include <CoreGraphics/CoreGraphics.h>
 #include <NSSystemDirectories.h>
 #include "display.h"
@@ -231,4 +233,93 @@ void display_screen_snapshot_rect_to_clipboard(void) {
 
     // releasing memory
     CGImageRelease(screen_snapshot);
+}
+
+dispatch_queue_t dispatch_queue;
+
+CGDisplayStreamFrameAvailableHandler display_stream_handler = ^(CGDisplayStreamFrameStatus status,
+                                                 uint64_t displayTime, IOSurfaceRef __nullable frameSurface,
+                                                 CGDisplayStreamUpdateRef __nullable updateRef){
+
+    switch(status) {
+        case kCGDisplayStreamFrameStatusFrameComplete:
+            // A new frame was generated.
+            break;
+        case kCGDisplayStreamFrameStatusFrameIdle:
+            fprintf(stderr, "%s: A new frame was not generated because the display did not change.\n", __func__);
+            return;
+        case kCGDisplayStreamFrameStatusFrameBlank:
+            fprintf(stderr, "%s: A new frame was not generated because the display has gone blank.\n", __func__);
+            return;
+        case kCGDisplayStreamFrameStatusStopped:
+            fprintf(stderr, "%s: The display stream was stopped.\n", __func__);
+            return;
+        default:
+            fprintf(stderr, "%s: Unhandled display stream frame status.\n", __func__);
+            return;
+    }
+
+    size_t frameWidth = IOSurfaceGetWidth(frameSurface);
+    size_t frameHeight = IOSurfaceGetHeight(frameSurface);
+    size_t bytesPerElement = IOSurfaceGetBytesPerElement(frameSurface);
+    size_t bytesPerRow = IOSurfaceGetBytesPerRow(frameSurface);
+
+    printf("Display stream frame size: (%d, %d).\n", frameWidth, frameHeight);
+    printf("Display stream bytes per element: %d.\n", bytesPerElement);
+    printf("Display stream bytes per row: %d.\n", bytesPerRow);
+};
+
+CGDisplayStreamRef _display_stream(const CFDictionaryRef properties, const size_t outWidth, const size_t outHeight, const screen_stream_handler_t stream_handler) {
+
+    CGDirectDisplayID displayID = display_current_displayID();
+
+    dispatch_queue = dispatch_queue_create("display stream queue", DISPATCH_QUEUE_SERIAL);
+
+    CGDisplayStreamRef displayStream = CGDisplayStreamCreateWithDispatchQueue(displayID, outWidth, outHeight, 'BGRA', properties, dispatch_queue, display_stream_handler);
+    if(displayStream == NULL) {
+        fprintf(stderr, "%s: Error! Failed to create a display stream used to capture the screen.\n", __func__);
+        return NULL;
+    }
+
+    return displayStream;
+}
+
+CGDisplayStreamRef display_stream_rect(const double x, const double y, const double width, const double height,
+                                const size_t outWidth, const size_t outHeight, const screen_stream_handler_t stream_handler) {
+
+    // create properties dictionary
+    CFMutableDictionaryRef properties = CFDictionaryCreateMutable(kCFAllocatorDefault, 0, NULL, NULL);
+    // set screen rect to be streamed
+    CFDictionaryAddValue(properties,
+                         kCGDisplayStreamSourceRect,
+                         CGRectCreateDictionaryRepresentation(CGRectMake(x, y, width, height)));
+
+    return _display_stream(properties, outWidth, outHeight, stream_handler);
+}
+
+CGDisplayStreamRef display_stream(const size_t outWidth, const size_t outHeight, const screen_stream_handler_t stream_handler) {
+
+    // create properties dictionary
+    CFMutableDictionaryRef properties = CFDictionaryCreateMutable(kCFAllocatorDefault, 0, NULL, NULL);
+
+    return _display_stream(properties, outWidth, outHeight, stream_handler);
+}
+
+int display_stream_start(CGDisplayStreamRef displayStream) {
+
+    if(CGDisplayStreamStart(displayStream) != kCGErrorSuccess) {
+        fprintf(stderr, "%s: Error! Failed to start the display stream.\n", __func__);
+        return -1;
+    }
+
+    return 0;
+}
+
+int display_stream_stop(CGDisplayStreamRef displayStream) {
+
+    if(CGDisplayStreamStop(displayStream) != kCGErrorSuccess) {
+        fprintf(stderr, "%s: Error! Failed to stop the display stream.\n", __func__);
+        return -1;
+    }
+    return 0;
 }
