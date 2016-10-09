@@ -14,9 +14,16 @@ AR = ar rcs
 # -std=c99 use newer version
 CFLAGS=-g -Wall -D__USE_FIXED_PROTOTYPES__ -std=c99
 
+# include headers 
+CFLAGS += -I/usr/local/include
+
 # libraries
+# OpenCV
+OPENCV_LIBS = `pkg-config --cflags --libs opencv`
+
 # OS X
 OS_X_LIBS += -framework ApplicationServices
+
 # custom 
 COMMON_FUNCTIONS_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/libcommon_functions.a
 LIBPNG_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/liblibpng.a 
@@ -28,8 +35,8 @@ LIBRARY = libcocoa_helper.a
 
 all: $(TARGET)
 
-$(TARGET): $(LIBRARY) main.c
-	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LIBRARY) $(OS_X_LIBS) $(COMMON_FUNCTIONS_LIBRARY) $(LIBPNG_LIBRARY) $(ZLIB_LIBRARY)
+$(TARGET): main.c $(LIBRARY)
+	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LIBRARY) $(OS_X_LIBS) $(COMMON_FUNCTIONS_LIBRARY) $(LIBPNG_LIBRARY) $(ZLIB_LIBRARY) $(OPENCV_LIBS)
 
 $(LIBRARY): property_list.o strings.o exec_cmd.o images.o file_system.o
 	$(AR) $(LIBRARY) property_list.o strings.o exec_cmd.o images.o file_system.o
