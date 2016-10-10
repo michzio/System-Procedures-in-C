@@ -12,6 +12,7 @@
 #include "test/test_windows.h"
 #include "test/test_system_events.h"
 #include "test/test_audio.h"
+#include "test/test_display_stream.h"
 
 int main(void) {
 
@@ -22,10 +23,11 @@ int main(void) {
     //display_screen_snapshot_to_clipboard();
     //display_screen_snapshot_rect_to_clipboard();
 
-    test_display.run_tests();
+    //test_display.run_tests();
     //test_windows.run_tests();
     //test_audio.run_tests();
     //test_system_events.run_tests();
+    test_display_stream.run_tests();
 
     return 0;
 }
