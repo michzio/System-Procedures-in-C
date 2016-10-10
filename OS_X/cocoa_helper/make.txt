@@ -29,6 +29,9 @@ COMMON_FUNCTIONS_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/
 LIBPNG_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/liblibpng.a 
 ZLIB_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/libzlib.a
 
+# source files 
+SOURCE_FILES = property_list.o strings.o exec_cmd.o images.o file_system.o
+
 # the build target executable: 
 TARGET = cocoa_helper 
 LIBRARY = libcocoa_helper.a  
@@ -38,8 +41,8 @@ all: $(TARGET)
 $(TARGET): main.c $(LIBRARY)
 	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LIBRARY) $(OS_X_LIBS) $(COMMON_FUNCTIONS_LIBRARY) $(LIBPNG_LIBRARY) $(ZLIB_LIBRARY) $(OPENCV_LIBS)
 
-$(LIBRARY): property_list.o strings.o exec_cmd.o images.o file_system.o
-	$(AR) $(LIBRARY) property_list.o strings.o exec_cmd.o images.o file_system.o
+$(LIBRARY): $(SOURCE_FILES)
+	$(AR) $(LIBRARY) $(SOURCE_FILES)
 
 property_list.o: property_list.c property_list.h
 	$(CC) $(CFLAGS) -c property_list.c 
@@ -57,4 +60,4 @@ file_system.o: file_system.c file_system.h
 	$(CC) $(CFLAGS) -c file_system.c 
 
 clean: 
-	$(RM) $(TARGET) $(LIBRARY) property_list.o strings.o exec_cmd.o images.o file_system.o
+	$(RM) $(TARGET) $(LIBRARY) $(SOURCE_FILES)
