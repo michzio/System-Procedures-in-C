@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/test/test_windows.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/test_audio.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/test_display.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/test_automation_scripts.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/test_display_stream.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/test_windows.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/test_system_events.h" isTestSource="false" />
@@ -12,6 +13,7 @@
       <sourceFolder url="file://$MODULE_DIR$/test/test_system_events.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/test_audio.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/test_display.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/test_automation_scripts.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/automation_scripts.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/system/audio.h" isTestSource="false" />
@@ -22,8 +24,8 @@
       <sourceFolder url="file://$MODULE_DIR$/system/display_stream.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/system/display_stream.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/system/display.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/system/events.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/system/windows.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/system/events.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/automation_scripts.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
     </content>

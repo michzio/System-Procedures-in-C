@@ -13,20 +13,20 @@
  */
 
 // callback gets new frame buffer
-typedef void (*display_stream_handler_t)(const unsigned char *frameBuffer, const size_t frameBufferLength,
+typedef void (*display_stream_handler_t)(const void *handlerArgs, const unsigned char *frameBuffer, const size_t frameBufferLength,
                                          const size_t frameWidth, const size_t frameHeight, const size_t bytesPerPixel);
 // callback gets only update of current frame buffer
 // in current frame buffer should be replaced rectangle (offsetX, offsetY, updateWidth, updateHeight)
-typedef void (*display_stream_updates_handler_t)(const unsigned char *updateBuffer, const size_t updateBufferLength,
+typedef void (*display_stream_updates_handler_t)(const void *handlerArgs, const unsigned char *updateBuffer, const size_t updateBufferLength,
                                                  const size_t offsetX, const size_t offsetY, const size_t updateWidth,
                                                  const size_t updateHeight, const size_t bytesPerPixel);
 
-CGDisplayStreamRef display_stream_init(const size_t outWidth, const size_t outHeight, const display_stream_handler_t customDisplayStreamHandler);
+CGDisplayStreamRef display_stream_init(const size_t outWidth, const size_t outHeight, const display_stream_handler_t customDisplayStreamHandler, const void *handlerArgs);
 CGDisplayStreamRef display_stream_rect_init(const double x, const double y, const double width, const double height,
-                                            const size_t outWidth, const size_t outHeight, const display_stream_handler_t customDisplayStreamHandler);
-CGDisplayStreamRef display_stream_updates_init(const size_t outWidth, const size_t outHeight, const display_stream_updates_handler_t customDisplayStreamUpdatesHandler);
+                                            const size_t outWidth, const size_t outHeight, const display_stream_handler_t customDisplayStreamHandler, const void *handlerArgs);
+CGDisplayStreamRef display_stream_updates_init(const size_t outWidth, const size_t outHeight, const display_stream_updates_handler_t customDisplayStreamUpdatesHandler, const void *handlerArgs);
 CGDisplayStreamRef display_stream_rect_updates_init(const double x, const double y, const double width, const double height,
-                                                    const size_t outWidth, const size_t outHeight, const display_stream_updates_handler_t customDisplayStreamUpdatesHandler);
+                                                    const size_t outWidth, const size_t outHeight, const display_stream_updates_handler_t customDisplayStreamUpdatesHandler, const void *handlerArgs);
 int display_stream_start(CGDisplayStreamRef displayStream);
 int display_stream_stop(CGDisplayStreamRef displayStream);
 void display_stream_free(CGDisplayStreamRef displayStream);

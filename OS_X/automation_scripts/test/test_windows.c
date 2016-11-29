@@ -5,7 +5,7 @@
 #include <printf.h>
 #include "test_windows.h"
 #include "../../../../unit_tests/test/assertion.h"
-#include "../../../../unit_tests/common/comparer.h"
+#include "../../../../comparers/comparer.h"
 #include "../system/windows.h"
 
 static void test_front_window_owner(void) {

@@ -4,7 +4,7 @@
 
 #import <AudioToolbox/AudioServices.h>
 #include "audio.h"
-#import "../../../../server/common/types.h"
+#import "../../../../common/types.h"
 
 enum audio_direction {
     kAudioOutput,

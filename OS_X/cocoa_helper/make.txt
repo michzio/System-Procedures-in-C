@@ -25,9 +25,9 @@ OPENCV_LIBS = `pkg-config --cflags --libs opencv`
 OS_X_LIBS += -framework ApplicationServices
 
 # custom 
-COMMON_FUNCTIONS_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/libcommon_functions.a
-LIBPNG_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/liblibpng.a 
-ZLIB_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/libzlib.a
+COMMON_FUNCTIONS_LIBRARY = ../../../common/libcommon_functions.a
+LIBPNG_LIBRARY = ../../../libpng-1.6.24/liblibpng.a
+ZLIB_LIBRARY = ../../../zlib-1.2.8/libzlib.a
 
 # source files 
 SOURCE_FILES = property_list.o strings.o exec_cmd.o images.o file_system.o

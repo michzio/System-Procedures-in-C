@@ -14,7 +14,7 @@
 static dispatch_queue_t dispatch_queue;
 
 // generic display stream initializer
-CGDisplayStreamRef _display_stream_init(const CFDictionaryRef properties, const size_t outWidth, const size_t outHeight, const display_stream_handler_t customDisplayStreamHandler) {
+CGDisplayStreamRef _display_stream_init(const CFDictionaryRef properties, const size_t outWidth, const size_t outHeight, const display_stream_handler_t customDisplayStreamHandler, const void *handlerArgs) {
 
     /**
      * CGDisplayStreamRef callback block that provides new display frames as IOSurfaceRef objects and display updates object.
@@ -96,7 +96,7 @@ CGDisplayStreamRef _display_stream_init(const CFDictionaryRef properties, const 
 
         IOSurfaceUnlock(frameSurface, kIOSurfaceLockReadOnly, NULL);
 
-        customDisplayStreamHandler(frameBufferCopy, frameAllocSize, frameWidth, frameHeight, bytesPerElement);
+        customDisplayStreamHandler(handlerArgs, frameBufferCopy, frameAllocSize, frameWidth, frameHeight, bytesPerElement);
     };
 
     CGDirectDisplayID displayID = display_current_displayID();
@@ -119,7 +119,7 @@ CGDisplayStreamRef _display_stream_init(const CFDictionaryRef properties, const 
 
 // display stream initializer of rectangle subarea of the screen
 CGDisplayStreamRef display_stream_rect_init(const double x, const double y, const double width, const double height,
-                                            const size_t outWidth, const size_t outHeight, const display_stream_handler_t customDisplayStreamHandler) {
+                                            const size_t outWidth, const size_t outHeight, const display_stream_handler_t customDisplayStreamHandler, const void *handlerArgs) {
 
     // create properties dictionary
     CFMutableDictionaryRef properties = CFDictionaryCreateMutable(kCFAllocatorDefault, 0, NULL, NULL);
@@ -128,20 +128,20 @@ CGDisplayStreamRef display_stream_rect_init(const double x, const double y, cons
                          kCGDisplayStreamSourceRect,
                          CGRectCreateDictionaryRepresentation(CGRectMake(x, y, width, height)));
 
-    return _display_stream_init(properties, outWidth, outHeight, customDisplayStreamHandler);
+    return _display_stream_init(properties, outWidth, outHeight, customDisplayStreamHandler, handlerArgs);
 }
 
 // display stream initializer of the entire area of the screen
-CGDisplayStreamRef display_stream_init(const size_t outWidth, const size_t outHeight, const display_stream_handler_t customDisplayStreamHandler) {
+CGDisplayStreamRef display_stream_init(const size_t outWidth, const size_t outHeight, const display_stream_handler_t customDisplayStreamHandler, const void *handlerArgs) {
 
     // create properties dictionary
     CFMutableDictionaryRef properties = CFDictionaryCreateMutable(kCFAllocatorDefault, 0, NULL, NULL);
 
-    return _display_stream_init(properties, outWidth, outHeight, customDisplayStreamHandler);
+    return _display_stream_init(properties, outWidth, outHeight, customDisplayStreamHandler, handlerArgs);
 }
 
 // generic display stream updates initializer
-CGDisplayStreamRef _display_stream_updates_init(const CFDictionaryRef properties, const size_t outWidth, const size_t outHeight, const display_stream_updates_handler_t customDisplayStreamUpdatesHandler) {
+CGDisplayStreamRef _display_stream_updates_init(const CFDictionaryRef properties, const size_t outWidth, const size_t outHeight, const display_stream_updates_handler_t customDisplayStreamUpdatesHandler, const void *handlerArgs) {
 
     /**
      * CGDisplayStreamRef callback block that provides new display frames as IOSurfaceRef objects and display updates object.
@@ -161,7 +161,7 @@ CGDisplayStreamRef _display_stream_updates_init(const CFDictionaryRef properties
                 fprintf(stderr, "%s: A new frame was not generated because the display did not change.\n", __func__);
                 return;
             case kCGDisplayStreamFrameStatusFrameBlank:
-                fprintf(stderr, "$s: A new frame was not generated because the display has gone blank.\n", __func__);
+                fprintf(stderr, "%s: A new frame was not generated because the display has gone blank.\n", __func__);
                 return;
             case kCGDisplayStreamFrameStatusStopped:
                 fprintf(stderr, "%s: The display stream has been stopped.\n", __func__);
@@ -179,7 +179,7 @@ CGDisplayStreamRef _display_stream_updates_init(const CFDictionaryRef properties
         uint8_t *frameBuffer = (uint8_t *) IOSurfaceGetBaseAddress(frameSurface);
 
         size_t rectCount = 0;
-        CGRect *rects = 0;
+        const CGRect *rects = 0;
         unsigned char **updateBuffers = 0;
         size_t *updateBuffersLengths = 0;
         size_t updateBufferBytesPerRow = 0;
@@ -215,7 +215,7 @@ CGDisplayStreamRef _display_stream_updates_init(const CFDictionaryRef properties
         IOSurfaceUnlock(frameSurface, kIOSurfaceLockReadOnly, NULL);
 
         for(int i=0; i<rectCount; i++) {
-            customDisplayStreamUpdatesHandler(updateBuffers[i], updateBuffersLengths[i], (size_t) rects[i].origin.x, (size_t) rects[i].origin.y,
+            customDisplayStreamUpdatesHandler(handlerArgs, updateBuffers[i], updateBuffersLengths[i], (size_t) rects[i].origin.x, (size_t) rects[i].origin.y,
                                               (size_t)(rects[i].size.width + 0.5), (size_t)(rects[i].size.height + 0.5), bytesPerElement);
         }
 
@@ -243,7 +243,7 @@ CGDisplayStreamRef _display_stream_updates_init(const CFDictionaryRef properties
 
 
 CGDisplayStreamRef display_stream_rect_updates_init(const double x, const double y, const double width, const double height,
-                                                    const size_t outWidth, const size_t outHeight, const display_stream_updates_handler_t customDisplayStreamUpdatesHandler) {
+                                                    const size_t outWidth, const size_t outHeight, const display_stream_updates_handler_t customDisplayStreamUpdatesHandler, const void *handlerArgs) {
 
     // create properties dictionary
     CFMutableDictionaryRef properties = CFDictionaryCreateMutable(kCFAllocatorDefault, 0, NULL, NULL);
@@ -252,14 +252,14 @@ CGDisplayStreamRef display_stream_rect_updates_init(const double x, const double
                          kCGDisplayStreamSourceRect,
                          CGRectCreateDictionaryRepresentation(CGRectMake(x, y, width, height)));
 
-    return _display_stream_updates_init(properties, outWidth, outHeight, customDisplayStreamUpdatesHandler);
+    return _display_stream_updates_init(properties, outWidth, outHeight, customDisplayStreamUpdatesHandler, handlerArgs);
 }
-CGDisplayStreamRef display_stream_updates_init(const size_t outWidth, const size_t outHeight, const display_stream_updates_handler_t customDisplayStreamUpdatesHandler) {
+CGDisplayStreamRef display_stream_updates_init(const size_t outWidth, const size_t outHeight, const display_stream_updates_handler_t customDisplayStreamUpdatesHandler, const void *handlerArgs) {
 
     // create properties dictionary
     CFMutableDictionaryRef properties = CFDictionaryCreateMutable(kCFAllocatorDefault, 0, NULL, NULL);
 
-    return _display_stream_updates_init(properties, outWidth, outHeight, customDisplayStreamUpdatesHandler);
+    return _display_stream_updates_init(properties, outWidth, outHeight, customDisplayStreamUpdatesHandler, handlerArgs);
 }
 
 
@@ -288,6 +288,6 @@ void display_stream_free(CGDisplayStreamRef displayStream) {
     // deallocate display stream
     if(displayStream) {
         CFRelease(displayStream);
-        displayStream == NULL;
+        displayStream = NULL;
     }
 }

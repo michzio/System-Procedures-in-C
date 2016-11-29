@@ -29,11 +29,14 @@ OS_X_LIBS += -framework AudioToolbox
 OS_X_LIBS += -framework IOSurface
 
 # custom 
-COCOA_HELPER_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/libcocoa_helper.a
-COMMON_FUNCTIONS_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/libcommon_functions.a
-LIBPNG_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/liblibpng.a 
-ZLIB_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/libzlib.a
-UNIT_TESTS_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/unit_tests/libunit_tests.a
+COCOA_HELPER_LIBRARY = ../cocoa_helper/libcocoa_helper.a
+COMMON_FUNCTIONS_LIBRARY = ../../../common/libcommon_functions.a
+LIBPNG_LIBRARY = ../../../libpng-1.6.24/liblibpng.a
+ZLIB_LIBRARY = ../../../zlib-1.2.8/libzlib.a
+COMPARERS_LIBRARY = ../../../comparers/libcomparers.a
+UNIT_TESTS_LIBRARY = ../../../unit_tests/libunit_tests.a
+# custom cocoa libraries
+APPLE_SCRIPT_SYSTEM_AUTOMATION_LIBRARY = ../../../../cocoa/AppleScriptSystemAutomation/libAppleScriptSystemAutomation.a
 
 # the build target executable: 
 TARGET = automation_scripts
@@ -43,12 +46,12 @@ LIBRARY = libautomation_scripts.a
 SOURCE_FILES = automation_scripts.o windows.o events.o display.o audio.o display_stream.o
 
 # test source files 
-TEST_SOURCE_FILES = test_audio.o test_display.o test_system_events.o test_windows.o test_display_stream.o
+TEST_SOURCE_FILES = test_audio.o test_display.o test_system_events.o test_windows.o test_display_stream.o test_automation_scripts.o
 
 all: $(TARGET)
 
 $(TARGET): main.c $(LIBRARY) $(TEST_SOURCE_FILES)
-	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LIBRARY) $(OS_X_LIBS) $(COCOA_HELPER_LIBRARY) $(COMMON_FUNCTIONS_LIBRARY) $(LIBPNG_LIBRARY) $(ZLIB_LIBRARY) $(TEST_SOURCE_FILES) $(UNIT_TESTS_LIBRARY) $(OPENCV_LIBS)
+	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LIBRARY) $(OS_X_LIBS) $(COCOA_HELPER_LIBRARY) $(COMMON_FUNCTIONS_LIBRARY) $(LIBPNG_LIBRARY) $(ZLIB_LIBRARY) $(APPLE_SCRIPT_SYSTEM_AUTOMATION_LIBRARY) $(TEST_SOURCE_FILES) $(COMPARERS_LIBRARY) $(UNIT_TESTS_LIBRARY) $(OPENCV_LIBS)
 
 $(LIBRARY): $(SOURCE_FILES)
 	$(AR) $(LIBRARY) $(SOURCE_FILES)
@@ -85,6 +88,9 @@ test_windows.o: test/test_windows.c test/test_windows.h
 
 test_display_stream.o: test/test_display_stream.c test/test_display_stream.h
 	$(CC) $(CFLAGS) -c test/test_display_stream.c
+
+test_automation_scripts.o: test/test_automation_scripts.c test/test_automation_scripts.h 
+	$(CC) $(CFLAGS) -c test/test_automation_scripts.c
 
 clean: 
 	$(RM) $(TARGET) $(LIBRARY) $(SOURCE_FILES) $(TEST_SOURCE_FILES)

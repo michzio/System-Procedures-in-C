@@ -4,10 +4,12 @@
 
 #include <unistd.h>
 #include <printf.h>
+#include <stdlib.h>
 #include "test_display.h"
 #include "../system/display.h"
 #include "../../../../unit_tests/test/assertion.h"
-
+#include "../../../../common/libraries/png/png-encoding.h"
+#include "../../../../common/libraries/png/png-helper.h"
 
 
 static void test_display_brightness(void) {
@@ -41,12 +43,27 @@ static void test_display_get_pixel_size(void) {
     size_t width = 0, height = 0;
     display_get_pixel_size(&width, &height);
 
-    printf("Display size: [%d, %d]\n", width, height);
+    printf("Display size: [%zu, %zu]\n", width, height);
+}
+
+static void test_display_screen_snapshot_to_buffer() {
+
+    unsigned char *rgbaData = 0;
+    size_t rgbaDataLength = 0;
+    size_t width = 0;
+    size_t height = 0;
+
+    display_screen_snapshot_to_buffer(&rgbaData, &rgbaDataLength, &width, &height);
+
+    assert_not_null(rgbaData, __func__);
+    writeRGBAasPNGFile(rgbaData, width, height, PNG_BIT_DEPTH_8, "/Users/michzio/Desktop/test_screen_snapshot.png");
+    free(rgbaData);
 }
 
 static void run_tests(void) {
     test_display_brightness();
     test_display_get_pixel_size();
+    test_display_screen_snapshot_to_buffer();
 }
 
 test_display_t test_display = { .run_tests = run_tests };

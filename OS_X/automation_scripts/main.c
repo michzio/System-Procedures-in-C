@@ -13,6 +13,7 @@
 #include "test/test_system_events.h"
 #include "test/test_audio.h"
 #include "test/test_display_stream.h"
+#include "test/test_automation_scripts.h"
 
 int main(void) {
 
@@ -27,7 +28,8 @@ int main(void) {
     //test_windows.run_tests();
     //test_audio.run_tests();
     //test_system_events.run_tests();
-    test_display_stream.run_tests();
+    //test_display_stream.run_tests();
+    test_automation_scripts.run_tests();
 
     return 0;
 }

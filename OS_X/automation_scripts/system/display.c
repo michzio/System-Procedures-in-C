@@ -240,3 +240,39 @@ void display_screen_snapshot_rect_to_clipboard(void) {
     // releasing memory
     CGImageRelease(screen_snapshot);
 }
+
+void display_screen_snapshot_to_buffer(unsigned char **rgbaData, size_t *rgbaDataLength, size_t *width, size_t *height) {
+
+    // take screen snapshot
+    CGImageRef screen_snapshot = display_screen_snapshot();
+    if(screen_snapshot == NULL) {
+        fprintf(stderr, "%s: Could not take screen snapshot of the current display.\n", __func__);
+        return;
+    }
+
+    // convert image to raw RGBA bitmap
+    *rgbaData = CGImageCopyRGBAData(screen_snapshot, rgbaDataLength);
+    *width = CGImageGetWidth(screen_snapshot);
+    *height = CGImageGetHeight(screen_snapshot);
+
+    // releasing memory
+    CGImageRelease(screen_snapshot);
+}
+
+void display_screen_snapshot_rect_to_buffer(unsigned char **rgbaData, size_t *rgbaDataLength, size_t *width, size_t *height) {
+
+    // take screen snapshot of selected rectangular area
+    CGImageRef screen_snapshot = display_screen_snapshot_rect();
+    if(screen_snapshot == NULL) {
+        fprintf(stderr, "%s: Could not take screen snapshot of selected rectangular area of the current display.\n", __func__);
+        return;
+    }
+
+    // convert image to raw RGBA bitmap
+    *rgbaData = CGImageCopyRGBAData(screen_snapshot, rgbaDataLength);
+    *width = CGImageGetWidth(screen_snapshot);
+    *height = CGImageGetHeight(screen_snapshot);
+
+    // releasing memory
+    CGImageRelease(screen_snapshot);
+}

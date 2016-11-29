@@ -18,7 +18,7 @@ static void test_create(void) {
 static void test_clean(void) {
     // nothing
 }
-static void display_stream_handler(const unsigned char *frameBuffer, const size_t frameBufferLength,
+static void display_stream_handler(const void *handlerArgs, const unsigned char *frameBuffer, const size_t frameBufferLength,
                             const size_t frameWidth, const size_t frameHeight, const size_t bytesPerPixel) {
 
     // printf("Display stream frame buffer:\n");
@@ -38,7 +38,7 @@ static void test_display_stream_new_frames(void) {
     size_t width = 0, height = 0;
     display_get_pixel_size(&width, &height);
 
-    CGDisplayStreamRef displayStream = display_stream_init(width, height, display_stream_handler);
+    CGDisplayStreamRef displayStream = display_stream_init(width, height, display_stream_handler, NULL);
     display_stream_start(displayStream);
     sleep(5);
     display_stream_stop(displayStream);
@@ -52,12 +52,12 @@ static void test_display_stream_new_frames(void) {
     test_clean();
 }
 
-static void display_stream_updates_handler(const unsigned char *updateBuffer, const size_t updateBufferLength,
+static void display_stream_updates_handler(const void *handlerArgs, const unsigned char *updateBuffer, const size_t updateBufferLength,
                                            const size_t offsetX, const size_t offsetY, const size_t updateWidth,
                                            const size_t updateHeight, const size_t bytesPerPixel) {
 
     printf("Display stream update buffer: \n");
-    printf("offset: {%d, %d}, size: {%d, %d}\n", offsetX, offsetY, updateWidth, updateHeight);
+    printf("offset: {%zu, %zu}, size: {%zu, %zu}\n", offsetX, offsetY, updateWidth, updateHeight);
     // bytes_array_dump(updateBuffer, updateBufferLength, 20);
     count++;
     char filePath[256];
@@ -74,7 +74,7 @@ static void test_display_stream_update_frames(void) {
     size_t width = 0, height = 0;
     display_get_pixel_size(&width, &height);
 
-    CGDisplayStreamRef displayStream = display_stream_updates_init(width, height, display_stream_updates_handler);
+    CGDisplayStreamRef displayStream = display_stream_updates_init(width, height, display_stream_updates_handler, NULL);
     display_stream_start(displayStream);
     sleep(5);
     display_stream_stop(displayStream);
