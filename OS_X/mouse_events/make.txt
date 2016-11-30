@@ -3,6 +3,9 @@
 # the compiler: gcc for C program, define as g++ for C++
 CC = gcc
 
+# the static library archiver
+AR = ar rcs
+
 # compiler flags:
 # -g enable debugging
 # -Wall turn on all warnings
@@ -17,11 +20,21 @@ OS_X_LIBS += -framework ApplicationServices
 
 # the build target executable:
 TARGET = mouse_events
+LIBRARY = libmouse_events.a
+
+# source files
+SOURCE_FILES = mouse_events.o scroll_wheel_events.o
+
+# test source files
+TEST_SOURCE_FILES =
 
 all: $(TARGET)
 
-$(TARGET): mouse_events.o scroll_wheel_events.o
-	$(CC) $(CFLAGS) -o mouse_events main.c mouse_events.o scroll_wheel_events.o $(OS_X_LIBS)
+$(TARGET): main.c $(LIBRARY) $(TEST_SOURCE_FILES)
+	$(CC) $(CFLAGS) -o $(TARGET) main.c $(TEST_SOURCE_FILES) $(LIBRARY) $(OS_X_LIBS)
+
+$(LIBRARY): $(SOURCE_FILES)
+	$(AR) $(LIBRARY) $(SOURCE_FILES)
 
 mouse_events.o: mouse_events.c mouse_events.h
 	$(CC) $(CFLAGS) -c mouse_events.c
@@ -30,4 +43,4 @@ scroll_wheel_events.o: scroll_wheel_events.c scroll_wheel_events.h
 	$(CC) $(CFLAGS) -c scroll_wheel_events.c
 
 clean:
-	$(RM) $(TARGET) $(TARGET).o scroll_wheel_events.o
+	$(RM) $(TARGET) $(LIBRARY) $(SOURCE_FILES) $(TEST_SOURCE_FILES)

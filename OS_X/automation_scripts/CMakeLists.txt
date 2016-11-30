@@ -40,7 +40,7 @@ set(APPLE_SCRIPT_SYSTEM_AUTOMATION_LIB_PATH ${APPLE_SCRIPT_SYSTEM_AUTOMATION_PAT
 
 file(COPY tools DESTINATION .)
 
-add_library(Automation_Scripts_Lib SHARED ${SOURCE_FILES} system/display_stream.c)
+add_library(Automation_Scripts_Lib SHARED ${SOURCE_FILES})
 set_target_properties(Automation_Scripts_Lib PROPERTIES OUTPUT_NAME automation_scripts_shared)
 target_link_libraries(Automation_Scripts_Lib ${COMMON_FUNCTIONS_LIB_PATH})
 target_link_libraries(Automation_Scripts_Lib ${LIBPNG_LIB_PATH})

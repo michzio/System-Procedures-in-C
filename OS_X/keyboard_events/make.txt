@@ -1,7 +1,10 @@
 # Makefile for UNIX 
 
 # the compiler: gcc for C program, define as g++ for C++
-CC = gcc 
+CC = gcc
+
+# the static library archiver
+AR = ar rcs
 
 # compiler flags: 
 # -g enable debugging 
@@ -13,18 +16,29 @@ CFLAGS=-g -Wall -D__USE_FIXED_PROTOTYPES__ -std=c99
 
 # libraries 
 # OS X 
-OS_X_LIBS += -framework ApplicationServices 
-# custom
-COCOA_HELPER_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/test/OS_X/cocoa_helper/libcocoa_helper.a
-AUTOMATION_SCRIPTS_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/test/OS_X/automation_scripts/libautomation_scripts.a
+OS_X_LIBS += -framework ApplicationServices
+
+# custom cocoa libraries
+COCOA_HELPER_LIBRARY = ../cocoa_helper/libcocoa_helper.a
+AUTOMATION_SCRIPTS_LIBRARY = ../automation_scripts/libautomation_scripts.a
 
 # the build target executable:  
 TARGET = keyboard_events
+LIBRARY = libkeyboard_events.a
+
+# source files
+SOURCE_FILES = keyboard_events.o hot_keys_events.o symbolic_hot_keys.o
+
+# test source files
+TEST_SOURCE_FILES =
 
 all: $(TARGET)
 
-$(TARGET): keyboard_events.o hot_keys_events.o symbolic_hot_keys.o
-	$(CC) $(CFLAGS) -o keyboard_events main.c keyboard_events.o hot_keys_events.o symbolic_hot_keys.o $(OS_X_LIBS) $(COCOA_HELPER_LIBRARY) $(AUTOMATION_SCRIPTS_LIBRARY)
+$(TARGET): main.c $(LIBRARY) $(TEST_SOURCE_FILES)
+	$(CC) $(CFLAGS) -o $(TARGET) main.c $(TEST_SOURCE_FILES) $(LIBRARY) $(OS_X_LIBS) $(COCOA_HELPER_LIBRARY) $(AUTOMATION_SCRIPTS_LIBRARY)
+
+$(LIBRARY): $(SOURCE_FILES)
+	$(AR) $(LIBRARY) $(SOURCE_FILES)
 
 keyboard_events.o: keyboard_events.c keyboard_events.h virtual_key_codes.h
 	$(CC) $(CFLAGS) -c keyboard_events.c 
@@ -36,5 +50,4 @@ symbolic_hot_keys.o: symbolic_hot_keys.c symbolic_hot_keys.h
 	$(CC) $(CFLAGS) -c symbolic_hot_keys.c 
 
 clean: 
-	$(RM) $(TARGET) $(TARGET).o hot_keys_events.o symbolic_hot_keys.o
- 
+	$(RM) $(TARGET) $(LIBRARY) $(SOURCE_FILES) $(TEST_SOURCE_FILES)

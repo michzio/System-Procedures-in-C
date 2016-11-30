@@ -6,6 +6,8 @@
 
 int main() {
 
+    printf("Mouse Events in Mac OS X\n");
+
     float x, y;
 
     /*
