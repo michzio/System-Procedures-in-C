@@ -8,9 +8,9 @@
 // mouse moving
 void mouse_position(float *x, float *y);
 void mouse_move_to(float x, float y);
-void mouse_move_to_eventless(float x, float y);
+void _mouse_move_to(float x, float y);
 void mouse_move_by(float dx, float dy);
-void mouse_move_by_eventless(float dx, float dy);
+void _mouse_move_by(float dx, float dy);
 
 // mouse clicking
 void mouse_left_click(void);

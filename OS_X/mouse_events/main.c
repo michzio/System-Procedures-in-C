@@ -30,7 +30,7 @@ int main() {
     sleep(1);
     mouse_position(&x, &y);
     printf("Current mouse position: {%f,%f}\n", x, y);
-    mouse_move_to_eventless(1000, 500);
+    _mouse_move_to(1000, 500);
     //sleep(1);
     mouse_position(&x, &y);
     printf("Current mouse position: {%f,%f}\n", x, y);

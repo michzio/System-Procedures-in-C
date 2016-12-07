@@ -51,7 +51,7 @@ void mouse_move_to(float x, float y) {
     CFRelease(move_event);
 }
 
-void mouse_move_to_eventless(float x, float y) {
+void _mouse_move_to(float x, float y) {
 
     /**
      * moves the mouse cursor without generating events
@@ -79,7 +79,7 @@ void mouse_move_by(float dx, float dy) {
     mouse_move_to(x + dx, y + dy);
 }
 
-void mouse_move_by_eventless(float dx, float dy) {
+void _mouse_move_by(float dx, float dy) {
 
     float x, y;
 
