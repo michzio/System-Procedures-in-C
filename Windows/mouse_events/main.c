@@ -11,7 +11,11 @@ int main() {
     printf("Current mouse position: {%f, %f}\n", x, y);
 
     // mouse_move_to(1350, 350);
-    _mouse_move_to(1350, 350);
+    //_mouse_move_to(1350, 350);
+    //mouse_move_to(0,0);
+    //mouse_move_by(1400,700);
+    _mouse_move_to(0,0);
+    _mouse_move_by(1400, 700);
 
     return 0;
 }

@@ -84,7 +84,7 @@ void _mouse_move_by(float dx, float dy) {
     float x, y;
 
     mouse_position(&x, &y);
-    mouse_move_to_eventless(x + dx, y + dy);
+    _mouse_move_to(x + dx, y + dy);
 }
 
 // mouse clicking

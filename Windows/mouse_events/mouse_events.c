@@ -30,15 +30,15 @@ void mouse_move_to(float x, float y) {
      */
     INPUT mouseInput;
     mouseInput.type = INPUT_MOUSE;
-    mouseInput.mi.dx = x * 0xFFFF / GetSystemMetrics(SM_CXSCREEN) + 1;
-    mouseInput.mi.dy = y * 0xFFFF / GetSystemMetrics(SM_CYSCREEN) + 1;
+    mouseInput.mi.dx = ((LONG)x) * 0xFFFF / GetSystemMetrics(SM_CXSCREEN) + 1;
+    mouseInput.mi.dy = ((LONG)y) * 0xFFFF / GetSystemMetrics(SM_CYSCREEN) + 1;
     mouseInput.mi.mouseData = 0;
     mouseInput.mi.dwFlags = MOUSEEVENTF_MOVE | MOUSEEVENTF_ABSOLUTE;
     mouseInput.mi.time = 0;
     mouseInput.mi.dwExtraInfo = NULL;
 
     /**
-     * send a INPUT events into the keyboard or mouse input stream.
+     * send an INPUT event into the keyboard or mouse input stream.
      * function fails when blocked by UIPI.
      * params:
      * @nInputs : _In_ UINT
@@ -46,7 +46,9 @@ void mouse_move_to(float x, float y) {
      * @cbSize : _In_ int
      * @return : UINT (number of events sent)
      */
-    SendInput(1, &mouseInput, sizeof(mouseInput));
+    if(SendInput(1, &mouseInput, sizeof(mouseInput)) != 1) {
+        fprintf(stderr, "Error while sending INPUT event to input stream.\n");
+    }
 }
 
 // function using deprecated Mouse Event Windows API
@@ -70,8 +72,16 @@ void _mouse_move_to(float x, float y) {
 
 void mouse_move_by(float dx, float dy) {
 
+   float x, y;
+
+    mouse_position(&x, &y);
+    mouse_move_to(x + dx, y + dy);
 }
 
 void _mouse_move_by(float dx, float dy) {
 
+    float x, y;
+
+    mouse_position(&x, &y);
+    _mouse_move_to(x + dx, y + dy);
 }
