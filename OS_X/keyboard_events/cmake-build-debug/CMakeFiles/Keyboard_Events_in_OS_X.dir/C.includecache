@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/windows.h
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/hot_keys_events.h
+stdint.h
+-
+stdbool.h
+-
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/keyboard_events.h
+CoreGraphics/CoreGraphics.h
+-
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/main.c
+keyboard_events.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/keyboard_events.h
+virtual_key_codes.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/virtual_key_codes.h
+symbolic_hot_keys.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/symbolic_hot_keys.h
+hot_keys_events.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/hot_keys_events.h
+../automation_scripts/system/windows.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/windows.h
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/symbolic_hot_keys.h
+CoreGraphics/CoreGraphics.h
+-
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/virtual_key_codes.h
+
