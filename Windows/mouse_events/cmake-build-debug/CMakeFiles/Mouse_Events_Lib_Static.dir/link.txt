@@ -1,0 +1,2 @@
+/usr/bin/ar.exe qc libmouse_events.a  CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.o
+/usr/bin/ranlib.exe libmouse_events.a

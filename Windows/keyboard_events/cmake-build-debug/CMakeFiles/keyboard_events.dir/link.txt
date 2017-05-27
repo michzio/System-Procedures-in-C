@@ -1,0 +1,1 @@
+/usr/bin/cc  -g  -Wl,--enable-auto-import CMakeFiles/keyboard_events.dir/main.c.o CMakeFiles/keyboard_events.dir/keyboard_events.c.o  -o keyboard_events.exe -Wl,--out-implib,libkeyboard_events.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

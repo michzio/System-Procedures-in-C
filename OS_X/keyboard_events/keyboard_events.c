@@ -106,6 +106,58 @@ static uint64_t mod_key_code_to_mod_flag(uint16_t mod_key_code) {
     }
 }
 
+void multi_key_down(int key_num, ...) {
+
+    uint16_t key_code = -1;
+    uint64_t modifiers_flags = 0;
+
+    // convert modifiers key_codes into modifiers flags
+    va_list key_codes;
+    va_start(key_codes, key_num);
+
+    for( int i=0; i< key_num; i++) {
+        uint16_t mod_key_code = (uint16_t) va_arg(key_codes, int);
+        uint64_t mod_flag = mod_key_code_to_mod_flag(mod_key_code);
+        if(mod_flag)
+            modifiers_flags |= mod_flag;
+        else // flag not found it isn't modifier key
+            key_code = mod_key_code;
+    }
+
+    va_end(key_codes);
+
+    // lack of main key code despite of modifier flags
+    if(key_code < 0) return;
+
+    key_down_modified(key_code, modifiers_flags);
+}
+
+void multi_key_up(int key_num, ...) {
+
+    uint16_t key_code = -1;
+    uint64_t modifiers_flags = 0;
+
+    // convert modifiers key_codes into modifiers flags
+    va_list key_codes;
+    va_start(key_codes, key_num);
+
+    for(int i=0; i< key_num; i++) {
+        uint16_t mod_key_code = (uint16_t) va_arg(key_codes, int);
+        uint64_t mod_flag = mod_key_code_to_mod_flag(mod_key_code);
+        if(mod_flag)
+            modifiers_flags |= mod_flag;
+        else // flag not found it isn't modifier key
+            key_code = mod_key_code;
+    }
+
+    va_end(key_codes);
+
+    // lack of main key code despite of modifier flags
+    if(key_code < 0) return;
+
+    key_up_modified(key_code, modifiers_flags);
+}
+
 void multi_key_input(int key_num, ...) {
 
     uint16_t key_code = -1;

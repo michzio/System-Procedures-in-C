@@ -13,8 +13,9 @@ void key_down_modified(uint16_t key_code, uint64_t modifiers_flags);
 void key_up_modified(uint16_t key_code, uint64_t modifiers_flags);
 void key_input(uint16_t key_code);
 void key_input_modified(uint16_t key_code, uint64_t modifiers_flags);
-void multi_key_down(uint16_t key_code, uint16_t mod_key_code, ...);
-void multi_key_up(uint16_t key_code, uint16_t mod_key_code, ...);
+void key_hold_down_modified(uint16_t key_code, uint64_t modifiers_flags, uint32_t hold_time_in_s);
+void multi_key_down(int key_num, ...);
+void multi_key_up(int key_num, ...);
 void multi_key_input(int key_num, ...);
 
 
