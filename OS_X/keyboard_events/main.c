@@ -163,5 +163,10 @@ int main() {
     printf("Cmd + Fn: %d\n", kMFCommand + kMFFunction);
     printf("Ctrl + Shift: %d\n", kMFControl + kMFShift);
 
+    //multi_key_down(2, kVK_ANSI_O, kVK_Option);
+    //multi_key_up(2, kVK_ANSI_O, kVK_Option);
+
+    sleep(5);
+
     return 0;
 }
