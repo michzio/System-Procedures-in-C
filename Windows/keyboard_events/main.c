@@ -16,7 +16,9 @@ int main() {
 
     //multi_key_down(2, kVK_ANSI_O, kVK_RightAlt);
     //multi_key_up(2, kVK_ANSI_O, kVK_RightAlt);
-    multi_key_input(2, kVK_ANSI_O, kVK_RightAlt);
+    //multi_key_input(2, kVK_ANSI_O, kVK_RightAlt);
+    //key_input(kVK_F2);
+    //key_input_modified(9, 786432);
     return 0;
 }
 

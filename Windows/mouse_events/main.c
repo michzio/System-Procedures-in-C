@@ -1,5 +1,8 @@
 #include <stdio.h>
+#include <unistd.h>
+#include <windows.h>
 #include "mouse_events.h"
+#include "scroll_wheel_events.h"
 
 int main() {
 
@@ -46,10 +49,15 @@ int main() {
     //mouse_right_click_up_at(50,250);
     //mouse_middle_click_up();
     //mouse_middle_click_up_at(1090, 500);
-    mouse_left_drag_by(50,100);
+    //mouse_left_drag_by(50,100);
     //mouse_left_drag_to(100,600);
     //mouse_right_drag_by(150,150);
     //mouse_middle_drag_by(150, 150);
 
+    sleep(3);
+    //scroll_wheel_scroll(100*SCROLL_UNIT);
+    //scroll_wheel_scroll_up(10*SCROLL_UNIT);
+    //scroll_wheel_scroll_down(10*SCROLL_UNIT);
+    scroll_wheel_scroll_horizontal(-10*SCROLL_UNIT);
     return 0;
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application-hotkeys>
+    <hotkeys name="ZoomOutHotKeys">
+        <app name="">
+            <key_code></key_code>
+            <modifier_flags></modifier_flags>
+        </app>
+        <app name="Default Application">                    <!-- Opera, Chrome, Edge, Photos... -->
+            <key_code>189</key_code>                        <!-- Minus sign (-) -->
+            <modifier_flags>262144</modifier_flags>         <!-- Ctrl -->
+        </app>
+    </hotkeys>
+    <hotkeys name="ZoomInHotKeys">
+        <app name="">
+            <key_code></key_code>
+            <modifier_flags></modifier_flags>
+        </app>
+        <app name="Default Application">                    <!-- Opera, Chrome, Edge, Photos... -->
+            <key_code>187</key_code>                        <!-- Plus sign (+) -->
+            <modifier_flags>262144</modifier_flags>         <!-- Ctrl -->
+        </app>
+    </hotkeys>
+</application-hotkeys>

@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/mouse_events.c" "/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o"
+  "/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/scroll_wheel_events.c" "/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

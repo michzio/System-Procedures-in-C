@@ -263,6 +263,36 @@ mouse_events.c.s:
 	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.s
 .PHONY : mouse_events.c.s
 
+scroll_wheel_events.o: scroll_wheel_events.c.o
+
+.PHONY : scroll_wheel_events.o
+
+# target to build an object file
+scroll_wheel_events.c.o:
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib_Static.dir/build.make CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.o
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o
+.PHONY : scroll_wheel_events.c.o
+
+scroll_wheel_events.i: scroll_wheel_events.c.i
+
+.PHONY : scroll_wheel_events.i
+
+# target to preprocess a source file
+scroll_wheel_events.c.i:
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib_Static.dir/build.make CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.i
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.i
+.PHONY : scroll_wheel_events.c.i
+
+scroll_wheel_events.s: scroll_wheel_events.c.s
+
+.PHONY : scroll_wheel_events.s
+
+# target to generate assembly for a file
+scroll_wheel_events.c.s:
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib_Static.dir/build.make CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.s
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.s
+.PHONY : scroll_wheel_events.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -285,6 +315,9 @@ help:
 	@echo "... mouse_events.o"
 	@echo "... mouse_events.i"
 	@echo "... mouse_events.s"
+	@echo "... scroll_wheel_events.o"
+	@echo "... scroll_wheel_events.i"
+	@echo "... scroll_wheel_events.s"
 .PHONY : help
 
 

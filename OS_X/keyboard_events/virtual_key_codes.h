@@ -93,6 +93,7 @@ enum {
   kVK_Return                    = 0x24,
   kVK_Tab                       = 0x30,
   kVK_Space                     = 0x31,
+  kVK_Backspace                 = 0x33,
   kVK_Delete                    = 0x33,
   kVK_Escape                    = 0x35,
   kVK_Command                   = 0x37,

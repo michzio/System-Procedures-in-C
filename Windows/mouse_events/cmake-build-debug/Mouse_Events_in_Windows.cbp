@@ -225,6 +225,14 @@
 			<Option target="Mouse_Events_Lib_Static"/>
 			<Option target="Mouse_Events_Lib"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/scroll_wheel_events.c">
+			<Option target="Mouse_Events_Lib_Static"/>
+			<Option target="Mouse_Events_Lib"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/scroll_wheel_events.h">
+			<Option target="Mouse_Events_Lib_Static"/>
+			<Option target="Mouse_Events_Lib"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

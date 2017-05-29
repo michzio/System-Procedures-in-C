@@ -4,3 +4,7 @@
 CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o
  /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/mouse_events.c
  /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/mouse_events.h
+CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o
+ /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/mouse_events.h
+ /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/scroll_wheel_events.c
+ /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/scroll_wheel_events.h

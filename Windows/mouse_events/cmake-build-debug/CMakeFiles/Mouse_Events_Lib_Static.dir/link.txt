@@ -1,2 +1,2 @@
-/usr/bin/ar.exe qc libmouse_events.a  CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.o
+/usr/bin/ar.exe qc libmouse_events.a  CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.o CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.o
 /usr/bin/ranlib.exe libmouse_events.a

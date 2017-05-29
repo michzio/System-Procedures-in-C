@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.6)
 project(Mouse_Events_in_Windows)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c99")
-set(SOURCE_FILES mouse_events.h mouse_events.c)
+set(SOURCE_FILES mouse_events.h mouse_events.c scroll_wheel_events.h scroll_wheel_events.c)
 set(TEST_SOURCE_FILES )
 
 # libraries paths

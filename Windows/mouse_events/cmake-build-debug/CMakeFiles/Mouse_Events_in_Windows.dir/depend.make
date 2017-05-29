@@ -3,4 +3,5 @@
 
 CMakeFiles/Mouse_Events_in_Windows.dir/main.c.o: ../main.c
 CMakeFiles/Mouse_Events_in_Windows.dir/main.c.o: ../mouse_events.h
+CMakeFiles/Mouse_Events_in_Windows.dir/main.c.o: ../scroll_wheel_events.h
 

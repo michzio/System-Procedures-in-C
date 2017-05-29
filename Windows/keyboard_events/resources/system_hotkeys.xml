@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- source: https://support.microsoft.com/en-us/help/12445/windows-keyboard-shortcuts -->
+<system-hotkeys>
+    <hotkeys name="CutHotKeys">
+        <key_code>88</key_code>                     <!-- X -->
+        <modifier_flags>262144</modifier_flags>       <!-- Ctrl -->
+    </hotkeys>
+    <hotkeys name="CopyHotKeys">
+        <key_code>67</key_code>                     <!-- C -->
+        <modifier_flagss>262144</modifier_flagss>       <!-- Ctrl -->
+    </hotkeys>
+    <hotkeys name="PasteHotKeys">
+        <key_code>86</key_code>                     <!-- V -->
+        <modifier_flags>262144</modifier_flags>       <!-- Ctrl -->
+    </hotkeys>
+    <hotkeys name="UndoHotKeys">
+        <key_code>90</key_code>                     <!-- Z -->
+        <modifier_flags>262144</modifier_flags>       <!-- Ctrl -->
+    </hotkeys>
+    <hotkeys name="RedoHotKeys">
+        <key_code>89</key_code>                     <!-- Y -->
+        <modifier_flags>262144</modifier_flags>       <!-- Ctrl -->
+    </hotkeys>
+    <hotkeys name="SwitchAppsHotKeys">
+        <key_code>9</key_code>                      <!-- Tab -->
+        <modifier_flags>524288</modifier_flags>       <!-- Alt -->
+    </hotkeys>
+    <hotkeys name="CloseFrontWindowHotKeys">
+        <key_code>115</key_code>                    <!-- F4 -->
+        <modifier_flags>524288</modifier_flags>       <!-- Alt -->
+    </hotkeys>
+    <hotkeys name="LockPCHotKeys">                  <!-- Similar to log out -->
+        <key_code>76</key_code>                     <!-- L -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="ShowDesktopHotKeys">
+        <key_code>68</key_code>                     <!-- D -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="RenameSelectedHotKeys">
+        <key_code>113</key_code>                    <!-- F2 -->
+        <modifier_flags>0</modifier_flags>            <!-- nothing -->
+    </hotkeys>
+    <hotkeys name="SearchFileExplorerHotKeys">
+        <key_code>114</key_code>                    <!-- F3 -->
+        <modifier_flags>0</modifier_flags>            <!-- nothing -->
+    </hotkeys>
+    <hotkeys name="DisplayAddressBarListFileExplorerHotKeys">
+        <key_code>115</key_code>                    <!-- F4 -->
+        <modifier_flags>0</modifier_flags>            <!-- nothing -->
+    </hotkeys>
+    <hotkeys name="RefreshActiveWindowHotKeys">
+        <key_code>116</key_code>                    <!-- F5 -->
+        <modifier_flags>0</modifier_flags>            <!-- nothing -->
+    </hotkeys>
+    <hotkeys name="CycleElementsHotKeys">
+        <key_code>117</key_code>                    <!-- F6 -->
+        <modifier_flags>0</modifier_flags>            <!-- nothing -->
+    </hotkeys>
+    <hotkeys name="ActivateMenuBarHotKeys">
+        <key_code>121</key_code>                    <!-- F10 -->
+        <modifier_flags>0</modifier_flags>            <!-- nothing -->
+    </hotkeys>
+    <hotkeys name="ShowPasswordHotKeys">
+        <key_code>119</key_code>                    <!-- F8 -->
+        <modifier_flags>524288</modifier_flags>       <!-- Alt -->
+    </hotkeys>
+    <hotkeys name="CycleItemsOrderedHotKeys">
+        <key_code>27</key_code>                     <!-- Esc -->
+        <modifier_flags>524288</modifier_flags>       <!-- Alt -->
+    </hotkeys>
+    <hotkeys name="DisplayItemPropertiesHotKeys">
+        <key_code>13</key_code>                     <!-- Enter -->
+        <modifier_flags>524288</modifier_flags>       <!-- Alt -->
+    </hotkeys>
+    <hotkeys name="OpenShortcutMenuHotKeys">
+        <key_code>32</key_code>                     <!-- Spacebar -->
+        <modifier_flags>524288</modifier_flags>       <!-- Alt -->
+    </hotkeys>
+    <hotkeys name="GoBackHotKeys">
+        <key_code>37</key_code>                     <!-- LeftArrow -->
+        <modifier_flags>524288</modifier_flags>       <!-- Alt -->
+    </hotkeys>
+    <hotkeys name="GoForwardHotKeys">
+        <key_code>39</key_code>                     <!-- RightArrow -->
+        <modifier_flags>524288</modifier_flags>       <!-- Alt -->
+    </hotkeys>
+    <hotkeys name="PageUpHotKeys">
+        <key_code>33</key_code>                     <!-- Page Up -->
+        <modifier_flags>524288</modifier_flags>       <!-- Alt -->
+    </hotkeys>
+    <hotkeys name="PageDownHotKeys">
+        <key_code>34</key_code>                     <!-- Page Down -->
+        <modifier_flags>524288</modifier_flags>       <!-- Alt -->
+    </hotkeys>
+    <hotkeys name="CloseTabHotKeys">
+        <key_code>115</key_code>                    <!-- F4 -->
+        <modifier_flags>262144</modifier_flags>       <!-- Ctrl -->
+    </hotkeys>
+    <hotkeys name="SelectAllHotKeys">
+        <key_code>65</key_code>                     <!-- A -->
+        <modifier_flags>262144</modifier_flags>       <!-- Ctrl -->
+    </hotkeys>
+    <hotkeys name="MoveToTrashHotKeys">
+        <key_code>68</key_code>                     <!-- D -->
+        <modifier_flags>262144</modifier_flags>       <!-- Ctrl -->
+    </hotkeys>
+    <hotkeys name="RefreshWindowHotKeys">
+        <key_code>82</key_code>                     <!-- R -->
+        <modifier_flags>262144</modifier_flags>       <!-- Ctrl -->
+    </hotkeys>
+    <hotkeys name="NextWordBeginningHotKeys">
+        <key_code>39</key_code>                     <!-- RightArrow -->
+        <modifier_flags>262144</modifier_flags>       <!-- Ctrl -->
+    </hotkeys>
+    <hotkeys name="PrevWordBeginningHotKeys">
+        <key_code>37</key_code>                     <!-- LeftArrow -->
+        <modifier_flags>262144</modifier_flags>       <!-- Ctrl -->
+    </hotkeys>
+    <hotkeys name="NextParagraphBeginningHotKeys">
+        <key_code>40</key_code>                     <!-- DownArrow -->
+        <modifier_flags>262144</modifier_flags>       <!-- Ctrl -->
+    </hotkeys>
+    <hotkeys name="PrevParagraphBeginningHotKeys">
+        <key_code>38</key_code>                     <!-- UpArrow -->
+        <modifier_flags>262144</modifier_flags>       <!-- Ctrl -->
+    </hotkeys>
+    <hotkeys name="AppsSwitcherHotKeys">
+        <key_code>9</key_code>                      <!-- Tab -->
+        <modifier_flags>786432</modifier_flags>       <!-- Ctrl + Alt -->
+    </hotkeys>
+    <hotkeys name="ExpandSelectionUpHotKeys">
+        <key_code>38</key_code>                     <!-- UpArrow -->
+        <modifier_flags>393216</modifier_flags>       <!-- Ctrl + Shift -->
+    </hotkeys>
+    <hotkeys name="ExpandSelectionDownHotKeys">
+        <key_code>40</key_code>                     <!-- DownArrow -->
+        <modifier_flags>393216</modifier_flags>       <!-- Ctrl + Shift -->
+    </hotkeys>
+    <hotkeys name="ExpandSelectionLeftHotKeys">
+        <key_code>37</key_code>                     <!-- LeftArrow -->
+        <modifier_flags>393216</modifier_flags>       <!-- Ctrl + Shift -->
+    </hotkeys>
+    <hotkeys name="ExpandSelectionRightHotKeys">
+        <key_code>39</key_code>                     <!-- RightArrow -->
+        <modifier_flags>393216</modifier_flags>       <!-- Ctrl + Shift -->
+    </hotkeys>
+    <hotkeys name="OpenStartMenuHotKeys">
+        <key_code>27</key_code>                     <!-- Escape -->
+        <modifier_flags>262144</modifier_flags>       <!-- Ctrl -->
+        <!-- or just Windows/command key -->
+    </hotkeys>
+    <hotkeys name="OpenTaskManagerHotKeys">
+        <key_code>27</key_code>                     <!-- Escape -->
+        <modifier_flags>393216</modifier_flags>       <!-- Ctrl + Shift -->
+    </hotkeys>
+    <hotkeys name="SwitchKeyboardLayoutHotKeys">
+        <key_code>16</key_code>                     <!-- Shift -->
+        <modifier_flags>262144</modifier_flags>       <!-- Ctrl -->
+    </hotkeys>
+    <hotkeys name="TurnChineseIMEHotKeys">
+        <key_code>32</key_code>                     <!-- Spacebar -->
+        <modifier_flags>262144</modifier_flags>       <!-- Ctrl -->
+    </hotkeys>
+    <hotkeys name="DisplayShortcutMenuHotKeys">
+        <key_code>121</key_code>                    <!-- F10 -->
+        <modifier_flags>131072</modifier_flags>       <!-- Shift -->
+    </hotkeys>
+    <hotkeys name="SelectLeftHotKeys">
+        <key_code>37</key_code>                     <!-- LeftArrow -->
+        <modifier_flags>131072</modifier_flags>       <!-- Shift -->
+    </hotkeys>
+    <hotkeys name="SelectRightHotKeys">
+        <key_code>39</key_code>                     <!-- RightArrow -->
+        <modifier_flags>131072</modifier_flags>       <!-- Shift -->
+    </hotkeys>
+    <hotkeys name="SelectUpHotKeys">
+        <key_code>38</key_code>                     <!-- UpArrow -->
+        <modifier_flags>131072</modifier_flags>       <!-- Shift -->
+    </hotkeys>
+    <hotkeys name="SelectDownHotKeys">
+        <key_code>40</key_code>                     <!-- DownArrow -->
+        <modifier_flags>131072</modifier_flags>       <!-- Shift -->
+    </hotkeys>
+    <hotkeys name="ForceDeleteHotKeys">
+        <key_code>45</key_code>                     <!-- Delete -->
+        <modifier_flags>131072</modifier_flags>       <!-- Shift -->
+    </hotkeys>
+    <hotkeys name="OpenActionCenterHotKeys">
+        <key_code>65</key_code>
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="NotificationAreaFocusHotKeys">
+        <key_code>66</key_code>                     <!-- B -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="DisplayDateTimeHotKeys">
+        <key_code>68</key_code>                     <!-- D -->
+        <modifier_flags>1572864</modifier_flags>      <!-- Windows + Alt -->
+    </hotkeys>
+    <hotkeys name="OpenFileExplorerHotKeys">
+        <key_code>69</key_code>                     <!-- E -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="OpenFeedbackHubHotKeys">
+        <key_code>70</key_code>                     <!-- F -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="OpenGameBarHotKeys">
+        <key_code>71</key_code>                     <!-- G -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="OpenSettingsHotKeys">
+        <key_code>73</key_code>                     <!-- I -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="OpenConnectHotKeys">
+        <key_code>75</key_code>                     <!-- K -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="SwitchAccountsHotKeys">          <!-- Similar to log out -->
+        <key_code>76</key_code>                     <!-- L -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="MinimizeAllWindowsHotKeys">
+        <key_code>77</key_code>                     <!-- M -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="LockOrientationHotKeys">
+        <key_code>79</key_code>                     <!-- O -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="ChoosePresentationDisplayModeHotKeys">
+        <key_code>80</key_code>                     <!-- P -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="OpenRunDialogBoxHotKeys">
+        <key_code>82</key_code>                     <!-- R -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="OpenSearchHotKeys">
+        <key_code>83</key_code>                     <!-- S -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="CycleTaskBarAppsHotKeys">
+        <key_code>84</key_code>                     <!-- T -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="EaseOfAccessCenterHotKeys">
+        <key_code>85</key_code>                     <!-- U -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="CycleNotificationsHotKeys">
+        <key_code>86</key_code>                     <!-- V -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="ReverseCycleNotificationsHotKeys">
+        <key_code>86</key_code>                     <!-- V -->
+        <modifier_flags>1179648</modifier_flags>      <!-- Windows + Shift -->
+    </hotkeys>
+    <hotkeys name="OpenQuickLinkMenuHotKeys">
+        <key_code>88</key_code>                     <!-- X -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="AvailableCommandsHotKeys">
+        <key_code>90</key_code>                     <!-- Z -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="PeekDesktopHotKeys">
+        <key_code>188</key_code>                    <!-- Comma (,)  -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="SystemPropertiesDialogBoxHotKeys">
+        <key_code>19</key_code>                     <!-- Pause key -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="RestoreMinimizedWindowsHotKeys">
+        <key_code>77</key_code>                     <!-- M -->
+        <modifier_flags>1179648</modifier_flags>      <!-- Windows + Shift -->
+    </hotkeys>
+    <hotkeys name="OpenTaskViewHotKeys">
+        <key_code>9</key_code>                      <!-- Tab key -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="MaximizeWindowHotKeys">
+        <key_code>38</key_code>                     <!-- UpArrow -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="MinimizeWindowHotKeys">
+        <key_code>40</key_code>                     <!-- DownArrow -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="MaximizeWindowToLeftHotKeys">
+        <key_code>37</key_code>                     <!-- LeftArrow -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="MaximizeWindowToRightHotKeys">
+        <key_code>39</key_code>                     <!-- RightArrow -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="MinimizeAllExceptCurrentWindowHotKeys">
+        <key_code>36</key_code>                     <!-- Home key -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="StretchWindowVerticallyHotKeys">
+        <key_code>38</key_code>                     <!-- UpArrow -->
+        <modifier_flags>1179648</modifier_flags>      <!-- Windows + Shift -->
+    </hotkeys>
+    <hotkeys name="MinimizeWindowVerticallyHotKeys">
+        <key_code>40</key_code>                     <!-- DownArrow -->
+        <modifier_flags>1179648</modifier_flags>      <!-- Windows + Shift -->
+    </hotkeys>
+    <hotkeys name="MoveWindowToLeftMonitorHotKeys">
+        <key_code>37</key_code>                     <!-- LeftArrow -->
+        <modifier_flags>1179648</modifier_flags>      <!-- Windows + Shift -->
+    </hotkeys>
+    <hotkeys name="MoveWindowToRightMonitorHotKeys">
+        <key_code>39</key_code>                     <!-- RightArrow -->
+        <modifier_flags>1179648</modifier_flags>      <!-- Windows + Shift -->
+    </hotkeys>
+    <hotkeys name="InputLangAndKeyboardLayoutHotKeys">
+        <key_code>32</key_code>                     <!-- Spacebar -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="OpenNarratorHotKeys">
+        <key_code>13</key_code>                     <!-- Enter -->
+        <modifier_flags>1310720</modifier_flags>      <!-- Windows + Ctrl -->
+    </hotkeys>
+    <hotkeys name="ZoomInHotKeys">
+        <key_code>187</key_code>                    <!-- Plus sign (+) -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="ZoomOutHotKeys">
+        <key_code>189</key_code>                    <!-- Minus sign (-) -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="ExitMagnifierHotKeys">
+        <key_code>27</key_code>                     <!-- Escape -->
+        <modifier_flags>1048576</modifier_flags>      <!-- Windows/Command -->
+    </hotkeys>
+    <hotkeys name="FileExplorerSelectAddressBarHotKeys">
+        <key_code>68</key_code>                     <!-- D -->
+        <modifier_flags>524288</modifier_flags>       <!-- Alt -->
+    </hotkeys>
+    <hotkeys name="FileExplorerSelectSearchBoxHotKeys">
+        <key_code>70</key_code>                     <!-- F -->
+        <modifier_flags>262144</modifier_flags>       <!-- Ctrl -->
+    </hotkeys>
+    <hotkeys name="FileExplorerNewWindowHotKeys">
+        <key_code>78</key_code>                     <!-- N -->
+        <modifier_flags>262144</modifier_flags>       <!-- Ctrl -->
+    </hotkeys>
+    <hotkeys name="FileExplorerCloseWindowHotKeys">
+        <key_code>87</key_code>                     <!-- W -->
+        <modifier_flags>262144</modifier_flags>       <!-- Ctrl -->
+    </hotkeys>
+    <hotkeys name="FileExplorerAllAboveFoldersHotKeys">
+        <key_code>69</key_code>                     <!-- E -->
+        <modifier_flags>393216</modifier_flags>       <!-- Ctrl + Shift -->
+    </hotkeys>
+    <hotkeys name="FileExplorerNewFolderHotKeys">
+        <key_code>78</key_code>                     <!-- N -->
+        <modifier_flags>393216</modifier_flags>       <!-- Ctrl + Shift -->
+    </hotkeys>
+    <hotkeys name="FileExplorerDisplayPreviewPanelHotKeys">
+        <key_code>80</key_code>                     <!-- P -->
+        <modifier_flags>524288</modifier_flags>       <!-- Alt -->
+    </hotkeys>
+    <hotkeys name="FileExplorerPropertiesDialogBoxHotKeys">
+        <key_code>13</key_code>                     <!-- Enter -->
+        <modifier_flags>524288</modifier_flags>       <!-- Alt -->
+    </hotkeys>
+    <hotkeys name="FileExplorerNextFolderHotKeys">
+        <key_code>39</key_code>                     <!-- RightArrow -->
+        <modifier_flags>524288</modifier_flags>       <!-- Alt -->
+    </hotkeys>
+    <hotkeys name="FileExplorerPrevFolderHotKeys">
+        <key_code>37</key_code>                     <!-- LeftArrow -->
+        <modifier_flags>524288</modifier_flags>       <!-- Alt -->
+    </hotkeys>
+    <hotkeys name="FileExplorerUpFolderHotKeys">
+        <key_code>38</key_code>                     <!-- UpArrow -->
+        <modifier_flags>524288</modifier_flags>       <!-- Alt -->
+    </hotkeys>
+    <hotkeys name="VirtualDesktopAddHotKeys">
+        <key_code>68</key_code>                     <!-- D -->
+        <modifier_flags>1310720</modifier_flags>      <!-- Windows + Ctrl -->
+    </hotkeys>
+    <hotkeys name="VirtualDesktopMoveLeftHotKeys">
+        <key_code>37</key_code>                     <!-- LeftArrow -->
+        <modifier_flags>1310720</modifier_flags>      <!-- Windows + Ctrl -->
+    </hotkeys>
+    <hotkeys name="VirtualDesktopMoveRightHotKeys">
+        <key_code>39</key_code>                     <!-- RightArrow -->
+        <modifier_flags>1310720</modifier_flags>      <!-- Windows + Ctrl -->
+    </hotkeys>
+    <hotkeys name="VirtualDesktopCloseHotKeys">
+        <key_code>115</key_code>                    <!-- F4 -->
+        <modifier_flags>1310720</modifier_flags>      <!-- Windows + Ctrl -->
+    </hotkeys>
+</system-hotkeys>

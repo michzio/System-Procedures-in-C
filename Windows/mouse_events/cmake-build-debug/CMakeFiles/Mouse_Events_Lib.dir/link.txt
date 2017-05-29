@@ -1,1 +1,1 @@
-/usr/bin/cc  -g   -shared -Wl,--enable-auto-import -o cygmouse_events_shared.dll -Wl,--out-implib,libmouse_events_shared.dll.a -Wl,--major-image-version,0,--minor-image-version,0 CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o 
+/usr/bin/cc  -g   -shared -Wl,--enable-auto-import -o cygmouse_events_shared.dll -Wl,--out-implib,libmouse_events_shared.dll.a -Wl,--major-image-version,0,--minor-image-version,0 CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o 
