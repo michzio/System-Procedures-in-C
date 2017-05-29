@@ -6,15 +6,37 @@
 #include "scroll_wheel_events.h"
 #include "mouse_events.h"
 
+void create_scroll_wheel_input(INPUT *scrollWheelInput, int scroll_direction, int speed) {
+
+    float x, y;
+
+    mouse_position(&x, &y);
+
+    // fill scroll wheel input structure
+    scrollWheelInput->type = INPUT_MOUSE;
+    scrollWheelInput->mi.dx = ((LONG)x) * 0xFFFF / (GetSystemMetrics(SM_CXSCREEN) - 1);;
+    scrollWheelInput->mi.dy = ((LONG)y) * 0xFFFF / (GetSystemMetrics(SM_CYSCREEN) - 1);
+    scrollWheelInput->mi.dwFlags = MOUSEEVENTF_ABSOLUTE;
+    if(scroll_direction == SCROLL_VERTICAL)
+        scrollWheelInput->mi.dwFlags |= MOUSEEVENTF_WHEEL;
+    else if(scroll_direction == SCROLL_HORIZONTAL)
+        scrollWheelInput->mi.dwFlags |= MOUSEEVENTF_HWHEEL;
+    /**
+     * mouseData specifies the amount of wheel movement.
+     * A positive value indicates that the wheel was rotated forward,
+     * away from the user; a negative value indicates that
+     * the wheel was rotated backward, toward the user.
+     **/
+    scrollWheelInput->mi.mouseData = speed;
+    scrollWheelInput->mi.time = 0;
+    scrollWheelInput->mi.dwExtraInfo = NULL;
+}
+
 /***
  * documentation of mouse inputs:
  * https://msdn.microsoft.com/en-us/library/windows/desktop/ms646273(v=vs.85).aspx
  */
 void scroll_wheel_scroll(int speed) {
-
-    float x, y;
-
-    mouse_position(&x, &y);
 
     /**
      * INPUT structure to store info about input event
@@ -23,19 +45,7 @@ void scroll_wheel_scroll(int speed) {
      * MOUSEINPUT, KEYBDINPUT or HARDWAREINPUT
      */
     INPUT mouseScrollInput;
-    mouseScrollInput.type = INPUT_MOUSE;
-    mouseScrollInput.mi.dx = ((LONG)x) * 0xFFFF / (GetSystemMetrics(SM_CXSCREEN) - 1);;
-    mouseScrollInput.mi.dy = ((LONG)y) * 0xFFFF / (GetSystemMetrics(SM_CYSCREEN) - 1);
-    mouseScrollInput.mi.dwFlags = MOUSEEVENTF_WHEEL | MOUSEEVENTF_ABSOLUTE;
-    /**
-     * mouseData specifies the amount of wheel movement.
-     * A positive value indicates that the wheel was rotated forward,
-     * away from the user; a negative value indicates that
-     * the wheel was rotated backward, toward the user.
-     **/
-    mouseScrollInput.mi.mouseData = speed;
-    mouseScrollInput.mi.time = 0;
-    mouseScrollInput.mi.dwExtraInfo = NULL;
+    create_scroll_wheel_input(&mouseScrollInput, SCROLL_VERTICAL, speed);
 
     /**
      * send an INPUT event into the keyboard or mouse input stream.
@@ -71,14 +81,7 @@ void scroll_wheel_scroll_vertical_down(unsigned int speed) {
     scroll_wheel_scroll_down(speed);
 }
 
-// available in Windows Vista or newer
-#define MOUSEEVENTF_HWHEEL 0x01000
-
 void scroll_wheel_scroll_horizontal(int speed) {
-
-    float x, y;
-
-    mouse_position(&x, &y);
 
     /**
     * INPUT structure to store info about input event
@@ -87,18 +90,7 @@ void scroll_wheel_scroll_horizontal(int speed) {
     * MOUSEINPUT, KEYBDINPUT or HARDWAREINPUT
     */
     INPUT mouseHorizontalScrollInput;
-    mouseHorizontalScrollInput.type = INPUT_MOUSE;
-    mouseHorizontalScrollInput.mi.dx = ((LONG)x) * 0xFFFF / (GetSystemMetrics(SM_CXSCREEN) - 1);;
-    mouseHorizontalScrollInput.mi.dy = ((LONG)y) * 0xFFFF / (GetSystemMetrics(SM_CYSCREEN) - 1);
-    mouseHorizontalScrollInput.mi.dwFlags = MOUSEEVENTF_HWHEEL | MOUSEEVENTF_ABSOLUTE;
-    /**
-     * mouseData specifies the amount of wheel movement.
-     * A positive value indicates that the wheel was rotated right,
-     * a negative value indicates that the wheel was rotated left.
-     **/
-    mouseHorizontalScrollInput.mi.mouseData = speed;
-    mouseHorizontalScrollInput.mi.time = 0;
-    mouseHorizontalScrollInput.mi.dwExtraInfo = NULL;
+    create_scroll_wheel_input(&mouseHorizontalScrollInput, SCROLL_HORIZONTAL, speed);
 
     /**
      * send an INPUT event into the keyboard or mouse input stream.
