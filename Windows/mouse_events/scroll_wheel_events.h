@@ -16,6 +16,7 @@ enum {
     SCROLL_VERTICAL,
     SCROLL_HORIZONTAL
 };
+void create_scroll_wheel_input(INPUT *scrollWheelInput, int scroll_direction, int speed);
 
 void scroll_wheel_scroll(int speed);
 void scroll_wheel_scroll_up(unsigned int speed);
