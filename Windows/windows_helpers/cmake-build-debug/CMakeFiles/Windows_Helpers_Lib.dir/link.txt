@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   -shared -Wl,--enable-auto-import -o cygwindows_helpers_shared.dll -Wl,--out-implib,libwindows_helpers_shared.dll.a -Wl,--major-image-version,0,--minor-image-version,0 CMakeFiles/Windows_Helpers_Lib.dir/windows.c.o 

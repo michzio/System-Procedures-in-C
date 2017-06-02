@@ -1,0 +1,10 @@
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles/install/strip.dir
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles/install/local.dir
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles/install.dir
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles/list_install_components.dir
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles/Install_Windows_Helpers.dir
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles/Windows_Helpers.dir
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles/Windows_Helpers_Lib_Static.dir
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles/Windows_Helpers_Lib.dir

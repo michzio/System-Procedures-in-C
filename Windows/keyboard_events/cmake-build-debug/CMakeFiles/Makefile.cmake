@@ -32,6 +32,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.7.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.7.2/CMakeRCCompiler.cmake"
   "CMakeFiles/3.7.2/CMakeSystem.cmake"
+  "../resources/application_hotkeys.xml"
+  "../resources/system_hotkeys.xml"
   )
 
 # The corresponding makefile is:
@@ -42,10 +44,15 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "resources/application_hotkeys.xml"
+  "resources/system_hotkeys.xml"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/keyboard_events.dir/DependInfo.cmake"
+  "CMakeFiles/Install_Keyboard_Events_in_Windows.dir/DependInfo.cmake"
+  "CMakeFiles/Keyboard_Events_in_Windows.dir/DependInfo.cmake"
+  "CMakeFiles/Keyboard_Events_Lib_Static.dir/DependInfo.cmake"
+  "CMakeFiles/Keyboard_Events_Lib.dir/DependInfo.cmake"
   )

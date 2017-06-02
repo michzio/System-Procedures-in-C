@@ -7,6 +7,7 @@
 
 #include <stdint.h>
 
+// basic keyboard modifiers
 enum {
     kMFShift        = 0x00020000,
     kMFLeftShift    = 0x00010000,
@@ -23,12 +24,21 @@ enum {
     kMFRightAlt     = kMFAlt,
 };
 
+// additional mouse modifiers
+enum {
+    kMFScrollUp = 0x10000000,
+    kMFScrollDown = 0x20000000,
+    kMFScrollRight = 0x40000000,
+    kMFScrollLeft = 0x80000000,
+};
+
 void key_down(uint16_t key_code);
 void key_up(uint16_t key_code);
 void key_down_modified(uint16_t key_code, uint64_t modifiers_flags);
 void key_up_modified(uint16_t key_code, uint64_t modifiers_flags);
 void key_input(uint16_t key_code);
 void key_input_modified(uint16_t key_code, uint64_t modifiers_flags);
+void key_hold_down_modified(uint16_t key_code, uint64_t modifiers_flags, uint32_t hold_time_in_s);
 void multi_key_down(int key_num, ...);
 void multi_key_up(int key_num, ...);
 void multi_key_input(int key_num, ...);

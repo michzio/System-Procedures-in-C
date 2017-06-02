@@ -99,7 +99,7 @@ void zoom_hot_keys_event(zoom_direction_t zoom_direction) {
 
     switch (zoom_direction) {
         case kZoomIn:
-            front_app_hot_keys_event(kZoominHotKeys, true);
+            front_app_hot_keys_event(kZoomInHotKeys, true);
             break;
         case kZoomOut:
             front_app_hot_keys_event(kZoomOutHotKeys, true);

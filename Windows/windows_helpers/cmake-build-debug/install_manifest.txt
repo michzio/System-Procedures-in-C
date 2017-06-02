@@ -1,0 +1,4 @@
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/output/windows/bin/windows_helpers.exe
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/output/windows/lib/static/libwindows_helpers_shared.dll.a
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/output/windows/bin/cygwindows_helpers_shared.dll
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/output/windows/lib/static/libwindows_helpers.a

@@ -1,3 +1,10 @@
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles/install/strip.dir
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles/install/local.dir
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles/install.dir
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles/list_install_components.dir
 /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles/edit_cache.dir
-/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles/keyboard_events.dir
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles/Install_Keyboard_Events_in_Windows.dir
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles/Keyboard_Events_in_Windows.dir
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles/Keyboard_Events_Lib_Static.dir
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles/Keyboard_Events_Lib.dir

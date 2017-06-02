@@ -121,7 +121,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy.exe
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump.exe
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=keyboard_events
+CMAKE_PROJECT_NAME:STATIC=Keyboard_Events_in_Windows
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib.exe
@@ -177,6 +177,18 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip.exe
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Dependencies for the target
+Keyboard_Events_Lib_LIB_DEPENDS:STATIC=general;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../mouse_events/output/windows/lib/static/libmouse_events.a;general;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../windows_helpers/output/windows/lib/static/libwindows_helpers.a;general;-L/usr/local/lib/;general;-lxml2;
+
+//Dependencies for the target
+Keyboard_Events_Lib_Static_LIB_DEPENDS:STATIC=general;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../mouse_events/output/windows/lib/static/libmouse_events.a;general;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../windows_helpers/output/windows/lib/static/libwindows_helpers.a;general;-L/usr/local/lib/;general;-lxml2;
+
+//Value Computed by CMake
+Keyboard_Events_in_Windows_BINARY_DIR:STATIC=/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug
+
+//Value Computed by CMake
+Keyboard_Events_in_Windows_SOURCE_DIR:STATIC=/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events
 
 //Path to a program.
 ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf.exe

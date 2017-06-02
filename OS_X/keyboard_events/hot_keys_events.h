@@ -115,7 +115,7 @@ static const char *kDefaultApplication = "Default Application";
 
 // 2. common hot keys names
 static const char *kZoomOutHotKeys = "ZoomOutHotKeys";
-static const char *kZoominHotKeys = "ZoomInHotKeys";
+static const char *kZoomInHotKeys = "ZoomInHotKeys";
 static const char *kRotateCCWHotKeys = "RotateCCWHotKeys";
 static const char *kRotateCWHotKeys = "RotateCWHotKeys";
 static const char *kZoomActualSizeHotKeys = "ZoomActualSizeHotKeys";

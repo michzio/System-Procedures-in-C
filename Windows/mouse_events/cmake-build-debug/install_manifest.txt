@@ -1,0 +1,4 @@
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/output/windows/bin/mouse_events.exe
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/output/windows/lib/static/libmouse_events_shared.dll.a
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/output/windows/bin/cygmouse_events_shared.dll
+/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/output/windows/lib/static/libmouse_events.a

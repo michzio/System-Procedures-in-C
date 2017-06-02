@@ -219,4 +219,15 @@ enum {
     kVK_UpArrow                   = VK_UP // UP ARROW key (0x26)
 };
 
+// add additional scroll wheel inputs virtual key codes
+// defined as custom codes, only suitable for this library
+// make sure this hex codes aren't used in Win32 library
+// as some virtual key code
+enum {
+    kVK_MouseScrollUp = 0x101,
+    kVK_MouseScrollDown = 0x102,
+    kVK_MouseScrollRight = 0x103,
+    kVK_MouseScrollLeft = 0x104
+};
+
 #endif //KEYBOARD_EVENTS_VIRTUAL_KEY_CODES_H

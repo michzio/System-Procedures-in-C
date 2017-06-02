@@ -1,0 +1,2 @@
+/usr/bin/ar.exe qc libkeyboard_events.a  CMakeFiles/Keyboard_Events_Lib_Static.dir/keyboard_events.c.o CMakeFiles/Keyboard_Events_Lib_Static.dir/hot_keys_events.c.o
+/usr/bin/ranlib.exe libkeyboard_events.a

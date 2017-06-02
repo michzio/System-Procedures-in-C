@@ -7,6 +7,7 @@
 #include <windows.h>
 #include <stdio.h>
 #include <unistd.h>
+#include "../mouse_events/scroll_wheel_events.h"
 
 static void create_keyboard_input(INPUT *keyboardInput, uint16_t key_code) {
 
@@ -86,14 +87,35 @@ void key_down_modified(uint16_t key_code, uint64_t modifiers_flags) {
         create_keyboard_down_input(&(keyDownInputs[numOfInputs]), kVK_Alt);
         numOfInputs++;
     }
-
     if(modifiers_flags & kMFWindows) {
         create_keyboard_down_input(&(keyDownInputs[numOfInputs]), kVK_LeftWindowsKey);
         numOfInputs++;
     }
 
-    create_keyboard_down_input(&(keyDownInputs[numOfInputs]), key_code);
-    numOfInputs++;
+    // handle additional scroll wheel input
+    // if it exists add it to array of key down inputs
+    if(modifiers_flags & kMFScrollUp) {
+        // positive scroll speed means scrolling up
+        create_scroll_wheel_input(&(keyDownInputs[numOfInputs]), SCROLL_VERTICAL, SCROLL_UNIT);
+        numOfInputs++;
+    } else if(modifiers_flags & kMFScrollDown) {
+        // negative scroll speed means scrolling down
+        create_scroll_wheel_input(&(keyDownInputs[numOfInputs]), SCROLL_VERTICAL, -SCROLL_UNIT);
+        numOfInputs++;
+    } else if(modifiers_flags & kMFScrollRight) {
+        // positive scroll speed means scrolling right
+        create_scroll_wheel_input(&(keyDownInputs[numOfInputs]), SCROLL_HORIZONTAL, SCROLL_UNIT);
+        numOfInputs++;
+    } else if(modifiers_flags & kMFScrollLeft) {
+        // negative scroll speed means scrolling left
+        create_scroll_wheel_input(&(keyDownInputs[numOfInputs]), SCROLL_HORIZONTAL, -SCROLL_UNIT);
+        numOfInputs++;
+    }
+
+    if(key_code >= 0) {
+        create_keyboard_down_input(&(keyDownInputs[numOfInputs]), key_code);
+        numOfInputs++;
+    } // else use only modifier keys inputs
 
     if(SendInput(numOfInputs, keyDownInputs, sizeof(INPUT)) != numOfInputs) {
         fprintf(stderr, "Error while sending INPUT event into input stream.\n");
@@ -105,8 +127,30 @@ void key_up_modified(uint16_t key_code, uint64_t modifiers_flags) {
     int numOfInputs = 0;
     INPUT keyUpInputs[MAX_NUM_OF_INPUTS];
 
-    create_keyboard_up_input(&(keyUpInputs[numOfInputs]), key_code);
-    numOfInputs++;
+    if(key_code >= 0) {
+        create_keyboard_up_input(&(keyUpInputs[numOfInputs]), key_code);
+        numOfInputs++;
+    } // else use only modifier keys inputs
+
+    // handle additional scroll wheel input
+    // if it exists add it to array of key up inputs
+    if(modifiers_flags & kMFScrollUp) {
+        // positive scroll speed means scrolling up
+        create_scroll_wheel_input(&(keyUpInputs[numOfInputs]), SCROLL_VERTICAL, SCROLL_UNIT);
+        numOfInputs++;
+    } else if(modifiers_flags & kMFScrollDown) {
+        // negative scroll speed means scrolling down
+        create_scroll_wheel_input(&(keyUpInputs[numOfInputs]), SCROLL_VERTICAL, -SCROLL_UNIT);
+        numOfInputs++;
+    } else if(modifiers_flags & kMFScrollRight) {
+        // positive scroll speed means scrolling right
+        create_scroll_wheel_input(&(keyUpInputs[numOfInputs]), SCROLL_HORIZONTAL, SCROLL_UNIT);
+        numOfInputs++;
+    } else if(modifiers_flags & kMFScrollLeft) {
+        // negative scroll speed means scrolling left
+        create_scroll_wheel_input(&(keyUpInputs[numOfInputs]), SCROLL_HORIZONTAL, -SCROLL_UNIT);
+        numOfInputs++;
+    }
 
     if(modifiers_flags & kMFShift) {
         create_keyboard_up_input(&(keyUpInputs[numOfInputs]), kVK_Shift);
@@ -196,12 +240,34 @@ void key_input_modified(uint16_t key_code, uint64_t modifiers_flags) {
         numOfInputs++;
     }
 
-    create_keyboard_down_input(&(keyInputs[numOfInputs]), key_code);
-    numOfInputs++;
+    if(key_code >=0) {
+        create_keyboard_down_input(&(keyInputs[numOfInputs]), key_code);
+        numOfInputs++;
 
-    // UP INPUTS
-    create_keyboard_up_input(&(keyInputs[numOfInputs]), key_code);
-    numOfInputs++;
+        // UP INPUTS
+        create_keyboard_up_input(&(keyInputs[numOfInputs]), key_code);
+        numOfInputs++;
+    } // else use only modifier keys inputs
+
+    // handle additional scroll wheel input
+    // if it exists add it to array of key inputs
+    if(modifiers_flags & kMFScrollUp) {
+        // positive scroll speed means scrolling up
+        create_scroll_wheel_input(&(keyInputs[numOfInputs]), SCROLL_VERTICAL, SCROLL_UNIT);
+        numOfInputs++;
+    } else if(modifiers_flags & kMFScrollDown) {
+        // negative scroll speed means scrolling down
+        create_scroll_wheel_input(&(keyInputs[numOfInputs]), SCROLL_VERTICAL, -SCROLL_UNIT);
+        numOfInputs++;
+    } else if(modifiers_flags & kMFScrollRight) {
+        // positive scroll speed means scrolling right
+        create_scroll_wheel_input(&(keyInputs[numOfInputs]), SCROLL_HORIZONTAL, SCROLL_UNIT);
+        numOfInputs++;
+    } else if(modifiers_flags & kMFScrollLeft) {
+        // negative scroll speed means scrolling left
+        create_scroll_wheel_input(&(keyInputs[numOfInputs]), SCROLL_HORIZONTAL, -SCROLL_UNIT);
+        numOfInputs++;
+    }
 
     if(modifiers_flags & kMFShift) {
         create_keyboard_up_input(&(keyInputs[numOfInputs]), kVK_Shift);
@@ -229,6 +295,12 @@ void key_input_modified(uint16_t key_code, uint64_t modifiers_flags) {
     }
 }
 
+void key_hold_down_modified(uint16_t key_code, uint64_t modifiers_flags, uint32_t hold_time_in_s) {
+    key_down_modified(key_code, modifiers_flags);
+    sleep(hold_time_in_s);
+    key_up_modified(key_code, modifiers_flags);
+}
+
 static uint64_t mod_key_code_to_mod_flag(uint16_t mod_key_code) {
 
     switch (mod_key_code) {
@@ -252,6 +324,14 @@ static uint64_t mod_key_code_to_mod_flag(uint16_t mod_key_code) {
             return kMFWindows;
         case kVK_RightWindowsKey:
             return kMFWindows;
+        case kVK_MouseScrollUp:
+            return kMFScrollUp;
+        case kVK_MouseScrollDown:
+            return kMFScrollDown;
+        case kVK_MouseScrollRight:
+            return kMFScrollRight;
+        case kVK_MouseScrollLeft:
+            return kMFScrollLeft;
         default:
             return 0;
     }
@@ -278,7 +358,7 @@ void multi_key_down(int key_num, ...) {
     va_end(key_codes);
 
     // lack of main key code despite of modifier keys
-    if(key_code < 0) return;
+    // if(key_code < 0) return; <-- deprecated, now allowed modifier keys only
 
     key_down_modified(key_code, modifier_flags);
 }
@@ -304,7 +384,7 @@ void multi_key_up(int key_num, ...) {
     va_end(key_codes);
 
     // lack of main key code despite of modifier keys
-    if(key_code < 0) return;
+    // if(key_code < 0) return; <-- deprecated, now allowed modifier keys only
 
     key_up_modified(key_code, modifier_flags);
 }
@@ -330,7 +410,7 @@ void multi_key_input(int key_num, ...) {
     va_end(key_codes);
 
     // lack of main key code despite of modifier keys
-    if(key_code < 0) return;
+    // if(key_code < 0) return; <-- deprecated, now allowed modifier keys only
 
     key_input_modified(key_code, modifier_flags);
 }

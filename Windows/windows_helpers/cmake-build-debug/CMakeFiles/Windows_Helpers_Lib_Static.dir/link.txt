@@ -1,0 +1,2 @@
+/usr/bin/ar.exe qc libwindows_helpers.a  CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.o
+/usr/bin/ranlib.exe libwindows_helpers.a
