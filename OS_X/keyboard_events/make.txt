@@ -19,12 +19,24 @@ CFLAGS=-g -Wall -D__USE_FIXED_PROTOTYPES__ -std=c99
 OS_X_LIBS += -framework ApplicationServices
 
 # custom cocoa libraries
-COCOA_HELPER_LIBRARY = ../cocoa_helper/libcocoa_helper.a
-AUTOMATION_SCRIPTS_LIBRARY = ../automation_scripts/libautomation_scripts.a
+COCOA_HELPER_INCL_DIR = ../cocoa_helper
+AUTOMATION_SCRIPTS_INCL_DIR = ../automation_scripts
+
+COCOA_HELPER_LIBRARY = $(COCOA_HELPER_INCL_DIR)/output/debug/lib/static/libcocoa_helper.a
+AUTOMATION_SCRIPTS_LIBRARY = $(AUTOMATION_SCRIPTS_INCL_DIR)/output/debug/lib/static/libautomation_scripts.a
 
 # the build target executable:  
 TARGET = keyboard_events
 LIBRARY = libkeyboard_events.a
+SHARED_LIBRARY = libkeyboard_events.so
+
+# on macOS build .dylib shared library
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Darwin)
+	DYNAMIC_LIBRARY= libkeyboard_events.dylib
+else 
+	DYNAMIC_LIBRARY=
+endif
 
 # source files
 SOURCE_FILES = keyboard_events.o hot_keys_events.o symbolic_hot_keys.o
@@ -32,22 +44,39 @@ SOURCE_FILES = keyboard_events.o hot_keys_events.o symbolic_hot_keys.o
 # test source files
 TEST_SOURCE_FILES =
 
-all: $(TARGET)
+# output directories 
+OUTPUT_DIR = output/debug
+OUTPUT_LIB_DIR = $(OUTPUT_DIR)/lib
+OUTPUT_STATIC_LIB_DIR = $(OUTPUT_LIB_DIR)/static
+OUTPUT_BIN_DIR = $(OUTPUT_DIR)/bin
+OUTPUT_TEST_DIR = $(OUTPUT_DIR)/test
 
-$(TARGET): main.c $(LIBRARY) $(TEST_SOURCE_FILES)
-	$(CC) $(CFLAGS) -o $(TARGET) main.c $(TEST_SOURCE_FILES) $(LIBRARY) $(OS_X_LIBS) $(COCOA_HELPER_LIBRARY) $(AUTOMATION_SCRIPTS_LIBRARY)
+all: directories libraries $(TARGET)
+
+# make output directories
+directories: 
+	@mkdir -p $(OUTPUT_DIR)
+	@mkdir -p $(OUTPUT_LIB_DIR)
+	@mkdir -p $(OUTPUT_STATIC_LIB_DIR)
+	@mkdir -p $(OUTPUT_BIN_DIR)
+	@mkdir -p $(OUTPUT_TEST_DIR)
+
+libraries: $(LIBRARY)
+
+$(TARGET): $(LIBRARY) $(TEST_SOURCE_FILES)
+	$(CC) $(CFLAGS) -o $(OUTPUT_BIN_DIR)/$(TARGET) main.c  $(OUTPUT_STATIC_LIB_DIR)/$(LIBRARY) $(OS_X_LIBS) $(COCOA_HELPER_LIBRARY) $(AUTOMATION_SCRIPTS_LIBRARY)
 
 $(LIBRARY): $(SOURCE_FILES)
-	$(AR) $(LIBRARY) $(SOURCE_FILES)
+	$(AR) $(OUTPUT_STATIC_LIB_DIR)/$(LIBRARY) $(OUTPUT_DIR)/*.o
 
 keyboard_events.o: keyboard_events.c keyboard_events.h virtual_key_codes.h
-	$(CC) $(CFLAGS) -c keyboard_events.c 
+	$(CC) $(CFLAGS) -c keyboard_events.c -o $(OUTPUT_DIR)/keyboard_events.o
 
 hot_keys_events.o: hot_keys_events.c hot_keys_events.h 
-	$(CC) $(CFLAGS) -c hot_keys_events.c
+	$(CC) $(CFLAGS) -c hot_keys_events.c -o $(OUTPUT_DIR)/hot_keys_events.o
 
 symbolic_hot_keys.o: symbolic_hot_keys.c symbolic_hot_keys.h 
-	$(CC) $(CFLAGS) -c symbolic_hot_keys.c 
+	$(CC) $(CFLAGS) -c symbolic_hot_keys.c -o $(OUTPUT_DIR)/symbolic_hot_keys.o
 
 clean: 
-	$(RM) $(TARGET) $(LIBRARY) $(SOURCE_FILES) $(TEST_SOURCE_FILES)
+	$(RM) -rf $(OUTPUT_DIR)

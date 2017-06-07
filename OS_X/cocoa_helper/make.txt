@@ -24,40 +24,68 @@ OPENCV_LIBS = `pkg-config --cflags --libs opencv`
 # OS X
 OS_X_LIBS += -framework ApplicationServices
 
-# custom 
-COMMON_FUNCTIONS_LIBRARY = ../../../common/libcommon_functions.a
-LIBPNG_LIBRARY = ../../../libpng-1.6.24/liblibpng.a
-ZLIB_LIBRARY = ../../../zlib-1.2.8/libzlib.a
+# custom
+COMMON_FUNCTIONS_INCL_DIR = ../../../common
+LIBPNG_INCL_DIR = ../../../libpng-1.6.24
+ZLIB_INCL_DIR = ../../../zlib-1.2.8
+ 
+COMMON_FUNCTIONS_LIBRARY = $(COMMON_FUNCTIONS_INCL_DIR)/output/debug/lib/static/libcommon_functions.a
+LIBPNG_LIBRARY = $(LIBPNG_INCL_DIR)/output/debug/lib/static/liblibpng.a
+ZLIB_LIBRARY = $(ZLIB_INCL_DIR)/output/debug/lib/static/libzlib.a
+
+# the build target executable: 
+TARGET = cocoa_helper 
+LIBRARY = libcocoa_helper.a
+SHARED_LIBRARY = libcocoa_helper.so
+
+# on macOS build .dylib shared library
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Darwin)
+	DYNAMIC_LIBRARY= libcocoa_helper.dylib
+else 
+	DYNAMIC_LIBRARY=
+endif 
 
 # source files 
 SOURCE_FILES = property_list.o strings.o exec_cmd.o images.o file_system.o
 
-# the build target executable: 
-TARGET = cocoa_helper 
-LIBRARY = libcocoa_helper.a  
+# output directories 
+OUTPUT_DIR = output/debug
+OUTPUT_LIB_DIR = $(OUTPUT_DIR)/lib
+OUTPUT_STATIC_LIB_DIR = $(OUTPUT_LIB_DIR)/static
+OUTPUT_BIN_DIR = $(OUTPUT_DIR)/bin
 
-all: $(TARGET)
+all: directories libraries $(TARGET)
 
-$(TARGET): main.c $(LIBRARY)
-	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LIBRARY) $(OS_X_LIBS) $(COMMON_FUNCTIONS_LIBRARY) $(LIBPNG_LIBRARY) $(ZLIB_LIBRARY) $(OPENCV_LIBS)
+# make output directories
+directories: 
+	@mkdir -p $(OUTPUT_DIR)
+	@mkdir -p $(OUTPUT_LIB_DIR)
+	@mkdir -p $(OUTPUT_STATIC_LIB_DIR)
+	@mkdir -p $(OUTPUT_BIN_DIR)
+
+libraries: $(LIBRARY)
+
+$(TARGET): $(LIBRARY)
+	$(CC) $(CFLAGS) -o $(OUTPUT_BIN_DIR)/$(TARGET) main.c $(OUTPUT_STATIC_LIB_DIR)/$(LIBRARY) $(OS_X_LIBS) $(COMMON_FUNCTIONS_LIBRARY) $(LIBPNG_LIBRARY) $(ZLIB_LIBRARY) $(OPENCV_LIBS)
 
 $(LIBRARY): $(SOURCE_FILES)
-	$(AR) $(LIBRARY) $(SOURCE_FILES)
+	$(AR) $(OUTPUT_STATIC_LIB_DIR)/$(LIBRARY) $(OUTPUT_DIR)/*.o
 
 property_list.o: property_list.c property_list.h
-	$(CC) $(CFLAGS) -c property_list.c 
+	$(CC) $(CFLAGS) -c property_list.c -o $(OUTPUT_DIR)/property_list.o
 
 strings.o: strings.c strings.h 
-	$(CC) $(CFLAGS) -c strings.c
+	$(CC) $(CFLAGS) -c strings.c -o $(OUTPUT_DIR)/strings.o
 
 exec_cmd.o: exec_cmd.c exec_cmd.h
-	$(CC) $(CFLAGS) -c exec_cmd.c
+	$(CC) $(CFLAGS) -c exec_cmd.c -o $(OUTPUT_DIR)/exec_cmd.o
 
 images.o: images.c images.h 
-	$(CC) $(CFLAGS) -c images.c 
+	$(CC) $(CFLAGS) -c images.c -o $(OUTPUT_DIR)/images.o
 
 file_system.o: file_system.c file_system.h 
-	$(CC) $(CFLAGS) -c file_system.c 
+	$(CC) $(CFLAGS) -c file_system.c -o $(OUTPUT_DIR)/file_system.o
 
 clean: 
-	$(RM) $(TARGET) $(LIBRARY) $(SOURCE_FILES)
+	$(RM) -rf $(OUTPUT_DIR)

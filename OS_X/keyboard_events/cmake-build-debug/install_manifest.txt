@@ -1,0 +1,3 @@
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/output/apple/bin/keyboard_events
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/output/apple/lib/libkeyboard_events.dylib
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/output/apple/lib/static/libkeyboard_events.a

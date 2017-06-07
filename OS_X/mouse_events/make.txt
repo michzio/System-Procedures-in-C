@@ -21,6 +21,15 @@ OS_X_LIBS += -framework ApplicationServices
 # the build target executable:
 TARGET = mouse_events
 LIBRARY = libmouse_events.a
+SHARED_LIBRARY = libmouse_events.so
+
+# on macOS build .dylib shared library
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Darwin)
+	DYNAMIC_LIBRARY= libmouse_events.dylib
+else 
+	DYNAMIC_LIBRARY=
+endif
 
 # source files
 SOURCE_FILES = mouse_events.o scroll_wheel_events.o
@@ -28,19 +37,34 @@ SOURCE_FILES = mouse_events.o scroll_wheel_events.o
 # test source files
 TEST_SOURCE_FILES =
 
-all: $(TARGET)
+# output directories 
+OUTPUT_DIR = output/debug
+OUTPUT_LIB_DIR = $(OUTPUT_DIR)/lib
+OUTPUT_STATIC_LIB_DIR = $(OUTPUT_LIB_DIR)/static
+OUTPUT_BIN_DIR = $(OUTPUT_DIR)/bin
 
-$(TARGET): main.c $(LIBRARY) $(TEST_SOURCE_FILES)
-	$(CC) $(CFLAGS) -o $(TARGET) main.c $(TEST_SOURCE_FILES) $(LIBRARY) $(OS_X_LIBS)
+all: directories libraries $(TARGET)
+
+# make output directories
+directories: 
+	@mkdir -p $(OUTPUT_DIR)
+	@mkdir -p $(OUTPUT_LIB_DIR)
+	@mkdir -p $(OUTPUT_STATIC_LIB_DIR)
+	@mkdir -p $(OUTPUT_BIN_DIR)
+
+libraries: $(LIBRARY)
+
+$(TARGET): $(LIBRARY) $(TEST_SOURCE_FILES)
+	$(CC) $(CFLAGS) -o $(OUTPUT_BIN_DIR)/$(TARGET) main.c $(OUTPUT_STATIC_LIB_DIR)/$(LIBRARY) $(OS_X_LIBS)
 
 $(LIBRARY): $(SOURCE_FILES)
-	$(AR) $(LIBRARY) $(SOURCE_FILES)
+	$(AR) $(OUTPUT_STATIC_LIB_DIR)/$(LIBRARY) $(OUTPUT_DIR)/*.o
 
 mouse_events.o: mouse_events.c mouse_events.h
-	$(CC) $(CFLAGS) -c mouse_events.c
+	$(CC) $(CFLAGS) -c mouse_events.c -o $(OUTPUT_DIR)/mouse_events.o
 
 scroll_wheel_events.o: scroll_wheel_events.c scroll_wheel_events.h
-	$(CC) $(CFLAGS) -c scroll_wheel_events.c
+	$(CC) $(CFLAGS) -c scroll_wheel_events.c -o $(OUTPUT_DIR)/scroll_wheel_events.o
 
 clean:
-	$(RM) $(TARGET) $(LIBRARY) $(SOURCE_FILES) $(TEST_SOURCE_FILES)
+	$(RM) -rf $(OUTPUT_DIR)

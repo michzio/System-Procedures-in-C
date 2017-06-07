@@ -1,0 +1,10 @@
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/CMakeFiles/install/local.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/CMakeFiles/install/strip.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/CMakeFiles/install.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/CMakeFiles/list_install_components.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/CMakeFiles/Keyboard_Events_in_OS_X.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/CMakeFiles/Install_Keyboard_Events_in_OS_X.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/CMakeFiles/Keyboard_Events_Lib_Static.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/CMakeFiles/Keyboard_Events_Lib.dir

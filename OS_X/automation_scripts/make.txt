@@ -29,19 +29,36 @@ OS_X_LIBS += -framework AudioToolbox
 OS_X_LIBS += -framework IOSurface
 
 # custom
-COMMON_FUNCTIONS_LIBRARY = ../../../common/libcommon_functions.a
-LIBPNG_LIBRARY = ../../../libpng-1.6.24/liblibpng.a
-ZLIB_LIBRARY = ../../../zlib-1.2.8/libzlib.a
-COMPARERS_LIBRARY = ../../../comparers/libcomparers.a
-UNIT_TESTS_LIBRARY = ../../../unit_tests/libunit_tests.a
+COMMON_FUNCTIONS_INCL_DIR = ../../../common
+LIBPNG_INCL_DIR = ../../../libpng-1.6.24
+ZLIB_INCL_DIR = ../../../zlib-1.2.8
+COMPARERS_INCL_DIR = ../../../comparers
+UNIT_TESTS_INCL_DIR = ../../../unit_tests
+
+COMMON_FUNCTIONS_LIBRARY = $(COMMON_FUNCTIONS_INCL_DIR)/output/debug/lib/static/libcommon_functions.a
+LIBPNG_LIBRARY = $(LIBPNG_INCL_DIR)/output/debug/lib/static/liblibpng.a
+ZLIB_LIBRARY = $(ZLIB_INCL_DIR)/output/debug/lib/static/libzlib.a
+COMPARERS_LIBRARY = $(COMPARERS_INCL_DIR)/output/debug/lib/static/libcomparers.a
+UNIT_TESTS_LIBRARY = $(UNIT_TESTS_INCL_DIR)/output/debug/lib/static/libunit_tests.a
 
 # custom cocoa libraries
-COCOA_HELPER_LIBRARY = ../cocoa_helper/libcocoa_helper.a
+COCOA_HELPER_INCL_DIR = ../cocoa_helper
+
+COCOA_HELPER_LIBRARY = $(COCOA_HELPER_INCL_DIR)/output/debug/lib/static/libcocoa_helper.a
 APPLE_SCRIPT_SYSTEM_AUTOMATION_LIBRARY = ../../../../cocoa/AppleScriptSystemAutomation/libAppleScriptSystemAutomation.a
 
 # the build target executable: 
 TARGET = automation_scripts
 LIBRARY = libautomation_scripts.a
+SHARED_LIBRARY = libautomation_scripts.so
+
+# on macOS build .dylib shared library
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Darwin)
+	DYNAMIC_LIBRARY= libautomation_scripts.dylib
+else 
+	DYNAMIC_LIBRARY=
+endif
 
 # source files 
 SOURCE_FILES = automation_scripts.o windows.o events.o display.o audio.o display_stream.o
@@ -49,49 +66,66 @@ SOURCE_FILES = automation_scripts.o windows.o events.o display.o audio.o display
 # test source files 
 TEST_SOURCE_FILES = test_audio.o test_display.o test_system_events.o test_windows.o test_display_stream.o test_automation_scripts.o
 
-all: $(TARGET)
+# output directories 
+OUTPUT_DIR = output/debug
+OUTPUT_LIB_DIR = $(OUTPUT_DIR)/lib
+OUTPUT_STATIC_LIB_DIR = $(OUTPUT_LIB_DIR)/static
+OUTPUT_BIN_DIR = $(OUTPUT_DIR)/bin
+OUTPUT_TEST_DIR = $(OUTPUT_DIR)/test
 
-$(TARGET): main.c $(LIBRARY) $(TEST_SOURCE_FILES)
-	$(CC) $(CFLAGS) -o $(TARGET) main.c $(TEST_SOURCE_FILES) $(LIBRARY) $(OS_X_LIBS) $(COCOA_HELPER_LIBRARY) $(COMMON_FUNCTIONS_LIBRARY) $(LIBPNG_LIBRARY) $(ZLIB_LIBRARY) $(APPLE_SCRIPT_SYSTEM_AUTOMATION_LIBRARY) $(COMPARERS_LIBRARY) $(UNIT_TESTS_LIBRARY) $(OPENCV_LIBS)
+all: directories libraries $(TARGET)
+
+# make output directories
+directories: 
+	@mkdir -p $(OUTPUT_DIR)
+	@mkdir -p $(OUTPUT_LIB_DIR)
+	@mkdir -p $(OUTPUT_STATIC_LIB_DIR)
+	@mkdir -p $(OUTPUT_BIN_DIR)
+	@mkdir -p $(OUTPUT_TEST_DIR)
+
+libraries: $(LIBRARY)
+
+$(TARGET): $(LIBRARY) $(TEST_SOURCE_FILES)
+	$(CC) $(CFLAGS) -o $(OUTPUT_BIN_DIR)/$(TARGET) main.c $(OUTPUT_TEST_DIR)/*.o $(OUTPUT_STATIC_LIB_DIR)/$(LIBRARY) $(OS_X_LIBS) $(COCOA_HELPER_LIBRARY) $(COMMON_FUNCTIONS_LIBRARY) $(LIBPNG_LIBRARY) $(ZLIB_LIBRARY) $(APPLE_SCRIPT_SYSTEM_AUTOMATION_LIBRARY) $(COMPARERS_LIBRARY) $(UNIT_TESTS_LIBRARY) $(OPENCV_LIBS)
 
 $(LIBRARY): $(SOURCE_FILES)
-	$(AR) $(LIBRARY) $(SOURCE_FILES)
+	$(AR) $(OUTPUT_STATIC_LIB_DIR)/$(LIBRARY) $(OUTPUT_DIR)/*.o
 
 automation_scripts.o: automation_scripts.c automation_scripts.h
-	$(CC) $(CFLAGS) -c automation_scripts.c 
+	$(CC) $(CFLAGS) -c automation_scripts.c -o $(OUTPUT_DIR)/automation_scripts.o
 
 windows.o: system/windows.c system/windows.h
-	$(CC) $(CFLAGS) -c system/windows.c
+	$(CC) $(CFLAGS) -c system/windows.c -o $(OUTPUT_DIR)/windows.o
 
 events.o: system/events.c system/events.h
-	$(CC) $(CFLAGS) -c system/events.c
+	$(CC) $(CFLAGS) -c system/events.c -o $(OUTPUT_DIR)/events.o
 
 display.o: system/display.c system/display.h 
-	$(CC) $(CFLAGS) -c system/display.c 
+	$(CC) $(CFLAGS) -c system/display.c -o $(OUTPUT_DIR)/display.o
 
 audio.o: system/audio.c system/audio.h 
-	$(CC) $(CFLAGS) -c system/audio.c 
+	$(CC) $(CFLAGS) -c system/audio.c -o $(OUTPUT_DIR)/audio.o
 
 display_stream.o: system/display_stream.c system/display_stream.h 
-	$(CC) $(CFLAGS) -c system/display_stream.c
+	$(CC) $(CFLAGS) -c system/display_stream.c -o $(OUTPUT_DIR)/display_stream.o
 
 test_audio.o: test/test_audio.c test/test_audio.h 
-	$(CC) $(CFLAGS) -c test/test_audio.c 
+	$(CC) $(CFLAGS) -c test/test_audio.c -o $(OUTPUT_TEST_DIR)/test_audio.o
 
 test_display.o: test/test_display.c test/test_display.h
-	$(CC) $(CFLAGS) -c test/test_display.c
+	$(CC) $(CFLAGS) -c test/test_display.c -o $(OUTPUT_TEST_DIR)/test_display.o
 
 test_system_events.o: test/test_system_events.c test/test_system_events.h
-	$(CC) $(CFLAGS) -c test/test_system_events.c
+	$(CC) $(CFLAGS) -c test/test_system_events.c -o $(OUTPUT_TEST_DIR)/test_system_events.o
 
 test_windows.o: test/test_windows.c test/test_windows.h 
-	$(CC) $(CFLAGS) -c test/test_windows.c
+	$(CC) $(CFLAGS) -c test/test_windows.c -o $(OUTPUT_TEST_DIR)/test_windows.o
 
 test_display_stream.o: test/test_display_stream.c test/test_display_stream.h
-	$(CC) $(CFLAGS) -c test/test_display_stream.c
+	$(CC) $(CFLAGS) -c test/test_display_stream.c -o $(OUTPUT_TEST_DIR)/test_display_stream.o
 
 test_automation_scripts.o: test/test_automation_scripts.c test/test_automation_scripts.h 
-	$(CC) $(CFLAGS) -c test/test_automation_scripts.c
+	$(CC) $(CFLAGS) -c test/test_automation_scripts.c -o $(OUTPUT_TEST_DIR)/test_automation_scripts.o
 
 clean: 
-	$(RM) $(TARGET) $(LIBRARY) $(SOURCE_FILES) $(TEST_SOURCE_FILES)
+	$(RM) -rf $(OUTPUT_DIR)

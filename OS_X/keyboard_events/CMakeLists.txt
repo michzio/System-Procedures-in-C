@@ -24,7 +24,7 @@ configure_file(resources/application_hotkeys.plist resources/application_hotkeys
 configure_file(resources/system_hotkeys.plist resources/system_hotkeys.plist COPYONLY)
 
 add_library(Keyboard_Events_Lib SHARED ${SOURCE_FILES})
-set_target_properties(Keyboard_Events_Lib PROPERTIES OUTPUT_NAME keyboard_events_shared)
+set_target_properties(Keyboard_Events_Lib PROPERTIES OUTPUT_NAME keyboard_events)
 target_link_libraries(Keyboard_Events_Lib ${COCOA_HELPER_LIB_PATH})
 target_link_libraries(Keyboard_Events_Lib ${AUTOMATION_SCRIPTS_LIB_PATH})
 target_link_libraries(Keyboard_Events_Lib ${APPLICATION_SERVICES_LIBRARY})

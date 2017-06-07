@@ -1,0 +1,10 @@
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/cmake-build-debug/CMakeFiles/list_install_components.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/cmake-build-debug/CMakeFiles/install/strip.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/cmake-build-debug/CMakeFiles/install.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/cmake-build-debug/CMakeFiles/Mouse_Events_Lib.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/cmake-build-debug/CMakeFiles/Install_Mouse_Events_in_OS_X.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/cmake-build-debug/CMakeFiles/Mouse_Events_in_OS_X.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/cmake-build-debug/CMakeFiles/install/local.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/cmake-build-debug/CMakeFiles/Mouse_Events_Lib_Static.dir

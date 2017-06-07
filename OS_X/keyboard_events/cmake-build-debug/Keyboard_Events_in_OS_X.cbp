@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Keyboard_Events_in_OS_X"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\resources\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Keyboard_Events_in_OS_X">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/keyboard_events" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 Keyboard_Events_in_OS_X"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Keyboard_Events_in_OS_X/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/keyboard_events" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 Keyboard_Events_in_OS_X/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Install_Keyboard_Events_in_OS_X">
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 Install_Keyboard_Events_in_OS_X"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Keyboard_Events_Lib_Static">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/libkeyboard_events.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 Keyboard_Events_Lib_Static"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Keyboard_Events_Lib_Static/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/libkeyboard_events.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 Keyboard_Events_Lib_Static/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Keyboard_Events_Lib">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/libkeyboard_events.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 Keyboard_Events_Lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Keyboard_Events_Lib/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/libkeyboard_events.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 Keyboard_Events_Lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/hot_keys_events.c">
+			<Option target="Keyboard_Events_Lib_Static"/>
+			<Option target="Keyboard_Events_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/hot_keys_events.h">
+			<Option target="Keyboard_Events_Lib_Static"/>
+			<Option target="Keyboard_Events_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/keyboard_events.c">
+			<Option target="Keyboard_Events_Lib_Static"/>
+			<Option target="Keyboard_Events_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/keyboard_events.h">
+			<Option target="Keyboard_Events_Lib_Static"/>
+			<Option target="Keyboard_Events_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/main.c">
+			<Option target="Keyboard_Events_in_OS_X"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/symbolic_hot_keys.c">
+			<Option target="Keyboard_Events_Lib_Static"/>
+			<Option target="Keyboard_Events_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/symbolic_hot_keys.h">
+			<Option target="Keyboard_Events_Lib_Static"/>
+			<Option target="Keyboard_Events_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/virtual_key_codes.h">
+			<Option target="Keyboard_Events_Lib_Static"/>
+			<Option target="Keyboard_Events_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/resources/default_symbolic_hotkeys.plist">
+			<Option virtualFolder="CMake Files\resources\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/resources/application_hotkeys.plist">
+			<Option virtualFolder="CMake Files\resources\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/resources/system_hotkeys.plist">
+			<Option virtualFolder="CMake Files\resources\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

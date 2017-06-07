@@ -25,7 +25,7 @@ set(ZLIB_LIB_PATH ${ZLIB_PATH}/output/unix/lib/static/libzlib.a)
 file(COPY tools DESTINATION .)
 
 add_library(Cocoa_Helper_Lib SHARED ${SOURCE_FILES})
-set_target_properties(Cocoa_Helper_Lib PROPERTIES OUTPUT_NAME cocoa_helper_shared)
+set_target_properties(Cocoa_Helper_Lib PROPERTIES OUTPUT_NAME cocoa_helper)
 target_link_libraries(Cocoa_Helper_Lib ${APPLICATION_SERVICES_LIBRARY})
 target_link_libraries(Cocoa_Helper_Lib ${COMMON_FUNCTIONS_LIB_PATH})
 target_link_libraries(Cocoa_Helper_Lib ${LIBPNG_LIB_PATH})

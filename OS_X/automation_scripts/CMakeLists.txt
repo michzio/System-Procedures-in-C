@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.6)
-project(Automation_Scripts)
+project(Automation_Scripts_in_OS_X)
 # set(CMAKE_VERBOSE_MAKEFILE ON)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c99")
@@ -41,7 +41,7 @@ set(APPLE_SCRIPT_SYSTEM_AUTOMATION_LIB_PATH ${APPLE_SCRIPT_SYSTEM_AUTOMATION_PAT
 file(COPY tools DESTINATION .)
 
 add_library(Automation_Scripts_Lib SHARED ${SOURCE_FILES})
-set_target_properties(Automation_Scripts_Lib PROPERTIES OUTPUT_NAME automation_scripts_shared)
+set_target_properties(Automation_Scripts_Lib PROPERTIES OUTPUT_NAME automation_scripts)
 target_link_libraries(Automation_Scripts_Lib ${COMMON_FUNCTIONS_LIB_PATH})
 target_link_libraries(Automation_Scripts_Lib ${LIBPNG_LIB_PATH})
 target_link_libraries(Automation_Scripts_Lib ${ZLIB_LIB_PATH})

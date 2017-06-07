@@ -1,0 +1,3 @@
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/output/apple/bin/cocoa_helper
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/output/apple/lib/libcocoa_helper.dylib
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/output/apple/lib/static/libcocoa_helper.a

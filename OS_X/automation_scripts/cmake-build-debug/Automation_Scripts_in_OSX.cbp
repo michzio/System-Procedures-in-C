@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Automation_Scripts_in_OSX"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\..\..\..\..\usr\local\share\OpenCV\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Install_Automation_Scripts_in_OSX">
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 Install_Automation_Scripts_in_OSX"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Automation_Scripts_in_OS_X">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/automation_scripts" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 Automation_Scripts_in_OS_X"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Automation_Scripts_in_OS_X/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/automation_scripts" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 Automation_Scripts_in_OS_X/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Automation_Scripts_Lib_Static">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/libautomation_scripts.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 Automation_Scripts_Lib_Static"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Automation_Scripts_Lib_Static/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/libautomation_scripts.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 Automation_Scripts_Lib_Static/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Automation_Scripts_Lib">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/libautomation_scripts.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 Automation_Scripts_Lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Automation_Scripts_Lib/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/libautomation_scripts.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 Automation_Scripts_Lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/automation_scripts.c">
+			<Option target="Automation_Scripts_Lib_Static"/>
+			<Option target="Automation_Scripts_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/automation_scripts.h">
+			<Option target="Automation_Scripts_Lib_Static"/>
+			<Option target="Automation_Scripts_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/main.c">
+			<Option target="Automation_Scripts_in_OS_X"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/audio.c">
+			<Option target="Automation_Scripts_Lib_Static"/>
+			<Option target="Automation_Scripts_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/audio.h">
+			<Option target="Automation_Scripts_Lib_Static"/>
+			<Option target="Automation_Scripts_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/display.c">
+			<Option target="Automation_Scripts_Lib_Static"/>
+			<Option target="Automation_Scripts_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/display.h">
+			<Option target="Automation_Scripts_Lib_Static"/>
+			<Option target="Automation_Scripts_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/display_stream.c">
+			<Option target="Automation_Scripts_Lib_Static"/>
+			<Option target="Automation_Scripts_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/display_stream.h">
+			<Option target="Automation_Scripts_Lib_Static"/>
+			<Option target="Automation_Scripts_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/events.c">
+			<Option target="Automation_Scripts_Lib_Static"/>
+			<Option target="Automation_Scripts_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/events.h">
+			<Option target="Automation_Scripts_Lib_Static"/>
+			<Option target="Automation_Scripts_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/windows.c">
+			<Option target="Automation_Scripts_Lib_Static"/>
+			<Option target="Automation_Scripts_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/windows.h">
+			<Option target="Automation_Scripts_Lib_Static"/>
+			<Option target="Automation_Scripts_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_audio.c">
+			<Option target="Automation_Scripts_in_OS_X"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_audio.h">
+			<Option target="Automation_Scripts_in_OS_X"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_automation_scripts.c">
+			<Option target="Automation_Scripts_in_OS_X"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_automation_scripts.h">
+			<Option target="Automation_Scripts_in_OS_X"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_display.c">
+			<Option target="Automation_Scripts_in_OS_X"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_display.h">
+			<Option target="Automation_Scripts_in_OS_X"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_display_stream.c">
+			<Option target="Automation_Scripts_in_OS_X"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_display_stream.h">
+			<Option target="Automation_Scripts_in_OS_X"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_system_events.c">
+			<Option target="Automation_Scripts_in_OS_X"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_system_events.h">
+			<Option target="Automation_Scripts_in_OS_X"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_windows.c">
+			<Option target="Automation_Scripts_in_OS_X"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_windows.h">
+			<Option target="Automation_Scripts_in_OS_X"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../../../../../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../../../../../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../../../../../../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../../../../../../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

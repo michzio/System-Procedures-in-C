@@ -1,0 +1,3 @@
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/output/apple/bin/automation_scripts
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/output/apple/lib/libautomation_scripts.dylib
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/output/apple/lib/static/libautomation_scripts.a

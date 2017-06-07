@@ -13,7 +13,7 @@ mark_as_advanced(APPLICATION_SERVICES_LIBRARY)
 # none
 
 add_library(Mouse_Events_Lib SHARED ${SOURCE_FILES})
-set_target_properties(Mouse_Events_Lib PROPERTIES OUTPUT_NAME mouse_events_shared)
+set_target_properties(Mouse_Events_Lib PROPERTIES OUTPUT_NAME mouse_events)
 target_link_libraries(Mouse_Events_Lib ${APPLICATION_SERVICES_LIBRARY})
 
 add_library(Mouse_Events_Lib_Static ${SOURCE_FILES})
