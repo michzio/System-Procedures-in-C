@@ -200,6 +200,27 @@
 		<key>modifier_flags</key>
 		<integer>1048576</integer>
 	</dict>
+	<key>LeftDesktopHotKeys</key>
+	<dict>
+		<key>key_code</key>
+		<integer>123</integer>
+		<key>modifier_flags</key>
+		<integer>262144</integer>
+	</dict>
+	<key>RightDesktopHotKeys</key>
+	<dict>
+		<key>key_code</key>
+		<integer>124</integer>
+		<key>modifier_flags</key>
+		<integer>262144</integer>
+	</dict>
+	<key>OpenFileHotKeys</key>
+	<dict>
+		<key>key_code</key>
+		<integer>31</integer>
+		<key>modifier_flags</key>
+		<integer>1048576</integer>
+	</dict>
 	<key>LogOutHotKeys</key>
 	<dict>
 		<key>key_code</key>

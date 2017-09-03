@@ -5,252 +5,550 @@
 		<Option title="Keyboard_Events_in_Windows"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\resources\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\resources\;CMake Files\..\;CMake Files\..\mouse_events\;CMake Files\..\windows_helpers\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="install/strip">
-				<Option working_dir="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="install/local">
-				<Option working_dir="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="install">
-				<Option working_dir="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="list_install_components">
-				<Option working_dir="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Install_Keyboard_Events_in_Windows">
-				<Option working_dir="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 Install_Keyboard_Events_in_Windows"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Keyboard_Events_in_Windows">
-				<Option output="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/keyboard_events.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/outputs/bin/cygwin/keyboard_events" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/outputs/bin/cygwin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
 					<Add directory="/usr/local/include/libxml2"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/../../../../lib/../include/w32api"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../mouse_events/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../windows_helpers/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 Keyboard_Events_in_Windows"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 Keyboard_Events_in_Windows"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Keyboard_Events_in_Windows/fast">
-				<Option output="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/keyboard_events.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/outputs/bin/cygwin/keyboard_events" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/outputs/bin/cygwin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
 					<Add directory="/usr/local/include/libxml2"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/../../../../lib/../include/w32api"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../mouse_events/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../windows_helpers/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 Keyboard_Events_in_Windows/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 Keyboard_Events_in_Windows/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Keyboard_Events_Lib_Static">
-				<Option output="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/libkeyboard_events.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/outputs/lib/cygwin/libkeyboard_events.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
 					<Add directory="/usr/local/include/libxml2"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/../../../../lib/../include/w32api"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../mouse_events/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../windows_helpers/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 Keyboard_Events_Lib_Static"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 Keyboard_Events_Lib_Static"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Keyboard_Events_Lib_Static/fast">
-				<Option output="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/libkeyboard_events.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/outputs/lib/cygwin/libkeyboard_events.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
 					<Add directory="/usr/local/include/libxml2"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/../../../../lib/../include/w32api"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../mouse_events/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../windows_helpers/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 Keyboard_Events_Lib_Static/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 Keyboard_Events_Lib_Static/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Keyboard_Events_Lib">
-				<Option output="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/cygkeyboard_events_shared.dll" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/outputs/lib/cygwin/libkeyboard_events.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
 					<Add directory="/usr/local/include/libxml2"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/../../../../lib/../include/w32api"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../mouse_events/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../windows_helpers/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 Keyboard_Events_Lib"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 Keyboard_Events_Lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Keyboard_Events_Lib/fast">
-				<Option output="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/cygkeyboard_events_shared.dll" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/outputs/lib/cygwin/libkeyboard_events.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
 					<Add directory="/usr/local/include/libxml2"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/../../../../lib/../include/w32api"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../mouse_events/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../windows_helpers/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 Keyboard_Events_Lib/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 Keyboard_Events_Lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Mouse_Events_in_Windows">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/bin/cygwin/mouse_events" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/bin/cygwin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
+					<Add directory="/usr/local/include/libxml2"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 Mouse_Events_in_Windows"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Mouse_Events_in_Windows/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/bin/cygwin/mouse_events" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/bin/cygwin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
+					<Add directory="/usr/local/include/libxml2"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 Mouse_Events_in_Windows/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Mouse_Events_Lib_Static">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/lib/cygwin/libmouse_events.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
+					<Add directory="/usr/local/include/libxml2"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 Mouse_Events_Lib_Static"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Mouse_Events_Lib_Static/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/lib/cygwin/libmouse_events.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
+					<Add directory="/usr/local/include/libxml2"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 Mouse_Events_Lib_Static/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Mouse_Events_Lib">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/lib/cygwin/libmouse_events.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
+					<Add directory="/usr/local/include/libxml2"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 Mouse_Events_Lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Mouse_Events_Lib/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/lib/cygwin/libmouse_events.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
+					<Add directory="/usr/local/include/libxml2"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 Mouse_Events_Lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Windows_Helpers">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/bin/cygwin/windows_helpers" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/bin/cygwin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
+					<Add directory="/usr/local/include/libxml2"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 Windows_Helpers"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Windows_Helpers/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/bin/cygwin/windows_helpers" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/bin/cygwin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
+					<Add directory="/usr/local/include/libxml2"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 Windows_Helpers/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Windows_Helpers_Lib_Static">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/lib/cygwin/libwindows_helpers.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
+					<Add directory="/usr/local/include/libxml2"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 Windows_Helpers_Lib_Static"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Windows_Helpers_Lib_Static/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/lib/cygwin/libwindows_helpers.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
+					<Add directory="/usr/local/include/libxml2"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 Windows_Helpers_Lib_Static/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Windows_Helpers_Lib">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/lib/cygwin/libwindows_helpers.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
+					<Add directory="/usr/local/include/libxml2"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 Windows_Helpers_Lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Windows_Helpers_Lib/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/lib/cygwin/libwindows_helpers.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
+					<Add directory="/usr/local/include/libxml2"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 Windows_Helpers_Lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/hot_keys_events.c">
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include/hot_keys_events.h">
 			<Option target="Keyboard_Events_Lib_Static"/>
 			<Option target="Keyboard_Events_Lib"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/hot_keys_events.h">
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include/keyboard_events.h">
 			<Option target="Keyboard_Events_Lib_Static"/>
 			<Option target="Keyboard_Events_Lib"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/keyboard_events.c">
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include/virtual_key_codes.h">
 			<Option target="Keyboard_Events_Lib_Static"/>
 			<Option target="Keyboard_Events_Lib"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/keyboard_events.h">
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/src/hot_keys_events.c">
 			<Option target="Keyboard_Events_Lib_Static"/>
 			<Option target="Keyboard_Events_Lib"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/main.c">
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/src/keyboard_events.c">
+			<Option target="Keyboard_Events_Lib_Static"/>
+			<Option target="Keyboard_Events_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/src/main.c">
 			<Option target="Keyboard_Events_in_Windows"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/virtual_key_codes.h">
-			<Option target="Keyboard_Events_Lib_Static"/>
-			<Option target="Keyboard_Events_Lib"/>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/include/mouse_events.h">
+			<Option target="Mouse_Events_Lib_Static"/>
+			<Option target="Mouse_Events_Lib"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/CMakeLists.txt">
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/include/scroll_wheel_events.h">
+			<Option target="Mouse_Events_Lib_Static"/>
+			<Option target="Mouse_Events_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/src/main.c">
+			<Option target="Mouse_Events_in_Windows"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/src/mouse_events.c">
+			<Option target="Mouse_Events_Lib_Static"/>
+			<Option target="Mouse_Events_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/src/scroll_wheel_events.c">
+			<Option target="Mouse_Events_Lib_Static"/>
+			<Option target="Mouse_Events_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/include/windows_helpers/windows.h">
+			<Option target="Windows_Helpers_Lib_Static"/>
+			<Option target="Windows_Helpers_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/src/main.c">
+			<Option target="Windows_Helpers"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/src/windows_helpers/windows.c">
+			<Option target="Windows_Helpers_Lib_Static"/>
+			<Option target="Windows_Helpers_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/resources/application_hotkeys.xml">
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/resources/application_hotkeys.xml">
 			<Option virtualFolder="CMake Files\resources\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/resources/system_hotkeys.xml">
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/resources/system_hotkeys.xml">
 			<Option virtualFolder="CMake Files\resources\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../mouse_events/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\mouse_events\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../mouse_events/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\mouse_events\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../windows_helpers/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\windows_helpers\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../windows_helpers/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\windows_helpers\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

@@ -60,45 +60,17 @@ CMAKE_SOURCE_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/O
 CMAKE_BINARY_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/Install_Automation_Scripts_in_OS_X.dir
-
-# All Build rule for target.
-CMakeFiles/Install_Automation_Scripts_in_OS_X.dir/all: CMakeFiles/Automation_Scripts_in_OS_X.dir/all
-	$(MAKE) -f CMakeFiles/Install_Automation_Scripts_in_OS_X.dir/build.make CMakeFiles/Install_Automation_Scripts_in_OS_X.dir/depend
-	$(MAKE) -f CMakeFiles/Install_Automation_Scripts_in_OS_X.dir/build.make CMakeFiles/Install_Automation_Scripts_in_OS_X.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=23 "Built target Install_Automation_Scripts_in_OS_X"
-.PHONY : CMakeFiles/Install_Automation_Scripts_in_OS_X.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/Install_Automation_Scripts_in_OS_X.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 16
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Install_Automation_Scripts_in_OS_X.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Install_Automation_Scripts_in_OS_X.dir/rule
-
-# Convenience name for target.
-Install_Automation_Scripts_in_OS_X: CMakeFiles/Install_Automation_Scripts_in_OS_X.dir/rule
-
-.PHONY : Install_Automation_Scripts_in_OS_X
-
-# clean rule for target.
-CMakeFiles/Install_Automation_Scripts_in_OS_X.dir/clean:
-	$(MAKE) -f CMakeFiles/Install_Automation_Scripts_in_OS_X.dir/build.make CMakeFiles/Install_Automation_Scripts_in_OS_X.dir/clean
-.PHONY : CMakeFiles/Install_Automation_Scripts_in_OS_X.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/Install_Automation_Scripts_in_OS_X.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/Automation_Scripts_in_OS_X.dir
 
 # All Build rule for target.
-CMakeFiles/Automation_Scripts_in_OS_X.dir/all: CMakeFiles/Automation_Scripts_Lib_Static.dir/all
+CMakeFiles/Automation_Scripts_in_OS_X.dir/all: CMakeFiles/Automation_Scripts_Lib.dir/all
+CMakeFiles/Automation_Scripts_in_OS_X.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/all
+CMakeFiles/Automation_Scripts_in_OS_X.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/all
+CMakeFiles/Automation_Scripts_in_OS_X.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/all
+CMakeFiles/Automation_Scripts_in_OS_X.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/all
 	$(MAKE) -f CMakeFiles/Automation_Scripts_in_OS_X.dir/build.make CMakeFiles/Automation_Scripts_in_OS_X.dir/depend
 	$(MAKE) -f CMakeFiles/Automation_Scripts_in_OS_X.dir/build.make CMakeFiles/Automation_Scripts_in_OS_X.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=15,16,17,18,19,20,21,22 "Built target Automation_Scripts_in_OS_X"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=10,11,12,13,14 "Built target Automation_Scripts_in_OS_X"
 .PHONY : CMakeFiles/Automation_Scripts_in_OS_X.dir/all
 
 # Include target in all.
@@ -108,7 +80,7 @@ all: CMakeFiles/Automation_Scripts_in_OS_X.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Automation_Scripts_in_OS_X.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 46
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Automation_Scripts_in_OS_X.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Automation_Scripts_in_OS_X.dir/rule
@@ -132,10 +104,13 @@ clean: CMakeFiles/Automation_Scripts_in_OS_X.dir/clean
 # Target rules for target CMakeFiles/Automation_Scripts_Lib_Static.dir
 
 # All Build rule for target.
-CMakeFiles/Automation_Scripts_Lib_Static.dir/all:
+CMakeFiles/Automation_Scripts_Lib_Static.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/all
+CMakeFiles/Automation_Scripts_Lib_Static.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/all
+CMakeFiles/Automation_Scripts_Lib_Static.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/all
+CMakeFiles/Automation_Scripts_Lib_Static.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/all
 	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/depend
 	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=8,9,10,11,12,13,14 "Built target Automation_Scripts_Lib_Static"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=5,6,7,8,9 "Built target Automation_Scripts_Lib_Static"
 .PHONY : CMakeFiles/Automation_Scripts_Lib_Static.dir/all
 
 # Include target in all.
@@ -145,7 +120,7 @@ all: CMakeFiles/Automation_Scripts_Lib_Static.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Automation_Scripts_Lib_Static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 43
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Automation_Scripts_Lib_Static.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Automation_Scripts_Lib_Static.dir/rule
@@ -169,10 +144,13 @@ clean: CMakeFiles/Automation_Scripts_Lib_Static.dir/clean
 # Target rules for target CMakeFiles/Automation_Scripts_Lib.dir
 
 # All Build rule for target.
-CMakeFiles/Automation_Scripts_Lib.dir/all:
+CMakeFiles/Automation_Scripts_Lib.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/all
+CMakeFiles/Automation_Scripts_Lib.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/all
+CMakeFiles/Automation_Scripts_Lib.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/all
+CMakeFiles/Automation_Scripts_Lib.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/all
 	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/depend
 	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target Automation_Scripts_Lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target Automation_Scripts_Lib"
 .PHONY : CMakeFiles/Automation_Scripts_Lib.dir/all
 
 # Include target in all.
@@ -182,7 +160,7 @@ all: CMakeFiles/Automation_Scripts_Lib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Automation_Scripts_Lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 41
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Automation_Scripts_Lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Automation_Scripts_Lib.dir/rule
@@ -199,6 +177,556 @@ CMakeFiles/Automation_Scripts_Lib.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/Automation_Scripts_Lib.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs
+
+# Convenience name for "all" pass in the directory.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/all
+
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/all
+
+# Convenience name for "clean" pass in the directory.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/clean
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/clean
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/clean
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/clean
+
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/clean
+
+# Convenience name for "preinstall" pass in the directory.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/preinstall: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/preinstall
+
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/preinstall
+
+#=============================================================================
+# Target rules for target /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir
+
+# All Build rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/all
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/depend
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target Cocoa_Helper_in_OS_X"
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/all
+
+# Include target in all.
+all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 39
+	$(MAKE) -f CMakeFiles/Makefile2 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 0
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/rule
+
+# Convenience name for target.
+Cocoa_Helper_in_OS_X: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/rule
+
+.PHONY : Cocoa_Helper_in_OS_X
+
+# clean rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/clean:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/clean
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/clean
+
+# clean rule for target.
+clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir
+
+# All Build rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/all
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/depend
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=19,20,21,22 "Built target Cocoa_Helper_Lib_Static"
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/all
+
+# Include target in all.
+all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 38
+	$(MAKE) -f CMakeFiles/Makefile2 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 0
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/rule
+
+# Convenience name for target.
+Cocoa_Helper_Lib_Static: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/rule
+
+.PHONY : Cocoa_Helper_Lib_Static
+
+# clean rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/clean:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/clean
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/clean
+
+# clean rule for target.
+clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir
+
+# All Build rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/all
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/depend
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=15,16,17,18 "Built target Cocoa_Helper_Lib"
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/all
+
+# Include target in all.
+all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 37
+	$(MAKE) -f CMakeFiles/Makefile2 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 0
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/rule
+
+# Convenience name for target.
+Cocoa_Helper_Lib: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/rule
+
+.PHONY : Cocoa_Helper_Lib
+
+# clean rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/clean:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/clean
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/clean
+
+# clean rule for target.
+clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs
+
+# Convenience name for "all" pass in the directory.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/all
+
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/all
+
+# Convenience name for "clean" pass in the directory.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/clean
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/clean
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/clean
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/clean
+
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/clean
+
+# Convenience name for "preinstall" pass in the directory.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/preinstall: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/preinstall
+
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/preinstall
+
+#=============================================================================
+# Target rules for target /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir
+
+# All Build rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/all
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/depend
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=25,26,27,28,29,30,31 "Built target Common_Functions"
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/all
+
+# Include target in all.
+all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 40
+	$(MAKE) -f CMakeFiles/Makefile2 /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 0
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/rule
+
+# Convenience name for target.
+Common_Functions: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/rule
+
+.PHONY : Common_Functions
+
+# clean rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/clean:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/clean
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/clean
+
+# clean rule for target.
+clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir
+
+# All Build rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/all
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/depend
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49,50 "Built target Common_Functions_Lib_Static"
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/all
+
+# Include target in all.
+all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 34
+	$(MAKE) -f CMakeFiles/Makefile2 /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 0
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/rule
+
+# Convenience name for target.
+Common_Functions_Lib_Static: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/rule
+
+.PHONY : Common_Functions_Lib_Static
+
+# clean rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/clean:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/clean
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/clean
+
+# clean rule for target.
+clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir
+
+# All Build rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/all
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/depend
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=32,33,34,35,36,37,38,39,40 "Built target Common_Functions_Lib"
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/all
+
+# Include target in all.
+all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 33
+	$(MAKE) -f CMakeFiles/Makefile2 /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 0
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/rule
+
+# Convenience name for target.
+Common_Functions_Lib: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/rule
+
+.PHONY : Common_Functions_Lib
+
+# clean rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/clean:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/clean
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/clean
+
+# clean rule for target.
+clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs
+
+# Convenience name for "all" pass in the directory.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/all
+
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/all
+
+# Convenience name for "clean" pass in the directory.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/clean
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/clean
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/clean
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/clean
+
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/clean
+
+# Convenience name for "preinstall" pass in the directory.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/preinstall: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/preinstall
+
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/preinstall
+
+#=============================================================================
+# Target rules for target /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir
+
+# All Build rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/all
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/depend
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=51 "Built target libpng_1_6_24"
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/all
+
+# Include target in all.
+all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 25
+	$(MAKE) -f CMakeFiles/Makefile2 /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 0
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/rule
+
+# Convenience name for target.
+libpng_1_6_24: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/rule
+
+.PHONY : libpng_1_6_24
+
+# clean rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/clean:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/clean
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/clean
+
+# clean rule for target.
+clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir
+
+# All Build rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/all
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/depend
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=65,66,67,68,69,70,71,72,73,74,75,76,77 "Built target libpng_Lib_Static"
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/all
+
+# Include target in all.
+all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 24
+	$(MAKE) -f CMakeFiles/Makefile2 /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 0
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/rule
+
+# Convenience name for target.
+libpng_Lib_Static: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/rule
+
+.PHONY : libpng_Lib_Static
+
+# clean rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/clean:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/clean
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/clean
+
+# clean rule for target.
+clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir
+
+# All Build rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/all
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/depend
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=52,53,54,55,56,57,58,59,60,61,62,63,64 "Built target libpng_Lib"
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/all
+
+# Include target in all.
+all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 24
+	$(MAKE) -f CMakeFiles/Makefile2 /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 0
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/rule
+
+# Convenience name for target.
+libpng_Lib: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/rule
+
+.PHONY : libpng_Lib
+
+# clean rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/clean:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/clean
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/clean
+
+# clean rule for target.
+clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs
+
+# Convenience name for "all" pass in the directory.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/all
+
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/all
+
+# Convenience name for "clean" pass in the directory.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/clean
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/clean
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/clean
+
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/clean
+
+# Convenience name for "preinstall" pass in the directory.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/preinstall:
+
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/preinstall
+
+#=============================================================================
+# Target rules for target /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir
+
+# All Build rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/all
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/depend
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=78 "Built target zlib_1_2_8"
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/all
+
+# Include target in all.
+all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 12
+	$(MAKE) -f CMakeFiles/Makefile2 /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 0
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/rule
+
+# Convenience name for target.
+zlib_1_2_8: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/rule
+
+.PHONY : zlib_1_2_8
+
+# clean rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/clean:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/clean
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/clean
+
+# clean rule for target.
+clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir
+
+# All Build rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/all:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/depend
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=90,91,92,93,94,95,96,97,98,99,100 "Built target zlib_Lib_Static"
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/all
+
+# Include target in all.
+all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 0
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/rule
+
+# Convenience name for target.
+zlib_Lib_Static: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/rule
+
+.PHONY : zlib_Lib_Static
+
+# clean rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/clean:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/clean
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/clean
+
+# clean rule for target.
+clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir
+
+# All Build rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/all:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/depend
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=79,80,81,82,83,84,85,86,87,88,89 "Built target zlib_Lib"
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/all
+
+# Include target in all.
+all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles 0
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/rule
+
+# Convenience name for target.
+zlib_Lib: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/rule
+
+.PHONY : zlib_Lib
+
+# clean rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/clean:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/clean
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/clean
+
+# clean rule for target.
+clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/clean
 
 .PHONY : clean
 

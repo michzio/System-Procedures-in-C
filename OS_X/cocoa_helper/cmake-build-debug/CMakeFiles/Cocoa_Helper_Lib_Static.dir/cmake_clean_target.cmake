@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libcocoa_helper.a"
+  "../outputs/lib/apple/libcocoa_helper.a"
 )

@@ -56,16 +56,6 @@ CMAKE_BINARY_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/O
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,29 +67,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -110,17 +77,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -155,32 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Mouse_Events_Lib
-
-# Build rule for target.
-Mouse_Events_Lib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Mouse_Events_Lib
-.PHONY : Mouse_Events_Lib
-
-# fast build rule for target.
-Mouse_Events_Lib/fast:
-	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/build
-.PHONY : Mouse_Events_Lib/fast
-
-#=============================================================================
-# Target rules for targets named Install_Mouse_Events_in_OS_X
-
-# Build rule for target.
-Install_Mouse_Events_in_OS_X: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Install_Mouse_Events_in_OS_X
-.PHONY : Install_Mouse_Events_in_OS_X
-
-# fast build rule for target.
-Install_Mouse_Events_in_OS_X/fast:
-	$(MAKE) -f CMakeFiles/Install_Mouse_Events_in_OS_X.dir/build.make CMakeFiles/Install_Mouse_Events_in_OS_X.dir/build
-.PHONY : Install_Mouse_Events_in_OS_X/fast
-
-#=============================================================================
 # Target rules for targets named Mouse_Events_in_OS_X
 
 # Build rule for target.
@@ -206,92 +136,105 @@ Mouse_Events_Lib_Static/fast:
 	$(MAKE) -f CMakeFiles/Mouse_Events_Lib_Static.dir/build.make CMakeFiles/Mouse_Events_Lib_Static.dir/build
 .PHONY : Mouse_Events_Lib_Static/fast
 
-main.o: main.c.o
+#=============================================================================
+# Target rules for targets named Mouse_Events_Lib
 
-.PHONY : main.o
+# Build rule for target.
+Mouse_Events_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Mouse_Events_Lib
+.PHONY : Mouse_Events_Lib
 
-# target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/Mouse_Events_in_OS_X.dir/build.make CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.o
-.PHONY : main.c.o
+# fast build rule for target.
+Mouse_Events_Lib/fast:
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/build
+.PHONY : Mouse_Events_Lib/fast
 
-main.i: main.c.i
+src/main.o: src/main.c.o
 
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/Mouse_Events_in_OS_X.dir/build.make CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/Mouse_Events_in_OS_X.dir/build.make CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.s
-.PHONY : main.c.s
-
-mouse_events.o: mouse_events.c.o
-
-.PHONY : mouse_events.o
+.PHONY : src/main.o
 
 # target to build an object file
-mouse_events.c.o:
-	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o
-	$(MAKE) -f CMakeFiles/Mouse_Events_Lib_Static.dir/build.make CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.o
-.PHONY : mouse_events.c.o
+src/main.c.o:
+	$(MAKE) -f CMakeFiles/Mouse_Events_in_OS_X.dir/build.make CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.o
+.PHONY : src/main.c.o
 
-mouse_events.i: mouse_events.c.i
+src/main.i: src/main.c.i
 
-.PHONY : mouse_events.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-mouse_events.c.i:
-	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.i
-	$(MAKE) -f CMakeFiles/Mouse_Events_Lib_Static.dir/build.make CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.i
-.PHONY : mouse_events.c.i
+src/main.c.i:
+	$(MAKE) -f CMakeFiles/Mouse_Events_in_OS_X.dir/build.make CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.i
+.PHONY : src/main.c.i
 
-mouse_events.s: mouse_events.c.s
+src/main.s: src/main.c.s
 
-.PHONY : mouse_events.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-mouse_events.c.s:
-	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.s
-	$(MAKE) -f CMakeFiles/Mouse_Events_Lib_Static.dir/build.make CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.s
-.PHONY : mouse_events.c.s
+src/main.c.s:
+	$(MAKE) -f CMakeFiles/Mouse_Events_in_OS_X.dir/build.make CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.s
+.PHONY : src/main.c.s
 
-scroll_wheel_events.o: scroll_wheel_events.c.o
+src/mouse_events.o: src/mouse_events.c.o
 
-.PHONY : scroll_wheel_events.o
+.PHONY : src/mouse_events.o
 
 # target to build an object file
-scroll_wheel_events.c.o:
-	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o
-	$(MAKE) -f CMakeFiles/Mouse_Events_Lib_Static.dir/build.make CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.o
-.PHONY : scroll_wheel_events.c.o
+src/mouse_events.c.o:
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib_Static.dir/build.make CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.o
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.o
+.PHONY : src/mouse_events.c.o
 
-scroll_wheel_events.i: scroll_wheel_events.c.i
+src/mouse_events.i: src/mouse_events.c.i
 
-.PHONY : scroll_wheel_events.i
+.PHONY : src/mouse_events.i
 
 # target to preprocess a source file
-scroll_wheel_events.c.i:
-	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.i
-	$(MAKE) -f CMakeFiles/Mouse_Events_Lib_Static.dir/build.make CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.i
-.PHONY : scroll_wheel_events.c.i
+src/mouse_events.c.i:
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib_Static.dir/build.make CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.i
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.i
+.PHONY : src/mouse_events.c.i
 
-scroll_wheel_events.s: scroll_wheel_events.c.s
+src/mouse_events.s: src/mouse_events.c.s
 
-.PHONY : scroll_wheel_events.s
+.PHONY : src/mouse_events.s
 
 # target to generate assembly for a file
-scroll_wheel_events.c.s:
-	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.s
-	$(MAKE) -f CMakeFiles/Mouse_Events_Lib_Static.dir/build.make CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.s
-.PHONY : scroll_wheel_events.c.s
+src/mouse_events.c.s:
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib_Static.dir/build.make CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.s
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.s
+.PHONY : src/mouse_events.c.s
+
+src/scroll_wheel_events.o: src/scroll_wheel_events.c.o
+
+.PHONY : src/scroll_wheel_events.o
+
+# target to build an object file
+src/scroll_wheel_events.c.o:
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib_Static.dir/build.make CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.o
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.o
+.PHONY : src/scroll_wheel_events.c.o
+
+src/scroll_wheel_events.i: src/scroll_wheel_events.c.i
+
+.PHONY : src/scroll_wheel_events.i
+
+# target to preprocess a source file
+src/scroll_wheel_events.c.i:
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib_Static.dir/build.make CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.i
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.i
+.PHONY : src/scroll_wheel_events.c.i
+
+src/scroll_wheel_events.s: src/scroll_wheel_events.c.s
+
+.PHONY : src/scroll_wheel_events.s
+
+# target to generate assembly for a file
+src/scroll_wheel_events.c.s:
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib_Static.dir/build.make CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.s
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.s
+.PHONY : src/scroll_wheel_events.c.s
 
 # Help Target
 help:
@@ -299,25 +242,20 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... install/strip"
-	@echo "... install"
-	@echo "... Mouse_Events_Lib"
-	@echo "... Install_Mouse_Events_in_OS_X"
 	@echo "... edit_cache"
 	@echo "... Mouse_Events_in_OS_X"
-	@echo "... install/local"
 	@echo "... Mouse_Events_Lib_Static"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... mouse_events.o"
-	@echo "... mouse_events.i"
-	@echo "... mouse_events.s"
-	@echo "... scroll_wheel_events.o"
-	@echo "... scroll_wheel_events.i"
-	@echo "... scroll_wheel_events.s"
+	@echo "... Mouse_Events_Lib"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/mouse_events.o"
+	@echo "... src/mouse_events.i"
+	@echo "... src/mouse_events.s"
+	@echo "... src/scroll_wheel_events.o"
+	@echo "... src/scroll_wheel_events.i"
+	@echo "... src/scroll_wheel_events.s"
 .PHONY : help
 
 

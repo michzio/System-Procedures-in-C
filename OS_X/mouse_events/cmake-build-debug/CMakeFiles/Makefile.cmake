@@ -48,8 +48,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Mouse_Events_Lib.dir/DependInfo.cmake"
-  "CMakeFiles/Install_Mouse_Events_in_OS_X.dir/DependInfo.cmake"
   "CMakeFiles/Mouse_Events_in_OS_X.dir/DependInfo.cmake"
   "CMakeFiles/Mouse_Events_Lib_Static.dir/DependInfo.cmake"
+  "CMakeFiles/Mouse_Events_Lib.dir/DependInfo.cmake"
   )

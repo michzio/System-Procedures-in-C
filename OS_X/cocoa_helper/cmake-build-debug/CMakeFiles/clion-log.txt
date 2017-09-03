@@ -1,4 +1,12 @@
 /Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/cmake-build-debug
+building for Apple
+building for Apple
+building for Apple
+building for Apple
+CMake Error at /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/CMakeLists.txt:85 (define_property):
+  define_property given invalid scope FLAG_TEST_LIBRARIES.  Valid scopes are
+  GLOBAL, DIRECTORY, TARGET, SOURCE, TEST, VARIABLE, CACHED_VARIABLE.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/cmake-build-debug/CMakeFiles/CMakeOutput.log".

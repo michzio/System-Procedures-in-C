@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/main.c
+../include/mouse_events.h
+
+../include/scroll_wheel_events.h
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/src/main.c
 stdio.h
 -
 unistd.h
@@ -14,11 +18,7 @@ unistd.h
 CoreGraphics/CoreGraphics.h
 -
 mouse_events.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/mouse_events.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/src/mouse_events.h
 scroll_wheel_events.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/scroll_wheel_events.h
-
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/mouse_events.h
-
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/scroll_wheel_events.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/src/scroll_wheel_events.h
 

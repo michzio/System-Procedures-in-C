@@ -234,6 +234,12 @@
             <modifier_flags>0</modifier_flags>              <!-- nothing -->
         </app>
     </hotkeys>
+    <hotkeys name="PlayerFullScreenHotKeys">
+        <!-- TODO -->
+    </hotkeys>
+    <hotkeys name="PlayerSubtitlesHotKeys">
+        <!-- TODO -->
+    </hotkeys>
     <hotkeys name="BrowserNewTabHotKeys">
         <app name="Default Application">                    <!-- Opera, Chrome, Edge, Firefox ... -->
             <key_code>84</key_code>                         <!-- T -->
@@ -397,13 +403,13 @@
             <modifier_flags>0</modifier_flags>              <!-- nothing -->
         </app>
     </hotkeys>
-    <hotkeys name="SlideShowBlankBlackSlideHotKeys">
+    <hotkeys name="SlideShowBlankSlideBlackHotKeys">
         <app name="Default Application">                    <!-- PowerPoint, OpenOffice Impress, ... -->
             <key_code>66</key_code>                         <!-- B (or .) -->
             <modifier_flags>0</modifier_flags>              <!-- nothing -->
         </app>
     </hotkeys>
-    <hotkeys name="SlideShowBlankWhiteSlideHotKeys">
+    <hotkeys name="SlideShowBlankSlideWhiteHotKeys">
         <app name="Default Application">                    <!-- PowerPoint, OpenOffice Impress, ... -->
             <key_code>87</key_code>                         <!-- W (or ,) -->
             <modifier_flags>0</modifier_flags>              <!-- nothing -->

@@ -4,13 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/mouse_events.c" "/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.o"
-  "/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/scroll_wheel_events.c" "/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.o"
+  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/src/mouse_events.c" "/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.o"
+  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/src/scroll_wheel_events.c" "/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../include"
   )
 
 # Targets to which this target links.

@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers
+CMAKE_SOURCE_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Windows_Helpers_Lib_Static.dir/depend.make
@@ -57,50 +57,50 @@ include CMakeFiles/Windows_Helpers_Lib_Static.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Windows_Helpers_Lib_Static.dir/flags.make
 
-CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.o: CMakeFiles/Windows_Helpers_Lib_Static.dir/flags.make
-CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.o: ../windows.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.o   -c /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/windows.c
+CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.o: CMakeFiles/Windows_Helpers_Lib_Static.dir/flags.make
+CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.o: ../src/windows_helpers/windows.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/src/windows_helpers/windows.c
 
-CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/windows.c > CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.i
+CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/src/windows_helpers/windows.c > CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.i
 
-CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/windows.c -o CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.s
+CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/src/windows_helpers/windows.c -o CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.s
 
-CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.o.requires:
+CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.o.requires:
 
-.PHONY : CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.o.requires
+.PHONY : CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.o.requires
 
-CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.o.provides: CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.o.requires
-	$(MAKE) -f CMakeFiles/Windows_Helpers_Lib_Static.dir/build.make CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.o.provides.build
-.PHONY : CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.o.provides
+CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.o.provides: CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.o.requires
+	$(MAKE) -f CMakeFiles/Windows_Helpers_Lib_Static.dir/build.make CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.o.provides.build
+.PHONY : CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.o.provides
 
-CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.o.provides.build: CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.o
+CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.o.provides.build: CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.o
 
 
 # Object files for target Windows_Helpers_Lib_Static
 Windows_Helpers_Lib_Static_OBJECTS = \
-"CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.o"
+"CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.o"
 
 # External object files for target Windows_Helpers_Lib_Static
 Windows_Helpers_Lib_Static_EXTERNAL_OBJECTS =
 
-libwindows_helpers.a: CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.o
-libwindows_helpers.a: CMakeFiles/Windows_Helpers_Lib_Static.dir/build.make
-libwindows_helpers.a: CMakeFiles/Windows_Helpers_Lib_Static.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libwindows_helpers.a"
+../outputs/lib/cygwin/libwindows_helpers.a: CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.o
+../outputs/lib/cygwin/libwindows_helpers.a: CMakeFiles/Windows_Helpers_Lib_Static.dir/build.make
+../outputs/lib/cygwin/libwindows_helpers.a: CMakeFiles/Windows_Helpers_Lib_Static.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library ../outputs/lib/cygwin/libwindows_helpers.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/Windows_Helpers_Lib_Static.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Windows_Helpers_Lib_Static.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Windows_Helpers_Lib_Static.dir/build: libwindows_helpers.a
+CMakeFiles/Windows_Helpers_Lib_Static.dir/build: ../outputs/lib/cygwin/libwindows_helpers.a
 
 .PHONY : CMakeFiles/Windows_Helpers_Lib_Static.dir/build
 
-CMakeFiles/Windows_Helpers_Lib_Static.dir/requires: CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.o.requires
+CMakeFiles/Windows_Helpers_Lib_Static.dir/requires: CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.o.requires
 
 .PHONY : CMakeFiles/Windows_Helpers_Lib_Static.dir/requires
 
@@ -109,6 +109,6 @@ CMakeFiles/Windows_Helpers_Lib_Static.dir/clean:
 .PHONY : CMakeFiles/Windows_Helpers_Lib_Static.dir/clean
 
 CMakeFiles/Windows_Helpers_Lib_Static.dir/depend:
-	cd /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles/Windows_Helpers_Lib_Static.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles/Windows_Helpers_Lib_Static.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Windows_Helpers_Lib_Static.dir/depend
 

@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/O
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -88,39 +77,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -181,19 +137,6 @@ Cocoa_Helper_Lib_Static/fast:
 .PHONY : Cocoa_Helper_Lib_Static/fast
 
 #=============================================================================
-# Target rules for targets named Install_Cocoa_Helper_in_OS_X
-
-# Build rule for target.
-Install_Cocoa_Helper_in_OS_X: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Install_Cocoa_Helper_in_OS_X
-.PHONY : Install_Cocoa_Helper_in_OS_X
-
-# fast build rule for target.
-Install_Cocoa_Helper_in_OS_X/fast:
-	$(MAKE) -f CMakeFiles/Install_Cocoa_Helper_in_OS_X.dir/build.make CMakeFiles/Install_Cocoa_Helper_in_OS_X.dir/build
-.PHONY : Install_Cocoa_Helper_in_OS_X/fast
-
-#=============================================================================
 # Target rules for targets named Cocoa_Helper_Lib
 
 # Build rule for target.
@@ -206,182 +149,299 @@ Cocoa_Helper_Lib/fast:
 	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/build
 .PHONY : Cocoa_Helper_Lib/fast
 
-exec_cmd.o: exec_cmd.c.o
+#=============================================================================
+# Target rules for targets named Common_Functions
 
-.PHONY : exec_cmd.o
+# Build rule for target.
+Common_Functions: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Common_Functions
+.PHONY : Common_Functions
 
-# target to build an object file
-exec_cmd.c.o:
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.o
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/exec_cmd.c.o
-.PHONY : exec_cmd.c.o
+# fast build rule for target.
+Common_Functions/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/build
+.PHONY : Common_Functions/fast
 
-exec_cmd.i: exec_cmd.c.i
+#=============================================================================
+# Target rules for targets named Common_Functions_Lib_Static
 
-.PHONY : exec_cmd.i
+# Build rule for target.
+Common_Functions_Lib_Static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Common_Functions_Lib_Static
+.PHONY : Common_Functions_Lib_Static
 
-# target to preprocess a source file
-exec_cmd.c.i:
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.i
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/exec_cmd.c.i
-.PHONY : exec_cmd.c.i
+# fast build rule for target.
+Common_Functions_Lib_Static/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/build
+.PHONY : Common_Functions_Lib_Static/fast
 
-exec_cmd.s: exec_cmd.c.s
+#=============================================================================
+# Target rules for targets named Common_Functions_Lib
 
-.PHONY : exec_cmd.s
+# Build rule for target.
+Common_Functions_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Common_Functions_Lib
+.PHONY : Common_Functions_Lib
 
-# target to generate assembly for a file
-exec_cmd.c.s:
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.s
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/exec_cmd.c.s
-.PHONY : exec_cmd.c.s
+# fast build rule for target.
+Common_Functions_Lib/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/build
+.PHONY : Common_Functions_Lib/fast
 
-file_system.o: file_system.c.o
+#=============================================================================
+# Target rules for targets named libpng_1_6_24
 
-.PHONY : file_system.o
+# Build rule for target.
+libpng_1_6_24: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libpng_1_6_24
+.PHONY : libpng_1_6_24
 
-# target to build an object file
-file_system.c.o:
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.o
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/file_system.c.o
-.PHONY : file_system.c.o
+# fast build rule for target.
+libpng_1_6_24/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/build
+.PHONY : libpng_1_6_24/fast
 
-file_system.i: file_system.c.i
+#=============================================================================
+# Target rules for targets named libpng_Lib_Static
 
-.PHONY : file_system.i
+# Build rule for target.
+libpng_Lib_Static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libpng_Lib_Static
+.PHONY : libpng_Lib_Static
 
-# target to preprocess a source file
-file_system.c.i:
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.i
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/file_system.c.i
-.PHONY : file_system.c.i
+# fast build rule for target.
+libpng_Lib_Static/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/build
+.PHONY : libpng_Lib_Static/fast
 
-file_system.s: file_system.c.s
+#=============================================================================
+# Target rules for targets named libpng_Lib
 
-.PHONY : file_system.s
+# Build rule for target.
+libpng_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libpng_Lib
+.PHONY : libpng_Lib
 
-# target to generate assembly for a file
-file_system.c.s:
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.s
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/file_system.c.s
-.PHONY : file_system.c.s
+# fast build rule for target.
+libpng_Lib/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/build
+.PHONY : libpng_Lib/fast
 
-images.o: images.c.o
+#=============================================================================
+# Target rules for targets named zlib_1_2_8
 
-.PHONY : images.o
+# Build rule for target.
+zlib_1_2_8: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 zlib_1_2_8
+.PHONY : zlib_1_2_8
 
-# target to build an object file
-images.c.o:
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.o
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/images.c.o
-.PHONY : images.c.o
+# fast build rule for target.
+zlib_1_2_8/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/build
+.PHONY : zlib_1_2_8/fast
 
-images.i: images.c.i
+#=============================================================================
+# Target rules for targets named zlib_Lib_Static
 
-.PHONY : images.i
+# Build rule for target.
+zlib_Lib_Static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 zlib_Lib_Static
+.PHONY : zlib_Lib_Static
 
-# target to preprocess a source file
-images.c.i:
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.i
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/images.c.i
-.PHONY : images.c.i
+# fast build rule for target.
+zlib_Lib_Static/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/build
+.PHONY : zlib_Lib_Static/fast
 
-images.s: images.c.s
+#=============================================================================
+# Target rules for targets named zlib_Lib
 
-.PHONY : images.s
+# Build rule for target.
+zlib_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 zlib_Lib
+.PHONY : zlib_Lib
 
-# target to generate assembly for a file
-images.c.s:
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.s
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/images.c.s
-.PHONY : images.c.s
+# fast build rule for target.
+zlib_Lib/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/build
+.PHONY : zlib_Lib/fast
 
-main.o: main.c.o
+src/cocoa_helper/exec_cmd.o: src/cocoa_helper/exec_cmd.c.o
 
-.PHONY : main.o
-
-# target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_in_OS_X.dir/build.make CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.o
-.PHONY : main.c.o
-
-main.i: main.c.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_in_OS_X.dir/build.make CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_in_OS_X.dir/build.make CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.s
-.PHONY : main.c.s
-
-property_list.o: property_list.c.o
-
-.PHONY : property_list.o
-
-# target to build an object file
-property_list.c.o:
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.o
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/property_list.c.o
-.PHONY : property_list.c.o
-
-property_list.i: property_list.c.i
-
-.PHONY : property_list.i
-
-# target to preprocess a source file
-property_list.c.i:
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.i
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/property_list.c.i
-.PHONY : property_list.c.i
-
-property_list.s: property_list.c.s
-
-.PHONY : property_list.s
-
-# target to generate assembly for a file
-property_list.c.s:
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.s
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/property_list.c.s
-.PHONY : property_list.c.s
-
-strings.o: strings.c.o
-
-.PHONY : strings.o
+.PHONY : src/cocoa_helper/exec_cmd.o
 
 # target to build an object file
-strings.c.o:
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.o
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/strings.c.o
-.PHONY : strings.c.o
+src/cocoa_helper/exec_cmd.c.o:
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.o
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/src/cocoa_helper/exec_cmd.c.o
+.PHONY : src/cocoa_helper/exec_cmd.c.o
 
-strings.i: strings.c.i
+src/cocoa_helper/exec_cmd.i: src/cocoa_helper/exec_cmd.c.i
 
-.PHONY : strings.i
+.PHONY : src/cocoa_helper/exec_cmd.i
 
 # target to preprocess a source file
-strings.c.i:
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.i
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/strings.c.i
-.PHONY : strings.c.i
+src/cocoa_helper/exec_cmd.c.i:
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.i
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/src/cocoa_helper/exec_cmd.c.i
+.PHONY : src/cocoa_helper/exec_cmd.c.i
 
-strings.s: strings.c.s
+src/cocoa_helper/exec_cmd.s: src/cocoa_helper/exec_cmd.c.s
 
-.PHONY : strings.s
+.PHONY : src/cocoa_helper/exec_cmd.s
 
 # target to generate assembly for a file
-strings.c.s:
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.s
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/strings.c.s
-.PHONY : strings.c.s
+src/cocoa_helper/exec_cmd.c.s:
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.s
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/src/cocoa_helper/exec_cmd.c.s
+.PHONY : src/cocoa_helper/exec_cmd.c.s
+
+src/cocoa_helper/file_system.o: src/cocoa_helper/file_system.c.o
+
+.PHONY : src/cocoa_helper/file_system.o
+
+# target to build an object file
+src/cocoa_helper/file_system.c.o:
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.o
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/src/cocoa_helper/file_system.c.o
+.PHONY : src/cocoa_helper/file_system.c.o
+
+src/cocoa_helper/file_system.i: src/cocoa_helper/file_system.c.i
+
+.PHONY : src/cocoa_helper/file_system.i
+
+# target to preprocess a source file
+src/cocoa_helper/file_system.c.i:
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.i
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/src/cocoa_helper/file_system.c.i
+.PHONY : src/cocoa_helper/file_system.c.i
+
+src/cocoa_helper/file_system.s: src/cocoa_helper/file_system.c.s
+
+.PHONY : src/cocoa_helper/file_system.s
+
+# target to generate assembly for a file
+src/cocoa_helper/file_system.c.s:
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.s
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/src/cocoa_helper/file_system.c.s
+.PHONY : src/cocoa_helper/file_system.c.s
+
+src/cocoa_helper/images.o: src/cocoa_helper/images.c.o
+
+.PHONY : src/cocoa_helper/images.o
+
+# target to build an object file
+src/cocoa_helper/images.c.o:
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.o
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/src/cocoa_helper/images.c.o
+.PHONY : src/cocoa_helper/images.c.o
+
+src/cocoa_helper/images.i: src/cocoa_helper/images.c.i
+
+.PHONY : src/cocoa_helper/images.i
+
+# target to preprocess a source file
+src/cocoa_helper/images.c.i:
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.i
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/src/cocoa_helper/images.c.i
+.PHONY : src/cocoa_helper/images.c.i
+
+src/cocoa_helper/images.s: src/cocoa_helper/images.c.s
+
+.PHONY : src/cocoa_helper/images.s
+
+# target to generate assembly for a file
+src/cocoa_helper/images.c.s:
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.s
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/src/cocoa_helper/images.c.s
+.PHONY : src/cocoa_helper/images.c.s
+
+src/cocoa_helper/property_list.o: src/cocoa_helper/property_list.c.o
+
+.PHONY : src/cocoa_helper/property_list.o
+
+# target to build an object file
+src/cocoa_helper/property_list.c.o:
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.o
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/src/cocoa_helper/property_list.c.o
+.PHONY : src/cocoa_helper/property_list.c.o
+
+src/cocoa_helper/property_list.i: src/cocoa_helper/property_list.c.i
+
+.PHONY : src/cocoa_helper/property_list.i
+
+# target to preprocess a source file
+src/cocoa_helper/property_list.c.i:
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.i
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/src/cocoa_helper/property_list.c.i
+.PHONY : src/cocoa_helper/property_list.c.i
+
+src/cocoa_helper/property_list.s: src/cocoa_helper/property_list.c.s
+
+.PHONY : src/cocoa_helper/property_list.s
+
+# target to generate assembly for a file
+src/cocoa_helper/property_list.c.s:
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.s
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/src/cocoa_helper/property_list.c.s
+.PHONY : src/cocoa_helper/property_list.c.s
+
+src/cocoa_helper/strings.o: src/cocoa_helper/strings.c.o
+
+.PHONY : src/cocoa_helper/strings.o
+
+# target to build an object file
+src/cocoa_helper/strings.c.o:
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.o
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/src/cocoa_helper/strings.c.o
+.PHONY : src/cocoa_helper/strings.c.o
+
+src/cocoa_helper/strings.i: src/cocoa_helper/strings.c.i
+
+.PHONY : src/cocoa_helper/strings.i
+
+# target to preprocess a source file
+src/cocoa_helper/strings.c.i:
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.i
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/src/cocoa_helper/strings.c.i
+.PHONY : src/cocoa_helper/strings.c.i
+
+src/cocoa_helper/strings.s: src/cocoa_helper/strings.c.s
+
+.PHONY : src/cocoa_helper/strings.s
+
+# target to generate assembly for a file
+src/cocoa_helper/strings.c.s:
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.s
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib.dir/build.make CMakeFiles/Cocoa_Helper_Lib.dir/src/cocoa_helper/strings.c.s
+.PHONY : src/cocoa_helper/strings.c.s
+
+src/main.o: src/main.c.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.c.o:
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_in_OS_X.dir/build.make CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.o
+.PHONY : src/main.c.o
+
+src/main.i: src/main.c.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.c.i:
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_in_OS_X.dir/build.make CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.i
+.PHONY : src/main.c.i
+
+src/main.s: src/main.c.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.c.s:
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_in_OS_X.dir/build.make CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.s
+.PHONY : src/main.c.s
 
 # Help Target
 help:
@@ -389,34 +449,38 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... list_install_components"
 	@echo "... Cocoa_Helper_in_OS_X"
-	@echo "... install/strip"
-	@echo "... install"
 	@echo "... Cocoa_Helper_Lib_Static"
-	@echo "... Install_Cocoa_Helper_in_OS_X"
 	@echo "... Cocoa_Helper_Lib"
-	@echo "... exec_cmd.o"
-	@echo "... exec_cmd.i"
-	@echo "... exec_cmd.s"
-	@echo "... file_system.o"
-	@echo "... file_system.i"
-	@echo "... file_system.s"
-	@echo "... images.o"
-	@echo "... images.i"
-	@echo "... images.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... property_list.o"
-	@echo "... property_list.i"
-	@echo "... property_list.s"
-	@echo "... strings.o"
-	@echo "... strings.i"
-	@echo "... strings.s"
+	@echo "... Common_Functions"
+	@echo "... Common_Functions_Lib_Static"
+	@echo "... Common_Functions_Lib"
+	@echo "... libpng_1_6_24"
+	@echo "... libpng_Lib_Static"
+	@echo "... libpng_Lib"
+	@echo "... zlib_1_2_8"
+	@echo "... zlib_Lib_Static"
+	@echo "... zlib_Lib"
+	@echo "... src/cocoa_helper/exec_cmd.o"
+	@echo "... src/cocoa_helper/exec_cmd.i"
+	@echo "... src/cocoa_helper/exec_cmd.s"
+	@echo "... src/cocoa_helper/file_system.o"
+	@echo "... src/cocoa_helper/file_system.i"
+	@echo "... src/cocoa_helper/file_system.s"
+	@echo "... src/cocoa_helper/images.o"
+	@echo "... src/cocoa_helper/images.i"
+	@echo "... src/cocoa_helper/images.s"
+	@echo "... src/cocoa_helper/property_list.o"
+	@echo "... src/cocoa_helper/property_list.i"
+	@echo "... src/cocoa_helper/property_list.s"
+	@echo "... src/cocoa_helper/strings.o"
+	@echo "... src/cocoa_helper/strings.i"
+	@echo "... src/cocoa_helper/strings.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

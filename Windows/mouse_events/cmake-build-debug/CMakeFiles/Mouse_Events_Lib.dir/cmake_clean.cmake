@@ -1,9 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o"
-  "CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o"
-  "cygmouse_events_shared.pdb"
-  "cygmouse_events_shared.dll"
-  "libmouse_events_shared.dll.a"
+  "CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.o"
+  "CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.o"
+  "../outputs/lib/cygwin/libmouse_events.pdb"
+  "../outputs/lib/cygwin/libmouse_events.dylib"
 )
 
 # Per-language clean rules from dependency scanning.

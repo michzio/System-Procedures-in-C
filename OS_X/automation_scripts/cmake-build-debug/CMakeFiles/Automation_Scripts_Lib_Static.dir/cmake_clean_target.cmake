@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libautomation_scripts.a"
+  "../outputs/lib/apple/libautomation_scripts.a"
 )

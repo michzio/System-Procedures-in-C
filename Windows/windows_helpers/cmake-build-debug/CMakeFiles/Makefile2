@@ -45,60 +45,28 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers
+CMAKE_SOURCE_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug
-
-#=============================================================================
-# Target rules for target CMakeFiles/Install_Windows_Helpers.dir
-
-# All Build rule for target.
-CMakeFiles/Install_Windows_Helpers.dir/all: CMakeFiles/Windows_Helpers.dir/all
-	$(MAKE) -f CMakeFiles/Install_Windows_Helpers.dir/build.make CMakeFiles/Install_Windows_Helpers.dir/depend
-	$(MAKE) -f CMakeFiles/Install_Windows_Helpers.dir/build.make CMakeFiles/Install_Windows_Helpers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles --progress-num=1 "Built target Install_Windows_Helpers"
-.PHONY : CMakeFiles/Install_Windows_Helpers.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/Install_Windows_Helpers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Install_Windows_Helpers.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Install_Windows_Helpers.dir/rule
-
-# Convenience name for target.
-Install_Windows_Helpers: CMakeFiles/Install_Windows_Helpers.dir/rule
-
-.PHONY : Install_Windows_Helpers
-
-# clean rule for target.
-CMakeFiles/Install_Windows_Helpers.dir/clean:
-	$(MAKE) -f CMakeFiles/Install_Windows_Helpers.dir/build.make CMakeFiles/Install_Windows_Helpers.dir/clean
-.PHONY : CMakeFiles/Install_Windows_Helpers.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/Install_Windows_Helpers.dir/clean
-
-.PHONY : clean
+CMAKE_BINARY_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/Windows_Helpers.dir
 
 # All Build rule for target.
-CMakeFiles/Windows_Helpers.dir/all: CMakeFiles/Windows_Helpers_Lib_Static.dir/all
+CMakeFiles/Windows_Helpers.dir/all: CMakeFiles/Windows_Helpers_Lib.dir/all
 	$(MAKE) -f CMakeFiles/Windows_Helpers.dir/build.make CMakeFiles/Windows_Helpers.dir/depend
 	$(MAKE) -f CMakeFiles/Windows_Helpers.dir/build.make CMakeFiles/Windows_Helpers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles --progress-num=2,3 "Built target Windows_Helpers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Windows_Helpers"
 .PHONY : CMakeFiles/Windows_Helpers.dir/all
 
 # Include target in all.
@@ -108,9 +76,9 @@ all: CMakeFiles/Windows_Helpers.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Windows_Helpers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Windows_Helpers.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Windows_Helpers.dir/rule
 
 # Convenience name for target.
@@ -135,7 +103,7 @@ clean: CMakeFiles/Windows_Helpers.dir/clean
 CMakeFiles/Windows_Helpers_Lib_Static.dir/all:
 	$(MAKE) -f CMakeFiles/Windows_Helpers_Lib_Static.dir/build.make CMakeFiles/Windows_Helpers_Lib_Static.dir/depend
 	$(MAKE) -f CMakeFiles/Windows_Helpers_Lib_Static.dir/build.make CMakeFiles/Windows_Helpers_Lib_Static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target Windows_Helpers_Lib_Static"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target Windows_Helpers_Lib_Static"
 .PHONY : CMakeFiles/Windows_Helpers_Lib_Static.dir/all
 
 # Include target in all.
@@ -145,9 +113,9 @@ all: CMakeFiles/Windows_Helpers_Lib_Static.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Windows_Helpers_Lib_Static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Windows_Helpers_Lib_Static.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Windows_Helpers_Lib_Static.dir/rule
 
 # Convenience name for target.
@@ -172,7 +140,7 @@ clean: CMakeFiles/Windows_Helpers_Lib_Static.dir/clean
 CMakeFiles/Windows_Helpers_Lib.dir/all:
 	$(MAKE) -f CMakeFiles/Windows_Helpers_Lib.dir/build.make CMakeFiles/Windows_Helpers_Lib.dir/depend
 	$(MAKE) -f CMakeFiles/Windows_Helpers_Lib.dir/build.make CMakeFiles/Windows_Helpers_Lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles --progress-num=4,5 "Built target Windows_Helpers_Lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target Windows_Helpers_Lib"
 .PHONY : CMakeFiles/Windows_Helpers_Lib.dir/all
 
 # Include target in all.
@@ -182,9 +150,9 @@ all: CMakeFiles/Windows_Helpers_Lib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Windows_Helpers_Lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Windows_Helpers_Lib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Windows_Helpers_Lib.dir/rule
 
 # Convenience name for target.

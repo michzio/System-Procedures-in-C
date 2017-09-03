@@ -45,60 +45,30 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events
+CMAKE_SOURCE_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug
-
-#=============================================================================
-# Target rules for target CMakeFiles/Install_Keyboard_Events_in_Windows.dir
-
-# All Build rule for target.
-CMakeFiles/Install_Keyboard_Events_in_Windows.dir/all: CMakeFiles/Keyboard_Events_in_Windows.dir/all
-	$(MAKE) -f CMakeFiles/Install_Keyboard_Events_in_Windows.dir/build.make CMakeFiles/Install_Keyboard_Events_in_Windows.dir/depend
-	$(MAKE) -f CMakeFiles/Install_Keyboard_Events_in_Windows.dir/build.make CMakeFiles/Install_Keyboard_Events_in_Windows.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=1 "Built target Install_Keyboard_Events_in_Windows"
-.PHONY : CMakeFiles/Install_Keyboard_Events_in_Windows.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/Install_Keyboard_Events_in_Windows.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Install_Keyboard_Events_in_Windows.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Install_Keyboard_Events_in_Windows.dir/rule
-
-# Convenience name for target.
-Install_Keyboard_Events_in_Windows: CMakeFiles/Install_Keyboard_Events_in_Windows.dir/rule
-
-.PHONY : Install_Keyboard_Events_in_Windows
-
-# clean rule for target.
-CMakeFiles/Install_Keyboard_Events_in_Windows.dir/clean:
-	$(MAKE) -f CMakeFiles/Install_Keyboard_Events_in_Windows.dir/build.make CMakeFiles/Install_Keyboard_Events_in_Windows.dir/clean
-.PHONY : CMakeFiles/Install_Keyboard_Events_in_Windows.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/Install_Keyboard_Events_in_Windows.dir/clean
-
-.PHONY : clean
+CMAKE_BINARY_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/Keyboard_Events_in_Windows.dir
 
 # All Build rule for target.
-CMakeFiles/Keyboard_Events_in_Windows.dir/all: CMakeFiles/Keyboard_Events_Lib_Static.dir/all
+CMakeFiles/Keyboard_Events_in_Windows.dir/all: CMakeFiles/Keyboard_Events_Lib.dir/all
+CMakeFiles/Keyboard_Events_in_Windows.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/all
+CMakeFiles/Keyboard_Events_in_Windows.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/all
 	$(MAKE) -f CMakeFiles/Keyboard_Events_in_Windows.dir/build.make CMakeFiles/Keyboard_Events_in_Windows.dir/depend
 	$(MAKE) -f CMakeFiles/Keyboard_Events_in_Windows.dir/build.make CMakeFiles/Keyboard_Events_in_Windows.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target Keyboard_Events_in_Windows"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target Keyboard_Events_in_Windows"
 .PHONY : CMakeFiles/Keyboard_Events_in_Windows.dir/all
 
 # Include target in all.
@@ -108,9 +78,9 @@ all: CMakeFiles/Keyboard_Events_in_Windows.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Keyboard_Events_in_Windows.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Keyboard_Events_in_Windows.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Keyboard_Events_in_Windows.dir/rule
 
 # Convenience name for target.
@@ -132,10 +102,11 @@ clean: CMakeFiles/Keyboard_Events_in_Windows.dir/clean
 # Target rules for target CMakeFiles/Keyboard_Events_Lib_Static.dir
 
 # All Build rule for target.
-CMakeFiles/Keyboard_Events_Lib_Static.dir/all:
+CMakeFiles/Keyboard_Events_Lib_Static.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/all
+CMakeFiles/Keyboard_Events_Lib_Static.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/all
 	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/depend
 	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=5,6,7 "Built target Keyboard_Events_Lib_Static"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=4,5,6 "Built target Keyboard_Events_Lib_Static"
 .PHONY : CMakeFiles/Keyboard_Events_Lib_Static.dir/all
 
 # Include target in all.
@@ -145,9 +116,9 @@ all: CMakeFiles/Keyboard_Events_Lib_Static.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Keyboard_Events_Lib_Static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Keyboard_Events_Lib_Static.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Keyboard_Events_Lib_Static.dir/rule
 
 # Convenience name for target.
@@ -169,10 +140,11 @@ clean: CMakeFiles/Keyboard_Events_Lib_Static.dir/clean
 # Target rules for target CMakeFiles/Keyboard_Events_Lib.dir
 
 # All Build rule for target.
-CMakeFiles/Keyboard_Events_Lib.dir/all:
+CMakeFiles/Keyboard_Events_Lib.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/all
+CMakeFiles/Keyboard_Events_Lib.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/all
 	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/depend
 	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=2,3,4 "Built target Keyboard_Events_Lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target Keyboard_Events_Lib"
 .PHONY : CMakeFiles/Keyboard_Events_Lib.dir/all
 
 # Include target in all.
@@ -182,9 +154,9 @@ all: CMakeFiles/Keyboard_Events_Lib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Keyboard_Events_Lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Keyboard_Events_Lib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Keyboard_Events_Lib.dir/rule
 
 # Convenience name for target.
@@ -199,6 +171,272 @@ CMakeFiles/Keyboard_Events_Lib.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/Keyboard_Events_Lib.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs
+
+# Convenience name for "all" pass in the directory.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/all
+
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/all
+
+# Convenience name for "clean" pass in the directory.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir/clean
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/clean
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/clean
+
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/clean
+
+# Convenience name for "preinstall" pass in the directory.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/preinstall:
+
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/preinstall
+
+#=============================================================================
+# Target rules for target /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir
+
+# All Build rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/all
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir/depend
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target Mouse_Events_in_Windows"
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir/all
+
+# Include target in all.
+all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 0
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir/rule
+
+# Convenience name for target.
+Mouse_Events_in_Windows: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir/rule
+
+.PHONY : Mouse_Events_in_Windows
+
+# clean rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir/clean:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir/clean
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir/clean
+
+# clean rule for target.
+clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir
+
+# All Build rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/all:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/depend
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=12,13,14 "Built target Mouse_Events_Lib_Static"
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/all
+
+# Include target in all.
+all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 0
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/rule
+
+# Convenience name for target.
+Mouse_Events_Lib_Static: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/rule
+
+.PHONY : Mouse_Events_Lib_Static
+
+# clean rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/clean:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/clean
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/clean
+
+# clean rule for target.
+clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir
+
+# All Build rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/all:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/depend
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=9,10,11 "Built target Mouse_Events_Lib"
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/all
+
+# Include target in all.
+all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 0
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/rule
+
+# Convenience name for target.
+Mouse_Events_Lib: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/rule
+
+.PHONY : Mouse_Events_Lib
+
+# clean rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/clean:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/clean
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/clean
+
+# clean rule for target.
+clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs
+
+# Convenience name for "all" pass in the directory.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/all
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/all
+
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/all
+
+# Convenience name for "clean" pass in the directory.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir/clean
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/clean
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/clean
+
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/clean
+
+# Convenience name for "preinstall" pass in the directory.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/preinstall:
+
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/preinstall
+
+#=============================================================================
+# Target rules for target /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir
+
+# All Build rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir/all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/all
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir/depend
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target Windows_Helpers"
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir/all
+
+# Include target in all.
+all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 0
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir/rule
+
+# Convenience name for target.
+Windows_Helpers: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir/rule
+
+.PHONY : Windows_Helpers
+
+# clean rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir/clean:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir/clean
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir/clean
+
+# clean rule for target.
+clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir
+
+# All Build rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/all:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/depend
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target Windows_Helpers_Lib_Static"
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/all
+
+# Include target in all.
+all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 0
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/rule
+
+# Convenience name for target.
+Windows_Helpers_Lib_Static: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/rule
+
+.PHONY : Windows_Helpers_Lib_Static
+
+# clean rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/clean:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/clean
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/clean
+
+# clean rule for target.
+clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir
+
+# All Build rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/all:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/depend
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target Windows_Helpers_Lib"
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/all
+
+# Include target in all.
+all: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 0
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/rule
+
+# Convenience name for target.
+Windows_Helpers_Lib: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/rule
+
+.PHONY : Windows_Helpers_Lib
+
+# clean rule for target.
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/clean:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/clean
+.PHONY : /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/clean
+
+# clean rule for target.
+clean: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/clean
 
 .PHONY : clean
 

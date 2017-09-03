@@ -57,77 +57,77 @@ include CMakeFiles/Mouse_Events_Lib_Static.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Mouse_Events_Lib_Static.dir/flags.make
 
-CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.o: CMakeFiles/Mouse_Events_Lib_Static.dir/flags.make
-CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.o: ../mouse_events.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/mouse_events.c
+CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.o: CMakeFiles/Mouse_Events_Lib_Static.dir/flags.make
+CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.o: ../src/mouse_events.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/src/mouse_events.c
 
-CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/mouse_events.c > CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.i
+CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/src/mouse_events.c > CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.i
 
-CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/mouse_events.c -o CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.s
+CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/src/mouse_events.c -o CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.s
 
-CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.o.requires:
+CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.o.requires:
 
-.PHONY : CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.o.requires
+.PHONY : CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.o.requires
 
-CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.o.provides: CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.o.requires
-	$(MAKE) -f CMakeFiles/Mouse_Events_Lib_Static.dir/build.make CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.o.provides.build
-.PHONY : CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.o.provides
+CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.o.provides: CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.o.requires
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib_Static.dir/build.make CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.o.provides.build
+.PHONY : CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.o.provides
 
-CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.o.provides.build: CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.o
+CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.o.provides.build: CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.o
 
 
-CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.o: CMakeFiles/Mouse_Events_Lib_Static.dir/flags.make
-CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.o: ../scroll_wheel_events.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/scroll_wheel_events.c
+CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.o: CMakeFiles/Mouse_Events_Lib_Static.dir/flags.make
+CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.o: ../src/scroll_wheel_events.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/src/scroll_wheel_events.c
 
-CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/scroll_wheel_events.c > CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.i
+CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/src/scroll_wheel_events.c > CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.i
 
-CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/scroll_wheel_events.c -o CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.s
+CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/src/scroll_wheel_events.c -o CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.s
 
-CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.o.requires:
+CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.o.requires:
 
-.PHONY : CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.o.requires
+.PHONY : CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.o.requires
 
-CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.o.provides: CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.o.requires
-	$(MAKE) -f CMakeFiles/Mouse_Events_Lib_Static.dir/build.make CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.o.provides.build
-.PHONY : CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.o.provides
+CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.o.provides: CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.o.requires
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib_Static.dir/build.make CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.o.provides.build
+.PHONY : CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.o.provides
 
-CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.o.provides.build: CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.o
+CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.o.provides.build: CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.o
 
 
 # Object files for target Mouse_Events_Lib_Static
 Mouse_Events_Lib_Static_OBJECTS = \
-"CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.o" \
-"CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.o"
+"CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.o" \
+"CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.o"
 
 # External object files for target Mouse_Events_Lib_Static
 Mouse_Events_Lib_Static_EXTERNAL_OBJECTS =
 
-libmouse_events.a: CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.o
-libmouse_events.a: CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.o
-libmouse_events.a: CMakeFiles/Mouse_Events_Lib_Static.dir/build.make
-libmouse_events.a: CMakeFiles/Mouse_Events_Lib_Static.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libmouse_events.a"
+../outputs/lib/apple/libmouse_events.a: CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.o
+../outputs/lib/apple/libmouse_events.a: CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.o
+../outputs/lib/apple/libmouse_events.a: CMakeFiles/Mouse_Events_Lib_Static.dir/build.make
+../outputs/lib/apple/libmouse_events.a: CMakeFiles/Mouse_Events_Lib_Static.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library ../outputs/lib/apple/libmouse_events.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/Mouse_Events_Lib_Static.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Mouse_Events_Lib_Static.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Mouse_Events_Lib_Static.dir/build: libmouse_events.a
+CMakeFiles/Mouse_Events_Lib_Static.dir/build: ../outputs/lib/apple/libmouse_events.a
 
 .PHONY : CMakeFiles/Mouse_Events_Lib_Static.dir/build
 
-CMakeFiles/Mouse_Events_Lib_Static.dir/requires: CMakeFiles/Mouse_Events_Lib_Static.dir/mouse_events.c.o.requires
-CMakeFiles/Mouse_Events_Lib_Static.dir/requires: CMakeFiles/Mouse_Events_Lib_Static.dir/scroll_wheel_events.c.o.requires
+CMakeFiles/Mouse_Events_Lib_Static.dir/requires: CMakeFiles/Mouse_Events_Lib_Static.dir/src/mouse_events.c.o.requires
+CMakeFiles/Mouse_Events_Lib_Static.dir/requires: CMakeFiles/Mouse_Events_Lib_Static.dir/src/scroll_wheel_events.c.o.requires
 
 .PHONY : CMakeFiles/Mouse_Events_Lib_Static.dir/requires
 

@@ -4,17 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/main.c" "/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles/Windows_Helpers.dir/main.c.o"
+  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/src/main.c" "/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles/Windows_Helpers.dir/src/main.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles/Windows_Helpers_Lib_Static.dir/DependInfo.cmake"
+  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles/Windows_Helpers_Lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

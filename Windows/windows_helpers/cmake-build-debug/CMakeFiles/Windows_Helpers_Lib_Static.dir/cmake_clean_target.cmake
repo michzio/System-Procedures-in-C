@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libwindows_helpers.a"
+  "../outputs/lib/cygwin/libwindows_helpers.a"
 )

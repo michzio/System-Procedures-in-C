@@ -56,40 +56,6 @@ CMAKE_BINARY_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/O
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -111,16 +77,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,19 +124,6 @@ Keyboard_Events_in_OS_X/fast:
 .PHONY : Keyboard_Events_in_OS_X/fast
 
 #=============================================================================
-# Target rules for targets named Install_Keyboard_Events_in_OS_X
-
-# Build rule for target.
-Install_Keyboard_Events_in_OS_X: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Install_Keyboard_Events_in_OS_X
-.PHONY : Install_Keyboard_Events_in_OS_X
-
-# fast build rule for target.
-Install_Keyboard_Events_in_OS_X/fast:
-	$(MAKE) -f CMakeFiles/Install_Keyboard_Events_in_OS_X.dir/build.make CMakeFiles/Install_Keyboard_Events_in_OS_X.dir/build
-.PHONY : Install_Keyboard_Events_in_OS_X/fast
-
-#=============================================================================
 # Target rules for targets named Keyboard_Events_Lib_Static
 
 # Build rule for target.
@@ -206,122 +149,317 @@ Keyboard_Events_Lib/fast:
 	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/build
 .PHONY : Keyboard_Events_Lib/fast
 
-hot_keys_events.o: hot_keys_events.c.o
+#=============================================================================
+# Target rules for targets named Automation_Scripts_in_OS_X
 
-.PHONY : hot_keys_events.o
+# Build rule for target.
+Automation_Scripts_in_OS_X: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Automation_Scripts_in_OS_X
+.PHONY : Automation_Scripts_in_OS_X
+
+# fast build rule for target.
+Automation_Scripts_in_OS_X/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/outputs/CMakeFiles/Automation_Scripts_in_OS_X.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/outputs/CMakeFiles/Automation_Scripts_in_OS_X.dir/build
+.PHONY : Automation_Scripts_in_OS_X/fast
+
+#=============================================================================
+# Target rules for targets named Automation_Scripts_Lib_Static
+
+# Build rule for target.
+Automation_Scripts_Lib_Static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Automation_Scripts_Lib_Static
+.PHONY : Automation_Scripts_Lib_Static
+
+# fast build rule for target.
+Automation_Scripts_Lib_Static/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/outputs/CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/outputs/CMakeFiles/Automation_Scripts_Lib_Static.dir/build
+.PHONY : Automation_Scripts_Lib_Static/fast
+
+#=============================================================================
+# Target rules for targets named Automation_Scripts_Lib
+
+# Build rule for target.
+Automation_Scripts_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Automation_Scripts_Lib
+.PHONY : Automation_Scripts_Lib
+
+# fast build rule for target.
+Automation_Scripts_Lib/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/outputs/CMakeFiles/Automation_Scripts_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/outputs/CMakeFiles/Automation_Scripts_Lib.dir/build
+.PHONY : Automation_Scripts_Lib/fast
+
+#=============================================================================
+# Target rules for targets named Cocoa_Helper_in_OS_X
+
+# Build rule for target.
+Cocoa_Helper_in_OS_X: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Cocoa_Helper_in_OS_X
+.PHONY : Cocoa_Helper_in_OS_X
+
+# fast build rule for target.
+Cocoa_Helper_in_OS_X/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/build
+.PHONY : Cocoa_Helper_in_OS_X/fast
+
+#=============================================================================
+# Target rules for targets named Cocoa_Helper_Lib_Static
+
+# Build rule for target.
+Cocoa_Helper_Lib_Static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Cocoa_Helper_Lib_Static
+.PHONY : Cocoa_Helper_Lib_Static
+
+# fast build rule for target.
+Cocoa_Helper_Lib_Static/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/build
+.PHONY : Cocoa_Helper_Lib_Static/fast
+
+#=============================================================================
+# Target rules for targets named Cocoa_Helper_Lib
+
+# Build rule for target.
+Cocoa_Helper_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Cocoa_Helper_Lib
+.PHONY : Cocoa_Helper_Lib
+
+# fast build rule for target.
+Cocoa_Helper_Lib/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/build
+.PHONY : Cocoa_Helper_Lib/fast
+
+#=============================================================================
+# Target rules for targets named Common_Functions
+
+# Build rule for target.
+Common_Functions: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Common_Functions
+.PHONY : Common_Functions
+
+# fast build rule for target.
+Common_Functions/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/build
+.PHONY : Common_Functions/fast
+
+#=============================================================================
+# Target rules for targets named Common_Functions_Lib_Static
+
+# Build rule for target.
+Common_Functions_Lib_Static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Common_Functions_Lib_Static
+.PHONY : Common_Functions_Lib_Static
+
+# fast build rule for target.
+Common_Functions_Lib_Static/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/build
+.PHONY : Common_Functions_Lib_Static/fast
+
+#=============================================================================
+# Target rules for targets named Common_Functions_Lib
+
+# Build rule for target.
+Common_Functions_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Common_Functions_Lib
+.PHONY : Common_Functions_Lib
+
+# fast build rule for target.
+Common_Functions_Lib/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/build
+.PHONY : Common_Functions_Lib/fast
+
+#=============================================================================
+# Target rules for targets named libpng_1_6_24
+
+# Build rule for target.
+libpng_1_6_24: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libpng_1_6_24
+.PHONY : libpng_1_6_24
+
+# fast build rule for target.
+libpng_1_6_24/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/build
+.PHONY : libpng_1_6_24/fast
+
+#=============================================================================
+# Target rules for targets named libpng_Lib_Static
+
+# Build rule for target.
+libpng_Lib_Static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libpng_Lib_Static
+.PHONY : libpng_Lib_Static
+
+# fast build rule for target.
+libpng_Lib_Static/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/build
+.PHONY : libpng_Lib_Static/fast
+
+#=============================================================================
+# Target rules for targets named libpng_Lib
+
+# Build rule for target.
+libpng_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libpng_Lib
+.PHONY : libpng_Lib
+
+# fast build rule for target.
+libpng_Lib/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/build
+.PHONY : libpng_Lib/fast
+
+#=============================================================================
+# Target rules for targets named zlib_1_2_8
+
+# Build rule for target.
+zlib_1_2_8: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 zlib_1_2_8
+.PHONY : zlib_1_2_8
+
+# fast build rule for target.
+zlib_1_2_8/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/build
+.PHONY : zlib_1_2_8/fast
+
+#=============================================================================
+# Target rules for targets named zlib_Lib_Static
+
+# Build rule for target.
+zlib_Lib_Static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 zlib_Lib_Static
+.PHONY : zlib_Lib_Static
+
+# fast build rule for target.
+zlib_Lib_Static/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/build
+.PHONY : zlib_Lib_Static/fast
+
+#=============================================================================
+# Target rules for targets named zlib_Lib
+
+# Build rule for target.
+zlib_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 zlib_Lib
+.PHONY : zlib_Lib
+
+# fast build rule for target.
+zlib_Lib/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/build
+.PHONY : zlib_Lib/fast
+
+src/hot_keys_events.o: src/hot_keys_events.c.o
+
+.PHONY : src/hot_keys_events.o
 
 # target to build an object file
-hot_keys_events.c.o:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/hot_keys_events.c.o
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.o
-.PHONY : hot_keys_events.c.o
+src/hot_keys_events.c.o:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/src/hot_keys_events.c.o
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.o
+.PHONY : src/hot_keys_events.c.o
 
-hot_keys_events.i: hot_keys_events.c.i
+src/hot_keys_events.i: src/hot_keys_events.c.i
 
-.PHONY : hot_keys_events.i
+.PHONY : src/hot_keys_events.i
 
 # target to preprocess a source file
-hot_keys_events.c.i:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/hot_keys_events.c.i
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.i
-.PHONY : hot_keys_events.c.i
+src/hot_keys_events.c.i:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/src/hot_keys_events.c.i
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.i
+.PHONY : src/hot_keys_events.c.i
 
-hot_keys_events.s: hot_keys_events.c.s
+src/hot_keys_events.s: src/hot_keys_events.c.s
 
-.PHONY : hot_keys_events.s
+.PHONY : src/hot_keys_events.s
 
 # target to generate assembly for a file
-hot_keys_events.c.s:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/hot_keys_events.c.s
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.s
-.PHONY : hot_keys_events.c.s
+src/hot_keys_events.c.s:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/src/hot_keys_events.c.s
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.s
+.PHONY : src/hot_keys_events.c.s
 
-keyboard_events.o: keyboard_events.c.o
+src/keyboard_events.o: src/keyboard_events.c.o
 
-.PHONY : keyboard_events.o
+.PHONY : src/keyboard_events.o
 
 # target to build an object file
-keyboard_events.c.o:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/keyboard_events.c.o
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.o
-.PHONY : keyboard_events.c.o
+src/keyboard_events.c.o:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/src/keyboard_events.c.o
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.o
+.PHONY : src/keyboard_events.c.o
 
-keyboard_events.i: keyboard_events.c.i
+src/keyboard_events.i: src/keyboard_events.c.i
 
-.PHONY : keyboard_events.i
+.PHONY : src/keyboard_events.i
 
 # target to preprocess a source file
-keyboard_events.c.i:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/keyboard_events.c.i
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.i
-.PHONY : keyboard_events.c.i
+src/keyboard_events.c.i:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/src/keyboard_events.c.i
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.i
+.PHONY : src/keyboard_events.c.i
 
-keyboard_events.s: keyboard_events.c.s
+src/keyboard_events.s: src/keyboard_events.c.s
 
-.PHONY : keyboard_events.s
+.PHONY : src/keyboard_events.s
 
 # target to generate assembly for a file
-keyboard_events.c.s:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/keyboard_events.c.s
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.s
-.PHONY : keyboard_events.c.s
+src/keyboard_events.c.s:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/src/keyboard_events.c.s
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.s
+.PHONY : src/keyboard_events.c.s
 
-main.o: main.c.o
+src/main.o: src/main.c.o
 
-.PHONY : main.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_in_OS_X.dir/build.make CMakeFiles/Keyboard_Events_in_OS_X.dir/main.c.o
-.PHONY : main.c.o
+src/main.c.o:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_in_OS_X.dir/build.make CMakeFiles/Keyboard_Events_in_OS_X.dir/src/main.c.o
+.PHONY : src/main.c.o
 
-main.i: main.c.i
+src/main.i: src/main.c.i
 
-.PHONY : main.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_in_OS_X.dir/build.make CMakeFiles/Keyboard_Events_in_OS_X.dir/main.c.i
-.PHONY : main.c.i
+src/main.c.i:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_in_OS_X.dir/build.make CMakeFiles/Keyboard_Events_in_OS_X.dir/src/main.c.i
+.PHONY : src/main.c.i
 
-main.s: main.c.s
+src/main.s: src/main.c.s
 
-.PHONY : main.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_in_OS_X.dir/build.make CMakeFiles/Keyboard_Events_in_OS_X.dir/main.c.s
-.PHONY : main.c.s
+src/main.c.s:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_in_OS_X.dir/build.make CMakeFiles/Keyboard_Events_in_OS_X.dir/src/main.c.s
+.PHONY : src/main.c.s
 
-symbolic_hot_keys.o: symbolic_hot_keys.c.o
+src/symbolic_hot_keys.o: src/symbolic_hot_keys.c.o
 
-.PHONY : symbolic_hot_keys.o
+.PHONY : src/symbolic_hot_keys.o
 
 # target to build an object file
-symbolic_hot_keys.c.o:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/symbolic_hot_keys.c.o
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.o
-.PHONY : symbolic_hot_keys.c.o
+src/symbolic_hot_keys.c.o:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/src/symbolic_hot_keys.c.o
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.o
+.PHONY : src/symbolic_hot_keys.c.o
 
-symbolic_hot_keys.i: symbolic_hot_keys.c.i
+src/symbolic_hot_keys.i: src/symbolic_hot_keys.c.i
 
-.PHONY : symbolic_hot_keys.i
+.PHONY : src/symbolic_hot_keys.i
 
 # target to preprocess a source file
-symbolic_hot_keys.c.i:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/symbolic_hot_keys.c.i
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.i
-.PHONY : symbolic_hot_keys.c.i
+src/symbolic_hot_keys.c.i:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/src/symbolic_hot_keys.c.i
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.i
+.PHONY : src/symbolic_hot_keys.c.i
 
-symbolic_hot_keys.s: symbolic_hot_keys.c.s
+src/symbolic_hot_keys.s: src/symbolic_hot_keys.c.s
 
-.PHONY : symbolic_hot_keys.s
+.PHONY : src/symbolic_hot_keys.s
 
 # target to generate assembly for a file
-symbolic_hot_keys.c.s:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/symbolic_hot_keys.c.s
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.s
-.PHONY : symbolic_hot_keys.c.s
+src/symbolic_hot_keys.c.s:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/src/symbolic_hot_keys.c.s
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.s
+.PHONY : src/symbolic_hot_keys.c.s
 
 # Help Target
 help:
@@ -329,28 +467,38 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... list_install_components"
 	@echo "... Keyboard_Events_in_OS_X"
-	@echo "... Install_Keyboard_Events_in_OS_X"
 	@echo "... Keyboard_Events_Lib_Static"
 	@echo "... Keyboard_Events_Lib"
-	@echo "... hot_keys_events.o"
-	@echo "... hot_keys_events.i"
-	@echo "... hot_keys_events.s"
-	@echo "... keyboard_events.o"
-	@echo "... keyboard_events.i"
-	@echo "... keyboard_events.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... symbolic_hot_keys.o"
-	@echo "... symbolic_hot_keys.i"
-	@echo "... symbolic_hot_keys.s"
+	@echo "... Automation_Scripts_in_OS_X"
+	@echo "... Automation_Scripts_Lib_Static"
+	@echo "... Automation_Scripts_Lib"
+	@echo "... Cocoa_Helper_in_OS_X"
+	@echo "... Cocoa_Helper_Lib_Static"
+	@echo "... Cocoa_Helper_Lib"
+	@echo "... Common_Functions"
+	@echo "... Common_Functions_Lib_Static"
+	@echo "... Common_Functions_Lib"
+	@echo "... libpng_1_6_24"
+	@echo "... libpng_Lib_Static"
+	@echo "... libpng_Lib"
+	@echo "... zlib_1_2_8"
+	@echo "... zlib_Lib_Static"
+	@echo "... zlib_Lib"
+	@echo "... src/hot_keys_events.o"
+	@echo "... src/hot_keys_events.i"
+	@echo "... src/hot_keys_events.s"
+	@echo "... src/keyboard_events.o"
+	@echo "... src/keyboard_events.i"
+	@echo "... src/keyboard_events.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/symbolic_hot_keys.o"
+	@echo "... src/symbolic_hot_keys.i"
+	@echo "... src/symbolic_hot_keys.s"
 .PHONY : help
 
 

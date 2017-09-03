@@ -57,158 +57,158 @@ include CMakeFiles/Cocoa_Helper_Lib_Static.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Cocoa_Helper_Lib_Static.dir/flags.make
 
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.o: CMakeFiles/Cocoa_Helper_Lib_Static.dir/flags.make
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.o: ../strings.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/strings.c
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.o: CMakeFiles/Cocoa_Helper_Lib_Static.dir/flags.make
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.o: ../src/cocoa_helper/strings.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/cocoa_helper/strings.c
 
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/strings.c > CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.i
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/cocoa_helper/strings.c > CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.i
 
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/strings.c -o CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.s
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/cocoa_helper/strings.c -o CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.s
 
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.o.requires:
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.o.requires:
 
-.PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.o.requires
+.PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.o.requires
 
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.o.provides: CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.o.requires
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.o.provides.build
-.PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.o.provides
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.o.provides: CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.o.requires
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.o.provides.build
+.PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.o.provides
 
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.o.provides.build: CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.o
-
-
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.o: CMakeFiles/Cocoa_Helper_Lib_Static.dir/flags.make
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.o: ../property_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/property_list.c
-
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/property_list.c > CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.i
-
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/property_list.c -o CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.s
-
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.o.requires:
-
-.PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.o.requires
-
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.o.provides: CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.o.requires
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.o.provides.build
-.PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.o.provides
-
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.o.provides.build: CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.o
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.o.provides.build: CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.o
 
 
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.o: CMakeFiles/Cocoa_Helper_Lib_Static.dir/flags.make
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.o: ../exec_cmd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/exec_cmd.c
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.o: CMakeFiles/Cocoa_Helper_Lib_Static.dir/flags.make
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.o: ../src/cocoa_helper/property_list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/cocoa_helper/property_list.c
 
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/exec_cmd.c > CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.i
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/cocoa_helper/property_list.c > CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.i
 
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/exec_cmd.c -o CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.s
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/cocoa_helper/property_list.c -o CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.s
 
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.o.requires:
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.o.requires:
 
-.PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.o.requires
+.PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.o.requires
 
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.o.provides: CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.o.requires
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.o.provides.build
-.PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.o.provides
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.o.provides: CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.o.requires
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.o.provides.build
+.PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.o.provides
 
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.o.provides.build: CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.o
-
-
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.o: CMakeFiles/Cocoa_Helper_Lib_Static.dir/flags.make
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.o: ../images.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/images.c
-
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/images.c > CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.i
-
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/images.c -o CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.s
-
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.o.requires:
-
-.PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.o.requires
-
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.o.provides: CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.o.requires
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.o.provides.build
-.PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.o.provides
-
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.o.provides.build: CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.o
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.o.provides.build: CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.o
 
 
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.o: CMakeFiles/Cocoa_Helper_Lib_Static.dir/flags.make
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.o: ../file_system.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/file_system.c
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.o: CMakeFiles/Cocoa_Helper_Lib_Static.dir/flags.make
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.o: ../src/cocoa_helper/exec_cmd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/cocoa_helper/exec_cmd.c
 
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/file_system.c > CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.i
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/cocoa_helper/exec_cmd.c > CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.i
 
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/file_system.c -o CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.s
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/cocoa_helper/exec_cmd.c -o CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.s
 
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.o.requires:
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.o.requires:
 
-.PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.o.requires
+.PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.o.requires
 
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.o.provides: CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.o.requires
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.o.provides.build
-.PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.o.provides
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.o.provides: CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.o.requires
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.o.provides.build
+.PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.o.provides
 
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.o.provides.build: CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.o
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.o.provides.build: CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.o
+
+
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.o: CMakeFiles/Cocoa_Helper_Lib_Static.dir/flags.make
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.o: ../src/cocoa_helper/images.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/cocoa_helper/images.c
+
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/cocoa_helper/images.c > CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.i
+
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/cocoa_helper/images.c -o CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.s
+
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.o.requires:
+
+.PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.o.requires
+
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.o.provides: CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.o.requires
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.o.provides.build
+.PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.o.provides
+
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.o.provides.build: CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.o
+
+
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.o: CMakeFiles/Cocoa_Helper_Lib_Static.dir/flags.make
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.o: ../src/cocoa_helper/file_system.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/cocoa_helper/file_system.c
+
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/cocoa_helper/file_system.c > CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.i
+
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/cocoa_helper/file_system.c -o CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.s
+
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.o.requires:
+
+.PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.o.requires
+
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.o.provides: CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.o.requires
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.o.provides.build
+.PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.o.provides
+
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.o.provides.build: CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.o
 
 
 # Object files for target Cocoa_Helper_Lib_Static
 Cocoa_Helper_Lib_Static_OBJECTS = \
-"CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.o" \
-"CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.o" \
-"CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.o" \
-"CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.o" \
-"CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.o"
+"CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.o" \
+"CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.o" \
+"CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.o" \
+"CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.o" \
+"CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.o"
 
 # External object files for target Cocoa_Helper_Lib_Static
 Cocoa_Helper_Lib_Static_EXTERNAL_OBJECTS =
 
-libcocoa_helper.a: CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.o
-libcocoa_helper.a: CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.o
-libcocoa_helper.a: CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.o
-libcocoa_helper.a: CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.o
-libcocoa_helper.a: CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.o
-libcocoa_helper.a: CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make
-libcocoa_helper.a: CMakeFiles/Cocoa_Helper_Lib_Static.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libcocoa_helper.a"
+../outputs/lib/apple/libcocoa_helper.a: CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.o
+../outputs/lib/apple/libcocoa_helper.a: CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.o
+../outputs/lib/apple/libcocoa_helper.a: CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.o
+../outputs/lib/apple/libcocoa_helper.a: CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.o
+../outputs/lib/apple/libcocoa_helper.a: CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.o
+../outputs/lib/apple/libcocoa_helper.a: CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make
+../outputs/lib/apple/libcocoa_helper.a: CMakeFiles/Cocoa_Helper_Lib_Static.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library ../outputs/lib/apple/libcocoa_helper.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/Cocoa_Helper_Lib_Static.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Cocoa_Helper_Lib_Static.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/build: libcocoa_helper.a
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/build: ../outputs/lib/apple/libcocoa_helper.a
 
 .PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/build
 
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/requires: CMakeFiles/Cocoa_Helper_Lib_Static.dir/strings.c.o.requires
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/requires: CMakeFiles/Cocoa_Helper_Lib_Static.dir/property_list.c.o.requires
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/requires: CMakeFiles/Cocoa_Helper_Lib_Static.dir/exec_cmd.c.o.requires
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/requires: CMakeFiles/Cocoa_Helper_Lib_Static.dir/images.c.o.requires
-CMakeFiles/Cocoa_Helper_Lib_Static.dir/requires: CMakeFiles/Cocoa_Helper_Lib_Static.dir/file_system.c.o.requires
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/requires: CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/strings.c.o.requires
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/requires: CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/property_list.c.o.requires
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/requires: CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/exec_cmd.c.o.requires
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/requires: CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/images.c.o.requires
+CMakeFiles/Cocoa_Helper_Lib_Static.dir/requires: CMakeFiles/Cocoa_Helper_Lib_Static.dir/src/cocoa_helper/file_system.c.o.requires
 
 .PHONY : CMakeFiles/Cocoa_Helper_Lib_Static.dir/requires
 

@@ -24,10 +24,10 @@ AUDIO_TOOLBOX_LIBRARY:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platfo
 Automation_Scripts_BINARY_DIR:STATIC=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug
 
 //Dependencies for the target
-Automation_Scripts_Lib_LIB_DEPENDS:STATIC=general;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../../../common/output/unix/lib/static/libcommon_functions.a;general;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../../../libpng-1.6.24/output/unix/lib/static/liblibpng.a;general;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../../../zlib-1.2.8/output/unix/lib/static/libzlib.a;general;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../cocoa_helper/output/apple/lib/static/libcocoa_helper.a;general;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../../../../cocoa/AppleScriptSystemAutomation/libAppleScriptSystemAutomation.a;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/ApplicationServices.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Carbon.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/IOKit.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AudioToolbox.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/IOSurface.framework;general;opencv_core;general;opencv_imgproc;general;opencv_highgui;
+Automation_Scripts_Lib_LIB_DEPENDS:STATIC=general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Carbon.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/IOKit.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AudioToolbox.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/IOSurface.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/ApplicationServices.framework;general;opencv_core;general;opencv_imgproc;general;opencv_highgui;general;APPLE_SCRIPT_SYSTEM_AUTOMATION_LIB;general;Cocoa_Helper_Lib;
 
 //Dependencies for the target
-Automation_Scripts_Lib_Static_LIB_DEPENDS:STATIC=general;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../../../common/output/unix/lib/static/libcommon_functions.a;general;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../../../libpng-1.6.24/output/unix/lib/static/liblibpng.a;general;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../../../zlib-1.2.8/output/unix/lib/static/libzlib.a;general;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../cocoa_helper/output/apple/lib/static/libcocoa_helper.a;general;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../../../../cocoa/AppleScriptSystemAutomation/libAppleScriptSystemAutomation.a;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/ApplicationServices.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Carbon.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/IOKit.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AudioToolbox.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/IOSurface.framework;general;opencv_core;general;opencv_imgproc;general;opencv_highgui;
+Automation_Scripts_Lib_Static_LIB_DEPENDS:STATIC=general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Carbon.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/IOKit.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AudioToolbox.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/IOSurface.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/ApplicationServices.framework;general;opencv_core;general;opencv_imgproc;general;opencv_highgui;general;APPLE_SCRIPT_SYSTEM_AUTOMATION_LIB;general;Cocoa_Helper_Lib_Static;
 
 //Value Computed by CMake
 Automation_Scripts_SOURCE_DIR:STATIC=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts
@@ -219,6 +219,30 @@ CMAKE_STRIP:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/Xcode
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Dependencies for the target
+Cocoa_Helper_Lib_LIB_DEPENDS:STATIC=general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/ApplicationServices.framework;general;opencv_core;general;opencv_imgproc;general;opencv_highgui;general;Common_Functions_Lib;
+
+//Dependencies for the target
+Cocoa_Helper_Lib_Static_LIB_DEPENDS:STATIC=general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/ApplicationServices.framework;general;opencv_core;general;opencv_imgproc;general;opencv_highgui;general;Common_Functions_Lib_Static;
+
+//Value Computed by CMake
+Cocoa_Helper_in_OS_X_BINARY_DIR:STATIC=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs
+
+//Value Computed by CMake
+Cocoa_Helper_in_OS_X_SOURCE_DIR:STATIC=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper
+
+//Value Computed by CMake
+Common_Functions_BINARY_DIR:STATIC=/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs
+
+//Dependencies for the target
+Common_Functions_Lib_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_highgui;general;zlib_Lib;general;libpng_Lib;
+
+//Dependencies for the target
+Common_Functions_Lib_Static_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_highgui;general;zlib_Lib_Static;general;libpng_Lib_Static;
+
+//Value Computed by CMake
+Common_Functions_SOURCE_DIR:STATIC=/Users/michzio/Developer/MyProjects/BachelorDegree/c/common
+
 //Path to a library.
 IOKIT_LIBRARY:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/IOKit.framework
 
@@ -244,6 +268,30 @@ OpenCV_LIB_DIR_OPT:PATH=
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
+
+//Value Computed by CMake
+libpng_1_6_24_BINARY_DIR:STATIC=/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs
+
+//Value Computed by CMake
+libpng_1_6_24_SOURCE_DIR:STATIC=/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24
+
+//Dependencies for the target
+libpng_Lib_LIB_DEPENDS:STATIC=general;zlib_Lib;
+
+//Dependencies for the target
+libpng_Lib_Static_LIB_DEPENDS:STATIC=general;zlib_Lib_Static;
+
+//Value Computed by CMake
+zlib_1_2_8_BINARY_DIR:STATIC=/Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs
+
+//Value Computed by CMake
+zlib_1_2_8_SOURCE_DIR:STATIC=/Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8
+
+//Dependencies for target
+zlib_Lib_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+zlib_Lib_Static_LIB_DEPENDS:STATIC=
 
 
 ########################
@@ -350,7 +398,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

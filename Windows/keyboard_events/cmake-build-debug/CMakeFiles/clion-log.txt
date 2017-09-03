@@ -1,4 +1,7 @@
-C:\Users\michzio\.CLion2017.1\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events
+building for Cygwin
+building for Cygwin
+building for Cygwin
 -- Configuring done
 -- Generating done
--- Build files have been written to: /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug
+-- Build files have been written to: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug

@@ -1,10 +1,5 @@
-/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/install/strip.dir
-/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/install/local.dir
-/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/install.dir
-/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/list_install_components.dir
-/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/edit_cache.dir
-/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/Install_Mouse_Events_in_Windows.dir
-/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/Mouse_Events_in_Windows.dir
-/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/Mouse_Events_Lib_Static.dir
-/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/Mouse_Events_Lib.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/Mouse_Events_in_Windows.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/Mouse_Events_Lib_Static.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/Mouse_Events_Lib.dir

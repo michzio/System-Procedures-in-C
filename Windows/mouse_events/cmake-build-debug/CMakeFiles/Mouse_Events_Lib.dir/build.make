@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events
+CMAKE_SOURCE_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Mouse_Events_Lib.dir/depend.make
@@ -57,76 +57,76 @@ include CMakeFiles/Mouse_Events_Lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Mouse_Events_Lib.dir/flags.make
 
-CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o: CMakeFiles/Mouse_Events_Lib.dir/flags.make
-CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o: ../mouse_events.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o   -c /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/mouse_events.c
+CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.o: CMakeFiles/Mouse_Events_Lib.dir/flags.make
+CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.o: ../src/mouse_events.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/src/mouse_events.c
 
-CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/mouse_events.c > CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.i
+CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/src/mouse_events.c > CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.i
 
-CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/mouse_events.c -o CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.s
+CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/src/mouse_events.c -o CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.s
 
-CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o.requires:
+CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.o.requires:
 
-.PHONY : CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o.requires
+.PHONY : CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.o.requires
 
-CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o.provides: CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o.requires
-	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o.provides.build
-.PHONY : CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o.provides
+CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.o.provides: CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.o.requires
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.o.provides.build
+.PHONY : CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.o.provides
 
-CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o.provides.build: CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o
+CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.o.provides.build: CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.o
 
 
-CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o: CMakeFiles/Mouse_Events_Lib.dir/flags.make
-CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o: ../scroll_wheel_events.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o   -c /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/scroll_wheel_events.c
+CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.o: CMakeFiles/Mouse_Events_Lib.dir/flags.make
+CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.o: ../src/scroll_wheel_events.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/src/scroll_wheel_events.c
 
-CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/scroll_wheel_events.c > CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.i
+CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/src/scroll_wheel_events.c > CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.i
 
-CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/scroll_wheel_events.c -o CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.s
+CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/src/scroll_wheel_events.c -o CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.s
 
-CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o.requires:
+CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.o.requires:
 
-.PHONY : CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o.requires
+.PHONY : CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.o.requires
 
-CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o.provides: CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o.requires
-	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o.provides.build
-.PHONY : CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o.provides
+CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.o.provides: CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.o.requires
+	$(MAKE) -f CMakeFiles/Mouse_Events_Lib.dir/build.make CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.o.provides.build
+.PHONY : CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.o.provides
 
-CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o.provides.build: CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o
+CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.o.provides.build: CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.o
 
 
 # Object files for target Mouse_Events_Lib
 Mouse_Events_Lib_OBJECTS = \
-"CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o" \
-"CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o"
+"CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.o" \
+"CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.o"
 
 # External object files for target Mouse_Events_Lib
 Mouse_Events_Lib_EXTERNAL_OBJECTS =
 
-cygmouse_events_shared.dll: CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o
-cygmouse_events_shared.dll: CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o
-cygmouse_events_shared.dll: CMakeFiles/Mouse_Events_Lib.dir/build.make
-cygmouse_events_shared.dll: CMakeFiles/Mouse_Events_Lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library cygmouse_events_shared.dll"
+../outputs/lib/cygwin/libmouse_events.dylib: CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.o
+../outputs/lib/cygwin/libmouse_events.dylib: CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.o
+../outputs/lib/cygwin/libmouse_events.dylib: CMakeFiles/Mouse_Events_Lib.dir/build.make
+../outputs/lib/cygwin/libmouse_events.dylib: CMakeFiles/Mouse_Events_Lib.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library ../outputs/lib/cygwin/libmouse_events.dylib"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Mouse_Events_Lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Mouse_Events_Lib.dir/build: cygmouse_events_shared.dll
+CMakeFiles/Mouse_Events_Lib.dir/build: ../outputs/lib/cygwin/libmouse_events.dylib
 
 .PHONY : CMakeFiles/Mouse_Events_Lib.dir/build
 
-CMakeFiles/Mouse_Events_Lib.dir/requires: CMakeFiles/Mouse_Events_Lib.dir/mouse_events.c.o.requires
-CMakeFiles/Mouse_Events_Lib.dir/requires: CMakeFiles/Mouse_Events_Lib.dir/scroll_wheel_events.c.o.requires
+CMakeFiles/Mouse_Events_Lib.dir/requires: CMakeFiles/Mouse_Events_Lib.dir/src/mouse_events.c.o.requires
+CMakeFiles/Mouse_Events_Lib.dir/requires: CMakeFiles/Mouse_Events_Lib.dir/src/scroll_wheel_events.c.o.requires
 
 .PHONY : CMakeFiles/Mouse_Events_Lib.dir/requires
 
@@ -135,6 +135,6 @@ CMakeFiles/Mouse_Events_Lib.dir/clean:
 .PHONY : CMakeFiles/Mouse_Events_Lib.dir/clean
 
 CMakeFiles/Mouse_Events_Lib.dir/depend:
-	cd /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/Mouse_Events_Lib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/cmake-build-debug/CMakeFiles/Mouse_Events_Lib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Mouse_Events_Lib.dir/depend
 

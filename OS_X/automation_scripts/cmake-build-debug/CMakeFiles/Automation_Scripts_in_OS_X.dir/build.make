@@ -57,28 +57,28 @@ include CMakeFiles/Automation_Scripts_in_OS_X.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Automation_Scripts_in_OS_X.dir/flags.make
 
-CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.o: CMakeFiles/Automation_Scripts_in_OS_X.dir/flags.make
-CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/main.c
+CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.o: CMakeFiles/Automation_Scripts_in_OS_X.dir/flags.make
+CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.o: ../src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/main.c
 
-CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/main.c > CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.i
+CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/main.c > CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.i
 
-CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/main.c -o CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.s
+CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/main.c -o CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.s
 
-CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.o.requires:
+CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.o.requires:
 
-.PHONY : CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.o.requires
+.PHONY : CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.o.requires
 
-CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.o.provides: CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.o.requires
-	$(MAKE) -f CMakeFiles/Automation_Scripts_in_OS_X.dir/build.make CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.o.provides.build
-.PHONY : CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.o.provides
+CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.o.provides: CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.o.requires
+	$(MAKE) -f CMakeFiles/Automation_Scripts_in_OS_X.dir/build.make CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.o.provides.build
+.PHONY : CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.o.provides
 
-CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.o.provides.build: CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.o
+CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.o.provides.build: CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.o
 
 
 CMakeFiles/Automation_Scripts_in_OS_X.dir/test/test_display.c.o: CMakeFiles/Automation_Scripts_in_OS_X.dir/flags.make
@@ -227,7 +227,7 @@ CMakeFiles/Automation_Scripts_in_OS_X.dir/test/test_automation_scripts.c.o.provi
 
 # Object files for target Automation_Scripts_in_OS_X
 Automation_Scripts_in_OS_X_OBJECTS = \
-"CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.o" \
+"CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.o" \
 "CMakeFiles/Automation_Scripts_in_OS_X.dir/test/test_display.c.o" \
 "CMakeFiles/Automation_Scripts_in_OS_X.dir/test/test_windows.c.o" \
 "CMakeFiles/Automation_Scripts_in_OS_X.dir/test/test_system_events.c.o" \
@@ -238,35 +238,35 @@ Automation_Scripts_in_OS_X_OBJECTS = \
 # External object files for target Automation_Scripts_in_OS_X
 Automation_Scripts_in_OS_X_EXTERNAL_OBJECTS =
 
-automation_scripts: CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.o
-automation_scripts: CMakeFiles/Automation_Scripts_in_OS_X.dir/test/test_display.c.o
-automation_scripts: CMakeFiles/Automation_Scripts_in_OS_X.dir/test/test_windows.c.o
-automation_scripts: CMakeFiles/Automation_Scripts_in_OS_X.dir/test/test_system_events.c.o
-automation_scripts: CMakeFiles/Automation_Scripts_in_OS_X.dir/test/test_audio.c.o
-automation_scripts: CMakeFiles/Automation_Scripts_in_OS_X.dir/test/test_display_stream.c.o
-automation_scripts: CMakeFiles/Automation_Scripts_in_OS_X.dir/test/test_automation_scripts.c.o
-automation_scripts: CMakeFiles/Automation_Scripts_in_OS_X.dir/build.make
-automation_scripts: libautomation_scripts.a
-automation_scripts: ../../../../comparers/output/unix/lib/static/libcomparers.a
-automation_scripts: ../../../../unit_tests/output/unix/lib/static/libunit_tests.a
-automation_scripts: ../../../../common/output/unix/lib/static/libcommon_functions.a
-automation_scripts: ../../../../libpng-1.6.24/output/unix/lib/static/liblibpng.a
-automation_scripts: ../../../../zlib-1.2.8/output/unix/lib/static/libzlib.a
-automation_scripts: ../../cocoa_helper/output/apple/lib/static/libcocoa_helper.a
-automation_scripts: ../../../../../cocoa/AppleScriptSystemAutomation/libAppleScriptSystemAutomation.a
-automation_scripts: /usr/local/lib/libopencv_highgui.2.4.13.dylib
-automation_scripts: /usr/local/lib/libopencv_imgproc.2.4.13.dylib
-automation_scripts: /usr/local/lib/libopencv_core.2.4.13.dylib
-automation_scripts: CMakeFiles/Automation_Scripts_in_OS_X.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable automation_scripts"
+../outputs/bin/apple/automation_scripts: CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.o
+../outputs/bin/apple/automation_scripts: CMakeFiles/Automation_Scripts_in_OS_X.dir/test/test_display.c.o
+../outputs/bin/apple/automation_scripts: CMakeFiles/Automation_Scripts_in_OS_X.dir/test/test_windows.c.o
+../outputs/bin/apple/automation_scripts: CMakeFiles/Automation_Scripts_in_OS_X.dir/test/test_system_events.c.o
+../outputs/bin/apple/automation_scripts: CMakeFiles/Automation_Scripts_in_OS_X.dir/test/test_audio.c.o
+../outputs/bin/apple/automation_scripts: CMakeFiles/Automation_Scripts_in_OS_X.dir/test/test_display_stream.c.o
+../outputs/bin/apple/automation_scripts: CMakeFiles/Automation_Scripts_in_OS_X.dir/test/test_automation_scripts.c.o
+../outputs/bin/apple/automation_scripts: CMakeFiles/Automation_Scripts_in_OS_X.dir/build.make
+../outputs/bin/apple/automation_scripts: ../outputs/lib/apple/libautomation_scripts.dylib
+../outputs/bin/apple/automation_scripts: ../../../../unit_tests/outputs/lib/apple/libunit_tests.dylib
+../outputs/bin/apple/automation_scripts: ../../../../comparers/outputs/lib/apple/libcomparers.dylib
+../outputs/bin/apple/automation_scripts: ../../../../../cocoa/AppleScriptSystemAutomation/libAppleScriptSystemAutomation.a
+../outputs/bin/apple/automation_scripts: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/lib/apple/libcocoa_helper.dylib
+../outputs/bin/apple/automation_scripts: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/lib/apple/libcommon_functions.dylib
+../outputs/bin/apple/automation_scripts: /usr/local/lib/libopencv_highgui.2.4.13.dylib
+../outputs/bin/apple/automation_scripts: /usr/local/lib/libopencv_imgproc.2.4.13.dylib
+../outputs/bin/apple/automation_scripts: /usr/local/lib/libopencv_core.2.4.13.dylib
+../outputs/bin/apple/automation_scripts: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/lib/apple/liblibpng.dylib
+../outputs/bin/apple/automation_scripts: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/lib/apple/libzlib.dylib
+../outputs/bin/apple/automation_scripts: CMakeFiles/Automation_Scripts_in_OS_X.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable ../outputs/bin/apple/automation_scripts"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Automation_Scripts_in_OS_X.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Automation_Scripts_in_OS_X.dir/build: automation_scripts
+CMakeFiles/Automation_Scripts_in_OS_X.dir/build: ../outputs/bin/apple/automation_scripts
 
 .PHONY : CMakeFiles/Automation_Scripts_in_OS_X.dir/build
 
-CMakeFiles/Automation_Scripts_in_OS_X.dir/requires: CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.o.requires
+CMakeFiles/Automation_Scripts_in_OS_X.dir/requires: CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.o.requires
 CMakeFiles/Automation_Scripts_in_OS_X.dir/requires: CMakeFiles/Automation_Scripts_in_OS_X.dir/test/test_display.c.o.requires
 CMakeFiles/Automation_Scripts_in_OS_X.dir/requires: CMakeFiles/Automation_Scripts_in_OS_X.dir/test/test_windows.c.o.requires
 CMakeFiles/Automation_Scripts_in_OS_X.dir/requires: CMakeFiles/Automation_Scripts_in_OS_X.dir/test/test_system_events.c.o.requires

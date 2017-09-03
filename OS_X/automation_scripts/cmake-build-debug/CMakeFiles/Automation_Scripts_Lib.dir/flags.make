@@ -6,5 +6,5 @@ C_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacO
 
 C_DEFINES = -DAutomation_Scripts_Lib_EXPORTS
 
-C_INCLUDES = -I/usr/local/include/opencv -I/usr/local/include 
+C_INCLUDES = -I/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/include -I/usr/local/include/opencv -I/usr/local/include -I/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../../../../cocoa/AppleScriptSystemAutomation/AppleScriptSystemAutomation -I/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../cocoa_helper/include -I/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../../../common/include -I/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../../../common/libraries -I/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../../../zlib-1.2.8/include -I/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../../../libpng-1.6.24/include -I/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../../../unit_tests/include -I/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../../../comparers/include 
 

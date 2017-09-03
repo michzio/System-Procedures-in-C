@@ -1,2 +1,2 @@
-/usr/bin/ar.exe qc libwindows_helpers.a  CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.o
-/usr/bin/ranlib.exe libwindows_helpers.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc ../outputs/lib/cygwin/libwindows_helpers.a  CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib ../outputs/lib/cygwin/libwindows_helpers.a

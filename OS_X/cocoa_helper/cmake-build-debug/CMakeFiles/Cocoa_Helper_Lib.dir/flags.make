@@ -6,5 +6,5 @@ C_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacO
 
 C_DEFINES = -DCocoa_Helper_Lib_EXPORTS
 
-C_INCLUDES = -I/usr/local/include/opencv -I/usr/local/include 
+C_INCLUDES = -I/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/include -I/usr/local/include/opencv -I/usr/local/include -I/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/../../../common/include -I/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/../../../common/libraries -I/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/../../../zlib-1.2.8/include -I/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/../../../libpng-1.6.24/include 
 

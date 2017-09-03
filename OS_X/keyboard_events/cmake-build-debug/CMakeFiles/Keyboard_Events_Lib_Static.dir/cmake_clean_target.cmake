@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libkeyboard_events.a"
+  "../outputs/lib/apple/libkeyboard_events.a"
 )

@@ -39,71 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events
+CMAKE_SOURCE_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -114,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -124,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -153,19 +109,6 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named Install_Keyboard_Events_in_Windows
-
-# Build rule for target.
-Install_Keyboard_Events_in_Windows: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Install_Keyboard_Events_in_Windows
-.PHONY : Install_Keyboard_Events_in_Windows
-
-# fast build rule for target.
-Install_Keyboard_Events_in_Windows/fast:
-	$(MAKE) -f CMakeFiles/Install_Keyboard_Events_in_Windows.dir/build.make CMakeFiles/Install_Keyboard_Events_in_Windows.dir/build
-.PHONY : Install_Keyboard_Events_in_Windows/fast
 
 #=============================================================================
 # Target rules for targets named Keyboard_Events_in_Windows
@@ -206,92 +149,170 @@ Keyboard_Events_Lib/fast:
 	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/build
 .PHONY : Keyboard_Events_Lib/fast
 
-hot_keys_events.o: hot_keys_events.c.o
+#=============================================================================
+# Target rules for targets named Mouse_Events_in_Windows
 
-.PHONY : hot_keys_events.o
+# Build rule for target.
+Mouse_Events_in_Windows: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Mouse_Events_in_Windows
+.PHONY : Mouse_Events_in_Windows
+
+# fast build rule for target.
+Mouse_Events_in_Windows/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_in_Windows.dir/build
+.PHONY : Mouse_Events_in_Windows/fast
+
+#=============================================================================
+# Target rules for targets named Mouse_Events_Lib_Static
+
+# Build rule for target.
+Mouse_Events_Lib_Static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Mouse_Events_Lib_Static
+.PHONY : Mouse_Events_Lib_Static
+
+# fast build rule for target.
+Mouse_Events_Lib_Static/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib_Static.dir/build
+.PHONY : Mouse_Events_Lib_Static/fast
+
+#=============================================================================
+# Target rules for targets named Mouse_Events_Lib
+
+# Build rule for target.
+Mouse_Events_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Mouse_Events_Lib
+.PHONY : Mouse_Events_Lib
+
+# fast build rule for target.
+Mouse_Events_Lib/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/CMakeFiles/Mouse_Events_Lib.dir/build
+.PHONY : Mouse_Events_Lib/fast
+
+#=============================================================================
+# Target rules for targets named Windows_Helpers
+
+# Build rule for target.
+Windows_Helpers: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Windows_Helpers
+.PHONY : Windows_Helpers
+
+# fast build rule for target.
+Windows_Helpers/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers.dir/build
+.PHONY : Windows_Helpers/fast
+
+#=============================================================================
+# Target rules for targets named Windows_Helpers_Lib_Static
+
+# Build rule for target.
+Windows_Helpers_Lib_Static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Windows_Helpers_Lib_Static
+.PHONY : Windows_Helpers_Lib_Static
+
+# fast build rule for target.
+Windows_Helpers_Lib_Static/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib_Static.dir/build
+.PHONY : Windows_Helpers_Lib_Static/fast
+
+#=============================================================================
+# Target rules for targets named Windows_Helpers_Lib
+
+# Build rule for target.
+Windows_Helpers_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Windows_Helpers_Lib
+.PHONY : Windows_Helpers_Lib
+
+# fast build rule for target.
+Windows_Helpers_Lib/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/CMakeFiles/Windows_Helpers_Lib.dir/build
+.PHONY : Windows_Helpers_Lib/fast
+
+src/hot_keys_events.o: src/hot_keys_events.c.o
+
+.PHONY : src/hot_keys_events.o
 
 # target to build an object file
-hot_keys_events.c.o:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/hot_keys_events.c.o
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.o
-.PHONY : hot_keys_events.c.o
+src/hot_keys_events.c.o:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/src/hot_keys_events.c.o
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.o
+.PHONY : src/hot_keys_events.c.o
 
-hot_keys_events.i: hot_keys_events.c.i
+src/hot_keys_events.i: src/hot_keys_events.c.i
 
-.PHONY : hot_keys_events.i
+.PHONY : src/hot_keys_events.i
 
 # target to preprocess a source file
-hot_keys_events.c.i:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/hot_keys_events.c.i
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.i
-.PHONY : hot_keys_events.c.i
+src/hot_keys_events.c.i:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/src/hot_keys_events.c.i
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.i
+.PHONY : src/hot_keys_events.c.i
 
-hot_keys_events.s: hot_keys_events.c.s
+src/hot_keys_events.s: src/hot_keys_events.c.s
 
-.PHONY : hot_keys_events.s
+.PHONY : src/hot_keys_events.s
 
 # target to generate assembly for a file
-hot_keys_events.c.s:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/hot_keys_events.c.s
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.s
-.PHONY : hot_keys_events.c.s
+src/hot_keys_events.c.s:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/src/hot_keys_events.c.s
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.s
+.PHONY : src/hot_keys_events.c.s
 
-keyboard_events.o: keyboard_events.c.o
+src/keyboard_events.o: src/keyboard_events.c.o
 
-.PHONY : keyboard_events.o
+.PHONY : src/keyboard_events.o
 
 # target to build an object file
-keyboard_events.c.o:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/keyboard_events.c.o
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.o
-.PHONY : keyboard_events.c.o
+src/keyboard_events.c.o:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/src/keyboard_events.c.o
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.o
+.PHONY : src/keyboard_events.c.o
 
-keyboard_events.i: keyboard_events.c.i
+src/keyboard_events.i: src/keyboard_events.c.i
 
-.PHONY : keyboard_events.i
+.PHONY : src/keyboard_events.i
 
 # target to preprocess a source file
-keyboard_events.c.i:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/keyboard_events.c.i
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.i
-.PHONY : keyboard_events.c.i
+src/keyboard_events.c.i:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/src/keyboard_events.c.i
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.i
+.PHONY : src/keyboard_events.c.i
 
-keyboard_events.s: keyboard_events.c.s
+src/keyboard_events.s: src/keyboard_events.c.s
 
-.PHONY : keyboard_events.s
+.PHONY : src/keyboard_events.s
 
 # target to generate assembly for a file
-keyboard_events.c.s:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/keyboard_events.c.s
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.s
-.PHONY : keyboard_events.c.s
+src/keyboard_events.c.s:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib_Static.dir/build.make CMakeFiles/Keyboard_Events_Lib_Static.dir/src/keyboard_events.c.s
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.s
+.PHONY : src/keyboard_events.c.s
 
-main.o: main.c.o
+src/main.o: src/main.c.o
 
-.PHONY : main.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_in_Windows.dir/build.make CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.o
-.PHONY : main.c.o
+src/main.c.o:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_in_Windows.dir/build.make CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.o
+.PHONY : src/main.c.o
 
-main.i: main.c.i
+src/main.i: src/main.c.i
 
-.PHONY : main.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_in_Windows.dir/build.make CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.i
-.PHONY : main.c.i
+src/main.c.i:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_in_Windows.dir/build.make CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.i
+.PHONY : src/main.c.i
 
-main.s: main.c.s
+src/main.s: src/main.c.s
 
-.PHONY : main.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/Keyboard_Events_in_Windows.dir/build.make CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.s
-.PHONY : main.c.s
+src/main.c.s:
+	$(MAKE) -f CMakeFiles/Keyboard_Events_in_Windows.dir/build.make CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.s
+.PHONY : src/main.c.s
 
 # Help Target
 help:
@@ -299,25 +320,26 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
-	@echo "... install/local"
-	@echo "... install"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Install_Keyboard_Events_in_Windows"
 	@echo "... Keyboard_Events_in_Windows"
 	@echo "... Keyboard_Events_Lib_Static"
 	@echo "... Keyboard_Events_Lib"
-	@echo "... hot_keys_events.o"
-	@echo "... hot_keys_events.i"
-	@echo "... hot_keys_events.s"
-	@echo "... keyboard_events.o"
-	@echo "... keyboard_events.i"
-	@echo "... keyboard_events.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Mouse_Events_in_Windows"
+	@echo "... Mouse_Events_Lib_Static"
+	@echo "... Mouse_Events_Lib"
+	@echo "... Windows_Helpers"
+	@echo "... Windows_Helpers_Lib_Static"
+	@echo "... Windows_Helpers_Lib"
+	@echo "... src/hot_keys_events.o"
+	@echo "... src/hot_keys_events.i"
+	@echo "... src/hot_keys_events.s"
+	@echo "... src/keyboard_events.o"
+	@echo "... src/keyboard_events.i"
+	@echo "... src/keyboard_events.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

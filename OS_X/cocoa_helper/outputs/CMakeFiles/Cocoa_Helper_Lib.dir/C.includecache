@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/include/cocoa_helper/property_list.h
+CoreGraphics/CoreGraphics.h
+-
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/cocoa_helper/property_list.c
+cocoa_helper/property_list.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/cocoa_helper/cocoa_helper/property_list.h
+IOSurface/IOSurface.h
+-
+CoreFoundation/CoreFoundation.h
+-
+

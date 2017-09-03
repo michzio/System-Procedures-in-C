@@ -6,8 +6,8 @@
 #include <printf.h>
 #include <unistd.h>
 #include "test_audio.h"
-#include "../system/audio.h"
-#include "../../../../unit_tests/test/assertion.h"
+#include "system/audio.h"
+#include "test/assertion.h"
 
 static void test_audio_output_mute(void) {
 

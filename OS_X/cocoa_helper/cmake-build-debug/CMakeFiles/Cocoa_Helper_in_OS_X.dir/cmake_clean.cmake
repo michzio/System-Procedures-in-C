@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.o"
-  "cocoa_helper.pdb"
-  "cocoa_helper"
+  "CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.o"
+  "../outputs/bin/apple/cocoa_helper.pdb"
+  "../outputs/bin/apple/cocoa_helper"
 )
 
 # Per-language clean rules from dependency scanning.

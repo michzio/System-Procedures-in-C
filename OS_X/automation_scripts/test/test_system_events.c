@@ -3,7 +3,7 @@
 //
 
 #include "test_system_events.h"
-#include "../system/events.h"
+#include "system/events.h"
 
 static void test_system_shutdown(void) { system_shutdown(); }
 static void test_system_restart(void) { system_restart(); }

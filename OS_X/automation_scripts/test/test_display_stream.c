@@ -3,11 +3,11 @@
 //
 
 #include "test_display_stream.h"
-#include "../system/display_stream.h"
-#include "../../../../common/bitwise.h"
-#include "../../../../common/bitmaps.h"
-#include "../../../../common/libraries/png/png-encoding.h"
-#include "../system/display.h"
+#include "system/display_stream.h"
+#include "bitwise.h"
+#include "bitmaps.h"
+#include "png/png-encoding.h"
+#include "system/display.h"
 
 static int count = 0;
 

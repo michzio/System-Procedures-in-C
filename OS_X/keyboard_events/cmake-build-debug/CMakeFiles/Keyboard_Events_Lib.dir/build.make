@@ -57,105 +57,112 @@ include CMakeFiles/Keyboard_Events_Lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Keyboard_Events_Lib.dir/flags.make
 
-CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.o: CMakeFiles/Keyboard_Events_Lib.dir/flags.make
-CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.o: ../keyboard_events.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/keyboard_events.c
+CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.o: CMakeFiles/Keyboard_Events_Lib.dir/flags.make
+CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.o: ../src/keyboard_events.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/src/keyboard_events.c
 
-CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/keyboard_events.c > CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.i
+CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/src/keyboard_events.c > CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.i
 
-CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/keyboard_events.c -o CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.s
+CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/src/keyboard_events.c -o CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.s
 
-CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.o.requires:
+CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.o.requires:
 
-.PHONY : CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.o.requires
+.PHONY : CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.o.requires
 
-CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.o.provides: CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.o.requires
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.o.provides.build
-.PHONY : CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.o.provides
+CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.o.provides: CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.o.requires
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.o.provides.build
+.PHONY : CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.o.provides
 
-CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.o.provides.build: CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.o
-
-
-CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.o: CMakeFiles/Keyboard_Events_Lib.dir/flags.make
-CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.o: ../symbolic_hot_keys.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/symbolic_hot_keys.c
-
-CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/symbolic_hot_keys.c > CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.i
-
-CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/symbolic_hot_keys.c -o CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.s
-
-CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.o.requires:
-
-.PHONY : CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.o.requires
-
-CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.o.provides: CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.o.requires
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.o.provides.build
-.PHONY : CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.o.provides
-
-CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.o.provides.build: CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.o
+CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.o.provides.build: CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.o
 
 
-CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.o: CMakeFiles/Keyboard_Events_Lib.dir/flags.make
-CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.o: ../hot_keys_events.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/hot_keys_events.c
+CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.o: CMakeFiles/Keyboard_Events_Lib.dir/flags.make
+CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.o: ../src/symbolic_hot_keys.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/src/symbolic_hot_keys.c
 
-CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/hot_keys_events.c > CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.i
+CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/src/symbolic_hot_keys.c > CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.i
 
-CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/hot_keys_events.c -o CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.s
+CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/src/symbolic_hot_keys.c -o CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.s
 
-CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.o.requires:
+CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.o.requires:
 
-.PHONY : CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.o.requires
+.PHONY : CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.o.requires
 
-CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.o.provides: CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.o.requires
-	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.o.provides.build
-.PHONY : CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.o.provides
+CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.o.provides: CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.o.requires
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.o.provides.build
+.PHONY : CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.o.provides
 
-CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.o.provides.build: CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.o
+CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.o.provides.build: CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.o
+
+
+CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.o: CMakeFiles/Keyboard_Events_Lib.dir/flags.make
+CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.o: ../src/hot_keys_events.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/src/hot_keys_events.c
+
+CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/src/hot_keys_events.c > CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.i
+
+CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/src/hot_keys_events.c -o CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.s
+
+CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.o.requires:
+
+.PHONY : CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.o.requires
+
+CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.o.provides: CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.o.requires
+	$(MAKE) -f CMakeFiles/Keyboard_Events_Lib.dir/build.make CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.o.provides.build
+.PHONY : CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.o.provides
+
+CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.o.provides.build: CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.o
 
 
 # Object files for target Keyboard_Events_Lib
 Keyboard_Events_Lib_OBJECTS = \
-"CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.o" \
-"CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.o" \
-"CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.o"
+"CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.o" \
+"CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.o" \
+"CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.o"
 
 # External object files for target Keyboard_Events_Lib
 Keyboard_Events_Lib_EXTERNAL_OBJECTS =
 
-libkeyboard_events.dylib: CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.o
-libkeyboard_events.dylib: CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.o
-libkeyboard_events.dylib: CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.o
-libkeyboard_events.dylib: CMakeFiles/Keyboard_Events_Lib.dir/build.make
-libkeyboard_events.dylib: ../../cocoa_helper/output/apple/lib/static/libcocoa_helper.a
-libkeyboard_events.dylib: ../../automation_scripts/output/apple/lib/static/libautomation_scripts.a
-libkeyboard_events.dylib: CMakeFiles/Keyboard_Events_Lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libkeyboard_events.dylib"
+../outputs/lib/apple/libkeyboard_events.dylib: CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.o
+../outputs/lib/apple/libkeyboard_events.dylib: CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.o
+../outputs/lib/apple/libkeyboard_events.dylib: CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.o
+../outputs/lib/apple/libkeyboard_events.dylib: CMakeFiles/Keyboard_Events_Lib.dir/build.make
+../outputs/lib/apple/libkeyboard_events.dylib: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/outputs/lib/apple/libautomation_scripts.dylib
+../outputs/lib/apple/libkeyboard_events.dylib: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/../../../../cocoa/AppleScriptSystemAutomation/libAppleScriptSystemAutomation.a
+../outputs/lib/apple/libkeyboard_events.dylib: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/lib/apple/libcocoa_helper.dylib
+../outputs/lib/apple/libkeyboard_events.dylib: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/lib/apple/libcommon_functions.dylib
+../outputs/lib/apple/libkeyboard_events.dylib: /usr/local/lib/libopencv_highgui.2.4.13.dylib
+../outputs/lib/apple/libkeyboard_events.dylib: /usr/local/lib/libopencv_imgproc.2.4.13.dylib
+../outputs/lib/apple/libkeyboard_events.dylib: /usr/local/lib/libopencv_core.2.4.13.dylib
+../outputs/lib/apple/libkeyboard_events.dylib: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/lib/apple/liblibpng.dylib
+../outputs/lib/apple/libkeyboard_events.dylib: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/lib/apple/libzlib.dylib
+../outputs/lib/apple/libkeyboard_events.dylib: CMakeFiles/Keyboard_Events_Lib.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library ../outputs/lib/apple/libkeyboard_events.dylib"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Keyboard_Events_Lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Keyboard_Events_Lib.dir/build: libkeyboard_events.dylib
+CMakeFiles/Keyboard_Events_Lib.dir/build: ../outputs/lib/apple/libkeyboard_events.dylib
 
 .PHONY : CMakeFiles/Keyboard_Events_Lib.dir/build
 
-CMakeFiles/Keyboard_Events_Lib.dir/requires: CMakeFiles/Keyboard_Events_Lib.dir/keyboard_events.c.o.requires
-CMakeFiles/Keyboard_Events_Lib.dir/requires: CMakeFiles/Keyboard_Events_Lib.dir/symbolic_hot_keys.c.o.requires
-CMakeFiles/Keyboard_Events_Lib.dir/requires: CMakeFiles/Keyboard_Events_Lib.dir/hot_keys_events.c.o.requires
+CMakeFiles/Keyboard_Events_Lib.dir/requires: CMakeFiles/Keyboard_Events_Lib.dir/src/keyboard_events.c.o.requires
+CMakeFiles/Keyboard_Events_Lib.dir/requires: CMakeFiles/Keyboard_Events_Lib.dir/src/symbolic_hot_keys.c.o.requires
+CMakeFiles/Keyboard_Events_Lib.dir/requires: CMakeFiles/Keyboard_Events_Lib.dir/src/hot_keys_events.c.o.requires
 
 .PHONY : CMakeFiles/Keyboard_Events_Lib.dir/requires
 

@@ -6,49 +6,67 @@
 
 #IncludeRegexTransform: 
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/bitmaps.h
+../../../../../cocoa/AppleScriptSystemAutomation/AppleScriptSystemAutomation/AppleScriptSystemAutomation.h
+stddef.h
+-
+stdbool.h
+-
+
+../../../../common/include/bitmaps.h
 stddef.h
 -
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/bitwise.h
+../../../../common/include/bitwise.h
 stdio.h
 -
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/libraries/png/png-encoding.h
+../../../../common/libraries/png/png-encoding.h
 stdio.h
 -
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/libraries/png/png-helper.h
-../../../libpng-1.6.24/png.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/png.h
+../../../../common/libraries/png/png-helper.h
+png.h
+../../../../common/libraries/png/png.h
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/comparer.h
+../../../../comparers/include/comparer.h
 stdio.h
 -
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/png.h
-pnglibconf.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/pnglibconf.h
-pngconf.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/pngconf.h
+../../../../unit_tests/include/test/assertion.h
+comparer.h
+../../../../unit_tests/include/test/comparer.h
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/pngconf.h
-limits.h
--
-stddef.h
--
-stdio.h
--
-setjmp.h
--
-time.h
+../../cocoa_helper/include/cocoa_helper/file_system.h
+CoreServices/CoreServices.h
 -
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/pnglibconf.h
+../../cocoa_helper/include/cocoa_helper/strings.h
+CoreGraphics/CoreGraphics.h
+-
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/automation_scripts.h
+../include/automation_scripts.h
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/main.c
+../include/system/audio.h
+
+../include/system/display.h
+
+../include/system/display_stream.h
+CoreGraphics/CoreGraphics.h
+-
+
+../include/system/events.h
+
+../include/system/windows.h
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/include/system/audio.h
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/include/system/display.h
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/include/system/events.h
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/include/system/windows.h
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/main.c
 stdio.h
 -
 stdbool.h
@@ -57,42 +75,30 @@ unistd.h
 -
 NSSystemDirectories.h
 -
-system/windows.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/windows.h
-system/events.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/events.h
-system/display.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/display.h
-system/audio.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/audio.h
-../cocoa_helper/file_system.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/file_system.h
-../cocoa_helper/strings.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/strings.h
-test/test_display.h
+../include/system/windows.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/include/system/windows.h
+../include/system/events.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/include/system/events.h
+../include/system/display.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/include/system/display.h
+../include/system/audio.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/include/system/audio.h
+cocoa_helper/file_system.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/cocoa_helper/file_system.h
+cocoa_helper/strings.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/cocoa_helper/strings.h
+../test/test_display.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_display.h
-test/test_windows.h
+../test/test_windows.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_windows.h
-test/test_system_events.h
+../test/test_system_events.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_system_events.h
-test/test_audio.h
+../test/test_audio.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_audio.h
-test/test_display_stream.h
+../test/test_display_stream.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_display_stream.h
-test/test_automation_scripts.h
+../test/test_automation_scripts.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_automation_scripts.h
-
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/audio.h
-
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/display.h
-
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/display_stream.h
-CoreGraphics/CoreGraphics.h
--
-
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/events.h
-
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/windows.h
 
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_audio.c
 stdbool.h
@@ -103,10 +109,10 @@ unistd.h
 -
 test_audio.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_audio.h
-../system/audio.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/audio.h
-../../../../unit_tests/test/assertion.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/unit_tests/test/assertion.h
+system/audio.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/system/audio.h
+test/assertion.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test/assertion.h
 
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_audio.h
 
@@ -119,12 +125,12 @@ unistd.h
 -
 stdlib.h
 -
-../automation_scripts.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/automation_scripts.h
+automation_scripts.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/automation_scripts.h
 test_automation_scripts.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_automation_scripts.h
-../../../../../cocoa/AppleScriptSystemAutomation/AppleScriptSystemAutomation/AppleScriptSystemAutomation.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/cocoa/AppleScriptSystemAutomation/AppleScriptSystemAutomation/AppleScriptSystemAutomation.h
+AppleScriptSystemAutomation.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/AppleScriptSystemAutomation.h
 
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_automation_scripts.h
 
@@ -137,38 +143,38 @@ stdlib.h
 -
 test_display.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_display.h
-../system/display.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/display.h
-../../../../unit_tests/test/assertion.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/unit_tests/test/assertion.h
-../../../../common/libraries/png/png-encoding.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/libraries/png/png-encoding.h
-../../../../common/libraries/png/png-helper.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/libraries/png/png-helper.h
+system/display.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/system/display.h
+test/assertion.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test/assertion.h
+png/png-encoding.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/png/png-encoding.h
+png/png-helper.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/png/png-helper.h
 
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_display.h
 
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_display_stream.c
 test_display_stream.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_display_stream.h
-../system/display_stream.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/display_stream.h
-../../../../common/bitwise.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/bitwise.h
-../../../../common/bitmaps.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/bitmaps.h
-../../../../common/libraries/png/png-encoding.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/libraries/png/png-encoding.h
-../system/display.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/display.h
+system/display_stream.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/system/display_stream.h
+bitwise.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/bitwise.h
+bitmaps.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/bitmaps.h
+png/png-encoding.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/png/png-encoding.h
+system/display.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/system/display.h
 
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_display_stream.h
 
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_system_events.c
 test_system_events.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_system_events.h
-../system/events.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/events.h
+system/events.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/system/events.h
 
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_system_events.h
 
@@ -177,30 +183,32 @@ printf.h
 -
 test_windows.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_windows.h
-../../../../unit_tests/test/assertion.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/unit_tests/test/assertion.h
-../../../../comparers/comparer.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/comparer.h
-../system/windows.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/windows.h
+test/assertion.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test/assertion.h
+comparer.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/comparer.h
+system/windows.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/system/windows.h
 
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/test/test_windows.h
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/file_system.h
-CoreServices/CoreServices.h
+/usr/local/include/png.h
+pnglibconf.h
+/usr/local/include/pnglibconf.h
+pngconf.h
+/usr/local/include/pngconf.h
+
+/usr/local/include/pngconf.h
+limits.h
 -
-
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/strings.h
-CoreGraphics/CoreGraphics.h
--
-
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/unit_tests/test/assertion.h
-../../comparers/comparer.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/comparer.h
-
-/Users/michzio/Developer/MyProjects/BachelorDegree/cocoa/AppleScriptSystemAutomation/AppleScriptSystemAutomation/AppleScriptSystemAutomation.h
 stddef.h
 -
-stdbool.h
+stdio.h
 -
+setjmp.h
+-
+time.h
+-
+
+/usr/local/include/pnglibconf.h
 

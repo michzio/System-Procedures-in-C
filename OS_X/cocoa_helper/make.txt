@@ -14,24 +14,26 @@ AR = ar rcs
 # -std=c99 use newer version
 CFLAGS=-g -Wall -D__USE_FIXED_PROTOTYPES__ -std=c99
 
-# include headers 
-CFLAGS += -I/usr/local/include
-
 # libraries
 # OpenCV
 OPENCV_LIBS = `pkg-config --cflags --libs opencv`
 
-# OS X
-OS_X_LIBS += -framework ApplicationServices
+# mac OS X
+OS_X_LIBS = -framework ApplicationServices
 
 # custom
-COMMON_FUNCTIONS_INCL_DIR = ../../../common
-LIBPNG_INCL_DIR = ../../../libpng-1.6.24
-ZLIB_INCL_DIR = ../../../zlib-1.2.8
- 
-COMMON_FUNCTIONS_LIBRARY = $(COMMON_FUNCTIONS_INCL_DIR)/output/debug/lib/static/libcommon_functions.a
-LIBPNG_LIBRARY = $(LIBPNG_INCL_DIR)/output/debug/lib/static/liblibpng.a
-ZLIB_LIBRARY = $(ZLIB_INCL_DIR)/output/debug/lib/static/libzlib.a
+ZLIB_LIB_DIR=../../../zlib-1.2.8/outputs/debug/lib
+ZLIB_STATIC_LIB_PATH=$(ZLIB_LIB_DIR)/libzlib.a
+LIBPNG_LIB_DIR=../../../libpng-1.6.24/outputs/debug/lib
+LIBPNG_STATIC_LIB_PATH=$(LIBPNG_LIB_DIR)/liblibpng.a
+COMMON_FUNCTIONS_LIB_DIR=../../../common/outputs/debug/lib
+COMMON_FUNCTIONS_STATIC_LIB_PATH=$(COMMON_FUNCTIONS_LIB_DIR)/libcommon_functions.a
+
+# include directories
+INCLUDE_DIRS= ./include ../../../zlib-1.2.8/include ../../../libpng-1.6.24/include ../../../common/include ../../../common/libraries
+CFLAGS+= $(foreach d, $(INCLUDE_DIRS), -I$d)
+# OpenCV headers
+CFLAGS+= -I/usr/local/include
 
 # the build target executable: 
 TARGET = cocoa_helper 
@@ -49,43 +51,50 @@ endif
 # source files 
 SOURCE_FILES = property_list.o strings.o exec_cmd.o images.o file_system.o
 
-# output directories 
-OUTPUT_DIR = output/debug
-OUTPUT_LIB_DIR = $(OUTPUT_DIR)/lib
-OUTPUT_STATIC_LIB_DIR = $(OUTPUT_LIB_DIR)/static
-OUTPUT_BIN_DIR = $(OUTPUT_DIR)/bin
+# test source files
+TEST_SOURCE_FILES =
+
+# outputs directories
+OUTPUTS_DIR = outputs/debug
+OUTPUTS_LIB_DIR = $(OUTPUTS_DIR)/lib
+OUTPUTS_BIN_DIR = $(OUTPUTS_DIR)/bin
 
 all: directories libraries $(TARGET)
 
-# make output directories
+# make outputs directories
 directories: 
-	@mkdir -p $(OUTPUT_DIR)
-	@mkdir -p $(OUTPUT_LIB_DIR)
-	@mkdir -p $(OUTPUT_STATIC_LIB_DIR)
-	@mkdir -p $(OUTPUT_BIN_DIR)
+	@mkdir -p $(OUTPUTS_DIR)
+	@mkdir -p $(OUTPUTS_LIB_DIR)
+	@mkdir -p $(OUTPUTS_BIN_DIR)
 
-libraries: $(LIBRARY)
+libraries: $(LIBRARY) $(SHARED_LIBRARY) $(DYNAMIC_LIBRARY)
 
 $(TARGET): $(LIBRARY)
-	$(CC) $(CFLAGS) -o $(OUTPUT_BIN_DIR)/$(TARGET) main.c $(OUTPUT_STATIC_LIB_DIR)/$(LIBRARY) $(OS_X_LIBS) $(COMMON_FUNCTIONS_LIBRARY) $(LIBPNG_LIBRARY) $(ZLIB_LIBRARY) $(OPENCV_LIBS)
+	$(CC) $(CFLAGS) -o $(OUTPUTS_BIN_DIR)/$(TARGET) src/main.c $(OUTPUTS_LIB_DIR)/$(LIBRARY) $(OS_X_LIBS) $(COMMON_FUNCTIONS_STATIC_LIB_PATH) $(LIBPNG_STATIC_LIB_PATH) $(ZLIB_STATIC_LIB_PATH) $(OPENCV_LIBS)
+
+$(SHARED_LIBRARY): $(SOURCE_FILES)
+	$(CC) $(CFLAGS) $(OS_X_LIBS) -L$(ZLIB_LIB_DIR) -L$(LIBPNG_LIB_DIR) -L$(COMMON_FUNCTIONS_LIB_DIR) -shared -o $(OUTPUTS_LIB_DIR)/$(SHARED_LIBRARY) $(OUTPUTS_DIR)/*.o -lzlib -llibpng -lcommon_functions $(OPENCV_LIBS)
+
+$(DYNAMIC_LIBRARY): $(SOURCE_FILES)
+	$(CC) $(CFLAGS) $(OS_X_LIBS) -L$(ZLIB_LIB_DIR) -L$(LIBPNG_LIB_DIR) -L$(COMMON_FUNCTIONS_LIB_DIR) -dynamiclib -o $(OUTPUTS_LIB_DIR)/$(DYNAMIC_LIBRARY) $(OUTPUTS_DIR)/*.o -lzlib -llibpng -lcommon_functions $(OPENCV_LIBS)
 
 $(LIBRARY): $(SOURCE_FILES)
-	$(AR) $(OUTPUT_STATIC_LIB_DIR)/$(LIBRARY) $(OUTPUT_DIR)/*.o
+	$(AR) $(OUTPUTS_LIB_DIR)/$(LIBRARY) $(OUTPUTS_DIR)/*.o
 
-property_list.o: property_list.c property_list.h
-	$(CC) $(CFLAGS) -c property_list.c -o $(OUTPUT_DIR)/property_list.o
+property_list.o: src/cocoa_helper/property_list.c include/cocoa_helper/property_list.h
+	$(CC) $(CFLAGS) -c src/cocoa_helper/property_list.c -o $(OUTPUTS_DIR)/property_list.o
 
-strings.o: strings.c strings.h 
-	$(CC) $(CFLAGS) -c strings.c -o $(OUTPUT_DIR)/strings.o
+strings.o: src/cocoa_helper/strings.c include/cocoa_helper/strings.h
+	$(CC) $(CFLAGS) -c src/cocoa_helper/strings.c -o $(OUTPUTS_DIR)/strings.o
 
-exec_cmd.o: exec_cmd.c exec_cmd.h
-	$(CC) $(CFLAGS) -c exec_cmd.c -o $(OUTPUT_DIR)/exec_cmd.o
+exec_cmd.o: src/cocoa_helper/exec_cmd.c include/cocoa_helper/exec_cmd.h
+	$(CC) $(CFLAGS) -c src/cocoa_helper/exec_cmd.c -o $(OUTPUTS_DIR)/exec_cmd.o
 
-images.o: images.c images.h 
-	$(CC) $(CFLAGS) -c images.c -o $(OUTPUT_DIR)/images.o
+images.o: src/cocoa_helper/images.c include/cocoa_helper/images.h
+	$(CC) $(CFLAGS) -c src/cocoa_helper/images.c -o $(OUTPUTS_DIR)/images.o
 
-file_system.o: file_system.c file_system.h 
-	$(CC) $(CFLAGS) -c file_system.c -o $(OUTPUT_DIR)/file_system.o
+file_system.o: src/cocoa_helper/file_system.c include/cocoa_helper/file_system.h
+	$(CC) $(CFLAGS) -c src/cocoa_helper/file_system.c -o $(OUTPUTS_DIR)/file_system.o
 
 clean: 
-	$(RM) -rf $(OUTPUT_DIR)
+	$(RM) -rf $(OUTPUTS_DIR)

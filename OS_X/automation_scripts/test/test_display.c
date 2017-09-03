@@ -6,10 +6,10 @@
 #include <printf.h>
 #include <stdlib.h>
 #include "test_display.h"
-#include "../system/display.h"
-#include "../../../../unit_tests/test/assertion.h"
-#include "../../../../common/libraries/png/png-encoding.h"
-#include "../../../../common/libraries/png/png-helper.h"
+#include "system/display.h"
+#include "test/assertion.h"
+#include "png/png-encoding.h"
+#include "png/png-helper.h"
 
 
 static void test_display_brightness(void) {

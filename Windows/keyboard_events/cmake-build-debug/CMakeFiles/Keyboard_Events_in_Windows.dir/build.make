@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events
+CMAKE_SOURCE_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Keyboard_Events_in_Windows.dir/depend.make
@@ -57,52 +57,52 @@ include CMakeFiles/Keyboard_Events_in_Windows.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Keyboard_Events_in_Windows.dir/flags.make
 
-CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.o: CMakeFiles/Keyboard_Events_in_Windows.dir/flags.make
-CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.o   -c /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/main.c
+CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.o: CMakeFiles/Keyboard_Events_in_Windows.dir/flags.make
+CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.o: ../src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/src/main.c
 
-CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/main.c > CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.i
+CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/src/main.c > CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.i
 
-CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/main.c -o CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.s
+CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/src/main.c -o CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.s
 
-CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.o.requires:
+CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.o.requires:
 
-.PHONY : CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.o.requires
+.PHONY : CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.o.requires
 
-CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.o.provides: CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.o.requires
-	$(MAKE) -f CMakeFiles/Keyboard_Events_in_Windows.dir/build.make CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.o.provides.build
-.PHONY : CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.o.provides
+CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.o.provides: CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.o.requires
+	$(MAKE) -f CMakeFiles/Keyboard_Events_in_Windows.dir/build.make CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.o.provides.build
+.PHONY : CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.o.provides
 
-CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.o.provides.build: CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.o
+CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.o.provides.build: CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.o
 
 
 # Object files for target Keyboard_Events_in_Windows
 Keyboard_Events_in_Windows_OBJECTS = \
-"CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.o"
+"CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.o"
 
 # External object files for target Keyboard_Events_in_Windows
 Keyboard_Events_in_Windows_EXTERNAL_OBJECTS =
 
-keyboard_events.exe: CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.o
-keyboard_events.exe: CMakeFiles/Keyboard_Events_in_Windows.dir/build.make
-keyboard_events.exe: libkeyboard_events.a
-keyboard_events.exe: ../../mouse_events/output/windows/lib/static/libmouse_events.a
-keyboard_events.exe: ../../windows_helpers/output/windows/lib/static/libwindows_helpers.a
-keyboard_events.exe: CMakeFiles/Keyboard_Events_in_Windows.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable keyboard_events.exe"
+../outputs/bin/cygwin/keyboard_events: CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.o
+../outputs/bin/cygwin/keyboard_events: CMakeFiles/Keyboard_Events_in_Windows.dir/build.make
+../outputs/bin/cygwin/keyboard_events: ../outputs/lib/cygwin/libkeyboard_events.dylib
+../outputs/bin/cygwin/keyboard_events: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/lib/cygwin/libmouse_events.dylib
+../outputs/bin/cygwin/keyboard_events: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/outputs/lib/cygwin/libwindows_helpers.dylib
+../outputs/bin/cygwin/keyboard_events: CMakeFiles/Keyboard_Events_in_Windows.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../outputs/bin/cygwin/keyboard_events"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Keyboard_Events_in_Windows.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Keyboard_Events_in_Windows.dir/build: keyboard_events.exe
+CMakeFiles/Keyboard_Events_in_Windows.dir/build: ../outputs/bin/cygwin/keyboard_events
 
 .PHONY : CMakeFiles/Keyboard_Events_in_Windows.dir/build
 
-CMakeFiles/Keyboard_Events_in_Windows.dir/requires: CMakeFiles/Keyboard_Events_in_Windows.dir/main.c.o.requires
+CMakeFiles/Keyboard_Events_in_Windows.dir/requires: CMakeFiles/Keyboard_Events_in_Windows.dir/src/main.c.o.requires
 
 .PHONY : CMakeFiles/Keyboard_Events_in_Windows.dir/requires
 
@@ -111,6 +111,6 @@ CMakeFiles/Keyboard_Events_in_Windows.dir/clean:
 .PHONY : CMakeFiles/Keyboard_Events_in_Windows.dir/clean
 
 CMakeFiles/Keyboard_Events_in_Windows.dir/depend:
-	cd /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles/Keyboard_Events_in_Windows.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/cmake-build-debug/CMakeFiles/Keyboard_Events_in_Windows.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Keyboard_Events_in_Windows.dir/depend
 

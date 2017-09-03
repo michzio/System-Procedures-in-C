@@ -15,8 +15,12 @@ AR = ar rcs
 CFLAGS=-g -Wall -D__USE_FIXED_PROTOTYPES__ -std=c99
 
 # libraries
-# OS X
+# mac OS X
 OS_X_LIBS += -framework ApplicationServices
+
+# include directories
+INCLUDE_DIRS= ./include
+CFLAGS+= $(foreach d, $(INCLUDE_DIRS), -I$d)
 
 # the build target executable:
 TARGET = mouse_events
@@ -37,34 +41,38 @@ SOURCE_FILES = mouse_events.o scroll_wheel_events.o
 # test source files
 TEST_SOURCE_FILES =
 
-# output directories 
-OUTPUT_DIR = output/debug
-OUTPUT_LIB_DIR = $(OUTPUT_DIR)/lib
-OUTPUT_STATIC_LIB_DIR = $(OUTPUT_LIB_DIR)/static
-OUTPUT_BIN_DIR = $(OUTPUT_DIR)/bin
+# outputs directories
+OUTPUTS_DIR = outputs/debug
+OUTPUTS_LIB_DIR = $(OUTPUTS_DIR)/lib
+OUTPUTS_BIN_DIR = $(OUTPUTS_DIR)/bin
 
 all: directories libraries $(TARGET)
 
-# make output directories
+# make outputs directories
 directories: 
-	@mkdir -p $(OUTPUT_DIR)
-	@mkdir -p $(OUTPUT_LIB_DIR)
-	@mkdir -p $(OUTPUT_STATIC_LIB_DIR)
-	@mkdir -p $(OUTPUT_BIN_DIR)
+	@mkdir -p $(OUTPUTS_DIR)
+	@mkdir -p $(OUTPUTS_LIB_DIR)
+	@mkdir -p $(OUTPUTS_BIN_DIR)
 
-libraries: $(LIBRARY)
+libraries: $(LIBRARY) $(SHARED_LIBRARY) $(DYNAMIC_LIBRARY)
 
 $(TARGET): $(LIBRARY) $(TEST_SOURCE_FILES)
-	$(CC) $(CFLAGS) -o $(OUTPUT_BIN_DIR)/$(TARGET) main.c $(OUTPUT_STATIC_LIB_DIR)/$(LIBRARY) $(OS_X_LIBS)
+	$(CC) $(CFLAGS) -o $(OUTPUTS_BIN_DIR)/$(TARGET) src/main.c $(OUTPUTS_LIB_DIR)/$(LIBRARY) $(OS_X_LIBS)
+
+$(SHARED_LIBRARY): $(SOURCE_FILES)
+	$(CC) $(CFLAGS) $(OS_X_LIBS) -shared -o $(OUTPUTS_LIB_DIR)/$(SHARED_LIBRARY) $(OUTPUTS_DIR)/*.o
+
+$(DYNAMIC_LIBRARY): $(SOURCE_FILES)
+	$(CC) $(CFLAGS) $(OS_X_LIBS) -dynamiclib -o $(OUTPUTS_LIB_DIR)/$(DYNAMIC_LIBRARY) $(OUTPUTS_DIR)/*.o
 
 $(LIBRARY): $(SOURCE_FILES)
-	$(AR) $(OUTPUT_STATIC_LIB_DIR)/$(LIBRARY) $(OUTPUT_DIR)/*.o
+	$(AR) $(OUTPUTS_LIB_DIR)/$(LIBRARY) $(OUTPUTS_DIR)/*.o
 
-mouse_events.o: mouse_events.c mouse_events.h
-	$(CC) $(CFLAGS) -c mouse_events.c -o $(OUTPUT_DIR)/mouse_events.o
+mouse_events.o: src/mouse_events.c include/mouse_events.h
+	$(CC) $(CFLAGS) -c src/mouse_events.c -o $(OUTPUTS_DIR)/mouse_events.o
 
-scroll_wheel_events.o: scroll_wheel_events.c scroll_wheel_events.h
-	$(CC) $(CFLAGS) -c scroll_wheel_events.c -o $(OUTPUT_DIR)/scroll_wheel_events.o
+scroll_wheel_events.o: src/scroll_wheel_events.c include/scroll_wheel_events.h
+	$(CC) $(CFLAGS) -c src/scroll_wheel_events.c -o $(OUTPUTS_DIR)/scroll_wheel_events.o
 
 clean:
-	$(RM) -rf $(OUTPUT_DIR)
+	$(RM) -rf $(OUTPUTS_DIR)

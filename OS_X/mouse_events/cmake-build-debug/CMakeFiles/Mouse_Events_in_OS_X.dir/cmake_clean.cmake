@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.o"
-  "mouse_events.pdb"
-  "mouse_events"
+  "CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.o"
+  "../outputs/bin/apple/mouse_events.pdb"
+  "../outputs/bin/apple/mouse_events"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -39,71 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers
+CMAKE_SOURCE_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -114,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/michzio/.CLion2017.1/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -124,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -153,19 +109,6 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named Install_Windows_Helpers
-
-# Build rule for target.
-Install_Windows_Helpers: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Install_Windows_Helpers
-.PHONY : Install_Windows_Helpers
-
-# fast build rule for target.
-Install_Windows_Helpers/fast:
-	$(MAKE) -f CMakeFiles/Install_Windows_Helpers.dir/build.make CMakeFiles/Install_Windows_Helpers.dir/build
-.PHONY : Install_Windows_Helpers/fast
 
 #=============================================================================
 # Target rules for targets named Windows_Helpers
@@ -206,62 +149,62 @@ Windows_Helpers_Lib/fast:
 	$(MAKE) -f CMakeFiles/Windows_Helpers_Lib.dir/build.make CMakeFiles/Windows_Helpers_Lib.dir/build
 .PHONY : Windows_Helpers_Lib/fast
 
-main.o: main.c.o
+src/main.o: src/main.c.o
 
-.PHONY : main.o
-
-# target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/Windows_Helpers.dir/build.make CMakeFiles/Windows_Helpers.dir/main.c.o
-.PHONY : main.c.o
-
-main.i: main.c.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/Windows_Helpers.dir/build.make CMakeFiles/Windows_Helpers.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/Windows_Helpers.dir/build.make CMakeFiles/Windows_Helpers.dir/main.c.s
-.PHONY : main.c.s
-
-windows.o: windows.c.o
-
-.PHONY : windows.o
+.PHONY : src/main.o
 
 # target to build an object file
-windows.c.o:
-	$(MAKE) -f CMakeFiles/Windows_Helpers_Lib_Static.dir/build.make CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.o
-	$(MAKE) -f CMakeFiles/Windows_Helpers_Lib.dir/build.make CMakeFiles/Windows_Helpers_Lib.dir/windows.c.o
-.PHONY : windows.c.o
+src/main.c.o:
+	$(MAKE) -f CMakeFiles/Windows_Helpers.dir/build.make CMakeFiles/Windows_Helpers.dir/src/main.c.o
+.PHONY : src/main.c.o
 
-windows.i: windows.c.i
+src/main.i: src/main.c.i
 
-.PHONY : windows.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-windows.c.i:
-	$(MAKE) -f CMakeFiles/Windows_Helpers_Lib_Static.dir/build.make CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.i
-	$(MAKE) -f CMakeFiles/Windows_Helpers_Lib.dir/build.make CMakeFiles/Windows_Helpers_Lib.dir/windows.c.i
-.PHONY : windows.c.i
+src/main.c.i:
+	$(MAKE) -f CMakeFiles/Windows_Helpers.dir/build.make CMakeFiles/Windows_Helpers.dir/src/main.c.i
+.PHONY : src/main.c.i
 
-windows.s: windows.c.s
+src/main.s: src/main.c.s
 
-.PHONY : windows.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-windows.c.s:
-	$(MAKE) -f CMakeFiles/Windows_Helpers_Lib_Static.dir/build.make CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.s
-	$(MAKE) -f CMakeFiles/Windows_Helpers_Lib.dir/build.make CMakeFiles/Windows_Helpers_Lib.dir/windows.c.s
-.PHONY : windows.c.s
+src/main.c.s:
+	$(MAKE) -f CMakeFiles/Windows_Helpers.dir/build.make CMakeFiles/Windows_Helpers.dir/src/main.c.s
+.PHONY : src/main.c.s
+
+src/windows_helpers/windows.o: src/windows_helpers/windows.c.o
+
+.PHONY : src/windows_helpers/windows.o
+
+# target to build an object file
+src/windows_helpers/windows.c.o:
+	$(MAKE) -f CMakeFiles/Windows_Helpers_Lib_Static.dir/build.make CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.o
+	$(MAKE) -f CMakeFiles/Windows_Helpers_Lib.dir/build.make CMakeFiles/Windows_Helpers_Lib.dir/src/windows_helpers/windows.c.o
+.PHONY : src/windows_helpers/windows.c.o
+
+src/windows_helpers/windows.i: src/windows_helpers/windows.c.i
+
+.PHONY : src/windows_helpers/windows.i
+
+# target to preprocess a source file
+src/windows_helpers/windows.c.i:
+	$(MAKE) -f CMakeFiles/Windows_Helpers_Lib_Static.dir/build.make CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.i
+	$(MAKE) -f CMakeFiles/Windows_Helpers_Lib.dir/build.make CMakeFiles/Windows_Helpers_Lib.dir/src/windows_helpers/windows.c.i
+.PHONY : src/windows_helpers/windows.c.i
+
+src/windows_helpers/windows.s: src/windows_helpers/windows.c.s
+
+.PHONY : src/windows_helpers/windows.s
+
+# target to generate assembly for a file
+src/windows_helpers/windows.c.s:
+	$(MAKE) -f CMakeFiles/Windows_Helpers_Lib_Static.dir/build.make CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.s
+	$(MAKE) -f CMakeFiles/Windows_Helpers_Lib.dir/build.make CMakeFiles/Windows_Helpers_Lib.dir/src/windows_helpers/windows.c.s
+.PHONY : src/windows_helpers/windows.c.s
 
 # Help Target
 help:
@@ -269,22 +212,17 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
-	@echo "... install/local"
-	@echo "... install"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Install_Windows_Helpers"
 	@echo "... Windows_Helpers"
 	@echo "... Windows_Helpers_Lib_Static"
 	@echo "... Windows_Helpers_Lib"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... windows.o"
-	@echo "... windows.i"
-	@echo "... windows.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/windows_helpers/windows.o"
+	@echo "... src/windows_helpers/windows.i"
+	@echo "... src/windows_helpers/windows.s"
 .PHONY : help
 
 

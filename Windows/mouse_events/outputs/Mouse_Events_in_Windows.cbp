@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Mouse_Events_in_Windows"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\resources\;CMake Files\..\;CMake Files\..\mouse_events\;CMake Files\..\windows_helpers\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Mouse_Events_in_Windows">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/bin/cygwin/mouse_events" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/bin/cygwin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
+					<Add directory="/usr/local/include/libxml2"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 Mouse_Events_in_Windows"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Mouse_Events_in_Windows/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/bin/cygwin/mouse_events" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/bin/cygwin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
+					<Add directory="/usr/local/include/libxml2"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 Mouse_Events_in_Windows/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Mouse_Events_Lib_Static">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/lib/cygwin/libmouse_events.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
+					<Add directory="/usr/local/include/libxml2"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 Mouse_Events_Lib_Static"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Mouse_Events_Lib_Static/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/lib/cygwin/libmouse_events.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
+					<Add directory="/usr/local/include/libxml2"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 Mouse_Events_Lib_Static/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Mouse_Events_Lib">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/lib/cygwin/libmouse_events.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
+					<Add directory="/usr/local/include/libxml2"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 Mouse_Events_Lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Mouse_Events_Lib/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/lib/cygwin/libmouse_events.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/include"/>
+					<Add directory="/usr/local/include/libxml2"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 Mouse_Events_Lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/include/mouse_events.h">
+			<Option target="Mouse_Events_Lib_Static"/>
+			<Option target="Mouse_Events_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/include/scroll_wheel_events.h">
+			<Option target="Mouse_Events_Lib_Static"/>
+			<Option target="Mouse_Events_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/src/main.c">
+			<Option target="Mouse_Events_in_Windows"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/src/mouse_events.c">
+			<Option target="Mouse_Events_Lib_Static"/>
+			<Option target="Mouse_Events_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/mouse_events/src/scroll_wheel_events.c">
+			<Option target="Mouse_Events_Lib_Static"/>
+			<Option target="Mouse_Events_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/resources/application_hotkeys.xml">
+			<Option virtualFolder="CMake Files\resources\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/resources/system_hotkeys.xml">
+			<Option virtualFolder="CMake Files\resources\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../mouse_events/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\mouse_events\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../mouse_events/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\mouse_events\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../windows_helpers/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\windows_helpers\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/keyboard_events/../windows_helpers/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\windows_helpers\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

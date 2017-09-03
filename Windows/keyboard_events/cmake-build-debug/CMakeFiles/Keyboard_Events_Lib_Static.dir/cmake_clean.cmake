@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Keyboard_Events_Lib_Static.dir/keyboard_events.c.o"
-  "CMakeFiles/Keyboard_Events_Lib_Static.dir/hot_keys_events.c.o"
-  "libkeyboard_events.pdb"
-  "libkeyboard_events.a"
+  "CMakeFiles/Keyboard_Events_Lib_Static.dir/src/keyboard_events.c.o"
+  "CMakeFiles/Keyboard_Events_Lib_Static.dir/src/hot_keys_events.c.o"
+  "../outputs/lib/cygwin/libkeyboard_events.pdb"
+  "../outputs/lib/cygwin/libkeyboard_events.a"
 )
 
 # Per-language clean rules from dependency scanning.

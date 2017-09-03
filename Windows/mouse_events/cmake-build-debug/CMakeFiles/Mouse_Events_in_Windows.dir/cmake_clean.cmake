@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Mouse_Events_in_Windows.dir/main.c.o"
-  "mouse_events.pdb"
-  "mouse_events.exe"
-  "libmouse_events.dll.a"
+  "CMakeFiles/Mouse_Events_in_Windows.dir/src/main.c.o"
+  "../outputs/bin/cygwin/mouse_events.pdb"
+  "../outputs/bin/cygwin/mouse_events"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/include/mouse_events.h
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/include/scroll_wheel_events.h
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/src/mouse_events.c
+ApplicationServices/ApplicationServices.h
+-
+mouse_events.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/src/mouse_events.h
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/src/scroll_wheel_events.c
+ApplicationServices/ApplicationServices.h
+-
+scroll_wheel_events.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/src/scroll_wheel_events.h
+

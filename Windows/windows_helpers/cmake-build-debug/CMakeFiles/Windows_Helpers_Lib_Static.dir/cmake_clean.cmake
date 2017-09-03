@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Windows_Helpers_Lib_Static.dir/windows.c.o"
-  "libwindows_helpers.pdb"
-  "libwindows_helpers.a"
+  "CMakeFiles/Windows_Helpers_Lib_Static.dir/src/windows_helpers/windows.c.o"
+  "../outputs/lib/cygwin/libwindows_helpers.pdb"
+  "../outputs/lib/cygwin/libwindows_helpers.a"
 )
 
 # Per-language clean rules from dependency scanning.

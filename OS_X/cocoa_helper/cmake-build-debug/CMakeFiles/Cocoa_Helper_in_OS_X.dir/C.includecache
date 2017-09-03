@@ -6,29 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/bitmaps.h
+../../../../common/include/bitmaps.h
 stddef.h
 -
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/bitwise.h
+../../../../common/include/bitwise.h
 stdio.h
 -
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/libraries/md5/md5.h
+../../../../common/libraries/md5/md5.h
 openssl/md5.h
 -
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/libraries/png/png-decoding.h
+../../../../common/libraries/png/png-decoding.h
 stdbool.h
 -
 stddef.h
 -
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/file_system.h
+../include/cocoa_helper/file_system.h
 CoreServices/CoreServices.h
 -
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/images.h
+../include/cocoa_helper/images.h
 CoreServices/CoreServices.h
 -
 CoreGraphics/CoreGraphics.h
@@ -36,27 +36,27 @@ CoreGraphics/CoreGraphics.h
 ImageIO/ImageIO.h
 -
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/main.c
+../include/cocoa_helper/strings.h
+CoreGraphics/CoreGraphics.h
+-
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/main.c
 stdio.h
 -
 NSSystemDirectories.h
 -
-strings.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/strings.h
-file_system.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/file_system.h
-images.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/images.h
-../../../common/bitwise.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/bitwise.h
-../../../common/libraries/md5/md5.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/libraries/md5/md5.h
-../../../common/libraries/png/png-decoding.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/libraries/png/png-decoding.h
-../../../common/bitmaps.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/bitmaps.h
-
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/strings.h
-CoreGraphics/CoreGraphics.h
--
+cocoa_helper/strings.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/cocoa_helper/strings.h
+cocoa_helper/file_system.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/cocoa_helper/file_system.h
+cocoa_helper/images.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/cocoa_helper/images.h
+bitwise.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/bitwise.h
+md5/md5.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/md5/md5.h
+png/png-decoding.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/png/png-decoding.h
+bitmaps.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/bitmaps.h
 

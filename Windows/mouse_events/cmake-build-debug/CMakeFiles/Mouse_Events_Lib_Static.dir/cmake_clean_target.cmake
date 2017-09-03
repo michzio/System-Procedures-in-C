@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libmouse_events.a"
+  "../outputs/lib/cygwin/libmouse_events.a"
 )

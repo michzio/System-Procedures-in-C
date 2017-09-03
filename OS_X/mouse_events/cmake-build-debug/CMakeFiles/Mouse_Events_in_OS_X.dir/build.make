@@ -57,50 +57,50 @@ include CMakeFiles/Mouse_Events_in_OS_X.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Mouse_Events_in_OS_X.dir/flags.make
 
-CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.o: CMakeFiles/Mouse_Events_in_OS_X.dir/flags.make
-CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/main.c
+CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.o: CMakeFiles/Mouse_Events_in_OS_X.dir/flags.make
+CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.o: ../src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/src/main.c
 
-CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/main.c > CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.i
+CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/src/main.c > CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.i
 
-CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/main.c -o CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.s
+CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/src/main.c -o CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.s
 
-CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.o.requires:
+CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.o.requires:
 
-.PHONY : CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.o.requires
+.PHONY : CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.o.requires
 
-CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.o.provides: CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.o.requires
-	$(MAKE) -f CMakeFiles/Mouse_Events_in_OS_X.dir/build.make CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.o.provides.build
-.PHONY : CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.o.provides
+CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.o.provides: CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.o.requires
+	$(MAKE) -f CMakeFiles/Mouse_Events_in_OS_X.dir/build.make CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.o.provides.build
+.PHONY : CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.o.provides
 
-CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.o.provides.build: CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.o
+CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.o.provides.build: CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.o
 
 
 # Object files for target Mouse_Events_in_OS_X
 Mouse_Events_in_OS_X_OBJECTS = \
-"CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.o"
+"CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.o"
 
 # External object files for target Mouse_Events_in_OS_X
 Mouse_Events_in_OS_X_EXTERNAL_OBJECTS =
 
-mouse_events: CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.o
-mouse_events: CMakeFiles/Mouse_Events_in_OS_X.dir/build.make
-mouse_events: libmouse_events.a
-mouse_events: CMakeFiles/Mouse_Events_in_OS_X.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable mouse_events"
+../outputs/bin/apple/mouse_events: CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.o
+../outputs/bin/apple/mouse_events: CMakeFiles/Mouse_Events_in_OS_X.dir/build.make
+../outputs/bin/apple/mouse_events: ../outputs/lib/apple/libmouse_events.dylib
+../outputs/bin/apple/mouse_events: CMakeFiles/Mouse_Events_in_OS_X.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/mouse_events/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../outputs/bin/apple/mouse_events"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Mouse_Events_in_OS_X.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Mouse_Events_in_OS_X.dir/build: mouse_events
+CMakeFiles/Mouse_Events_in_OS_X.dir/build: ../outputs/bin/apple/mouse_events
 
 .PHONY : CMakeFiles/Mouse_Events_in_OS_X.dir/build
 
-CMakeFiles/Mouse_Events_in_OS_X.dir/requires: CMakeFiles/Mouse_Events_in_OS_X.dir/main.c.o.requires
+CMakeFiles/Mouse_Events_in_OS_X.dir/requires: CMakeFiles/Mouse_Events_in_OS_X.dir/src/main.c.o.requires
 
 .PHONY : CMakeFiles/Mouse_Events_in_OS_X.dir/requires
 

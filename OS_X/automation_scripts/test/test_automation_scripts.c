@@ -6,9 +6,9 @@
 #include <stdbool.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include "../automation_scripts.h"
+#include "automation_scripts.h"
 #include "test_automation_scripts.h"
-#include "../../../../../cocoa/AppleScriptSystemAutomation/AppleScriptSystemAutomation/AppleScriptSystemAutomation.h"
+#include "AppleScriptSystemAutomation.h"
 
 static void test_cocoa_apple_script_system_automation_lib(void) {
 

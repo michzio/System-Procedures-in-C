@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/include/keyboard_events.h
+CoreGraphics/CoreGraphics.h
+-
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/include/virtual_key_codes.h
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/src/keyboard_events.c
+ApplicationServices/ApplicationServices.h
+-
+keyboard_events.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/src/keyboard_events.h
+virtual_key_codes.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/keyboard_events/src/virtual_key_codes.h
+

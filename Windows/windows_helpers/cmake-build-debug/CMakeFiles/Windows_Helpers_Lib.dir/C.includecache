@@ -6,11 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/windows.c
+../include/windows_helpers/windows.h
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/src/windows_helpers/windows.c
 stdio.h
 -
 windows.h
 -
-windows.h
-/cygdrive/c/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/windows.h
+windows_helpers/windows.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/Windows/windows_helpers/src/windows_helpers/windows_helpers/windows.h
 

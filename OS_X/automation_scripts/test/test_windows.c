@@ -4,9 +4,9 @@
 
 #include <printf.h>
 #include "test_windows.h"
-#include "../../../../unit_tests/test/assertion.h"
-#include "../../../../comparers/comparer.h"
-#include "../system/windows.h"
+#include "test/assertion.h"
+#include "comparer.h"
+#include "system/windows.h"
 
 static void test_front_window_owner(void) {
     char *window_owner = front_window_owner();

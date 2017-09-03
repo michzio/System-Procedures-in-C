@@ -56,40 +56,6 @@ CMAKE_BINARY_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/O
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -111,16 +77,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -153,19 +109,6 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named Install_Automation_Scripts_in_OS_X
-
-# Build rule for target.
-Install_Automation_Scripts_in_OS_X: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Install_Automation_Scripts_in_OS_X
-.PHONY : Install_Automation_Scripts_in_OS_X
-
-# fast build rule for target.
-Install_Automation_Scripts_in_OS_X/fast:
-	$(MAKE) -f CMakeFiles/Install_Automation_Scripts_in_OS_X.dir/build.make CMakeFiles/Install_Automation_Scripts_in_OS_X.dir/build
-.PHONY : Install_Automation_Scripts_in_OS_X/fast
 
 #=============================================================================
 # Target rules for targets named Automation_Scripts_in_OS_X
@@ -206,212 +149,368 @@ Automation_Scripts_Lib/fast:
 	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/build
 .PHONY : Automation_Scripts_Lib/fast
 
-automation_scripts.o: automation_scripts.c.o
+#=============================================================================
+# Target rules for targets named Cocoa_Helper_in_OS_X
 
-.PHONY : automation_scripts.o
+# Build rule for target.
+Cocoa_Helper_in_OS_X: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Cocoa_Helper_in_OS_X
+.PHONY : Cocoa_Helper_in_OS_X
 
-# target to build an object file
-automation_scripts.c.o:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/automation_scripts.c.o
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.o
-.PHONY : automation_scripts.c.o
+# fast build rule for target.
+Cocoa_Helper_in_OS_X/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_in_OS_X.dir/build
+.PHONY : Cocoa_Helper_in_OS_X/fast
 
-automation_scripts.i: automation_scripts.c.i
+#=============================================================================
+# Target rules for targets named Cocoa_Helper_Lib_Static
 
-.PHONY : automation_scripts.i
+# Build rule for target.
+Cocoa_Helper_Lib_Static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Cocoa_Helper_Lib_Static
+.PHONY : Cocoa_Helper_Lib_Static
 
-# target to preprocess a source file
-automation_scripts.c.i:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/automation_scripts.c.i
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.i
-.PHONY : automation_scripts.c.i
+# fast build rule for target.
+Cocoa_Helper_Lib_Static/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib_Static.dir/build
+.PHONY : Cocoa_Helper_Lib_Static/fast
 
-automation_scripts.s: automation_scripts.c.s
+#=============================================================================
+# Target rules for targets named Cocoa_Helper_Lib
 
-.PHONY : automation_scripts.s
+# Build rule for target.
+Cocoa_Helper_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Cocoa_Helper_Lib
+.PHONY : Cocoa_Helper_Lib
 
-# target to generate assembly for a file
-automation_scripts.c.s:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/automation_scripts.c.s
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.s
-.PHONY : automation_scripts.c.s
+# fast build rule for target.
+Cocoa_Helper_Lib/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/CMakeFiles/Cocoa_Helper_Lib.dir/build
+.PHONY : Cocoa_Helper_Lib/fast
 
-main.o: main.c.o
+#=============================================================================
+# Target rules for targets named Common_Functions
 
-.PHONY : main.o
+# Build rule for target.
+Common_Functions: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Common_Functions
+.PHONY : Common_Functions
 
-# target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_in_OS_X.dir/build.make CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.o
-.PHONY : main.c.o
+# fast build rule for target.
+Common_Functions/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions.dir/build
+.PHONY : Common_Functions/fast
 
-main.i: main.c.i
+#=============================================================================
+# Target rules for targets named Common_Functions_Lib_Static
 
-.PHONY : main.i
+# Build rule for target.
+Common_Functions_Lib_Static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Common_Functions_Lib_Static
+.PHONY : Common_Functions_Lib_Static
 
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_in_OS_X.dir/build.make CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.i
-.PHONY : main.c.i
+# fast build rule for target.
+Common_Functions_Lib_Static/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib_Static.dir/build
+.PHONY : Common_Functions_Lib_Static/fast
 
-main.s: main.c.s
+#=============================================================================
+# Target rules for targets named Common_Functions_Lib
 
-.PHONY : main.s
+# Build rule for target.
+Common_Functions_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Common_Functions_Lib
+.PHONY : Common_Functions_Lib
 
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_in_OS_X.dir/build.make CMakeFiles/Automation_Scripts_in_OS_X.dir/main.c.s
-.PHONY : main.c.s
+# fast build rule for target.
+Common_Functions_Lib/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/CMakeFiles/Common_Functions_Lib.dir/build
+.PHONY : Common_Functions_Lib/fast
 
-system/audio.o: system/audio.c.o
+#=============================================================================
+# Target rules for targets named libpng_1_6_24
 
-.PHONY : system/audio.o
+# Build rule for target.
+libpng_1_6_24: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libpng_1_6_24
+.PHONY : libpng_1_6_24
 
-# target to build an object file
-system/audio.c.o:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/system/audio.c.o
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.o
-.PHONY : system/audio.c.o
+# fast build rule for target.
+libpng_1_6_24/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_1_6_24.dir/build
+.PHONY : libpng_1_6_24/fast
 
-system/audio.i: system/audio.c.i
+#=============================================================================
+# Target rules for targets named libpng_Lib_Static
 
-.PHONY : system/audio.i
+# Build rule for target.
+libpng_Lib_Static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libpng_Lib_Static
+.PHONY : libpng_Lib_Static
 
-# target to preprocess a source file
-system/audio.c.i:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/system/audio.c.i
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.i
-.PHONY : system/audio.c.i
+# fast build rule for target.
+libpng_Lib_Static/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib_Static.dir/build
+.PHONY : libpng_Lib_Static/fast
 
-system/audio.s: system/audio.c.s
+#=============================================================================
+# Target rules for targets named libpng_Lib
 
-.PHONY : system/audio.s
+# Build rule for target.
+libpng_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libpng_Lib
+.PHONY : libpng_Lib
 
-# target to generate assembly for a file
-system/audio.c.s:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/system/audio.c.s
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.s
-.PHONY : system/audio.c.s
+# fast build rule for target.
+libpng_Lib/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/CMakeFiles/libpng_Lib.dir/build
+.PHONY : libpng_Lib/fast
 
-system/display.o: system/display.c.o
+#=============================================================================
+# Target rules for targets named zlib_1_2_8
 
-.PHONY : system/display.o
+# Build rule for target.
+zlib_1_2_8: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 zlib_1_2_8
+.PHONY : zlib_1_2_8
 
-# target to build an object file
-system/display.c.o:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/system/display.c.o
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.o
-.PHONY : system/display.c.o
+# fast build rule for target.
+zlib_1_2_8/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_1_2_8.dir/build
+.PHONY : zlib_1_2_8/fast
 
-system/display.i: system/display.c.i
+#=============================================================================
+# Target rules for targets named zlib_Lib_Static
 
-.PHONY : system/display.i
+# Build rule for target.
+zlib_Lib_Static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 zlib_Lib_Static
+.PHONY : zlib_Lib_Static
 
-# target to preprocess a source file
-system/display.c.i:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/system/display.c.i
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.i
-.PHONY : system/display.c.i
+# fast build rule for target.
+zlib_Lib_Static/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib_Static.dir/build
+.PHONY : zlib_Lib_Static/fast
 
-system/display.s: system/display.c.s
+#=============================================================================
+# Target rules for targets named zlib_Lib
 
-.PHONY : system/display.s
+# Build rule for target.
+zlib_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 zlib_Lib
+.PHONY : zlib_Lib
 
-# target to generate assembly for a file
-system/display.c.s:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/system/display.c.s
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.s
-.PHONY : system/display.c.s
+# fast build rule for target.
+zlib_Lib/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/CMakeFiles/zlib_Lib.dir/build
+.PHONY : zlib_Lib/fast
 
-system/display_stream.o: system/display_stream.c.o
+src/automation_scripts.o: src/automation_scripts.c.o
 
-.PHONY : system/display_stream.o
-
-# target to build an object file
-system/display_stream.c.o:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/system/display_stream.c.o
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.o
-.PHONY : system/display_stream.c.o
-
-system/display_stream.i: system/display_stream.c.i
-
-.PHONY : system/display_stream.i
-
-# target to preprocess a source file
-system/display_stream.c.i:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/system/display_stream.c.i
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.i
-.PHONY : system/display_stream.c.i
-
-system/display_stream.s: system/display_stream.c.s
-
-.PHONY : system/display_stream.s
-
-# target to generate assembly for a file
-system/display_stream.c.s:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/system/display_stream.c.s
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.s
-.PHONY : system/display_stream.c.s
-
-system/events.o: system/events.c.o
-
-.PHONY : system/events.o
-
-# target to build an object file
-system/events.c.o:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/system/events.c.o
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.o
-.PHONY : system/events.c.o
-
-system/events.i: system/events.c.i
-
-.PHONY : system/events.i
-
-# target to preprocess a source file
-system/events.c.i:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/system/events.c.i
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.i
-.PHONY : system/events.c.i
-
-system/events.s: system/events.c.s
-
-.PHONY : system/events.s
-
-# target to generate assembly for a file
-system/events.c.s:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/system/events.c.s
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.s
-.PHONY : system/events.c.s
-
-system/windows.o: system/windows.c.o
-
-.PHONY : system/windows.o
+.PHONY : src/automation_scripts.o
 
 # target to build an object file
-system/windows.c.o:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/system/windows.c.o
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.o
-.PHONY : system/windows.c.o
+src/automation_scripts.c.o:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/src/automation_scripts.c.o
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.o
+.PHONY : src/automation_scripts.c.o
 
-system/windows.i: system/windows.c.i
+src/automation_scripts.i: src/automation_scripts.c.i
 
-.PHONY : system/windows.i
+.PHONY : src/automation_scripts.i
 
 # target to preprocess a source file
-system/windows.c.i:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/system/windows.c.i
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.i
-.PHONY : system/windows.c.i
+src/automation_scripts.c.i:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/src/automation_scripts.c.i
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.i
+.PHONY : src/automation_scripts.c.i
 
-system/windows.s: system/windows.c.s
+src/automation_scripts.s: src/automation_scripts.c.s
 
-.PHONY : system/windows.s
+.PHONY : src/automation_scripts.s
 
 # target to generate assembly for a file
-system/windows.c.s:
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/system/windows.c.s
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.s
-.PHONY : system/windows.c.s
+src/automation_scripts.c.s:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/src/automation_scripts.c.s
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.s
+.PHONY : src/automation_scripts.c.s
+
+src/main.o: src/main.c.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.c.o:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_in_OS_X.dir/build.make CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.o
+.PHONY : src/main.c.o
+
+src/main.i: src/main.c.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.c.i:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_in_OS_X.dir/build.make CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.i
+.PHONY : src/main.c.i
+
+src/main.s: src/main.c.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.c.s:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_in_OS_X.dir/build.make CMakeFiles/Automation_Scripts_in_OS_X.dir/src/main.c.s
+.PHONY : src/main.c.s
+
+src/system/audio.o: src/system/audio.c.o
+
+.PHONY : src/system/audio.o
+
+# target to build an object file
+src/system/audio.c.o:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/src/system/audio.c.o
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.o
+.PHONY : src/system/audio.c.o
+
+src/system/audio.i: src/system/audio.c.i
+
+.PHONY : src/system/audio.i
+
+# target to preprocess a source file
+src/system/audio.c.i:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/src/system/audio.c.i
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.i
+.PHONY : src/system/audio.c.i
+
+src/system/audio.s: src/system/audio.c.s
+
+.PHONY : src/system/audio.s
+
+# target to generate assembly for a file
+src/system/audio.c.s:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/src/system/audio.c.s
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.s
+.PHONY : src/system/audio.c.s
+
+src/system/display.o: src/system/display.c.o
+
+.PHONY : src/system/display.o
+
+# target to build an object file
+src/system/display.c.o:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/src/system/display.c.o
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.o
+.PHONY : src/system/display.c.o
+
+src/system/display.i: src/system/display.c.i
+
+.PHONY : src/system/display.i
+
+# target to preprocess a source file
+src/system/display.c.i:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/src/system/display.c.i
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.i
+.PHONY : src/system/display.c.i
+
+src/system/display.s: src/system/display.c.s
+
+.PHONY : src/system/display.s
+
+# target to generate assembly for a file
+src/system/display.c.s:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/src/system/display.c.s
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.s
+.PHONY : src/system/display.c.s
+
+src/system/display_stream.o: src/system/display_stream.c.o
+
+.PHONY : src/system/display_stream.o
+
+# target to build an object file
+src/system/display_stream.c.o:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/src/system/display_stream.c.o
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.o
+.PHONY : src/system/display_stream.c.o
+
+src/system/display_stream.i: src/system/display_stream.c.i
+
+.PHONY : src/system/display_stream.i
+
+# target to preprocess a source file
+src/system/display_stream.c.i:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/src/system/display_stream.c.i
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.i
+.PHONY : src/system/display_stream.c.i
+
+src/system/display_stream.s: src/system/display_stream.c.s
+
+.PHONY : src/system/display_stream.s
+
+# target to generate assembly for a file
+src/system/display_stream.c.s:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/src/system/display_stream.c.s
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.s
+.PHONY : src/system/display_stream.c.s
+
+src/system/events.o: src/system/events.c.o
+
+.PHONY : src/system/events.o
+
+# target to build an object file
+src/system/events.c.o:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/src/system/events.c.o
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.o
+.PHONY : src/system/events.c.o
+
+src/system/events.i: src/system/events.c.i
+
+.PHONY : src/system/events.i
+
+# target to preprocess a source file
+src/system/events.c.i:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/src/system/events.c.i
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.i
+.PHONY : src/system/events.c.i
+
+src/system/events.s: src/system/events.c.s
+
+.PHONY : src/system/events.s
+
+# target to generate assembly for a file
+src/system/events.c.s:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/src/system/events.c.s
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.s
+.PHONY : src/system/events.c.s
+
+src/system/windows.o: src/system/windows.c.o
+
+.PHONY : src/system/windows.o
+
+# target to build an object file
+src/system/windows.c.o:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/src/system/windows.c.o
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.o
+.PHONY : src/system/windows.c.o
+
+src/system/windows.i: src/system/windows.c.i
+
+.PHONY : src/system/windows.i
+
+# target to preprocess a source file
+src/system/windows.c.i:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/src/system/windows.c.i
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.i
+.PHONY : src/system/windows.c.i
+
+src/system/windows.s: src/system/windows.c.s
+
+.PHONY : src/system/windows.s
+
+# target to generate assembly for a file
+src/system/windows.c.s:
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib_Static.dir/build.make CMakeFiles/Automation_Scripts_Lib_Static.dir/src/system/windows.c.s
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.s
+.PHONY : src/system/windows.c.s
 
 test/test_audio.o: test/test_audio.c.o
 
@@ -581,37 +680,44 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Install_Automation_Scripts_in_OS_X"
 	@echo "... Automation_Scripts_in_OS_X"
-	@echo "... list_install_components"
 	@echo "... Automation_Scripts_Lib_Static"
 	@echo "... Automation_Scripts_Lib"
-	@echo "... automation_scripts.o"
-	@echo "... automation_scripts.i"
-	@echo "... automation_scripts.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... system/audio.o"
-	@echo "... system/audio.i"
-	@echo "... system/audio.s"
-	@echo "... system/display.o"
-	@echo "... system/display.i"
-	@echo "... system/display.s"
-	@echo "... system/display_stream.o"
-	@echo "... system/display_stream.i"
-	@echo "... system/display_stream.s"
-	@echo "... system/events.o"
-	@echo "... system/events.i"
-	@echo "... system/events.s"
-	@echo "... system/windows.o"
-	@echo "... system/windows.i"
-	@echo "... system/windows.s"
+	@echo "... Cocoa_Helper_in_OS_X"
+	@echo "... Cocoa_Helper_Lib_Static"
+	@echo "... Cocoa_Helper_Lib"
+	@echo "... Common_Functions"
+	@echo "... Common_Functions_Lib_Static"
+	@echo "... Common_Functions_Lib"
+	@echo "... libpng_1_6_24"
+	@echo "... libpng_Lib_Static"
+	@echo "... libpng_Lib"
+	@echo "... zlib_1_2_8"
+	@echo "... zlib_Lib_Static"
+	@echo "... zlib_Lib"
+	@echo "... src/automation_scripts.o"
+	@echo "... src/automation_scripts.i"
+	@echo "... src/automation_scripts.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/system/audio.o"
+	@echo "... src/system/audio.i"
+	@echo "... src/system/audio.s"
+	@echo "... src/system/display.o"
+	@echo "... src/system/display.i"
+	@echo "... src/system/display.s"
+	@echo "... src/system/display_stream.o"
+	@echo "... src/system/display_stream.i"
+	@echo "... src/system/display_stream.s"
+	@echo "... src/system/events.o"
+	@echo "... src/system/events.i"
+	@echo "... src/system/events.s"
+	@echo "... src/system/windows.o"
+	@echo "... src/system/windows.i"
+	@echo "... src/system/windows.s"
 	@echo "... test/test_audio.o"
 	@echo "... test/test_audio.i"
 	@echo "... test/test_audio.s"

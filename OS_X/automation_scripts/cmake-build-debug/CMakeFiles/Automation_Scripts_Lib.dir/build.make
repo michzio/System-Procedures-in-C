@@ -57,192 +57,192 @@ include CMakeFiles/Automation_Scripts_Lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Automation_Scripts_Lib.dir/flags.make
 
-CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.o: CMakeFiles/Automation_Scripts_Lib.dir/flags.make
-CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.o: ../automation_scripts.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/automation_scripts.c
+CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.o: CMakeFiles/Automation_Scripts_Lib.dir/flags.make
+CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.o: ../src/automation_scripts.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/automation_scripts.c
 
-CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/automation_scripts.c > CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.i
+CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/automation_scripts.c > CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.i
 
-CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/automation_scripts.c -o CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.s
+CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/automation_scripts.c -o CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.s
 
-CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.o.requires:
+CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.o.requires:
 
-.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.o.requires
+.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.o.requires
 
-CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.o.provides: CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.o.requires
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.o.provides.build
-.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.o.provides
+CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.o.provides: CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.o.requires
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.o.provides.build
+.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.o.provides
 
-CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.o.provides.build: CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.o
-
-
-CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.o: CMakeFiles/Automation_Scripts_Lib.dir/flags.make
-CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.o: ../system/windows.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/windows.c
-
-CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/windows.c > CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.i
-
-CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/windows.c -o CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.s
-
-CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.o.requires:
-
-.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.o.requires
-
-CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.o.provides: CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.o.requires
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.o.provides.build
-.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.o.provides
-
-CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.o.provides.build: CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.o
+CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.o.provides.build: CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.o
 
 
-CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.o: CMakeFiles/Automation_Scripts_Lib.dir/flags.make
-CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.o: ../system/events.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/events.c
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.o: CMakeFiles/Automation_Scripts_Lib.dir/flags.make
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.o: ../src/system/windows.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/system/windows.c
 
-CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/events.c > CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.i
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/system/windows.c > CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.i
 
-CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/events.c -o CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.s
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/system/windows.c -o CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.s
 
-CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.o.requires:
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.o.requires:
 
-.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.o.requires
+.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.o.requires
 
-CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.o.provides: CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.o.requires
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.o.provides.build
-.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.o.provides
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.o.provides: CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.o.requires
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.o.provides.build
+.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.o.provides
 
-CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.o.provides.build: CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.o
-
-
-CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.o: CMakeFiles/Automation_Scripts_Lib.dir/flags.make
-CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.o: ../system/display.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/display.c
-
-CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/display.c > CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.i
-
-CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/display.c -o CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.s
-
-CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.o.requires:
-
-.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.o.requires
-
-CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.o.provides: CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.o.requires
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.o.provides.build
-.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.o.provides
-
-CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.o.provides.build: CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.o
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.o.provides.build: CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.o
 
 
-CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.o: CMakeFiles/Automation_Scripts_Lib.dir/flags.make
-CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.o: ../system/audio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/audio.c
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.o: CMakeFiles/Automation_Scripts_Lib.dir/flags.make
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.o: ../src/system/events.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/system/events.c
 
-CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/audio.c > CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.i
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/system/events.c > CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.i
 
-CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/audio.c -o CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.s
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/system/events.c -o CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.s
 
-CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.o.requires:
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.o.requires:
 
-.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.o.requires
+.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.o.requires
 
-CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.o.provides: CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.o.requires
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.o.provides.build
-.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.o.provides
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.o.provides: CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.o.requires
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.o.provides.build
+.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.o.provides
 
-CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.o.provides.build: CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.o
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.o.provides.build: CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.o
 
 
-CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.o: CMakeFiles/Automation_Scripts_Lib.dir/flags.make
-CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.o: ../system/display_stream.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/display_stream.c
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.o: CMakeFiles/Automation_Scripts_Lib.dir/flags.make
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.o: ../src/system/display.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/system/display.c
 
-CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/display_stream.c > CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.i
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/system/display.c > CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.i
 
-CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/system/display_stream.c -o CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.s
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/system/display.c -o CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.s
 
-CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.o.requires:
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.o.requires:
 
-.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.o.requires
+.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.o.requires
 
-CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.o.provides: CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.o.requires
-	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.o.provides.build
-.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.o.provides
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.o.provides: CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.o.requires
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.o.provides.build
+.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.o.provides
 
-CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.o.provides.build: CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.o
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.o.provides.build: CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.o
+
+
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.o: CMakeFiles/Automation_Scripts_Lib.dir/flags.make
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.o: ../src/system/audio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/system/audio.c
+
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/system/audio.c > CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.i
+
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/system/audio.c -o CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.s
+
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.o.requires:
+
+.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.o.requires
+
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.o.provides: CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.o.requires
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.o.provides.build
+.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.o.provides
+
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.o.provides.build: CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.o
+
+
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.o: CMakeFiles/Automation_Scripts_Lib.dir/flags.make
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.o: ../src/system/display_stream.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/system/display_stream.c
+
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/system/display_stream.c > CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.i
+
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/src/system/display_stream.c -o CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.s
+
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.o.requires:
+
+.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.o.requires
+
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.o.provides: CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.o.requires
+	$(MAKE) -f CMakeFiles/Automation_Scripts_Lib.dir/build.make CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.o.provides.build
+.PHONY : CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.o.provides
+
+CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.o.provides.build: CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.o
 
 
 # Object files for target Automation_Scripts_Lib
 Automation_Scripts_Lib_OBJECTS = \
-"CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.o" \
-"CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.o" \
-"CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.o" \
-"CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.o" \
-"CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.o" \
-"CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.o"
+"CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.o" \
+"CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.o" \
+"CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.o" \
+"CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.o" \
+"CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.o" \
+"CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.o"
 
 # External object files for target Automation_Scripts_Lib
 Automation_Scripts_Lib_EXTERNAL_OBJECTS =
 
-libautomation_scripts.dylib: CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.o
-libautomation_scripts.dylib: CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.o
-libautomation_scripts.dylib: CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.o
-libautomation_scripts.dylib: CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.o
-libautomation_scripts.dylib: CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.o
-libautomation_scripts.dylib: CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.o
-libautomation_scripts.dylib: CMakeFiles/Automation_Scripts_Lib.dir/build.make
-libautomation_scripts.dylib: ../../../../common/output/unix/lib/static/libcommon_functions.a
-libautomation_scripts.dylib: ../../../../libpng-1.6.24/output/unix/lib/static/liblibpng.a
-libautomation_scripts.dylib: ../../../../zlib-1.2.8/output/unix/lib/static/libzlib.a
-libautomation_scripts.dylib: ../../cocoa_helper/output/apple/lib/static/libcocoa_helper.a
-libautomation_scripts.dylib: ../../../../../cocoa/AppleScriptSystemAutomation/libAppleScriptSystemAutomation.a
-libautomation_scripts.dylib: /usr/local/lib/libopencv_highgui.2.4.13.dylib
-libautomation_scripts.dylib: /usr/local/lib/libopencv_imgproc.2.4.13.dylib
-libautomation_scripts.dylib: /usr/local/lib/libopencv_core.2.4.13.dylib
-libautomation_scripts.dylib: CMakeFiles/Automation_Scripts_Lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C shared library libautomation_scripts.dylib"
+../outputs/lib/apple/libautomation_scripts.dylib: CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.o
+../outputs/lib/apple/libautomation_scripts.dylib: CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.o
+../outputs/lib/apple/libautomation_scripts.dylib: CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.o
+../outputs/lib/apple/libautomation_scripts.dylib: CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.o
+../outputs/lib/apple/libautomation_scripts.dylib: CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.o
+../outputs/lib/apple/libautomation_scripts.dylib: CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.o
+../outputs/lib/apple/libautomation_scripts.dylib: CMakeFiles/Automation_Scripts_Lib.dir/build.make
+../outputs/lib/apple/libautomation_scripts.dylib: ../../../../../cocoa/AppleScriptSystemAutomation/libAppleScriptSystemAutomation.a
+../outputs/lib/apple/libautomation_scripts.dylib: /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/outputs/lib/apple/libcocoa_helper.dylib
+../outputs/lib/apple/libautomation_scripts.dylib: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/lib/apple/libcommon_functions.dylib
+../outputs/lib/apple/libautomation_scripts.dylib: /usr/local/lib/libopencv_highgui.2.4.13.dylib
+../outputs/lib/apple/libautomation_scripts.dylib: /usr/local/lib/libopencv_imgproc.2.4.13.dylib
+../outputs/lib/apple/libautomation_scripts.dylib: /usr/local/lib/libopencv_core.2.4.13.dylib
+../outputs/lib/apple/libautomation_scripts.dylib: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/lib/apple/liblibpng.dylib
+../outputs/lib/apple/libautomation_scripts.dylib: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/lib/apple/libzlib.dylib
+../outputs/lib/apple/libautomation_scripts.dylib: CMakeFiles/Automation_Scripts_Lib.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/automation_scripts/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C shared library ../outputs/lib/apple/libautomation_scripts.dylib"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Automation_Scripts_Lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Automation_Scripts_Lib.dir/build: libautomation_scripts.dylib
+CMakeFiles/Automation_Scripts_Lib.dir/build: ../outputs/lib/apple/libautomation_scripts.dylib
 
 .PHONY : CMakeFiles/Automation_Scripts_Lib.dir/build
 
-CMakeFiles/Automation_Scripts_Lib.dir/requires: CMakeFiles/Automation_Scripts_Lib.dir/automation_scripts.c.o.requires
-CMakeFiles/Automation_Scripts_Lib.dir/requires: CMakeFiles/Automation_Scripts_Lib.dir/system/windows.c.o.requires
-CMakeFiles/Automation_Scripts_Lib.dir/requires: CMakeFiles/Automation_Scripts_Lib.dir/system/events.c.o.requires
-CMakeFiles/Automation_Scripts_Lib.dir/requires: CMakeFiles/Automation_Scripts_Lib.dir/system/display.c.o.requires
-CMakeFiles/Automation_Scripts_Lib.dir/requires: CMakeFiles/Automation_Scripts_Lib.dir/system/audio.c.o.requires
-CMakeFiles/Automation_Scripts_Lib.dir/requires: CMakeFiles/Automation_Scripts_Lib.dir/system/display_stream.c.o.requires
+CMakeFiles/Automation_Scripts_Lib.dir/requires: CMakeFiles/Automation_Scripts_Lib.dir/src/automation_scripts.c.o.requires
+CMakeFiles/Automation_Scripts_Lib.dir/requires: CMakeFiles/Automation_Scripts_Lib.dir/src/system/windows.c.o.requires
+CMakeFiles/Automation_Scripts_Lib.dir/requires: CMakeFiles/Automation_Scripts_Lib.dir/src/system/events.c.o.requires
+CMakeFiles/Automation_Scripts_Lib.dir/requires: CMakeFiles/Automation_Scripts_Lib.dir/src/system/display.c.o.requires
+CMakeFiles/Automation_Scripts_Lib.dir/requires: CMakeFiles/Automation_Scripts_Lib.dir/src/system/audio.c.o.requires
+CMakeFiles/Automation_Scripts_Lib.dir/requires: CMakeFiles/Automation_Scripts_Lib.dir/src/system/display_stream.c.o.requires
 
 .PHONY : CMakeFiles/Automation_Scripts_Lib.dir/requires
 

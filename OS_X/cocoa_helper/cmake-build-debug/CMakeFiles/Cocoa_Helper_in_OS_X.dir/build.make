@@ -57,56 +57,56 @@ include CMakeFiles/Cocoa_Helper_in_OS_X.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Cocoa_Helper_in_OS_X.dir/flags.make
 
-CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.o: CMakeFiles/Cocoa_Helper_in_OS_X.dir/flags.make
-CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/main.c
+CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.o: CMakeFiles/Cocoa_Helper_in_OS_X.dir/flags.make
+CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.o: ../src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/main.c
 
-CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/main.c > CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.i
+CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/main.c > CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.i
 
-CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/main.c -o CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.s
+CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/src/main.c -o CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.s
 
-CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.o.requires:
+CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.o.requires:
 
-.PHONY : CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.o.requires
+.PHONY : CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.o.requires
 
-CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.o.provides: CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.o.requires
-	$(MAKE) -f CMakeFiles/Cocoa_Helper_in_OS_X.dir/build.make CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.o.provides.build
-.PHONY : CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.o.provides
+CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.o.provides: CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.o.requires
+	$(MAKE) -f CMakeFiles/Cocoa_Helper_in_OS_X.dir/build.make CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.o.provides.build
+.PHONY : CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.o.provides
 
-CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.o.provides.build: CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.o
+CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.o.provides.build: CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.o
 
 
 # Object files for target Cocoa_Helper_in_OS_X
 Cocoa_Helper_in_OS_X_OBJECTS = \
-"CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.o"
+"CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.o"
 
 # External object files for target Cocoa_Helper_in_OS_X
 Cocoa_Helper_in_OS_X_EXTERNAL_OBJECTS =
 
-cocoa_helper: CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.o
-cocoa_helper: CMakeFiles/Cocoa_Helper_in_OS_X.dir/build.make
-cocoa_helper: libcocoa_helper.a
-cocoa_helper: ../../../../common/output/unix/lib/static/libcommon_functions.a
-cocoa_helper: ../../../../libpng-1.6.24/output/unix/lib/static/liblibpng.a
-cocoa_helper: ../../../../zlib-1.2.8/output/unix/lib/static/libzlib.a
-cocoa_helper: /usr/local/lib/libopencv_highgui.2.4.13.dylib
-cocoa_helper: /usr/local/lib/libopencv_imgproc.2.4.13.dylib
-cocoa_helper: /usr/local/lib/libopencv_core.2.4.13.dylib
-cocoa_helper: CMakeFiles/Cocoa_Helper_in_OS_X.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable cocoa_helper"
+../outputs/bin/apple/cocoa_helper: CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.o
+../outputs/bin/apple/cocoa_helper: CMakeFiles/Cocoa_Helper_in_OS_X.dir/build.make
+../outputs/bin/apple/cocoa_helper: ../outputs/lib/apple/libcocoa_helper.dylib
+../outputs/bin/apple/cocoa_helper: /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/outputs/lib/apple/libcommon_functions.dylib
+../outputs/bin/apple/cocoa_helper: /usr/local/lib/libopencv_highgui.2.4.13.dylib
+../outputs/bin/apple/cocoa_helper: /usr/local/lib/libopencv_imgproc.2.4.13.dylib
+../outputs/bin/apple/cocoa_helper: /usr/local/lib/libopencv_core.2.4.13.dylib
+../outputs/bin/apple/cocoa_helper: /Users/michzio/Developer/MyProjects/BachelorDegree/c/libpng-1.6.24/outputs/lib/apple/liblibpng.dylib
+../outputs/bin/apple/cocoa_helper: /Users/michzio/Developer/MyProjects/BachelorDegree/c/zlib-1.2.8/outputs/lib/apple/libzlib.dylib
+../outputs/bin/apple/cocoa_helper: CMakeFiles/Cocoa_Helper_in_OS_X.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/system/OS_X/cocoa_helper/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../outputs/bin/apple/cocoa_helper"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Cocoa_Helper_in_OS_X.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Cocoa_Helper_in_OS_X.dir/build: cocoa_helper
+CMakeFiles/Cocoa_Helper_in_OS_X.dir/build: ../outputs/bin/apple/cocoa_helper
 
 .PHONY : CMakeFiles/Cocoa_Helper_in_OS_X.dir/build
 
-CMakeFiles/Cocoa_Helper_in_OS_X.dir/requires: CMakeFiles/Cocoa_Helper_in_OS_X.dir/main.c.o.requires
+CMakeFiles/Cocoa_Helper_in_OS_X.dir/requires: CMakeFiles/Cocoa_Helper_in_OS_X.dir/src/main.c.o.requires
 
 .PHONY : CMakeFiles/Cocoa_Helper_in_OS_X.dir/requires
 
